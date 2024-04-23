@@ -1,1 +1,114 @@
 @charset "utf-8";
+
+/* 푸터 */
+.footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #d9d9d9;
+  font-size: 1.4rem;
+  color: #999999;
+}
+
+.ft-top {
+  width: 100%;
+  display: flex;
+  align-items: left;
+  gap: 25px;
+  margin: 22px 0 0;
+  padding: 0 0 22px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.ft-bt {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.ft-bt-left {
+  width: 60%;
+  height: 100%;
+  margin: 46px 0;
+  /* border-right: 1px solid #d9d9d9; */
+  position: relative;
+}
+
+.ft-logo {
+  /* width: 20%; */
+  width: 160px;
+  height: 100%;
+}
+
+.ft-logo > img {
+  width: 100%;
+  height: 100%;
+}
+
+.ft-bt-left > * {
+  margin-bottom: 8px;
+}
+
+.ft-middle-line {
+  width: 1px;
+  /* height: 115px; */
+  height: 160px;
+  background-color: #999;
+  position: relative;
+  opacity: 0.5;
+}
+
+.ft-bt-right {
+  width: 40%;
+  height: 100%;
+  margin: 46px 2%;
+}
+
+.ft-bt-right h2 {
+  font-size: 2.5rem;
+  margin-bottom: 14px;
+  color: #5e5e5e;
+  font-weight: 700;
+}
+
+.ft-bt-right p {
+  margin-bottom: 8px;
+  line-height: 20px;
+}
+
+/* ============================================ */
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  /* 푸터 */
+  .ft-bt {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+
+  .ft-top {
+    flex-wrap: wrap;
+    padding-left: 20px;
+  }
+
+  .ft-bt-left > * {
+    margin-bottom: 5px;
+    line-height: 20px;
+  }
+
+  .ft-middle-line {
+    width: 100%;
+    height: 1px;
+    background-color: #999;
+    position: relative;
+
+    opacity: 0.5;
+  }
+
+  .ft-bt-right {
+    width: 40%;
+    height: 100%;
+    margin: 46px 0;
+  }
+}
