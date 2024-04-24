@@ -1,0 +1,652 @@
+@media screen and (max-width: 1660px) {
+  /* 추천 맛집 */
+  .market-best {
+    padding-left: 30px;
+  }
+  .market-best-left {
+    width: 280px;
+    padding: 30px 10px 40px 10px;
+  }
+  .prev-best::after {
+    right: -120px;
+  }
+  /* 지역 축제 */
+  .local-festival {
+    padding-left: 30px;
+  }
+  .local-festival-left {
+    width: 280px;
+    padding: 30px 10px 40px 10px;
+  }
+  .prev-best::after {
+    right: -120px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  /* 추천 맛집 스와이퍼 버튼 */
+  .prev-best::after {
+    right: -110px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .container {
+    padding: 0px 20px;
+  }
+  /* 추천 맛집 */
+  .market-best .container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .market-best {
+    padding-left: 20px;
+  }
+  .market-best-left {
+    width: 280px;
+    padding: 30px 10px 40px 10px;
+  }
+  /* 지역 축제 */
+  .local-festival .container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .local-festival {
+    padding-left: 20px;
+  }
+  .local-festival-left {
+    width: 280px;
+    padding: 30px 10px 40px 10px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* 시장 소개 왼쪽 */
+  .market-info .market-info-left .map-bg {
+    margin: 30px 0 0 30px;
+  }
+  .market-info-right .market-contents .market-content1,
+  .market-info-right .market-contents .market-content2 {
+    padding: 20px 15px;
+  }
+  .market-content-right .market-content-right-top p {
+    font-size: 1.5rem;
+  }
+  .market-adr {
+    font-size: 1.4rem;
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 1140px) {
+  /* 시장 소개 오른쪽 */
+  .market-info-right .market-contents {
+    padding: 50px 20px 10px 20px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  /* 시장 소개 */
+  .market-content-right .market-content-right-top p {
+    font-size: 1.4rem;
+  }
+  .market-adr {
+    font-size: 1.3rem;
+    margin: 10px 0;
+  }
+  .market-content-info {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  .market-info .market-info-left .map-bg {
+    margin: 30px 0 0 10px;
+  }
+  .market-info-left {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1045px) {
+  /* 시장 소개 왼쪽 변경 */
+  .market-info-contents {
+    display: none;
+  }
+  .market-info-1045 {
+    display: block;
+  }
+  .market-info-right {
+    width: 65%;
+    background-color: #e0e7fb;
+  }
+  .market-info-left2 {
+    width: 35%;
+  }
+  .market-contents2 .market-content-right-top {
+    margin: 15px 0;
+  }
+  .market-contents2 .market-content-right .market-content-right-top p {
+    font-size: 1.6rem;
+  }
+  .market-contents2 .market-adr {
+    font-size: 1.5rem;
+  }
+  .market-contents2 .market-adr {
+    margin: 20px 0;
+  }
+  .market-contents2 .market-content-info {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .wrap {
+    margin-top: 80px;
+  }
+  /* 헤더 */
+  .header > .container > .inner {
+    height: 80px;
+  }
+  .hd-logo {
+    width: 180px;
+    margin-top: 5px;
+  }
+  .nav > .menu-list > li a {
+    font-size: 1.8rem;
+  }
+  /* 마이 페이지 */
+  .hd-right {
+    width: 200px;
+  }
+  .hd-right > .my-list > li > button > i {
+    font-size: 1.8rem;
+    position: absolute;
+    left: -8px;
+  }
+  .hd-right > .my-list > li a {
+    font-size: 1.8rem;
+  }
+  .hd-right > .my-list > li:nth-child(1)::after {
+    height: 18px;
+    position: absolute;
+    top: 52%;
+  }
+  .header > .search > .container {
+    top: -80px;
+  }
+  .hd-right > .my-list > li > a > i {
+    font-size: 2.3rem;
+  }
+  /* 추천 맛집 */
+  .market-best-left {
+    width: 250px;
+    padding: 30px 10px 40px 10px;
+  }
+  .market-best .title {
+    font-size: 2.6rem;
+  }
+  .market-info-left-title p {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+  .prev-best::after {
+    font-size: 2.3rem;
+    right: -100px;
+  }
+  .next-best::after {
+    font-size: 2.3rem;
+  }
+  /* 지역 축제  */
+  .local-festival-left {
+    width: 250px;
+    padding: 30px 10px 40px 10px;
+  }
+  .local-festival .title {
+    font-size: 2.6rem;
+  }
+  .local-festival-left-title-top p {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+  .prev-festival::after {
+    font-size: 2.3rem;
+    right: -100px;
+  }
+  .next-festival::after {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 920px) {
+  /* 시장 소개 */
+  .market-contents {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 880px) {
+  /* 로고 */
+  .hd-logo {
+    width: 160px;
+    margin-top: 10px;
+  }
+  .nav > .menu-list > li a {
+    font-size: 1.6rem;
+  }
+  /* 마이 페이지 */
+  .hd-right {
+    width: 160px;
+  }
+  .hd-right > .my-list > li > button > i {
+    font-size: 1.6rem;
+    position: absolute;
+    left: -12px;
+  }
+  .hd-right > .my-list > li a {
+    font-size: 1.6rem;
+  }
+  .hd-right > .my-list > li a img {
+    width: 23px;
+    height: 23px;
+  }
+  .hd-right > .my-list > li:nth-child(1)::after {
+    height: 16px;
+    position: absolute;
+    top: 52%;
+    left: 38%;
+  }
+  .hd-right > .my-list > li > a > i {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 840px) {
+  /* 검색 하단 */
+  .header .search .search-content-bot .search-hot {
+    gap: 25%;
+  }
+  .mb-header .search .search-content-bot .search-hot {
+    gap: 25%;
+  }
+}
+@media screen and (max-width: 830px) {
+  /* 시장 소개 */
+  .market-info-contents .market-contents {
+    margin-top: 30px;
+  }
+  .market-contents {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 790px) {
+  /* 헤더 */
+  .header {
+    display: none;
+  }
+  .mb-header {
+    display: block;
+  }
+  .mb-header .search .container .inner .search-contents {
+    padding: 20px 0px 0 00px;
+  }
+  /* 시장 소개 왼쪽 변경 */
+  .market-info-right {
+    width: 70%;
+    background-color: #e0e7fb;
+  }
+  .market-info-left2 {
+    width: 30%;
+  }
+  .local-bt {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    padding: 30px 15px 30px 30px;
+  }
+}
+@media screen and (max-width: 740px) {
+  /* 추천맛집 */
+  .market-best-left {
+    width: 230px;
+    padding: 30px 10px 40px 10px;
+  }
+  .market-best .title {
+    font-size: 2.4rem;
+  }
+  .market-info-left-title p {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  .market-info-left-title-top img {
+    width: 80px;
+  }
+  .prev-best::after {
+    right: -70px;
+  }
+  /* 지역 축제 */
+  .local-festival-left {
+    width: 230px;
+    padding: 30px 10px 40px 10px;
+  }
+  .local-festival .title {
+    font-size: 2.4rem;
+  }
+  .local-festival-left-title-top p {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  .local-festival-left-title-top img {
+    width: 80px;
+  }
+  .prev-festival::after {
+    right: -70px;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* 추천 맛집 */
+  .sw-best .swiper-slide {
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* 시장 소개 */
+  .market-contents {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* 헤더 */
+  .mb-header > .mb-menu-contents {
+    width: 350px;
+  }
+  .mb-header > .mb-menu-contents > .mb-menu-xBt {
+    font-size: 3.6rem;
+  }
+}
+@media screen and (max-width: 570px) {
+  /* 헤더 검색 */
+  .mb-header .search .container .inner .search-contents {
+    padding: 30px 0px 0 0px;
+  }
+  .mb-header > .search > .container {
+    height: 510px;
+  }
+  /* 검색 상단 */
+  .mb-header .search .search-contents .search-content-top input {
+    font-size: 1.6rem;
+  }
+  input::placeholder {
+    font-size: 1.6rem;
+  }
+  .mb-header .search .search-contents .search-content-top i {
+    font-size: 1.6rem;
+  }
+  /* 검색 중간 */
+  .mb-header .search .search-content-mid p {
+    font-size: 1.6rem;
+  }
+  .mb-header .search .search-content-mid .search-s {
+    font-size: 1.2rem;
+  }
+  /* 검색 하단 */
+  .mb-header .search .search-content-bot-top p {
+    font-size: 1.6rem;
+  }
+  .mb-header .search .search-content-bot-top .search-s {
+    font-size: 1.2rem;
+  }
+  .mb-header .search .search-content-bot .search-hot .search-hot-list-left {
+    font-size: 1.4rem;
+  }
+  .mb-header .search .search-content-bot .search-hot .search-hot-list-right {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  /* 모바일 헤더 */
+  .mb-header > .mb-menu-contents {
+    width: 300px;
+  }
+  .mb-header > .mb-menu-contents > .mb-my-list img {
+    width: 40px;
+  }
+  .mb-header > .mb-menu-contents > .mb-my-list > a > span {
+    margin: 0 5px 0 15px;
+    font-size: 1.8rem;
+  }
+  .mb-header > .mb-menu-contents > .mb-my-list > a i {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+  .mb-header > .mb-menu-contents > .mb-menu-list > li > a {
+    font-size: 1.8rem;
+  }
+  .go-join a span {
+    left: 55px;
+  }
+  .mb-header > .mb-menu-contents > .mb-menu-xBt {
+    font-size: 3.4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* 추천 맛집 */
+  .sw-best .swiper-slide {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  /* 추천 맛집 */
+  .market-best-left {
+    width: 160px;
+    padding: 30px 5px 40px 0px;
+  }
+  .market-info-left-title-top img {
+    width: 70px;
+  }
+  .prev-best::after {
+    right: -40px;
+  }
+  /* 지역 축제 */
+  .local-festival-left {
+    width: 160px;
+    padding: 30px 5px 40px 0px;
+  }
+  .local-festival-left-title-top img {
+    width: 70px;
+  }
+  .prev-festival::after {
+    right: -40px;
+  }
+}
+@media screen and (max-width: 430px) {
+  /* 모바일 헤더 */
+  .mb-header > .mb-menu-contents {
+    width: 250px;
+    padding-left: 30px;
+  }
+  .mb-header > .mb-menu-contents > .mb-my-list img {
+    width: 35px;
+  }
+  .mb-header > .mb-menu-contents > .mb-my-list > a > span {
+    margin: 0 5px 0 15px;
+    font-size: 1.6rem;
+  }
+  .mb-header > .mb-menu-contents > .mb-my-list > a i {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+  .go-join a span {
+    left: 50px;
+  }
+  .mb-header > .mb-menu-contents > .mb-menu-xBt {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* 추천 맛집 */
+  .sw-festival .swiper-slide {
+    padding: 20px 10px;
+  }
+  /* 지역 축제 */
+  .sw-best .swiper-slide {
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 390px) {
+  /* 시장 소개 */
+  .market-content-right .market-content-right-top {
+    gap: 5px;
+  }
+  .market-content-right .market-content-right-top span {
+    font-size: 1rem;
+    padding: 5px 7px 5px 7px;
+  }
+  .market-contents {
+    width: 90%;
+  }
+  .market-contents .market-content-right-top {
+    margin: 10px 0;
+  }
+  .market-contents .market-content-right .market-content-right-top p {
+    font-size: 1.4rem;
+  }
+  .market-contents .market-adr {
+    font-size: 1.3rem;
+  }
+  .market-contents .market-adr {
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  /* 모바일 헤더 */
+  .mb-header .search .search-content-bot .search-hot {
+    padding: 15px 18px;
+  }
+  .mb-header > .search > .container {
+    height: 495px;
+  }
+  /* 검색 상단 */
+  .mb-header .search .search-contents .search-content-top input {
+    font-size: 1.5rem;
+  }
+  input::placeholder {
+    font-size: 1.5rem;
+  }
+  .mb-header .search .search-contents .search-content-top i {
+    font-size: 1.5rem;
+  }
+  /* 검색 중간 */
+  .mb-header .search .search-content-mid p {
+    font-size: 1.5rem;
+  }
+  /* 검색 하단 */
+  .mb-header .search .search-content-bot-top p {
+    font-size: 1.5rem;
+  }
+  .mb-header .search .search-content-bot-top .search-s {
+    font-size: 1rem;
+  }
+  .mb-header .search .search-content-bot .search-hot .search-hot-list-left {
+    font-size: 1.3rem;
+  }
+  .mb-header .search .search-content-bot .search-hot .search-hot-list-right {
+    font-size: 1.3rem;
+  }
+  .mb-header .search .search-content-bot .search-hot {
+    gap: 20%;
+  }
+  /* 추천 맛집 */
+  .market-best {
+    padding-left: 5px;
+  }
+  .local-festival {
+    padding-left: 5px;
+  }
+}
+@media screen and (max-width: 370px) {
+  /* 추천 맛집 */
+  .market-best-left {
+    width: 130px;
+  }
+  .market-info-left-title-top img {
+    width: 50px;
+  }
+  .market-best .title {
+    font-size: 2rem;
+  }
+  .market-info-left-title p {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  .sw-best .swiper-slide {
+    margin: 30px 0 25px 0.5%;
+  }
+  .prev-best::after {
+    font-size: 2rem;
+    right: -20px;
+  }
+  .next-best::after {
+    font-size: 2rem;
+  }
+  /* 지역 축제 */
+  .local-festival-left {
+    width: 130px;
+  }
+  .local-festival-left-title-top img {
+    width: 50px;
+  }
+  .local-festival .title {
+    font-size: 2rem;
+  }
+  .local-festival-title p {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  .sw-festival .swiper-slide {
+    margin: 30px 0 25px 0.5%;
+  }
+  .prev-festival::after {
+    font-size: 2rem;
+    right: -20px;
+  }
+  .next-festival::after {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  /* 모바일 헤더 */
+  .mb-header > .mb-menu-contents {
+    width: 220px;
+    padding-left: 30px;
+  }
+  .mb-header > .mb-menu-contents > .mb-my-list img {
+    width: 35px;
+  }
+  .mb-header > .mb-menu-contents > .mb-my-list > a > span {
+    margin: 0 5px 0 15px;
+    font-size: 1.6rem;
+  }
+  .mb-header > .mb-menu-contents > .mb-my-list > a i {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+  .go-join a span {
+    left: 50px;
+  }
+  .mb-header > .mb-menu-contents > .mb-menu-xBt {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 340px) {
+  /* 추천 맛집 */
+  .market-best-left {
+    padding: 30px 2px 40px 0px;
+  }
+  /* 지역 축제 */
+  .local-festival-left {
+    padding: 30px 2px 40px 0px;
+  }
+}
+@media screen and (max-width: 330px) {
+  /* 추천 맛집 */
+  .sw-best .swiper-slide {
+    padding: 20px 5px;
+    margin: 30px 0 25px 0.7%;
+  }
+  /* 지역 축제 */
+  .sw-festival .swiper-slide {
+    padding: 20px 5px;
+    margin: 30px 0 25px 0.7%;
+  }
+}
