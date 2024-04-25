@@ -102,32 +102,26 @@
 }
 @media screen and (max-width: 1045px) {
   /* 시장 소개 왼쪽 변경 */
-  .market-info-contents {
-    display: none;
-  }
-  .market-info-1045 {
-    display: block;
-  }
   .market-info-right {
     width: 65%;
     background-color: #e0e7fb;
   }
-  .market-info-left2 {
+  .market-info-left {
     width: 35%;
   }
-  .market-contents2 .market-content-right-top {
+  .market-contents .market-content-right-top {
     margin: 15px 0;
   }
-  .market-contents2 .market-content-right .market-content-right-top p {
+  .market-contents .market-content-right .market-content-right-top p {
     font-size: 1.6rem;
   }
-  .market-contents2 .market-adr {
+  .market-contents .market-adr {
     font-size: 1.5rem;
   }
-  .market-contents2 .market-adr {
+  .market-contents .market-adr {
     margin: 20px 0;
   }
-  .market-contents2 .market-content-info {
+  .market-contents .market-content-info {
     font-size: 1.4rem;
     line-height: 1.5;
   }
@@ -203,7 +197,7 @@
   }
   .prev-festival::after {
     font-size: 2.3rem;
-    right: -100px;
+    right: -110px;
   }
   .next-festival::after {
     font-size: 2.3rem;
@@ -284,7 +278,7 @@
     width: 70%;
     background-color: #e0e7fb;
   }
-  .market-info-left2 {
+  .market-info-left {
     width: 30%;
   }
   .local-bt {
@@ -293,6 +287,11 @@
     position: relative;
     justify-content: space-between;
     padding: 30px 15px 30px 30px;
+  }
+  /* 시장 소개 스와이퍼 */
+  .sw-local-container {
+    margin: 0 30px;
+    width: 90%;
   }
 }
 @media screen and (max-width: 740px) {
@@ -330,19 +329,20 @@
     width: 80px;
   }
   .prev-festival::after {
-    right: -70px;
-  }
-}
-@media screen and (max-width: 650px) {
-  /* 추천 맛집 */
-  .sw-best .swiper-slide {
-    width: 80% !important;
+    left: 90px;
   }
 }
 @media screen and (max-width: 640px) {
   /* 시장 소개 */
   .market-contents {
     width: 85%;
+  }
+}
+@media screen and (max-width: 630px) {
+  /* 지역 축제 */
+  .festival-img img {
+    height: 340px;
+    /* height: auto; */
   }
 }
 @media screen and (max-width: 600px) {
@@ -419,10 +419,11 @@
     font-size: 3.4rem;
   }
 }
-@media screen and (max-width: 500px) {
-  /* 추천 맛집 */
-  .sw-best .swiper-slide {
-    width: 100% !important;
+@media screen and (max-width: 510px) {
+  /* 지역 축제 */
+  .festival-img img {
+    /* height: 340px; */
+    height: 100%;
   }
 }
 @media screen and (max-width: 450px) {
@@ -443,10 +444,10 @@
     padding: 30px 5px 40px 0px;
   }
   .local-festival-left-title-top img {
-    width: 70px;
+    width: 55px;
   }
   .prev-festival::after {
-    right: -40px;
+    left: 50px;
   }
 }
 @media screen and (max-width: 430px) {
@@ -584,7 +585,7 @@
     width: 130px;
   }
   .local-festival-left-title-top img {
-    width: 50px;
+    width: 45px;
   }
   .local-festival .title {
     font-size: 2rem;
@@ -598,7 +599,7 @@
   }
   .prev-festival::after {
     font-size: 2rem;
-    right: -20px;
+    left: 30px;
   }
   .next-festival::after {
     font-size: 2rem;
