@@ -547,6 +547,7 @@ input::placeholder {
   position: relative;
   display: block;
   background-color: #fffcf0;
+  margin-bottom: 150px;
 }
 .market-best .inner {
   display: flex;
@@ -669,11 +670,12 @@ input::placeholder {
 .local-cont > .local-bt-name {
   width: 60px;
   border-radius: 5px;
-  background-color: #f88222;
+  background-color: #8da4d0;
+  color: #fff;
   display: block;
   border: none;
   cursor: pointer;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 5px 0;
   text-align: center;
 }
@@ -681,41 +683,56 @@ input::placeholder {
   display: block;
   position: relative;
   padding: 10px;
-  /* overflow: hidden; */
-  margin: 0 20px;
+  margin: 0 30px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  background-color: #f7dbc4;
 }
 .sw-local-name {
   position: relative;
   display: block;
   width: 100%;
 }
-.market-contents {
-  border: 1px solid #5e5e5e;
+.prev-local-name:after,
+.next-local-name:after {
+  font-size: 2rem;
+  color: #00539c;
 }
-.market-contents button {
-  display: block;
-  margin: 0 auto;
-  border: none;
+.prev-local-name {
+  top: 1373px;
+  right: auto;
+  left: 0px;
+  margin-left: 5px;
+}
+.next-local-name {
+  top: 1373px;
+  left: auto;
+  right: 5px;
+}
+/* 시장 소개 내용 */
+.market-contents {
+  margin: 30px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.market-content {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.market-content1,
+.market-content2 {
+  border: 1px solid #5e5e5e;
   border-radius: 5px;
-  background-color: #f88222;
+  padding: 30px 20px 50px 20px;
 }
 /* 오른쪽 */
-.market-info-right {
-  width: 60%;
-  background-color: #e0e7fb;
-}
-.market-info-right .market-contents {
-  padding: 50px;
-}
-.market-info-right .market-contents .market-content1,
-.market-info-right .market-contents .market-content2 {
-  border-radius: 5px;
-  background-color: #fff;
-  padding: 30px 20px;
-}
-.market-info-right .market-contents .market-content1 a,
-.market-info-right .market-contents .market-content2 a {
+.market-content1,
+.market-content2 {
   display: flex;
+  width: 50%;
   gap: 20px;
 }
 .market-content-right,
@@ -726,21 +743,40 @@ input::placeholder {
 .market-content-left img {
   width: 100%;
 }
-.market-content-right .market-content-right-top {
+.go-market {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 0 0;
+}
+.line::after {
+  content: "";
+  display: block;
+  /* width: 15px; */
+  height: 11px;
+  border: 0.5px solid #8da4d0;
+}
+.go-market span {
+  font-size: 1.3rem;
+  color: #00539c;
+}
+.go-market span:hover {
+  font-weight: bold;
+}
+.market-content-right-top {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.market-content-right .market-content-right-top p {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-.market-content-right .market-content-right-top span {
+.market-content-right-top span {
   font-size: 1.1rem;
   border-radius: 5px;
   padding: 5px 10px 5px 10px;
   color: #191919;
   background-color: #fcf6f2;
+}
+.market-content-right-top p {
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 .market-adr {
   display: block;
@@ -753,35 +789,13 @@ input::placeholder {
   line-height: 1.5;
   word-break: break-all;
 }
-.market-info-right .market-contents .market-content2 {
-  margin-top: 30px;
-  margin-bottom: 35px;
-}
-.market-info-right .market-contents {
-  display: none;
-}
 /* 더보기 버튼 */
-.market-info-contents .market-contents button {
+.market-contents button {
   display: block;
-  font-size: 1.6rem;
-  padding: 5px 8px;
-  color: #fff;
-  margin-top: 15px;
-}
-.prev-local-name:after,
-.next-local-name:after {
-  font-size: 2rem;
-  color: #f88222;
-}
-.prev-local-name {
-  top: 25px;
-  right: auto;
-  left: -10px;
-}
-.next-local-name {
-  top: 25px;
-  left: auto;
-  right: -5px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  background-color: #8da4d0;
 }
 /* 지역 축제 =================================================== */
 /* 지역 축제 왼쪽 */
@@ -791,7 +805,7 @@ input::placeholder {
   margin-top: 200px;
   position: relative;
   display: block;
-  background-color: #FFF4F4;
+  background-color: #fff4f4;
   margin-bottom: 150px;
 }
 .local-festival .inner {
@@ -803,7 +817,7 @@ input::placeholder {
   display: block;
   width: 300px;
   padding: 30px 20px 40px 20px;
-  background-color: #FFF4F4;
+  background-color: #fff4f4;
   /* background-color: #555142; */
 }
 .local-festival-title {
@@ -848,7 +862,7 @@ input::placeholder {
   display: block;
   width: 100%;
   overflow: hidden;
-  background-color: #FFF4F4;
+  background-color: #fff4f4;
 }
 .sw-festival {
   width: 100%;
@@ -863,6 +877,7 @@ input::placeholder {
   padding-bottom: 50px;
   padding: 20px;
   height: 500px;
+  text-align: center;
 }
 .festival-img {
   position: relative;
@@ -897,7 +912,4 @@ input::placeholder {
   border: none;
   color: #fff;
   background-color: #8da4d0;
-}
-.market-info{
-  display: none;
 }
