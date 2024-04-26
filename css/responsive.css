@@ -22,6 +22,11 @@
     right: -120px;
   }
 }
+@media screen and (max-width: 1470px) {
+  .market-content-right-top span:last-child {
+    display: none;
+  }
+}
 @media screen and (max-width: 1400px) {
   /* 추천 맛집 스와이퍼 버튼 */
   .prev-best::after {
@@ -57,73 +62,106 @@
     padding: 30px 10px 40px 10px;
   }
 }
+/* ================================================================================= */
 @media screen and (max-width: 1200px) {
-  /* 시장 소개 왼쪽 */
-  .market-info .market-info-left .map-bg {
-    margin: 30px 0 0 30px;
-  }
-  .market-info-right .market-contents .market-content1,
-  .market-info-right .market-contents .market-content2 {
-    padding: 20px 15px;
-  }
-  .market-content-right .market-content-right-top p {
-    font-size: 1.5rem;
-  }
-  .market-adr {
-    font-size: 1.4rem;
-    margin: 10px 0;
+  .market-info-contents {
+    margin: 0 20px;
   }
 }
-@media screen and (max-width: 1140px) {
-  /* 시장 소개 오른쪽 */
-  .market-info-right .market-contents {
-    padding: 50px 20px 10px 20px;
+@media screen and (max-width: 1186px) {
+  #gyeongbuk .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+  #chungnam .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: none;
   }
 }
-@media screen and (max-width: 1080px) {
-  /* 시장 소개 */
-  .market-content-right .market-content-right-top p {
-    font-size: 1.4rem;
+@media screen and (max-width: 1179px) {
+  #chungbuk .market-content-right-top span:nth-last-child(2) {
+    display: none;
   }
+}
+@media screen and (max-width: 1164px) {
+  #jeju .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1149px) {
+  #sejong .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1145px) {
+  #jeonbuk .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1127px) {
+  #seoul .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+  #jeonnam .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1109px) {
+  #ulsan .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+  #gyeonggi .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+  #daejeon .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1106px) {
   .market-adr {
     font-size: 1.3rem;
-    margin: 10px 0;
   }
   .market-content-info {
     font-size: 1.2rem;
-    line-height: 1.5;
   }
-  .market-info .market-info-left .map-bg {
-    margin: 30px 0 0 10px;
+}
+@media screen and (max-width: 1068px) {
+  #incheon .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: none;
   }
-  .market-info-left {
-    width: 45%;
+  #chungnam .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+  #jeonbuk .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1049px) {
+  #busan .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
   }
 }
 @media screen and (max-width: 1045px) {
-  /* 시장 소개 왼쪽 변경 */
-  .market-info-right {
-    width: 65%;
-    background-color: #e0e7fb;
+  #jeju .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
   }
-  .market-info-left {
-    width: 35%;
+}
+@media screen and (max-width: 1027px) {
+  #gyeongnam .market-content-right-top span:nth-last-child(2) {
+    display: none;
   }
-  .market-contents .market-content-right-top {
-    margin: 15px 0;
+  #gangwon .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: none;
   }
-  .market-contents .market-content-right .market-content-right-top p {
-    font-size: 1.6rem;
+  #daejeon .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: none;
   }
-  .market-contents .market-adr {
-    font-size: 1.5rem;
+}
+@media screen and (max-width: 1009px) {
+  #daegu .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: none;
   }
-  .market-contents .market-adr {
-    margin: 20px 0;
-  }
-  .market-contents .market-content-info {
-    font-size: 1.4rem;
-    line-height: 1.5;
+  #gwangju .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: none;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -203,10 +241,142 @@
     font-size: 2.3rem;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 991px) {
+  #incheon .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+  #daegu .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+  #gwangju .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 987px) {
+  .market-content-right-top {
+    gap: 7px;
+  }
+}
+@media screen and (max-width: 980px) {
+  /* 시장 소개 스와이퍼 */
+  .prev-local-name {
+    left: 21%;
+  }
+}
+@media screen and (max-width: 967px) {
+  .market-adr {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  .market-content-info {
+    font-size: 1.1rem;
+  }
+  .market-content-right-top p {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+}
+/* ========================================================================== */
+@media screen and (max-width: 960px) {
   /* 시장 소개 */
-  .market-contents {
-    width: 70%;
+  .market-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .market-content-right-top span {
+    display: block;
+  }
+  .market-content1,
+  .market-content2 {
+    width: 100%;
+  }
+  .market-content-right-top span:last-child {
+    display: block;
+  }
+  #gyeongbuk .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #chungnam .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #chungbuk .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #jeju .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #jeonbuk .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #sejong .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #seoul .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #jeonnam .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #ulsan .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #gyeonggi .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #daejeon .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #incheon .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #chungnam .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #jeonbuk .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #busan .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #jeju .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #gyeongnam .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #gangwon .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #daejeon .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #daegu .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #gwangju .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #incheon .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #daegu .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  #gwangju .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: block;
+  }
+  .market-content-right-top {
+    gap: 10px;
+  }
+  .market-content-right-top p {
+    font-size: 2rem;
+  }
+  .market-adr {
+    font-size: 1.6rem;
+    margin: 20px 0;
+  }
+  .market-content-info {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 880px) {
@@ -253,13 +423,14 @@
     gap: 25%;
   }
 }
-@media screen and (max-width: 830px) {
-  /* 시장 소개 */
-  .market-info-contents .market-contents {
-    margin-top: 30px;
+@media screen and (max-width: 835px) {
+  .market-content-right-top p {
+    font-size: 1.8rem;
   }
-  .market-contents {
-    width: 80%;
+}
+@media screen and (max-width: 805px) {
+  .market-content-right-top span:last-child {
+    display: none;
   }
 }
 @media screen and (max-width: 790px) {
@@ -273,25 +444,17 @@
   .mb-header .search .container .inner .search-contents {
     padding: 20px 0px 0 00px;
   }
-  /* 시장 소개 왼쪽 변경 */
-  .market-info-right {
-    width: 70%;
-    background-color: #e0e7fb;
-  }
-  .market-info-left {
-    width: 30%;
-  }
-  .local-bt {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    justify-content: space-between;
-    padding: 30px 15px 30px 30px;
-  }
   /* 시장 소개 스와이퍼 */
   .sw-local-container {
-    margin: 0 30px;
+    margin: auto;
     width: 90%;
+  }
+  .prev-local-name {
+    left: 1%;
+    margin-left: 0px;
+  }
+  .next-local-name {
+    right: 2%;
   }
 }
 @media screen and (max-width: 740px) {
@@ -332,17 +495,42 @@
     left: 90px;
   }
 }
-@media screen and (max-width: 640px) {
-  /* 시장 소개 */
-  .market-contents {
-    width: 85%;
+@media screen and (max-width: 700px) {
+  .market-content-info {
+    font-size: 1.3rem;
   }
+  .market-content-right-top p {
+    font-size: 1.7rem;
+  }
+  .market-adr {
+    font-size: 1.5rem;
+    margin: 15px 0;
+  }
+  .market-content-right-top {
+    gap: 7px;
+  }
+  /* 시장 소개 */
 }
 @media screen and (max-width: 630px) {
   /* 지역 축제 */
   .festival-img img {
     height: 340px;
     /* height: auto; */
+  }
+}
+@media screen and (max-width: 610px) {
+  .market-content-info {
+    font-size: 1.2rem;
+  }
+  .market-content-right-top p {
+    font-size: 1.6rem;
+  }
+  .market-adr {
+    font-size: 1.3rem;
+    margin: 15px 0;
+  }
+  .market-content-right-top {
+    gap: 6px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -352,6 +540,20 @@
   }
   .mb-header > .mb-menu-contents > .mb-menu-xBt {
     font-size: 3.6rem;
+  }
+}
+@media screen and (max-width: 610px) {
+  .market-content-right-top p {
+    font-size: 1.5rem;
+  }
+  .market-content-right-top {
+    gap: 5px;
+  }
+  /* 시장 소개 스와이퍼  */
+  .prev-local-name:after,
+  .next-local-name:after {
+    font-size: 1.6rem;
+    font-weight: bold;
   }
 }
 @media screen and (max-width: 570px) {
@@ -392,6 +594,52 @@
   .mb-header .search .search-content-bot .search-hot .search-hot-list-right {
     font-size: 1.4rem;
   }
+  /* 시장 소개 tag */
+  #chungnam .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+  #chungbuk .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+  #gyeongbuk .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 555px) {
+  #sejong .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+  #jeju .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  #seoul .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+  #jeonbuk .market-content2 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+  #jeonnam .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+}
+@media screen and (max-width: 535px) {
+  #ulsan .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+  #daejeon .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+  #gyeonggi .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+  #chungbuk .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
+  #jeonbuk .market-content1 .market-content-right-top span:nth-last-child(2) {
+    display: none;
+  }
 }
 @media screen and (max-width: 520px) {
   /* 모바일 헤더 */
@@ -418,12 +666,48 @@
   .mb-header > .mb-menu-contents > .mb-menu-xBt {
     font-size: 3.4rem;
   }
+  /* 시장 소개 */
+  .market-content1,
+  .market-content2 {
+    padding: 30px 10px 40px 10px;
+  }
 }
 @media screen and (max-width: 510px) {
   /* 지역 축제 */
   .festival-img img {
     /* height: 340px; */
     height: 100%;
+  }
+  /* 시장 소개 스와이퍼 */
+  .next-local-name {
+    right: 3%;
+  }
+  .sw-local-container {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* 시장 소개 */
+  .market-content-right-top span {
+    display: none !important;
+  }
+  .market-content-right-top p {
+    font-size: 1.6rem;
+  }
+  .market-adr {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  .market-content-info {
+    display: -webkit-box;
+    font-size: 1.1rem;
+    text-overflow: ellipsis; /* 말줄임 표시 (...) 추가 */
+    max-width: 100%; /* 최대 너비 설정 (넘치는 것은 말줄임 표시) */
+    overflow: hidden; /* 넘치는 것은 안보이게 설정 */
+    height: 100px; /* 최대 높이 설정 (넘치는 것은 말줄임 표시) */
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
   }
 }
 @media screen and (max-width: 450px) {
@@ -448,6 +732,11 @@
   }
   .prev-festival::after {
     left: 50px;
+  }
+  /* 시장 소개 */
+  .market-content1,
+  .market-content2 {
+    gap: 10px;
   }
 }
 @media screen and (max-width: 430px) {
@@ -483,30 +772,9 @@
   .sw-best .swiper-slide {
     padding: 20px 10px;
   }
-}
-@media screen and (max-width: 390px) {
   /* 시장 소개 */
-  .market-content-right .market-content-right-top {
-    gap: 5px;
-  }
-  .market-content-right .market-content-right-top span {
-    font-size: 1rem;
-    padding: 5px 7px 5px 7px;
-  }
   .market-contents {
-    width: 90%;
-  }
-  .market-contents .market-content-right-top {
-    margin: 10px 0;
-  }
-  .market-contents .market-content-right .market-content-right-top p {
-    font-size: 1.4rem;
-  }
-  .market-contents .market-adr {
-    font-size: 1.3rem;
-  }
-  .market-contents .market-adr {
-    margin: 10px 0;
+    gap: 30px;
   }
 }
 @media screen and (max-width: 380px) {
