@@ -627,7 +627,90 @@ input::placeholder {
 .go-join-450 a span:hover {
   font-weight: bold;
 }
-/* 모바일 검색 */
+/* 모바일450 검색 */
+.mb-header-450 > .search-450 {
+  width: 100%;
+  position: relative;
+  display: none;
+}
+.mb-header-450 > .search-450 > .container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: -80px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+.mb-header-450 > .search-450 > .container > .inner {
+  width: 100%;
+  height: 100%;
+}
+.mb-header .search .mb-search-top .search-close-bt {
+  position: relative;
+}
+.mb-header .search .mb-search-top .search-close-bt > i {
+  display: inline-block;
+  font-size: 3.5rem;
+  color: #5e5e5e;
+  cursor: pointer;
+}
+/* 검색 중간 */
+.mb-header .search .search-content-mid {
+  margin: 30px 0px;
+}
+.mb-header .search .search-content-mid p {
+  font-size: 2rem;
+}
+.mb-header .search .search-content-mid .search-s {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 30px 0;
+}
+/* 검색 하단 */
+.mb-header .search .search-content-bot {
+  position: relative;
+  display: block;
+}
+.mb-header .search .search-content-bot-top {
+  display: flex;
+  justify-content: space-between;
+}
+.mb-header .search .search-content-bot-top p {
+  font-size: 2rem;
+}
+.mb-header .search .search-content-bot-top .search-s {
+  font-size: 1.3rem;
+}
+.mb-header .search .search-content-bot-top .search-s i {
+  margin-right: 5px;
+}
+.mb-header .search .search-content-bot .search-hot {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 40%;
+  border: 1px solid #5e5e5e;
+  border-radius: 5px;
+  margin: 15px 0px;
+  padding: 15px 30px;
+}
+.mb-header .search .search-content-bot .search-hot .search-hot-list-left {
+  font-size: 1.6rem;
+  line-height: 1.9;
+}
+.mb-header .search .search-content-bot .search-hot .search-hot-list-left li a span {
+  margin-right: 20px;
+}
+.mb-header .search .search-content-bot .search-hot .search-hot-list-right {
+  font-size: 1.6rem;
+  line-height: 1.9;
+}
+.mb-header .search .search-content-bot .search-hot .search-hot-list-right li a span {
+  margin-right: 20px;
+}
+.mb-header .search .search-content-bot .search-hot .search-hot-list-right li:nth-child(5) a span {
+  margin-right: 11px;
+}
 /* 검색창 */
 .mb-header > .search {
   width: 100%;
@@ -639,6 +722,7 @@ input::placeholder {
   height: 100vh;
   position: absolute;
   top: -80px;
+  padding-top: 30px;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
@@ -652,7 +736,11 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}.mb-header > .search > .container > .inner > .mb-search-top .hd-logo{
+}
+.mb-search-cont-input {
+  width: 670px;
+}
+/* .mb-header > .search > .container > .inner > .mb-search-top .hd-logo {
   width: auto;
   margin-top: 5px;
 }
@@ -662,7 +750,7 @@ input::placeholder {
 .mb-header > .search > .container > .inner > .mb-search-top .hd-logo > a > img {
   width: 70px;
   height: 70px;
-}
+} */
 .mb-header .search .mb-search-top .search-close-bt {
   position: relative;
 }
