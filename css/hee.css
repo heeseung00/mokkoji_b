@@ -1,6 +1,53 @@
 @charset "utf-8";
 
 /* 희승 영역 */
+/* 메인 배너 */
+.banner {
+  max-height: 700px;
+  width: 100%;
+}
+
+.banner .container {
+  height: 100%;
+}
+.banner .swiper {
+  width: 100%;
+  height: 100%;
+  /* position: relative;
+  left: 0; */
+}
+
+.banner .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .bannerSwiper {
+  display: flex;
+}
+
+.banner .bannerSwiper-1200,
+.banner .bannerSwiper-790,
+.banner .bannerSwiper-450 {
+  display: none;
+}
+
+.banner .swiper-slide a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.banner .swiper-slide a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* 중간배너 */
 .banner-m {
   width: 100%;
@@ -8,6 +55,7 @@
   position: relative;
   cursor: pointer;
   background-color: #fcefa9;
+  margin-bottom: 150px;
 }
 
 .banner-m .inner {
@@ -40,6 +88,7 @@
 /* ================================================================== */
 /* 랭킹 */
 .ranking {
+  display: none;
   position: relative;
   width: 100%;
   height: 100%;
@@ -335,8 +384,8 @@
 }
 
 .ranking-banner .ranking-banner-img {
-  /* width: 40%; */
-  width: 35%;
+  width: 41%;
+  /* width: 35%; */
   background-color: #fff;
   border-radius: 5px;
   display: flex;
@@ -579,9 +628,9 @@
 
 .review .title-wrap {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+  gap: 43px;
 }
 
 .review .title-wrap > .title-wrap-all {
@@ -592,7 +641,8 @@
   font-weight: 700;
   margin-bottom: 10px;
   padding-top: 0;
-  margin-top: 75px;
+  margin-top: 78px;
+  /* margin-top: 128px; */
 }
 
 .review .sub-title {
@@ -646,7 +696,9 @@
 .review .review-slider-eat {
   position: relative;
   width: 100%;
-  height: 380px;
+  height: 375px;
+  /* height: 73.8333vw */
+  /* height: 380px; */
   /* height: 500px; */
   /* margin-bottom: 150px; */
 }
@@ -685,13 +737,14 @@
 
 .review .swiper-slide a img {
   width: 100%;
+  height: 100%;
 }
 
 .review .swiper-slide p {
   position: absolute;
   bottom: 10%;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   line-height: 21px;
   width: 100%;
@@ -756,7 +809,8 @@
 
 /* 이벤트 */
 .reviewToday .event-b {
-  width: 50%;
+  /* width: 50%; */
+  width: 43%;
   height: 70%;
   border-radius: 5px;
   overflow: hidden;
@@ -764,7 +818,24 @@
   margin-top: 30px;
 }
 
-.reviewToday .event-b .swiper {
+.reviewToday .event-b .evnet-content{
+  width: 100%;
+  height: 100%;
+}
+
+.reviewToday .event-b .evnet-content a{
+display: block;
+width: 100%;
+height: 100%;
+}
+
+
+.reviewToday .event-b .evnet-content a img{
+  width: 100%;
+  height: 100%;
+}
+
+/* .reviewToday .event-b .swiper {
   width: 82%;
   height: 100%;
 }
@@ -789,7 +860,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 /* 공지: 오늘의 소식 */
 .reviewToday .today-info {
@@ -799,8 +870,7 @@
 
 .reviewToday .today-info .title {
   font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 30px 0;
   display: flex;
   justify-content: flex-start;
 }
@@ -811,7 +881,7 @@
   /* display: flex; */
   font-size: 1.5rem;
   background-color: #fff;
-  padding: 0 21px;
+  padding: 10px 30px;
 }
 
 .today-info-content li {
@@ -823,10 +893,33 @@
 .today-info-content li a {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 2px;
 }
 
-.today-info-content li a
+/* .today-info-content li a:nth-child(1) {
+  width: 50%;
+}*/
+
+.today-info-content li a .today-info-tit {
+  width: 24%;
+  font-weight: 700;
+}
+
+.today-info-content li a span{
+  font-weight: 700;
+}
+
+.today-info-content li a .today-info-hidden {
+  width: 73%;
+  /* max-width: 420px; */
+  margin-left: 10px;
+  color: #3d3d3d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
 
 /* ========================================================= */
 /* 푸터 */
@@ -989,6 +1082,10 @@
 
 /* 반응형 */
 @media screen and (max-width: 1250px) {
+  .banner .container {
+    height: 100%;
+    padding: 0;
+  }
   /* 중간 배너 */
   .banner-m {
     padding: 0 20px;
@@ -998,10 +1095,14 @@
   .review {
     padding: 0 20px;
   }
+  .review .title {
+    margin-top: 40px;
+  }
+
   .review .review-slider-eat {
     position: relative;
-    height: 31vw;
-    /* height: 600px; */
+    /* height: 31vw; */
+    height: 300px;
   }
 
   .review .swiper {
@@ -1009,28 +1110,99 @@
   }
 
   .review .swiper-slide p {
-    /* font-size: 1.65rem; */
-    font-size: 1.32vw;
-    line-height: 26px;
+    font-size: 1.25rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
+  /* 배너 */
+  .banner {
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+  }
+  .banner .container {
+    height: 100%;
+    overflow: hidden; /* 가로로 넘치는 부분 가리기 */
+  }
+  .banner .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* 부모 요소 높이를 상속하여 높이 설정 */
+  }
+
+  .banner .swiper-slide a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner .swiper-slide a img {
+    width: 100%; /* 이미지 너비를 부모인 <a> 태그에 맞춤 */
+    height: auto; /* 이미지 높이를 비율에 맞춰 자동 조정 */
+  }
+
+  .banner .bannerSwiper-1200 {
+    display: flex;
+  }
+
+  .banner .bannerSwiper,
+  .banner .bannerSwiper-790,
+  .banner .bannerSwiper-450 {
+    display: none;
+  }
   /* 랭킹 */
   .ranking-banner .ranking-banner-img {
     width: 40.5%;
   }
 
   /* 리뷰 */
+  .review .title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-top: 0;
+    /* margin-top: 48px; */
+    margin-top: 4vw;
+  }
+
   .review .review-slider-eat {
     position: relative;
-    height: 51vw;
-    /* height: 600px; */
+    height: 35.8333vw;
+    /* height: 430px !important; */
   }
 
   .review .swiper-slide p {
     font-size: 1.7rem !important;
     line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .review .swiper-slide p {
+    font-size: 1.6rem !important;
+  }
+}
+@media screen and (max-width: 980px) {
+  .review .swiper-slide p {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .review .swiper-slide p {
+    font-size: 1.4rem !important;
   }
 }
 
@@ -1041,11 +1213,54 @@
   }
 }
 
+@media screen and (max-width: 880px) {
+  .review .swiper-slide p {
+    font-size: 1.3rem !important;
+  }
+}
+
+
+
 @media screen and (max-width: 850px) {
   /* 리뷰 */
+  .review .review-slider-eat {
+    height: 75.8333vw !important;
+  }
+
   .review .swiper-slide p {
-    font-size: 1.4rem;
-    line-height: 21px;
+    font-size: 2.3rem !important;
+    line-height: 28px !important;
+  }
+
+  .review .swiper-slide a{
+    width: 75% !important;
+  }
+
+  
+}
+
+@media screen and (max-width: 790px) {
+  /* 메인 배너 */
+  .banner {
+    max-height: 700px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner .bannerSwiper-790 {
+    display: block;
+  }
+
+  .banner .bannerSwiper,
+  .banner .bannerSwiper-1200,
+  .banner .bannerSwiper-450 {
+    display: none;
+  }
+
+  /* 페이지네이션 */
+  .banner-button-next,
+  .banner-button-prev {
+    display: none;
   }
 }
 
@@ -1141,6 +1356,10 @@
   }
 
   /* 리뷰 */
+  .review .inner{
+    width: 100%;
+    flex-direction: column;
+  }
   .review .container {
     padding: 0 15px 0;
     width: 100%;
@@ -1165,9 +1384,10 @@
   }
   .review .review-slider-eat {
     position: relative;
-    height: 75vw;
+    height: 102vw !important;
     margin-bottom: 25px;
     font-size: 1.6rem;
+   
   }
 
   .review .swiper-slide a {
@@ -1181,7 +1401,30 @@
   }
 
   .review .swiper-slide a p {
-    font-size: 1.4rem;
+    font-size: 3rem !important;
+    line-height: 4.8177vw !important;
+    /* line-height: 37px !important;/ */
+  }
+
+  .review .swiper-button-prev,
+  .review .swiper-button-next {
+    display: none;
+  }
+
+  /* 오늘의 소식 */
+
+  .reviewToday-wrap {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .reviewToday .today-info{
+  width: 100%;
+  }
+
+  .reviewToday .event-b{
+    width: 100%;
+    margin-top: 0;
   }
 
   /* .event .event-txt {
@@ -1201,6 +1444,10 @@
     padding-left: 20px;
   }
 
+  .ft-bt-left {
+    width: 100%;
+  }
+
   .ft-bt-left > * {
     margin-bottom: 5px;
     line-height: 20px;
@@ -1216,7 +1463,7 @@
   }
 
   .ft-bt-right {
-    width: 40%;
+    width: 100%;
     height: 100%;
     margin: 46px 0;
   }
@@ -1229,6 +1476,13 @@
   }
   &.swiper-slide-active {
     transform: scale(1);
+  }
+}
+
+
+@media screen and (max-width: 550px){
+  .review .swiper-slide a p{
+    font-size: 2.5rem !important;
   }
 }
 
@@ -1286,7 +1540,32 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .review .swiper-slide a p {
+    font-size: 4.5833vw !important;
+    /* font-size: 2.2rem !important; */
+    line-height: 28px;
+  }
+}
+
 @media screen and (max-width: 450px) {
+  /* 메인 배너 */
+  .banner {
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner .bannerSwiper-450 {
+    display: flex;
+  }
+
+  .banner .bannerSwiper,
+  .banner .bannerSwiper-1200,
+  .banner .bannerSwiper-790 {
+    display: none;
+  }
+
   /* 중간 배너 */
   .banner-m img:nth-child(1) {
     display: none;
@@ -1312,6 +1591,42 @@
 
   .ranking-topRank > ul {
     width: 70%;
+  }
+
+  /* 방문 후기 */
+  .review .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .review .title-wrap {
+    gap: 15px;
+  }
+
+  /* 이벤트, 공지 */
+  .reviewToday > .container {
+    padding: 20px;
+  }
+  .reviewToday-wrap {
+    flex-direction: column-reverse;
+  }
+
+  .reviewToday .today-info {
+    width: 100%;
+  }
+
+  .reviewToday .event-b {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .reviewToday .event-b .swiper {
+    width: 100%;
   }
 }
 
@@ -1372,6 +1687,10 @@
 
   .review .swiper-slide a {
     width: 77%;
+  }
+
+  .review .swiper-slide a p {
+    line-height: 20px;
   }
 
   .review .swiper-button-next-review1,
