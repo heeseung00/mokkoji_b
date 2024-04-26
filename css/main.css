@@ -549,7 +549,7 @@ input::placeholder {
 .mb-header-450 > .container > .inner > .mb-header-450-top > .logo-450 > a {
   position: relative;
   top: 10px;
-  left: 50%;
+  left: 45%;
   transform: translateX(-50%);
 }
 .mb-header-450 > .container > .inner > .mb-header-450-top > .logo-450 > a > img {
@@ -635,7 +635,7 @@ input::placeholder {
 }
 .mb-header > .search > .container {
   width: 100%;
-  height: 530px;
+  height: 100vh;
   position: absolute;
   top: -80px;
   background-color: #fff;
@@ -646,49 +646,28 @@ input::placeholder {
   width: 100%;
   height: 100%;
 }
-.mb-header > .search > .container > .inner > .hd-logo > a {
-  display: block;
-  width: 70px;
+.mb-header > .search > .container > .inner > .mb-search-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}.mb-header > .search > .container > .inner > .mb-search-top .hd-logo{
+  width: auto;
+  margin-top: 5px;
 }
-.mb-header > .search > .container > .inner > .hd-logo > a > img {
+.mb-header > .search > .container > .inner > .mb-search-top .hd-logo > a {
+  display: block;
+}
+.mb-header > .search > .container > .inner > .mb-search-top .hd-logo > a > img {
   width: 70px;
   height: 70px;
 }
-.mb-header .search .container .inner .search-contents {
-  padding: 50px 0px 0px 0px;
-  /* padding: 0 200px; */
-}
-.mb-header .search .search-close-bt {
+.mb-header .search .mb-search-top .search-close-bt {
   position: relative;
-  width: 100%;
 }
-.mb-header .search .search-close-bt > i {
-  position: absolute;
-  top: -60px;
-  right: 0;
+.mb-header .search .mb-search-top .search-close-bt > i {
   display: inline-block;
   font-size: 3.5rem;
-  color: #5e5e5e;
-  cursor: pointer;
-}
-/* 상단 */
-.mb-header .search .search-contents .search-content-top {
-  display: flex;
-  position: relative;
-}
-.mb-header .search .search-contents .search-content-top input {
-  height: 30px;
-  width: 800px;
-  border-width: 0 0 2px;
-  outline: none;
-  font-size: 2rem;
-}
-.mb-header .search .search-contents .search-content-top input::placeholder {
-  color: #5e5e5e;
-  font-size: 1.5rem;
-}
-.mb-header .search .search-contents .search-content-top i {
-  font-size: 2rem;
   color: #5e5e5e;
   cursor: pointer;
 }

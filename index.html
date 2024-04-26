@@ -166,7 +166,7 @@
             <!-- 검색 -->
             <div class="mb-search-mid">
               <form action="#" class="mb-search-cont">
-                <input type="text" class="search-text" maxlength="100" placeholder="검색어를 입력해주세요." />
+                <input type="text" id="mbautofocus" class="search-text" maxlength="100" placeholder="검색어를 입력해주세요." />
                 <input type="reset" class="search-reset" />
                 <input type="button" class="search-bt" />
               </form>
@@ -208,18 +208,25 @@
         <div class="search" id="mb-search">
           <div class="container">
             <div class="inner">
+              <div class="mb-search-top">
               <!-- 로고 -->
               <div class="hd-logo">
                 <a href="#"><img src="images/1header/mb-hd-logo.png" alt="로고" /></a>
               </div>
+              <!-- 검색창 -->
+              <div class="mb-search-mid">
+                <form action="#" class="mb-search-cont">
+                  <input type="text" class="search-text" maxlength="100" placeholder="검색어를 입력해주세요." />
+                  <input type="reset" class="search-reset" />
+                  <input type="button" class="search-bt" />
+                </form>
+              </div>
+              <!-- close 버튼 -->
               <div class="search-close-bt" id="mb-closeBt">
                 <i class="fa-solid fa-xmark" id="mb-menu-xBt"></i>
               </div>
+              </div>
               <div class="search-contents">
-                <div class="search-content-top">
-                  <input id="mbSearchInput" type="text" placeholder="검색어를 입력해 주세요." maxlength="50" />
-                  <i class="fi fi-rs-search"></i>
-                </div>
                 <div class="search-content-mid">
                   <p>최근 검색어</p>
                   <p class="search-s">최근 검색어 내역이 없습니다.</p>
@@ -335,7 +342,7 @@
               </div>
               <div class="search-contents-450">
                 <div class="search-content-top-450">
-                  <input id="mbSearchInput-450" type="text" placeholder="검색어를 입력해 주세요." maxlength="50" />
+                  <input id="mbSearchInput450" type="text" placeholder="검색어를 입력해 주세요." maxlength="50" />
                   <i class="fi fi-rs-search"></i>
                 </div>
                 <div class="search-content-mid-450">

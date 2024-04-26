@@ -97,18 +97,41 @@ window.addEventListener("load", function () {
   mbMenuClose.addEventListener("click", function () {
     mbMenuContents.style.display = "none";
   });
-    // 모바일450 햄버거 메뉴 열고 닫기
-    const mbMenuOpen450 = document.getElementById("mb-menuBt-450");
-    const mbMenuContents450 = document.getElementById("mbMenuContents450");
-    // const mbMenuClose = document.getElementById("mb-menu-xBt");
-    const mbMenuClose450 = document.querySelector(".mb-menu-xBt-450");
-    mbMenuOpen450.addEventListener("click", function () {
-      mbMenuContents450.style.display = "block";
-    });
-    mbMenuClose450.addEventListener("click", function () {
-      mbMenuContents450.style.display = "none";
-    });
+  // 모바일450 햄버거 메뉴 열고 닫기
+  const mbMenuOpen450 = document.getElementById("mb-menuBt-450");
+  const mbMenuContents450 = document.getElementById("mbMenuContents450");
+  // const mbMenuClose = document.getElementById("mb-menu-xBt");
+  const mbMenuClose450 = document.querySelector(".mb-menu-xBt-450");
+  mbMenuOpen450.addEventListener("click", function () {
+    mbMenuContents450.style.display = "block";
+  });
+  mbMenuClose450.addEventListener("click", function () {
+    mbMenuContents450.style.display = "none";
+  });
   // 모바일 헤더 검색창 열고 닫기
+  const mbsearchOpen = document.querySelector(".mb-search-cont");
+  const mbsearch = document.getElementById("mb-search");
+  const mbsearchClose = document.getElementById("mb-closeBt");
+  const mbSearchInput = document.getElementById("mbSearchInput");
+  mbsearchOpen.addEventListener("click", function () {
+    mbsearch.style.display = "block";
+  });
+  mbsearchClose.addEventListener("click", function () {
+    mbsearch.style.display = "none";
+    mbSearchInput.value = ""; // input 내용 리셋
+  });
+  // 모바일450 헤더 검색창 열고 닫기
+  const searchOpen450 = document.querySelector(".mb-search-cont-450");
+  const search450 = document.getElementById("mb-search-450");
+  const searchClose450 = document.getElementById("mb-closeBt-450");
+  const mbSearchInput450 = document.getElementById("mbSearchInput450");
+  searchOpen450.addEventListener("click", function () {
+    search450.style.display = "block";
+  });
+  searchClose450.addEventListener("click", function () {
+    search450.style.display = "none";
+    mbSearchInput450.value = ""; // input 내용 리셋
+  });
   // =================================================================
   // 전국 시장 소개 스와이프
   var swLocalName = new Swiper(".sw-local-name", {
