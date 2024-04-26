@@ -110,7 +110,7 @@ window.addEventListener("load", function () {
         spaceBetween: 10,
       },
       769: {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 10,
       },
       0: {
@@ -121,7 +121,7 @@ window.addEventListener("load", function () {
   });
 
   var reviewSwiper2 = new Swiper(".reviewSwiper2", {
-    slidesPerView: 3,
+    slidesPerView: 5,
     centeredSlides: true,
     loop: true,
     spaceBetween: 10,
@@ -147,8 +147,8 @@ window.addEventListener("load", function () {
         spaceBetween: 10,
       },
       769: {
-        slidesPerView: 1,
-        spaceBetween: 10,
+        slidesPerView: 3,
+        spaceBetween: 5,
       },
       0: {
         slidesPerView: 1,
