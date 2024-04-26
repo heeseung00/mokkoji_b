@@ -34,6 +34,7 @@ body {
   position: relative;
   margin-top: 100px;
   /* margin-left: 50px; */
+  overflow: hidden;
 }
 .inner {
   /* max-width: 1200px; */
