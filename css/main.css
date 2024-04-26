@@ -285,38 +285,17 @@ input::placeholder {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.header
-  .search
-  .search-content-bot
-  .search-hot
-  .search-hot-list-left
-  li
-  a
-  span {
+.header .search .search-content-bot .search-hot .search-hot-list-left li a span {
   margin-right: 20px;
 }
 .header .search .search-content-bot .search-hot .search-hot-list-right {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.header
-  .search
-  .search-content-bot
-  .search-hot
-  .search-hot-list-right
-  li
-  a
-  span {
+.header .search .search-content-bot .search-hot .search-hot-list-right li a span {
   margin-right: 20px;
 }
-.header
-  .search
-  .search-content-bot
-  .search-hot
-  .search-hot-list-right
-  li:nth-child(5)
-  a
-  span {
+.header .search .search-content-bot .search-hot .search-hot-list-right li:nth-child(5) a span {
   margin-right: 11px;
 }
 /* 모바일 헤더 =================================================== */
@@ -336,39 +315,39 @@ input::placeholder {
   position: relative;
   display: block;
 }
-.mb-header > .inner > .container {
+.mb-header > .container > .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
   background-color: #fff;
 }
-.mb-header > .inner > .container > .search {
+.mb-header > .container > .inner > .search {
   display: none;
 }
-.mb-header > .inner > .container > .mb-menu > button {
+.mb-header > .container > .inner > .mb-menu > button {
   border: none;
   background: none;
   cursor: pointer;
 }
-.mb-header > .inner > .container > .mb-menu > button > i {
+.mb-header > .container > .inner > .mb-menu > button > i {
   font-size: 2.8rem;
 }
-.mb-header > .inner > .container > .logo {
+.mb-header > .container > .inner > .logo {
   position: relative;
   display: block;
 }
-.mb-header > .inner > .container > .logo > a > img {
+.mb-header > .container > .inner > .logo > a > img {
   width: 70px;
   height: 70px;
 }
-.mb-header > .inner > .container > .mb-search > button {
+.mb-header > .container > .inner > .mb-search > button {
   border: none;
   background: none;
   cursor: pointer;
   display: none;
 }
-.mb-header > .inner > .container > .mb-search > button > i {
+.mb-header > .container > .inner > .mb-search > button > i {
   font-size: 2.5rem;
 }
 .mb-search-cont {
@@ -579,38 +558,17 @@ input::placeholder {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.mb-header
-  .search
-  .search-content-bot
-  .search-hot
-  .search-hot-list-left
-  li
-  a
-  span {
+.mb-header .search .search-content-bot .search-hot .search-hot-list-left li a span {
   margin-right: 20px;
 }
 .mb-header .search .search-content-bot .search-hot .search-hot-list-right {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.mb-header
-  .search
-  .search-content-bot
-  .search-hot
-  .search-hot-list-right
-  li
-  a
-  span {
+.mb-header .search .search-content-bot .search-hot .search-hot-list-right li a span {
   margin-right: 20px;
 }
-.mb-header
-  .search
-  .search-content-bot
-  .search-hot
-  .search-hot-list-right
-  li:nth-child(5)
-  a
-  span {
+.mb-header .search .search-content-bot .search-hot .search-hot-list-right li:nth-child(5) a span {
   margin-right: 11px;
 }
 /* 배너 */
