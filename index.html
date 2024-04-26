@@ -1,1926 +1,1976 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="imagetoolbar" content="no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://bbsj.kr" />
-    <meta property="og:title" content="모꼬지 ┃ 전통시장의 새로운 트렌드를 만들다" />
-    <link rel="canonical" href="http://bbsj.kr" />
-    <meta name="description" content="모꼬지는 전국 전통시장과 죽기 전에 꼭 가봐야 할 여행지를 소개하는 국내 유일한 시장 및 여행 정보 전문 포털 사이트입니다." />
-    <meta property="og:description" content="모꼬지는 전국 전통시장과 죽기 전에 꼭 가봐야 할 여행지를 소개하는 국내 유일한 시장 및 여행 정보 전문 포털 사이트입니다." />
-    <meta property="og:image" content="http://bbsj.kr/data/common/og_image.png" />
-    <meta property="og:image:width" content="476" />
-    <meta property="og:image:height" content="249" />
-    <meta name="naver-site-verification" content="9e97a766ddb836741081b7fcb259057995abf3be" />
-    <meta name="naver-site-verification" content="589ae093140a0342a73e0dc4c3a5e3a1c84c0610" />
-    <meta name="naver-site-verification" content="6957718e5c1b719b6c8c7d137c1e1b828896a6b6" />
-    <title>모꼬지</title>
-    <!-- flaticon -->
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css" />
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css" />
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-straight/css/uicons-thin-straight.css" />
-    <!-- font aswesom -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <!-- aos css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- css -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/hee.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <!-- 제이쿼리 추가 -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- aos js -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <!-- js -->
-    <script src="js/html5shiv.js"></script>
-    <!-- <script src="js/prefixfree.min.js"></script> -->
-    <script src="js/repond.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/hee.js"></script>
-    <script src="js/lee.js"></script>
-    <script src="js/jquery.cookie.js"></script>
-  </head>
-  <body>
-    <!-- B안 -->
-    <div class="wrap">
-      <!-- 헤더 -->
-      <header class="header">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="imagetoolbar" content="no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://bbsj.kr" />
+  <meta property="og:title" content="모꼬지 ┃ 전통시장의 새로운 트렌드를 만들다" />
+  <link rel="canonical" href="http://bbsj.kr" />
+  <meta name="description" content="모꼬지는 전국 전통시장과 죽기 전에 꼭 가봐야 할 여행지를 소개하는 국내 유일한 시장 및 여행 정보 전문 포털 사이트입니다." />
+  <meta property="og:description" content="모꼬지는 전국 전통시장과 죽기 전에 꼭 가봐야 할 여행지를 소개하는 국내 유일한 시장 및 여행 정보 전문 포털 사이트입니다." />
+  <meta property="og:image" content="http://bbsj.kr/data/common/og_image.png" />
+  <meta property="og:image:width" content="476" />
+  <meta property="og:image:height" content="249" />
+  <meta name="naver-site-verification" content="9e97a766ddb836741081b7fcb259057995abf3be" />
+  <meta name="naver-site-verification" content="589ae093140a0342a73e0dc4c3a5e3a1c84c0610" />
+  <meta name="naver-site-verification" content="6957718e5c1b719b6c8c7d137c1e1b828896a6b6" />
+  <title>모꼬지</title>
+  <!-- flaticon -->
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css" />
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-straight/css/uicons-thin-straight.css" />
+  <!-- font aswesom -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- aos css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- css -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/hee.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- 제이쿼리 추가 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- aos js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- js -->
+  <script src="js/html5shiv.js"></script>
+  <!-- <script src="js/prefixfree.min.js"></script> -->
+  <script src="js/repond.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/hee.js"></script>
+  <script src="js/lee.js"></script>
+  <script src="js/jquery.cookie.js"></script>
+</head>
+
+<body>
+  <!-- B안 -->
+  <div class="wrap">
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="container">
+        <div class="inner">
+          <!-- 로고 -->
+          <div class="hd-logo">
+            <a href="#"><img src="images/1header/hd-logo-main.png" alt="로고" /></a>
+          </div>
+          <!-- 네비게이션 -->
+          <nav class="nav">
+            <ul class="menu-list">
+              <li><a href="submenu-region.html">지역별</a></li>
+              <li><a href="#nav1">맛집</a></li>
+              <li><a href="#nav2">시장</a></li>
+              <li><a href="#nav3">축제</a></li>
+              <li><a href="#nav4">방문후기</a></li>
+              <li><a href="#nav5">이벤트</a></li>
+              <li><a href="notice-board.html">게시판</a></li>
+            </ul>
+          </nav>
+          <!-- 마이페이지 -->
+          <div class="hd-right">
+            <ul class="my-list">
+              <li>
+                <button id="search-open"><i class="fi fi-rr-search"></i></button>
+              </li>
+              <li><a href="login.html">로그인</a></li>
+              <li><a href="join.html">회원가입</a></li>
+              <li>
+                <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--검색 -->
+      <div class="search" id="search">
         <div class="container">
           <div class="inner">
             <!-- 로고 -->
             <div class="hd-logo">
               <a href="#"><img src="images/1header/hd-logo-main.png" alt="로고" /></a>
             </div>
-            <!-- 네비게이션 -->
-            <nav class="nav">
-              <ul class="menu-list">
-                <li><a href="submenu-region.html">지역별</a></li>
-                <li><a href="#nav1">맛집</a></li>
-                <li><a href="#nav2">시장</a></li>
-                <li><a href="#nav3">축제</a></li>
-                <li><a href="#nav4">방문후기</a></li>
-                <li><a href="#nav5">이벤트</a></li>
-                <li><a href="notice-board.html">게시판</a></li>
-              </ul>
-            </nav>
-            <!-- 마이페이지 -->
-            <div class="hd-right">
-              <ul class="my-list">
-                <li>
-                  <button id="search-open"><i class="fi fi-rr-search"></i></button>
-                </li>
-                <li><a href="login.html">로그인</a></li>
-                <li><a href="join.html">회원가입</a></li>
-                <li>
-                  <a href="#"><i class="fa-regular fa-circle-user"></i></a>
-                </li>
-              </ul>
+            <div class="search-close-bt" id="closeBt">
+              <i class="fa-solid fa-xmark" id="mb-menu-xBt"></i>
             </div>
-          </div>
-        </div>
-        <!--검색 -->
-        <div class="search" id="search">
-          <div class="container">
-            <div class="inner">
-              <!-- 로고 -->
-              <div class="hd-logo">
-                <a href="#"><img src="images/1header/hd-logo-main.png" alt="로고" /></a>
+            <div class="search-contents">
+              <div class="search-content-top">
+                <input id="searchInput" type="text" placeholder="검색어를 입력해 주세요." maxlength="50" />
+                <i class="fi fi-rs-search"></i>
               </div>
-              <div class="search-close-bt" id="closeBt">
-                <i class="fa-solid fa-xmark" id="mb-menu-xBt"></i>
+              <div class="search-content-mid">
+                <p>최근 검색어</p>
+                <p class="search-s">최근 검색어 내역이 없습니다.</p>
               </div>
-              <div class="search-contents">
-                <div class="search-content-top">
-                  <input id="searchInput" type="text" placeholder="검색어를 입력해 주세요." maxlength="50" />
-                  <i class="fi fi-rs-search"></i>
+              <div class="search-content-bot">
+                <div class="search-content-bot-top">
+                  <p>최근 인기 검색어</p>
+                  <p class="search-s"><i class="fi fi-rs-info"></i>조회일 직전 7일간의 인기 검색어</p>
                 </div>
-                <div class="search-content-mid">
-                  <p>최근 검색어</p>
-                  <p class="search-s">최근 검색어 내역이 없습니다.</p>
-                </div>
-                <div class="search-content-bot">
-                  <div class="search-content-bot-top">
-                    <p>최근 인기 검색어</p>
-                    <p class="search-s"><i class="fi fi-rs-info"></i>조회일 직전 7일간의 인기 검색어</p>
-                  </div>
-                  <div class="search-hot">
-                    <ul class="search-hot-list-left">
-                      <li>
-                        <a href="#"><span>1</span>광진손짜장</a>
-                      </li>
-                      <li>
-                        <a href="#"><span>2</span>제주도</a>
-                      </li>
-                      <li>
-                        <a href="#"><span>3</span>놀라운 토요일</a>
-                      </li>
-                      <li>
-                        <a href="#"><span>4</span>짜장면</a>
-                      </li>
-                      <li>
-                        <a href="#"><span>5</span>강원도 맛집</a>
-                      </li>
-                    </ul>
-                    <ul class="search-hot-list-right">
-                      <li>
-                        <a href="#"><span>6</span>돈까스</a>
-                      </li>
-                      <li>
-                        <a href="#"><span>7</span>경동시장</a>
-                      </li>
-                      <li>
-                        <a href="#"><span>8</span>참돔</a>
-                      </li>
-                      <li>
-                        <a href="#"><span>9</span>백종원</a>
-                      </li>
-                      <li>
-                        <a href="#"><span>10</span>이벤트</a>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="search-hot">
+                  <ul class="search-hot-list-left">
+                    <li>
+                      <a href="#"><span>1</span>광진손짜장</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>2</span>제주도</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>3</span>놀라운 토요일</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>4</span>짜장면</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>5</span>강원도 맛집</a>
+                    </li>
+                  </ul>
+                  <ul class="search-hot-list-right">
+                    <li>
+                      <a href="#"><span>6</span>돈까스</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>7</span>경동시장</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>8</span>참돔</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>9</span>백종원</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>10</span>이벤트</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
-      <!-- 모바일 헤더 -->
-      <div class="mb-header">
-        <div class="inner">
-          <div class="container">
-            <!-- 햄버거바 -->
-            <div class="mb-menu">
-              <button id="mb-menuBt"><i class="fa-solid fa-bars"></i></button>
-            </div>
+      </div>
+    </header>
+    <!-- 모바일 헤더 -->
+    <div class="mb-header">
+      <div class="inner">
+        <div class="container">
+          <!-- 로고 -->
+          <div class="logo">
+            <a href="#"><img src="images/1header/mb-hd-logo.png" alt="로고" /></a>
+          </div>
+          <!-- 검색 -->
+          <div class="mb-search">
+            <button id="mb-search-open"><i class="fi fi-rr-search"></i></button>
+          </div>
+          <div class="mb-search">
+            <form action="#" class="mb-search-cont">
+              <input type="text" class="search-text" maxlength="100" placeholder="검색어를 입력해주세요." />
+              <input type="reset" class="search-reset" />
+              <input type="button" class="search-bt" />
+            </form>
+          </div>
+          <!-- 햄버거바 -->
+          <div class="mb-menu">
+            <button id="mb-menuBt"><i class="fa-solid fa-bars"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- 햄버거 메뉴 내용 -->
+      <div class="mb-menu-contents" id="mbMenuContents">
+        <div class="mb-menu-xBt">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="mb-my-list">
+          <img src="images/1header/mypage-icon.png" alt="모바일마이페이지" />
+          <a href="login.html"><span>로그인하세요</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+        <div class="go-join">
+          <a href="join.html">
+            <span>회원가입</span>
+          </a>
+        </div>
+        <ul class="mb-menu-list">
+          <li><a href="submenu-region.html">지역별</a></li>
+          <li><a href="#nav1">맛집</a></li>
+          <li><a href="#nav2">시장</a></li>
+          <li><a href="#nav3">축제</a></li>
+          <li><a href="#nav4">방문후기</a></li>
+          <li><a href="#nav5">이벤트</a></li>
+          <li><a href="notice-board.html">게시판</a></li>
+        </ul>
+      </div>
+      <!-- 검색 내용 -->
+      <div class="search" id="mb-search">
+        <div class="container">
+          <div class="inner">
             <!-- 로고 -->
-            <div class="logo">
+            <div class="hd-logo">
               <a href="#"><img src="images/1header/mb-hd-logo.png" alt="로고" /></a>
             </div>
-            <!-- 검색 -->
-            <div class="mb-search">
-              <button id="mb-search-open"><i class="fi fi-rr-search"></i></button>
+            <div class="search-close-bt" id="mb-closeBt">
+              <i class="fa-solid fa-xmark" id="mb-menu-xBt"></i>
             </div>
-          </div>
-        </div>
-        <!-- 햄버거 메뉴 내용 -->
-        <div class="mb-menu-contents" id="mbMenuContents">
-          <div class="mb-menu-xBt">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-          <div class="mb-my-list">
-            <img src="images/1header/mypage-icon.png" alt="모바일마이페이지" />
-            <a href="login.html"
-              ><span>로그인하세요</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </a>
-          </div>
-          <div class="go-join">
-            <a href="join.html">
-              <span>회원가입</span>
-            </a>
-          </div>
-          <ul class="mb-menu-list">
-            <li><a href="submenu-region.html">지역별</a></li>
-            <li><a href="#nav1">맛집</a></li>
-            <li><a href="#nav2">시장</a></li>
-            <li><a href="#nav3">장날</a></li>
-            <li><a href="#nav4">방문후기</a></li>
-            <li><a href="notice-board.html">게시판</a></li>
-          </ul>
-        </div>
-        <!-- 검색 내용 -->
-        <div class="search" id="mb-search">
-          <div class="container">
-            <div class="inner">
-              <!-- 로고 -->
-              <div class="hd-logo">
-                <a href="#"><img src="images/1header/mb-hd-logo.png" alt="로고" /></a>
+            <div class="search-contents">
+              <div class="search-content-top">
+                <input id="mbSearchInput" type="text" placeholder="검색어를 입력해 주세요." maxlength="50" />
+                <i class="fi fi-rs-search"></i>
               </div>
-              <div class="search-close-bt" id="mb-closeBt">
-                <i class="fa-solid fa-xmark" id="mb-menu-xBt"></i>
+              <div class="search-content-mid">
+                <p>최근 검색어</p>
+                <p class="search-s">최근 검색어 내역이 없습니다.</p>
               </div>
-              <div class="search-contents">
-                <div class="search-content-top">
-                  <input id="mbSearchInput" type="text" placeholder="검색어를 입력해 주세요." maxlength="50" />
-                  <i class="fi fi-rs-search"></i>
+              <div class="search-content-bot">
+                <div class="search-content-bot-top">
+                  <p>최근 인기 검색어</p>
+                  <p class="search-s"><i class="fi fi-rs-info"></i>조회일 직전 7일간의 인기 검색어</p>
                 </div>
-                <div class="search-content-mid">
-                  <p>최근 검색어</p>
-                  <p class="search-s">최근 검색어 내역이 없습니다.</p>
-                </div>
-                <div class="search-content-bot">
-                  <div class="search-content-bot-top">
-                    <p>최근 인기 검색어</p>
-                    <p class="search-s"><i class="fi fi-rs-info"></i>조회일 직전 7일간의 인기 검색어</p>
-                  </div>
-                  <div class="search-hot">
-                    <ul class="search-hot-list-left">
-                      <li>
-                        <a href="#"><span>1</span>광진손짜장</a>
-                      </li>
-                      <li>
-                        <a href="#"><span>2</span>제주도</a>
-                      </li>
-                      <li>
-                        <a href="#"><span>3</span>놀라운 토요일</a>
-                      </li>
-                      <li>
-                        <a href="#"><span>4</span>짜장면</a>
-                      </li>
-                      <li>
-                        <a href="#"><span>5</span>강원도 맛집</a>
-                      </li>
-                    </ul>
-                    <ul class="search-hot-list-right">
-                      <li>
-                        <a href="#"><span>6</span>돈까스</a>
-                      </li>
-                      <li>
-                        <a href="#"><span>7</span>경동시장</a>
-                      </li>
-                      <li>
-                        <a href="#"><span>8</span>참돔</a>
-                      </li>
-                      <li>
-                        <a href="#"><span>9</span>백종원</a>
-                      </li>
-                      <li>
-                        <a href="#"><span>10</span>이벤트</a>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="search-hot">
+                  <ul class="search-hot-list-left">
+                    <li>
+                      <a href="#"><span>1</span>광진손짜장</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>2</span>제주도</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>3</span>놀라운 토요일</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>4</span>짜장면</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>5</span>강원도 맛집</a>
+                    </li>
+                  </ul>
+                  <ul class="search-hot-list-right">
+                    <li>
+                      <a href="#"><span>6</span>돈까스</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>7</span>경동시장</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>8</span>참돔</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>9</span>백종원</a>
+                    </li>
+                    <li>
+                      <a href="#"><span>10</span>이벤트</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- 배너 -->
-      <section class="banner"></section>
-      <!-- 추천 맛집 -->
-      <section class="market-best" id="nav1">
-        <div class="container">
-          <div class="inner">
-            <!-- 추천 맛집 왼쪽 -->
-            <div class="market-best-left">
-              <div class="market-info-left-title">
-                <div class="market-info-left-title-top">
-                  <h2 class="title">백종원의<br />추천맛집</h2>
-                  <img src="images/3bestrest/besttitle.png" alt="백종원" />
-                </div>
-                <p>
-                  백종원의 유튜브<br />
-                  ’님아 그 시장을 가오’에서 방문했던<br />시장 맛집을 한번에 확인하세요!
-                </p>
+    </div>
+    <!-- 배너 -->
+    <section class="banner"></section>
+    <!-- 추천 맛집 -->
+    <section class="market-best" id="nav1">
+      <div class="container">
+        <div class="inner">
+          <!-- 추천 맛집 왼쪽 -->
+          <div class="market-best-left">
+            <div class="market-info-left-title">
+              <div class="market-info-left-title-top">
+                <h2 class="title">백종원의<br />추천맛집</h2>
+                <img src="images/3bestrest/besttitle.png" alt="백종원" />
               </div>
-              <div class="market-info-left-bottom">
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev prev-best"></div>
-                <div class="swiper-button-next next-best"></div>
-              </div>
+              <p>
+                백종원의 유튜브<br />
+                ’님아 그 시장을 가오’에서 방문했던<br />시장 맛집을 한번에 확인하세요!
+              </p>
             </div>
-            <!-- 추천 맛집 오른쪽 -->
-            <div class="market-best-right">
-              <div class="swiper sw-best">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="best-img">
-                      <img src="images/3bestrest/best1.png" alt="정보석" />
-                      <div class="circle">전남</div>
-                    </div>
-                    <div class="best-info">
-                      <p class="best-contents-title">석곡전통시장</p>
-                      <span>정보석</span>
-                    </div>
-                    <button>더보기</button>
+            <div class="market-info-left-bottom">
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev prev-best"></div>
+              <div class="swiper-button-next next-best"></div>
+            </div>
+          </div>
+          <!-- 추천 맛집 오른쪽 -->
+          <div class="market-best-right">
+            <div class="swiper sw-best">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="best-img">
+                    <img src="images/3bestrest/best1.png" alt="정보석" />
+                    <div class="circle">전남</div>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="best-img">
-                      <img src="images/3bestrest/best2.png" alt="시장닭발" />
-                      <div class="circle">경북</div>
-                    </div>
-                    <div class="best-info">
-                      <p class="best-contents-title">군위재래시장</p>
-                      <span>시장닭발</span>
-                    </div>
-                    <button>더보기</button>
+                  <div class="best-info">
+                    <p class="best-contents-title">석곡전통시장</p>
+                    <span>정보석</span>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="best-img">
-                      <img src="images/3bestrest/best3.png" alt="창평국밥" />
-                      <div class="circle">전남</div>
-                    </div>
-                    <div class="best-info">
-                      <p class="best-contents-title">창평 전통시장</p>
-                      <span>창평국밥</span>
-                    </div>
-                    <button>더보기</button>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="best-img">
+                    <img src="images/3bestrest/best2.png" alt="시장닭발" />
+                    <div class="circle">경북</div>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="best-img">
-                      <img src="images/3bestrest/best4.png" alt="토종마을" />
-                      <div class="circle">충북</div>
-                    </div>
-                    <div class="best-info">
-                      <p class="best-contents-title">감곡시장</p>
-                      <span>토종마을</span>
-                    </div>
-                    <button>더보기</button>
+                  <div class="best-info">
+                    <p class="best-contents-title">군위재래시장</p>
+                    <span>시장닭발</span>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="best-img">
-                      <img src="images/3bestrest/best5.png" alt="맛과향이있는집" />
-                      <div class="circle">강원</div>
-                    </div>
-                    <div class="best-info">
-                      <p class="best-contents-title">삼척번개시장</p>
-                      <span>맛과향이있는집</span>
-                    </div>
-                    <button>더보기</button>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="best-img">
+                    <img src="images/3bestrest/best3.png" alt="창평국밥" />
+                    <div class="circle">전남</div>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="best-img">
-                      <img src="images/3bestrest/best6.png" alt="꽃게 해장국" />
-                      <div class="circle">강원</div>
-                    </div>
-                    <div class="best-info">
-                      <p class="best-contents-title">묵호항 수산시장</p>
-                      <span>꽃게 해장국</span>
-                    </div>
-                    <button>더보기</button>
+                  <div class="best-info">
+                    <p class="best-contents-title">창평 전통시장</p>
+                    <span>창평국밥</span>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="best-img">
-                      <img src="images/3bestrest/best7.png" alt="남천식당" />
-                      <div class="circle">경북</div>
-                    </div>
-                    <div class="best-info">
-                      <p class="best-contents-title">상주 중앙시장</p>
-                      <span>남천식당</span>
-                    </div>
-                    <button>더보기</button>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="best-img">
+                    <img src="images/3bestrest/best4.png" alt="토종마을" />
+                    <div class="circle">충북</div>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="best-img">
-                      <img src="images/3bestrest/best8.png" alt="부림곰탕" />
-                      <div class="circle">경남</div>
-                    </div>
-                    <div class="best-info">
-                      <p class="best-contents-title">마산부림시장</p>
-                      <span>부림곰탕</span>
-                    </div>
-                    <button>더보기</button>
+                  <div class="best-info">
+                    <p class="best-contents-title">감곡시장</p>
+                    <span>토종마을</span>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="best-img">
-                      <img src="images/3bestrest/best9.png" alt="청도가마솥국밥" />
-                      <div class="circle">경북</div>
-                    </div>
-                    <div class="best-info">
-                      <p class="best-contents-title">청도 시장</p>
-                      <span>청도가마솥국밥</span>
-                    </div>
-                    <button>더보기</button>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="best-img">
+                    <img src="images/3bestrest/best5.png" alt="맛과향이있는집" />
+                    <div class="circle">강원</div>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="best-img">
-                      <img src="images/3bestrest/best10.png" alt="소문난시골순대" />
-                      <div class="circle">전북</div>
-                    </div>
-                    <div class="best-info">
-                      <p class="best-contents-title">무주반딧불시장</p>
-                      <span>소문난시골순대</span>
-                    </div>
-                    <button>더보기</button>
+                  <div class="best-info">
+                    <p class="best-contents-title">삼척번개시장</p>
+                    <span>맛과향이있는집</span>
                   </div>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="best-img">
+                    <img src="images/3bestrest/best6.png" alt="꽃게 해장국" />
+                    <div class="circle">강원</div>
+                  </div>
+                  <div class="best-info">
+                    <p class="best-contents-title">묵호항 수산시장</p>
+                    <span>꽃게 해장국</span>
+                  </div>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="best-img">
+                    <img src="images/3bestrest/best7.png" alt="남천식당" />
+                    <div class="circle">경북</div>
+                  </div>
+                  <div class="best-info">
+                    <p class="best-contents-title">상주 중앙시장</p>
+                    <span>남천식당</span>
+                  </div>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="best-img">
+                    <img src="images/3bestrest/best8.png" alt="부림곰탕" />
+                    <div class="circle">경남</div>
+                  </div>
+                  <div class="best-info">
+                    <p class="best-contents-title">마산부림시장</p>
+                    <span>부림곰탕</span>
+                  </div>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="best-img">
+                    <img src="images/3bestrest/best9.png" alt="청도가마솥국밥" />
+                    <div class="circle">경북</div>
+                  </div>
+                  <div class="best-info">
+                    <p class="best-contents-title">청도 시장</p>
+                    <span>청도가마솥국밥</span>
+                  </div>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="best-img">
+                    <img src="images/3bestrest/best10.png" alt="소문난시골순대" />
+                    <div class="circle">전북</div>
+                  </div>
+                  <div class="best-info">
+                    <p class="best-contents-title">무주반딧불시장</p>
+                    <span>소문난시골순대</span>
+                  </div>
+                  <button>더보기</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- 전국 시장 소개 -->
-      <div class="market-info" id="nav2">
-        <!-- 스와이퍼 -->
-        <div class="sw-local-container">
-          <div class="swiper sw-local-name">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide local-cont seoul">
-                <div class="local-bt-name">서울</div>
-              </div>
-              <div class="swiper-slide local-cont incheon">
-                <div class="local-bt-name">인천</div>
-              </div>
-              <div class="swiper-slide local-cont daejeon">
-                <div class="local-bt-name">대전</div>
-              </div>
-              <div class="swiper-slide local-cont daegu">
-                <div class="local-bt-name">대구</div>
-              </div>
-              <div class="swiper-slide local-cont gyeonggi">
-                <div class="local-bt-name">경기</div>
-              </div>
-              <div class="swiper-slide local-cont busan">
-                <div class="local-bt-name">부산</div>
-              </div>
-              <div class="swiper-slide local-cont ulsan">
-                <div class="local-bt-name">울산</div>
-              </div>
-              <div class="swiper-slide local-cont gwangju">
-                <div class="local-bt-name">광주</div>
-              </div>
-              <div class="swiper-slide local-cont gangwon">
-                <div class="local-bt-name">강원</div>
-              </div>
-              <div class="swiper-slide local-cont chungbuk">
-                <div class="local-bt-name">충북</div>
-              </div>
-              <div class="swiper-slide local-cont chungnam">
-                <div class="local-bt-name">충남</div>
-              </div>
-              <div class="swiper-slide local-cont gyeongbuk">
-                <div class="local-bt-name">경북</div>
-              </div>
-              <div class="swiper-slide local-cont gyeongnam">
-                <div class="local-bt-name">경남</div>
-              </div>
-              <div class="swiper-slide local-cont jeonbuk">
-                <div class="local-bt-name">전북</div>
-              </div>
-              <div class="swiper-slide local-cont jeonnam">
-                <div class="local-bt-name">전남</div>
-              </div>
-              <div class="swiper-slide local-cont jeju">
-                <div class="local-bt-name">제주</div>
-              </div>
-              <div class="swiper-slide local-cont sejong">
-                <div class="local-bt-name">세종</div>
-              </div>
+      </div>
+    </section>
+    <!-- 전국 시장 소개 -->
+    <div class="market-info" id="nav2">
+      <!-- 스와이퍼 -->
+      <div class="sw-local-container">
+        <div class="swiper sw-local-name">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide local-cont seoul">
+              <div class="local-bt-name">서울</div>
             </div>
-          </div>
-        </div>
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev prev-local-name"></div>
-        <div class="swiper-button-next next-local-name"></div>
-        <!-- 시장 소개 내용 -->
-        <div class="market-info-contents">
-          <div class="market-contents" id="daegu">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-daegu1.png" alt="서문시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>서문시장</p>
-                    <span>#칼국수</span>
-                    <span>#납작만두</span>
-                    <span>#원단</span>
-                  </div>
-                  <span class="market-adr"> 대구광역시 북구 칠성남로 198 </span>
-                  <span class="market-content-info"> 서문시장은 대구광역시 중구 대신동에 있는 재래시장으로, 대구 최대의 재래시장이다. 칠성시장과 함께 대구의 2대 장터를 이루고 있으며, 대구장이라고 불리던 조선 시대부터 서울 시전, 평양장과 더불어 3대 시장으로 발전하여 현재까지 이어오고 있다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/XONrxgbSdu" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/BcfFx_bU6I" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-daegu2.png" alt="봉덕신시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>봉덕신시장</p>
-                    <span>#꿀떡</span>
-                    <span>#돼지국밥</span>
-                    <span>#강정</span>
-                  </div>
-                  <span class="market-adr"> 대구광역시 남구 봉덕로 115 </span>
-                  <span class="market-content-info"> 봉덕신시장의 주요 판매 품목은 가공식품, 농산물, 수산물, 축산물 등이며, 음식점이 있다. 영업시간은 오전 8시부터 오후 10시까지이며, 정기 휴일은 첫째 일요일이다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/ZpoV-W2h3O" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/NSRb2us1bl" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
+            <div class="swiper-slide local-cont incheon">
+              <div class="local-bt-name">인천</div>
             </div>
-            <button><a href="#">더보기</a></button>
-          </div>
-          <div class="market-contents" id="busan">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-busan1.png" alt="자갈치시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>자갈치시장</p>
-                    <span>#활어회</span>
-                    <span>#고래고기</span>
-                    <span>#어묵</span>
-                  </div>
-                  <span class="market-adr"> 부산 중구 자갈치해안로 52 </span>
-                  <span class="market-content-info"> 부산을 대표하는 국내 최대의 수산시장. 해안가에 널려있는 자갈과 생선을 의미하는 치가 합쳐져 자갈치시장이라는 이름이 생겼다. 일제강점기 때부터 해안가에 수산물을 파는 노점들이 형성되었다. 현재는 야외의 전통시장과 실내 현대시장으로 구분된다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/f4PAN5faLY" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/vEK1XgXBpy" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-busan2.png" alt="부전시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>부전시장</p>
-                    <span>#인삼</span>
-                    <span>#칼국수</span>
-                    <span>#죽</span>
-                  </div>
-                  <span class="market-adr">부산 부산진구 중앙대로 786 10</span>
-                  <span class="market-content-info"> 부전시장은 6.25전쟁 이후 전국 각지 피란민이 터를 잡으면서 형성된 시장으로 상가주택건물형태의 중대형시장이다. 없는 게 없을 만큼 다양한 각종 농, 수, 축산물 및 생활용품 등을 판매하고 있다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/g_S_tkvxNR" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/2B6j3BENMR" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
+            <div class="swiper-slide local-cont daejeon">
+              <div class="local-bt-name">대전</div>
             </div>
-            <button><a href="#">더보기</a></button>
-          </div>
-          <div class="market-contents" id="chungbuk">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-chungbuk1.png" alt="제천중앙시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>제천중앙시장</p>
-                    <span>#꽈배기</span>
-                    <span>#빨간어묵</span>
-                    <span>#약초</span>
-                  </div>
-                  <span class="market-adr"> 충북 제천시 풍양로 108 </span>
-                  <span class="market-content-info"> 제천중앙시장은 제천의 최고 중심지에 위치해 있다. 오랜 세월 전통시장의 맥을 이어 오고 있는 이곳은 다양한 볼거리와 먹거리는 물론 체험거리까지 두루 갖춘 시장이다. 시장 활성화를 위해 각종 문화 행사 및 문화교실 프로그램을 운영하고 있다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/vd8oA3qQSX" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/2B6j3BENMR" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-chungbuk2.png" alt="육거리종합시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>육거리종합시장</p>
-                    <span>#폐백 음식</span>
-                    <span>#꽈배기</span>
-                    <span>#만두</span>
-                  </div>
-                  <span class="market-adr">충북 청주시 상당구 석교동 131</span>
-                  <span class="market-content-info"> 매일 운영되는 상설시장과 오일장, 새벽에 운영되는 도깨비시장이 함께 운영되고 있다. 시장이 가지고 있는 세가지 매력을 모두 느낄 수 있으며 큰 규모와 오랜 전통을 자랑하는 청주의 대표적인 전통시장이다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/3wJl3pwFAg" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/2WFfhGKHWq" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
+            <div class="swiper-slide local-cont daegu">
+              <div class="local-bt-name">대구</div>
             </div>
-            <button><a href="#">더보기</a></button>
-          </div>
-          <div class="market-contents" id="chungnam">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-chungnam1.png" alt="천안중앙시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>천안중앙시장</p>
-                    <span>#칼국수</span>
-                    <span>#기름집</span>
-                    <span>#족발</span>
-                  </div>
-                  <span class="market-adr"> 충남 천안시 동남구 사직로 7 </span>
-                  <span class="market-content-info"> 예로부터 삼남이 만나는 길목으로, 일제 강점기 철도까지 놓이면서 교통의 요충지로 발전한 천안의 중심에 생겨난 것이 천안중앙시장이다. 지역의 생동감 넘치는 분위기와 다채로운 쇼핑, 맛집을 즐길 수 있는 곳이다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/jITjAaEqP3" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/NuG2BF8rd_" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-chungnam2.png" alt="온양온천전통시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>온양온천전통시장</p>
-                    <span>#온천</span>
-                    <span>#잔치국수</span>
-                    <span>#호떡</span>
-                  </div>
-                  <span class="market-adr">충남 아산시 시장길 29</span>
-                  <span class="market-content-info"> 예로부터 물 좋기로 소문난 온양은 온천으로 유명한 곳이다. 피부염 등의 치료가 필요할 때 잠시 쉬고 싶을 때 조선시대 여러 임금들이 온양 별궁을 찾곤 했는데,온양온천 전통시장은 바로 이 온양 별궁이 있던 곳에 자리잡고 있다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/Ef8UNLZAgc" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/3YNlsYzLty" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
+            <div class="swiper-slide local-cont gyeonggi">
+              <div class="local-bt-name">경기</div>
             </div>
-            <button><a href="#">더보기</a></button>
-          </div>
-          <div class="market-contents" id="daejeon">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-daejeon1.png" alt="중리전통시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>중리전통시장</p>
-                    <span>#농수산물</span>
-                    <span>#축산물</span>
-                    <span>#잡곡</span>
-                  </div>
-                  <span class="market-adr"> 대전 대덕구 중리북로37번길 26 </span>
-                  <span class="market-content-info">
-                    중리전통시장은 대전시 대덕구 중리동에 위치하고 있는 전통시장으로 산지 직송된 농수산물과 축산물을 주로 취급하고 있으며, 시장의 활성화를 위한 다양한 이벤트가 수시로 진행되고 있기 때문에 유익한 쇼핑은 물론 문화생활까지 즐길 수 있는 알찬 공간이다.
-                  </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/eV0XXSl6O7" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/uhp81StgaP" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content">
-                  <div class="market-content-left">
-                    <a href="#">
-                      <img src="images/4marketinfo/market-content-daejeon2.png" alt="대전중앙시장" />
-                    </a>
-                  </div>
-                  <div class="market-content-right">
-                    <div class="market-content-right-top">
-                      <p>대전중앙시장</p>
-                      <span>#한복</span>
-                      <span>#귀금속</span>
-                      <span>#침구</span>
-                    </div>
-                    <span class="market-adr">대전 동구 대전로 783</span>
-                    <span class="market-content-info"> 100여 년 역사를 자랑하는 대전중앙시장은 대전 교통의 중심인 대전역 앞에 위치하고 있어 대전 시민들이 애용하는 전통시장으로 자리매김했다. 시장은 아케이드 형식으로 품목별로 구분되어 있어 장을 보거나 구경하는 동선이 편안하다. </span>
-                    <div class="go-market">
-                      <a href="https://kko.to/8vkazR2Ohd" target="_blank"><span>길찾기</span></a>
-                      <div class="line"></div>
-                      <a href="https://kko.to/N35IxfVSmX" target="_blank"><span>지도 보기</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="swiper-slide local-cont busan">
+              <div class="local-bt-name">부산</div>
             </div>
-            <button><a href="#">더보기</a></button>
-          </div>
-          <div class="market-contents" id="gangwon">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-gangwon1.png" alt="삼척중앙시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>삼척중앙시장</p>
-                    <span>#문어</span>
-                    <span>#채소</span>
-                    <span>#곰치국</span>
-                  </div>
-                  <span class="market-adr"> 강원 삼척시 진주로 12-21 </span>
-                  <span class="market-content-info"> 예로부터 자원이 풍부한 곳으로 유명한 삼척은 일제강점기 때에 풍부한 지하자원으로 탄광이 개발되면서 많은 사람들이 이곳으로 자연스레 시장이 발달하고 번영한 곳이다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/SGRQ0Y3E-w" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/3OHxDo4E9b" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-gangwon2.png" alt="진부전통시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>진부전통시장</p>
-                    <span>#약재</span>
-                    <span>#녹두전</span>
-                    <span>#수수부꾸미</span>
-                  </div>
-                  <span class="market-adr">강원 평창군 진부면 하진부리 140</span>
-                  <span class="market-content-info"> 오랜 전통을 지닌 규모가 큰 재래시장으로 조선시대부터 장이 서기 시작해 수백년의 전통을 이어오고 있다. 봉평장, 대화장과 함께 단편소설 <메밀꽃필무렵>의 배경으로 잘 알려진 전통시장이다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/lWZfOYlc_w" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/Yd0n6iiexu" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
+            <div class="swiper-slide local-cont ulsan">
+              <div class="local-bt-name">울산</div>
             </div>
-            <button><a href="#">더보기</a></button>
-          </div>
-          <div class="market-contents" id="gwangju">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-gwangju1.png" alt="양동시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>양동시장</p>
-                    <span>#수산물</span>
-                    <span>#양동통닭</span>
-                    <span>#홍어</span>
-                  </div>
-                  <span class="market-adr"> 광주 서구 천변좌로 238 </span>
-                  <span class="market-content-info"> 양동시장은 전라남도에서 가장 큰 규모를 가지고 있다. 백 년이 넘는 오랜 전통을 가지고 있는 시장으로 산지 직송된 농수산물과 생활에 필요한 생필품을 취급하고 있다. 또한 판매되는 제품의 원산지표시 전국 우수시장으로 선정되었다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/QbcZR1adi1" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/LagEQJeqND" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-gwangju2.png" alt="남광주시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>남광주시장</p>
-                    <span>#수산물</span>
-                    <span>#포토존</span>
-                    <span>#튀김</span>
-                  </div>
-                  <span class="market-adr">광주 동구 제봉로17번길 18-6</span>
-                  <span class="market-content-info"> 남광주시장은 새벽에 반짝 운영되는 새벽시장과 아침부터 저녁까지 운영되는 상설시장이 함께 운영되고 있다. 수산물 도매시장으로도 알려져 있으며, 더불어 직송된 농축산물을 모두 취급하고 있기 때문에 신선한 상품을 저렴한 가격에 구입할 수 있다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/m5yVMOqdMI" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/1_IrkUjX85" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
+            <div class="swiper-slide local-cont gwangju">
+              <div class="local-bt-name">광주</div>
             </div>
-            <button><a href="#">더보기</a></button>
-          </div>
-          <div class="market-contents" id="gyeongbuk">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-gyeongbuk1.png" alt="청도장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>청도장</p>
-                    <span>#복숭아</span>
-                    <span>#미나리</span>
-                    <span>#청도반시</span>
-                  </div>
-                  <span class="market-adr"> 경북 청도군 청도시장1길 21 </span>
-                  <span class="market-content-info"> 청도에 있는 3개의 시장 중 규모가 가장 크고 찾는 사람이 많다. 재래시장이란 이름보단 청도장으로 더 많이 알려져 있다. 4일, 9일마다 주기적으로 열리는 오일장과 상설시장으로 운영되고 있다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/Pa5VfRNzaY" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/HrCF3vzyBv" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-gyeongbuk2.png" alt="풍기토종인삼시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>풍기토종인삼시장</p>
-                    <span>#인견</span>
-                    <span>#풍기인삼</span>
-                    <span>#사과</span>
-                  </div>
-                  <span class="market-adr">경북 영주시 풍기읍 인삼로 40</span>
-                  <span class="market-content-info"> 영주시 안에 있는 풍기읍은 대표적 특산품인 풍기인삼과 사과, 인견등이 유명하다. 이외에 영주에는 한우, 포도, 고구마, 생강도넛 등 다양한 특삼품과 먹거리가 존재한다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/omIGbMaysN" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/93IFcm3p2o" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
+            <div class="swiper-slide local-cont gangwon">
+              <div class="local-bt-name">강원</div>
             </div>
-            <button><a href="#">더보기</a></button>
-          </div>
-          <div class="market-contents" id="gyeonggi">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-gyeonggi1.png" alt="오산오색시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>오산오색시장</p>
-                    <span>#이벤트</span>
-                    <span>#수제맥주</span>
-                    <span>#칼국수</span>
-                  </div>
-                  <span class="market-adr"> 경기 오산시 오산로272번길 22</span>
-                  <span class="market-content-info"> 오산역에서 불과 10분 거리에 위치한 오산오색시장은 조선시대부터 시장의 명맥을 유지하고 있는 유서깊은 재래시장이다. 지난 2013년 전국우수시장박람회에서 대통령상을 표창하고, 2015년 문화관광형시장으로 선정될 만큼 활발하게 운영되고 있다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/F8jGzsfg9o" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/gSWhKBW1aV" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-gyeonggi2.png" alt="지동시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>지동시장</p>
-                    <span>#순대</span>
-                    <span>#꽈배기</span>
-                    <span>#만두</span>
-                  </div>
-                  <span class="market-adr">경기 수원시 팔달구 팔달문로 19</span>
-                  <span class="market-content-info"> 수원시의 대표적인 재래시장으로 지난 약 100년 동안 시민들의 변함없는 사랑을 받아온 지동시장은 200여개의 점포가 밀집되어 있다. 수원 성곽을 배경으로 형성된 상설시장으로 팔달문 주변 9개의 전통시장 중 특히 먹거리시장으로 유명하다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/Y3IfcLWzCx" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/VqK2UYwF20" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
+            <div class="swiper-slide local-cont chungbuk">
+              <div class="local-bt-name">충북</div>
             </div>
-            <button><a href="#">더보기</a></button>
-          </div>
-          <div class="market-contents" id="gyeongnam">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-gyeongnam1.png" alt="사천읍시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>사천읍시장</p>
-                    <span>#건어물</span>
-                    <span>#약재</span>
-                    <span>#채소</span>
-                  </div>
-                  <span class="market-adr"> 경남 사천시 사천읍 시장1길 16 </span>
-                  <span class="market-content-info"> 사람들로 북적거려 언제나 활기 넘치는 상설시장과, 매월 끝자리 5일과 10일에는 오일장이 함께 열린다. 주로 사천과 사천 인근 지역에서 직접 재배하거나 산지 직송된 농수산물과 축산물을 취급하고 있어 시장에 가면 언제나 신선한 상품을 구입할 수 있다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/sH6LxS22_y" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/G1dKb0UyBb" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-gyeongnam2.png" alt="합천왕후시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>합천왕후시장</p>
-                    <span>#양파</span>
-                    <span>#건어물</span>
-                    <span>#마늘</span>
-                  </div>
-                  <span class="market-adr">경남 합천군 합천읍 옥산로 44</span>
-                  <span class="market-content-info"> 우리나라에서 처음으로 왕후를 테마로 만들어진 역사적 의미가 있는 전통시장이다. 시장이 있는 옥산동은 왕후의 고향으로 알려진 곳으로, 예전부터 음력 정월대보름에 이 지역에서 신성왕후의 제사를 모셔왔다고 한다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/mnKuJpGTLO" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/dpDLi6ixcr" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
+            <div class="swiper-slide local-cont chungnam">
+              <div class="local-bt-name">충남</div>
             </div>
-            <button><a href="#">더보기</a></button>
-          </div>
-          <div class="market-contents" id="incheon">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-incheon1.png" alt="대룡시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>대룡시장</p>
-                    <span>#레트로</span>
-                    <span>#강아지떡</span>
-                    <span>#제비</span>
-                  </div>
-                  <span class="market-adr"> 인천 강화군 교동면 교동남로 35 </span>
-                  <span class="market-content-info"> 대룡시장은 6.25 때 연백군에서 교동도로 잠시 피난 온 주민들이 한강 하구가 분단선이 되어 고향에 다시 돌아갈 수 없게 되자 생계를 유지하기 위해 고향에 있는 연백시장을 본 따 만든 골목 시장이다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/c9PMHllJZW" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/NfC-ngYxxu" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-incheon2.png" alt="신포국제시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>신포국제시장</p>
-                    <span>#해산물</span>
-                    <span>#닭강정</span>
-                    <span>#재래김</span>
-                  </div>
-                  <span class="market-adr">인천 중구 신포동 6-6</span>
-                  <span class="market-content-info">
-                    인천의 개항 이후 형성된 시장으로 인천에서 가장 오래된 전통시장이다. 일본식 이름 ‘신정’에서 해방 이후 우리나라식 지명인 ‘신포동’으로 바뀌면서 그 지명을 딴 ‘신포’에 개항 이후 외국문물이 많이 들어와 ‘국제시장’이라는 이름이 붙어 ‘신포국제시장’이 되었다.
-                  </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/kruGiMfyYD" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/-6whn3k9Ji" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
+            <div class="swiper-slide local-cont gyeongbuk">
+              <div class="local-bt-name">경북</div>
             </div>
-            <button><a href="#">더보기</a></button>
-          </div>
-          <div class="market-contents" id="jeju">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-jeju1.png" alt="제주 동문시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>제주 동문시장</p>
-                    <span>#귤</span>
-                    <span>#애플망고</span>
-                    <span>#오메기떡</span>
-                  </div>
-                  <span class="market-adr"> 제주 제주시 관덕로14길 20</span>
-                  <span class="market-content-info"> 1980년대에 새마을사업의 일환으로 이 일대에 도로가 개설되면서 자연발생적으로 형성되었다. 2001년에 현재 이름으로 변경되었으며 제주도에서 가장 중요하면서 가장 큰 상설 재래시장인 동문시장이 되었다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/XqugwvHMs7" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/g5i-U__swS" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-jeju2.png" alt="제주시민속오일시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>제주시민속오일시장</p>
-                    <span>#곡식</span>
-                    <span>#약재</span>
-                    <span>#생선</span>
-                  </div>
-                  <span class="market-adr">제주 제주시 오일장서길 26</span>
-                  <span class="market-content-info"> 제주 중심시장의 명맥을 잇고 있는 민속시장으로 매월 끝자리 2일과 7일에 오일장이 열린다. 65세 이상 할머니들을 위한 ‘할망장터’도 있다. 제주에 있는 민속 오일장 중에 가장 규모가 크며 오래된 전통을 가지고 있다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/WKddrfOnjk" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/9WEmSR85xs" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
+            <div class="swiper-slide local-cont gyeongnam">
+              <div class="local-bt-name">경남</div>
             </div>
-            <button><a href="#">더보기</a></button>
-          </div>
-          <div class="market-contents" id="jeonbuk">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-jeonbuk1.png" alt="고창전통시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>고창전통시장</p>
-                    <span>#수박</span>
-                    <span>#풍천장어</span>
-                    <span>#복분자</span>
-                  </div>
-                  <span class="market-adr"> 전북 고창군 고창읍 동리로 62-11</span>
-                  <span class="market-content-info"> 고창전통시장은 조선시대에 개설되었던 고창 읍내장을 계승한 유서 깊은 전통시장으로 고창지역의 특산물을 비롯해 인근 지역에서 생산된 농수산물과 의류 등 다양한 물품들을 볼 수 있다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/xfXJoEM496" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/fuvCbRaN7p" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-jeonbuk2.png" alt="곰소젓갈도매시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>곰소젓갈도매시장</p>
-                    <span>#젓갈</span>
-                    <span>#천일염</span>
-                    <span>#어포</span>
-                  </div>
-                  <span class="market-adr">전북 부안군 진서면 곰소항길 22-34 1층</span>
-                  <span class="market-content-info"> 일제강점기 한반도에서 착취한 농산물과 군수물자를 운반하기 위해 구축한 것이 곰소항의 시작이지만, 현재는 곰소항 인근에서 나는 각종 수산물을 젓갈로 담아 판매하는 대규모 젓갈 단지로 이름이 높다. 국내 3대 젓갈시장중 한곳으로 불리는 곳이다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/_inkdY19Fq" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/PCHa07Aswk" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
+            <div class="swiper-slide local-cont jeonbuk">
+              <div class="local-bt-name">전북</div>
             </div>
-            <button><a href="#">더보기</a></button>
-          </div>
-          <div class="market-contents" id="jeonnam">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-jeonnam1.png" alt="목포 자유시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>목포 자유시장</p>
-                    <span>#낙지</span>
-                    <span>#남진야시장</span>
-                    <span>#국밥</span>
-                  </div>
-                  <span class="market-adr">전남 목포시 자유로 122 </span>
-                  <span class="market-content-info">
-                    목포 자유시장은 목포역 부근에서 형성된 노점상들이 목포시에서 마련한 장소에 모여 상인들 스스로 자기 점포를 갖기 위해 조금씩 저축해 마련한 시장이다. 다른 시장과 달리 상인들 스스로 적금 운동을 해서 개설한 시장이라는 점에서 남다른 특별함이 있다.
-                  </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/Ukc5WZHTUA" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/mLIkK81_00" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-jeonnam2.png" alt="여수수산물특화시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>여수수산물특화시장</p>
-                    <span>#해산물</span>
-                    <span>#돌게간장게장</span>
-                  </div>
-                  <span class="market-adr">전남 여수시 남산로 60-31</span>
-                  <span class="market-content-info"> 여수시는 주변에 풍부한 어장을 보유한 해안 지역으로 어업 비중이 높아 가장 현대화된 시설을 갖추고 있는 수산물 시장이 자리잡고 있다. 수산물 온라인 쇼핑몰도 운영하고 있어 집에서도 편하게 여수 바다의 싱싱한 수산물을 받아볼 수 있다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/TthUf2TZm5" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/op2671fbsY" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
+            <div class="swiper-slide local-cont jeonnam">
+              <div class="local-bt-name">전남</div>
             </div>
-            <button><a href="#">더보기</a></button>
-          </div>
-          <div class="market-contents" id="sejong">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-sejong1.png" alt="세종전통시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>세종전통시장</p>
-                    <span>#건어물</span>
-                    <span>#통닭발튀김</span>
-                    <span>#반찬</span>
-                  </div>
-                  <span class="market-adr"> 세종 조치원읍 조치원8길 42</span>
-                  <span class="market-content-info"> 매일 운영되는 상설시장과 매월 끝자리 4일, 9일에 열리는 오일장이 함께 운영되고 있다. 1931년에 개설되어 80년 이상의 전통을 고스란히 유지하면서 현재의 전통시장으로 거듭나며 꾸준히 발전해 오고 있는 큰 규모의 전통시장이다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/Yx2Tse2fER" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/UPZaZQW0-M" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-sejong2.png" alt="전의 왕의물시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>전의 왕의물시장</p>
-                    <span>#농산물</span>
-                    <span>#벽화</span>
-                  </div>
-                  <span class="market-adr">세종 전의면 장터길 33</span>
-                  <span class="market-content-info"> 세종특별자치시 전의면은 세종대왕이 눈병을 치료할 때 찾아간 곳으로 얄려져 있다. 탄산수가 나오는 우물의 물을 길어다 안질이 치료가 되었다 하여 ‘왕의 물’이라는 이름이 생겨났다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/UPZaZQW0-M" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/q9Z7zhvGHY" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
+            <div class="swiper-slide local-cont jeju">
+              <div class="local-bt-name">제주</div>
             </div>
-            <button><a href="#">더보기</a></button>
-          </div>
-          <div class="market-contents" id="seoul">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-seoul1.png" alt="청량리종합시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>청량리종합시장</p>
-                    <span>#쌀빵</span>
-                    <span>#농수산물</span>
-                    <span>#건어물</span>
-                  </div>
-                  <span class="market-adr"> 서울 동대문구 홍릉로1길 68-3</span>
-                  <span class="market-content-info"> 1960년대부터 본격적으로 사람과 물자가 오가기 시작한 청량리종합시장은 서울 동북권 최대 규모의 재래시장으로 오늘날까지 그 역할을 단단히 하고 있다. 일반적인 재래시장과는 달리 농수산물 및 청과물 도매시장을 함께 운영하고 있다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/jewvWJRD-c" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/-LrL8Y1k2B" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-seoul2.png" alt="방산시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>방산시장</p>
-                    <span>#인쇄</span>
-                    <span>#포장자재</span>
-                    <span>#제빵재료</span>
-                  </div>
-                  <span class="market-adr">서울 중구 을지로33길 18-1</span>
-                  <span class="market-content-info"> 방산종합시장은 종합 인쇄 및 포장 산업 관련 전문시장이다. 시장골목에 지류도매시장이 함께 형성되어 있어 포장자재는 물론 도배지, 아트지 등 다양한 지류 관련 상품들까지 저렴한 도매 가격으로 구입할 수 있다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/U6wHzcRbIj" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/Ywbwhqzmcp" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
+            <div class="swiper-slide local-cont sejong">
+              <div class="local-bt-name">세종</div>
             </div>
-            <button><a href="#">더보기</a></button>
-          </div>
-          <div class="market-contents" id="ulsan">
-            <div class="market-content">
-              <div class="market-content1">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-ulsan1.png" alt="학성새벽시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>학성새벽시장</p>
-                    <span>#건어물</span>
-                    <span>#농수산물</span>
-                    <span>#약재</span>
-                  </div>
-                  <span class="market-adr"> 울산 중구 새벽시장3길 20 </span>
-                  <span class="market-content-info"> 새벽 2시부터 정오까지만 운영되는 새벽시장이다. 주로 울산이나 울산 인근의 지역에서 직접 재배하거나 산지에서 직송된 농수산물을 취급하고 있는 식자재도매 시장으로 이곳에 가면 품질 좋은 신선한 상품을 저렴하게 구입할 수 있다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/CTublBERFn" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/gxlduuXix_" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="market-content2">
-                <div class="market-content-left">
-                  <a href="#">
-                    <img src="images/4marketinfo/market-content-ulsan2.png" alt="울산번개시장" />
-                  </a>
-                </div>
-                <div class="market-content-right">
-                  <div class="market-content-right-top">
-                    <p>울산번개시장</p>
-                    <span>#해산물</span>
-                    <span>#아시아인일요장날</span>
-                  </div>
-                  <span class="market-adr">울산 남구 신선로184번길 46-1</span>
-                  <span class="market-content-info"> 울산번개시장은 시장 인근에 있는 공단 근로자들의 거주지 주변에서 시장 역할을 해오다가 상설시장으로 발전했다. 현재 상가건물형시장에 노점상들이 함께 공존하고 있다. 반짝하고 생겼다가 없어짐을 반복하는 마치 번개와 같다고 해서 유래되었다. </span>
-                  <div class="go-market">
-                    <a href="https://kko.to/x6PQacPBiI" target="_blank"><span>길찾기</span></a>
-                    <div class="line"></div>
-                    <a href="https://kko.to/MqXm9rcInL" target="_blank"><span>지도 보기</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button><a href="#">더보기</a></button>
           </div>
         </div>
       </div>
-      <!-- 지역 축제 -->
-      <section class="local-festival" id="nav3">
-        <div class="container">
-          <div class="inner">
-            <!-- 지역 축제 왼쪽 -->
-            <div class="local-festival-left">
-              <div class="local-festival-title">
-                <div class="local-festival-left-title-top">
-                  <h2 class="title">진행중인<br />지역축제</h2>
-                  <img src="images/5festival/festivaltitle.png" alt="문어" />
-                </div>
-                <p>전통시장 방문하고축제도 함께 즐겨요</p>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev prev-local-name"></div>
+      <div class="swiper-button-next next-local-name"></div>
+      <!-- 시장 소개 내용 -->
+      <div class="market-info-contents">
+        <div class="market-contents" id="daegu">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-daegu1.png" alt="서문시장" />
+                </a>
               </div>
-              <div class="local-festival-left-bottom">
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev prev-festival"></div>
-                <div class="swiper-button-next next-festival"></div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>서문시장</p>
+                  <span>#칼국수</span>
+                  <span>#납작만두</span>
+                  <span>#원단</span>
+                </div>
+                <span class="market-adr"> 대구광역시 북구 칠성남로 198 </span>
+                <span class="market-content-info"> 서문시장은 대구광역시 중구 대신동에 있는 재래시장으로, 대구 최대의 재래시장이다. 칠성시장과 함께 대구의 2대 장터를 이루고
+                  있으며, 대구장이라고 불리던 조선 시대부터 서울 시전, 평양장과 더불어 3대 시장으로 발전하여 현재까지 이어오고 있다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/XONrxgbSdu" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/BcfFx_bU6I" target="_blank"><span>지도 보기</span></a>
+                </div>
               </div>
             </div>
-            <!-- 지역 축제 오른쪽 -->
-            <div class="local-festival-right">
-              <div class="swiper sw-festival">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="festival-img">
-                      <img src="images/5festival/festival1.png" alt="마켓피어나인" />
-                    </div>
-                    <div class="festival-info">
-                      <p class="festival-contents-title">마켓피어나인</p>
-                      <span>2024.04.12 ~ 2024.06.02</span>
-                    </div>
-                    <button>더보기</button>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-daegu2.png" alt="봉덕신시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>봉덕신시장</p>
+                  <span>#꿀떡</span>
+                  <span>#돼지국밥</span>
+                  <span>#강정</span>
+                </div>
+                <span class="market-adr"> 대구광역시 남구 봉덕로 115 </span>
+                <span class="market-content-info"> 봉덕신시장의 주요 판매 품목은 가공식품, 농산물, 수산물, 축산물 등이며, 음식점이 있다. 영업시간은 오전 8시부터 오후
+                  10시까지이며, 정기 휴일은 첫째 일요일이다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/ZpoV-W2h3O" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/NSRb2us1bl" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+        <div class="market-contents" id="busan">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-busan1.png" alt="자갈치시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>자갈치시장</p>
+                  <span>#활어회</span>
+                  <span>#고래고기</span>
+                  <span>#어묵</span>
+                </div>
+                <span class="market-adr"> 부산 중구 자갈치해안로 52 </span>
+                <span class="market-content-info"> 부산을 대표하는 국내 최대의 수산시장. 해안가에 널려있는 자갈과 생선을 의미하는 치가 합쳐져 자갈치시장이라는 이름이 생겼다.
+                  일제강점기 때부터 해안가에 수산물을 파는 노점들이 형성되었다. 현재는 야외의 전통시장과 실내 현대시장으로 구분된다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/f4PAN5faLY" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/vEK1XgXBpy" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-busan2.png" alt="부전시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>부전시장</p>
+                  <span>#인삼</span>
+                  <span>#칼국수</span>
+                  <span>#죽</span>
+                </div>
+                <span class="market-adr">부산 부산진구 중앙대로 786 10</span>
+                <span class="market-content-info"> 부전시장은 6.25전쟁 이후 전국 각지 피란민이 터를 잡으면서 형성된 시장으로 상가주택건물형태의 중대형시장이다. 없는 게
+                  없을 만큼 다양한 각종 농, 수, 축산물 및 생활용품 등을 판매하고 있다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/g_S_tkvxNR" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/2B6j3BENMR" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+        <div class="market-contents" id="chungbuk">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-chungbuk1.png" alt="제천중앙시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>제천중앙시장</p>
+                  <span>#꽈배기</span>
+                  <span>#빨간어묵</span>
+                  <span>#약초</span>
+                </div>
+                <span class="market-adr"> 충북 제천시 풍양로 108 </span>
+                <span class="market-content-info"> 제천중앙시장은 제천의 최고 중심지에 위치해 있다. 오랜 세월 전통시장의 맥을 이어 오고 있는 이곳은 다양한 볼거리와 먹거리는
+                  물론 체험거리까지 두루 갖춘 시장이다. 시장 활성화를 위해 각종 문화 행사 및 문화교실 프로그램을 운영하고 있다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/vd8oA3qQSX" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/2B6j3BENMR" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-chungbuk2.png" alt="육거리종합시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>육거리종합시장</p>
+                  <span>#폐백 음식</span>
+                  <span>#꽈배기</span>
+                  <span>#만두</span>
+                </div>
+                <span class="market-adr">충북 청주시 상당구 석교동 131</span>
+                <span class="market-content-info"> 매일 운영되는 상설시장과 오일장, 새벽에 운영되는 도깨비시장이 함께 운영되고 있다. 시장이 가지고 있는 세가지 매력을 모두
+                  느낄 수 있으며 큰 규모와 오랜 전통을 자랑하는 청주의 대표적인 전통시장이다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/3wJl3pwFAg" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/2WFfhGKHWq" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+        <div class="market-contents" id="chungnam">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-chungnam1.png" alt="천안중앙시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>천안중앙시장</p>
+                  <span>#칼국수</span>
+                  <span>#기름집</span>
+                  <span>#족발</span>
+                </div>
+                <span class="market-adr"> 충남 천안시 동남구 사직로 7 </span>
+                <span class="market-content-info"> 예로부터 삼남이 만나는 길목으로, 일제 강점기 철도까지 놓이면서 교통의 요충지로 발전한 천안의 중심에 생겨난 것이
+                  천안중앙시장이다. 지역의 생동감 넘치는 분위기와 다채로운 쇼핑, 맛집을 즐길 수 있는 곳이다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/jITjAaEqP3" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/NuG2BF8rd_" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-chungnam2.png" alt="온양온천전통시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>온양온천전통시장</p>
+                  <span>#온천</span>
+                  <span>#잔치국수</span>
+                  <span>#호떡</span>
+                </div>
+                <span class="market-adr">충남 아산시 시장길 29</span>
+                <span class="market-content-info"> 예로부터 물 좋기로 소문난 온양은 온천으로 유명한 곳이다. 피부염 등의 치료가 필요할 때 잠시 쉬고 싶을 때 조선시대 여러
+                  임금들이 온양 별궁을 찾곤 했는데,온양온천 전통시장은 바로 이 온양 별궁이 있던 곳에 자리잡고 있다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/Ef8UNLZAgc" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/3YNlsYzLty" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+        <div class="market-contents" id="daejeon">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-daejeon1.png" alt="중리전통시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>중리전통시장</p>
+                  <span>#농수산물</span>
+                  <span>#축산물</span>
+                  <span>#잡곡</span>
+                </div>
+                <span class="market-adr"> 대전 대덕구 중리북로37번길 26 </span>
+                <span class="market-content-info">
+                  중리전통시장은 대전시 대덕구 중리동에 위치하고 있는 전통시장으로 산지 직송된 농수산물과 축산물을 주로 취급하고 있으며, 시장의 활성화를 위한 다양한 이벤트가 수시로 진행되고 있기
+                  때문에 유익한 쇼핑은 물론 문화생활까지 즐길 수 있는 알찬 공간이다.
+                </span>
+                <div class="go-market">
+                  <a href="https://kko.to/eV0XXSl6O7" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/uhp81StgaP" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-daejeon2.png" alt="대전중앙시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>대전중앙시장</p>
+                  <span>#한복</span>
+                  <span>#귀금속</span>
+                  <span>#침구</span>
+                </div>
+                <span class="market-adr">대전 동구 대전로 783</span>
+                <span class="market-content-info"> 100여 년 역사를 자랑하는 대전중앙시장은 대전 교통의 중심인 대전역 앞에 위치하고 있어 대전 시민들이 애용하는 전통시장으로
+                  자리매김했다. 시장은 아케이드 형식으로 품목별로 구분되어 있어 장을 보거나 구경하는 동선이 편안하다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/8vkazR2Ohd" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/N35IxfVSmX" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+        <div class="market-contents" id="gangwon">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-gangwon1.png" alt="삼척중앙시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>삼척중앙시장</p>
+                  <span>#문어</span>
+                  <span>#채소</span>
+                  <span>#곰치국</span>
+                </div>
+                <span class="market-adr"> 강원 삼척시 진주로 12-21 </span>
+                <span class="market-content-info"> 예로부터 자원이 풍부한 곳으로 유명한 삼척은 일제강점기 때에 풍부한 지하자원으로 탄광이 개발되면서 많은 사람들이 이곳으로
+                  자연스레 시장이 발달하고 번영한 곳이다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/SGRQ0Y3E-w" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/3OHxDo4E9b" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-gangwon2.png" alt="진부전통시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>진부전통시장</p>
+                  <span>#약재</span>
+                  <span>#녹두전</span>
+                  <span>#수수부꾸미</span>
+                </div>
+                <span class="market-adr">강원 평창군 진부면 하진부리 140</span>
+                <span class="market-content-info"> 오랜 전통을 지닌 규모가 큰 재래시장으로 조선시대부터 장이 서기 시작해 수백년의 전통을 이어오고 있다. 봉평장, 대화장과
+                  함께 단편소설 <메밀꽃필무렵>의 배경으로 잘 알려진 전통시장이다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/lWZfOYlc_w" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/Yd0n6iiexu" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+        <div class="market-contents" id="gwangju">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-gwangju1.png" alt="양동시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>양동시장</p>
+                  <span>#수산물</span>
+                  <span>#양동통닭</span>
+                  <span>#홍어</span>
+                </div>
+                <span class="market-adr"> 광주 서구 천변좌로 238 </span>
+                <span class="market-content-info"> 양동시장은 전라남도에서 가장 큰 규모를 가지고 있다. 백 년이 넘는 오랜 전통을 가지고 있는 시장으로 산지 직송된 농수산물과
+                  생활에 필요한 생필품을 취급하고 있다. 또한 판매되는 제품의 원산지표시 전국 우수시장으로 선정되었다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/QbcZR1adi1" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/LagEQJeqND" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-gwangju2.png" alt="남광주시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>남광주시장</p>
+                  <span>#수산물</span>
+                  <span>#포토존</span>
+                  <span>#튀김</span>
+                </div>
+                <span class="market-adr">광주 동구 제봉로17번길 18-6</span>
+                <span class="market-content-info"> 남광주시장은 새벽에 반짝 운영되는 새벽시장과 아침부터 저녁까지 운영되는 상설시장이 함께 운영되고 있다. 수산물 도매시장으로도
+                  알려져 있으며, 더불어 직송된 농축산물을 모두 취급하고 있기 때문에 신선한 상품을 저렴한 가격에 구입할 수 있다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/m5yVMOqdMI" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/1_IrkUjX85" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+        <div class="market-contents" id="gyeongbuk">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-gyeongbuk1.png" alt="청도장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>청도장</p>
+                  <span>#복숭아</span>
+                  <span>#미나리</span>
+                  <span>#청도반시</span>
+                </div>
+                <span class="market-adr"> 경북 청도군 청도시장1길 21 </span>
+                <span class="market-content-info"> 청도에 있는 3개의 시장 중 규모가 가장 크고 찾는 사람이 많다. 재래시장이란 이름보단 청도장으로 더 많이 알려져 있다.
+                  4일, 9일마다 주기적으로 열리는 오일장과 상설시장으로 운영되고 있다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/Pa5VfRNzaY" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/HrCF3vzyBv" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-gyeongbuk2.png" alt="풍기토종인삼시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>풍기토종인삼시장</p>
+                  <span>#풍기인삼</span>
+                  <span>#인견</span>
+                  <span>#사과</span>
+                </div>
+                <span class="market-adr">경북 영주시 풍기읍 인삼로 40</span>
+                <span class="market-content-info"> 영주시 안에 있는 풍기읍은 대표적 특산품인 풍기인삼과 사과, 인견등이 유명하다. 이외에 영주에는 한우, 포도, 고구마,
+                  생강도넛 등 다양한 특삼품과 먹거리가 존재한다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/omIGbMaysN" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/93IFcm3p2o" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+        <div class="market-contents" id="gyeonggi">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-gyeonggi1.png" alt="오산오색시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>오산오색시장</p>
+                  <span>#이벤트</span>
+                  <span>#수제맥주</span>
+                  <span>#칼국수</span>
+                </div>
+                <span class="market-adr"> 경기 오산시 오산로272번길 22</span>
+                <span class="market-content-info"> 오산역에서 불과 10분 거리에 위치한 오산오색시장은 조선시대부터 시장의 명맥을 유지하고 있는 유서깊은 재래시장이다. 지난
+                  2013년 전국우수시장박람회에서 대통령상을 표창하고, 2015년 문화관광형시장으로 선정될 만큼 활발하게 운영되고 있다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/F8jGzsfg9o" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/gSWhKBW1aV" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-gyeonggi2.png" alt="지동시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>지동시장</p>
+                  <span>#순대</span>
+                  <span>#꽈배기</span>
+                  <span>#만두</span>
+                </div>
+                <span class="market-adr">경기 수원시 팔달구 팔달문로 19</span>
+                <span class="market-content-info"> 수원시의 대표적인 재래시장으로 지난 약 100년 동안 시민들의 변함없는 사랑을 받아온 지동시장은 200여개의 점포가 밀집되어
+                  있다. 수원 성곽을 배경으로 형성된 상설시장으로 팔달문 주변 9개의 전통시장 중 특히 먹거리시장으로 유명하다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/Y3IfcLWzCx" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/VqK2UYwF20" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+        <div class="market-contents" id="gyeongnam">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-gyeongnam1.png" alt="사천읍시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>사천읍시장</p>
+                  <span>#건어물</span>
+                  <span>#약재</span>
+                  <span>#채소</span>
+                </div>
+                <span class="market-adr"> 경남 사천시 사천읍 시장1길 16 </span>
+                <span class="market-content-info"> 사람들로 북적거려 언제나 활기 넘치는 상설시장과, 매월 끝자리 5일과 10일에는 오일장이 함께 열린다. 주로 사천과 사천
+                  인근 지역에서 직접 재배하거나 산지 직송된 농수산물과 축산물을 취급하고 있어 시장에 가면 언제나 신선한 상품을 구입할 수 있다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/sH6LxS22_y" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/G1dKb0UyBb" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-gyeongnam2.png" alt="합천왕후시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>합천왕후시장</p>
+                  <span>#양파</span>
+                  <span>#건어물</span>
+                  <span>#마늘</span>
+                </div>
+                <span class="market-adr">경남 합천군 합천읍 옥산로 44</span>
+                <span class="market-content-info"> 우리나라에서 처음으로 왕후를 테마로 만들어진 역사적 의미가 있는 전통시장이다. 시장이 있는 옥산동은 왕후의 고향으로 알려진
+                  곳으로, 예전부터 음력 정월대보름에 이 지역에서 신성왕후의 제사를 모셔왔다고 한다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/mnKuJpGTLO" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/dpDLi6ixcr" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+        <div class="market-contents" id="incheon">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-incheon1.png" alt="대룡시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>대룡시장</p>
+                  <span>#레트로</span>
+                  <span>#강아지떡</span>
+                  <span>#제비</span>
+                </div>
+                <span class="market-adr"> 인천 강화군 교동면 교동남로 35 </span>
+                <span class="market-content-info"> 대룡시장은 6.25 때 연백군에서 교동도로 잠시 피난 온 주민들이 한강 하구가 분단선이 되어 고향에 다시 돌아갈 수 없게
+                  되자 생계를 유지하기 위해 고향에 있는 연백시장을 본 따 만든 골목 시장이다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/c9PMHllJZW" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/NfC-ngYxxu" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-incheon2.png" alt="신포국제시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>신포국제시장</p>
+                  <span>#해산물</span>
+                  <span>#닭강정</span>
+                  <span>#재래김</span>
+                </div>
+                <span class="market-adr">인천 중구 신포동 6-6</span>
+                <span class="market-content-info">
+                  인천의 개항 이후 형성된 시장으로 인천에서 가장 오래된 전통시장이다. 일본식 이름 ‘신정’에서 해방 이후 우리나라식 지명인 ‘신포동’으로 바뀌면서 그 지명을 딴 ‘신포’에 개항 이후
+                  외국문물이 많이 들어와 ‘국제시장’이라는 이름이 붙어 ‘신포국제시장’이 되었다.
+                </span>
+                <div class="go-market">
+                  <a href="https://kko.to/kruGiMfyYD" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/-6whn3k9Ji" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+        <div class="market-contents" id="jeju">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-jeju1.png" alt="제주 동문시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>제주 동문시장</p>
+                  <span>#귤</span>
+                  <span>#애플망고</span>
+                  <span>#오메기떡</span>
+                </div>
+                <span class="market-adr"> 제주 제주시 관덕로14길 20</span>
+                <span class="market-content-info"> 1980년대에 새마을사업의 일환으로 이 일대에 도로가 개설되면서 자연발생적으로 형성되었다. 2001년에 현재 이름으로
+                  변경되었으며 제주도에서 가장 중요하면서 가장 큰 상설 재래시장인 동문시장이 되었다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/XqugwvHMs7" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/g5i-U__swS" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-jeju2.png" alt="제주시민속오일시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>제주시민속오일시장</p>
+                  <span>#곡식</span>
+                  <span>#약재</span>
+                  <span>#생선</span>
+                </div>
+                <span class="market-adr">제주 제주시 오일장서길 26</span>
+                <span class="market-content-info"> 제주 중심시장의 명맥을 잇고 있는 민속시장으로 매월 끝자리 2일과 7일에 오일장이 열린다. 65세 이상 할머니들을 위한
+                  ‘할망장터’도 있다. 제주에 있는 민속 오일장 중에 가장 규모가 크며 오래된 전통을 가지고 있다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/WKddrfOnjk" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/9WEmSR85xs" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+        <div class="market-contents" id="jeonbuk">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-jeonbuk1.png" alt="고창전통시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>고창전통시장</p>
+                  <span>#수박</span>
+                  <span>#풍천장어</span>
+                  <span>#복분자</span>
+                </div>
+                <span class="market-adr"> 전북 고창군 고창읍 동리로 62-11</span>
+                <span class="market-content-info"> 고창전통시장은 조선시대에 개설되었던 고창 읍내장을 계승한 유서 깊은 전통시장으로 고창지역의 특산물을 비롯해 인근 지역에서
+                  생산된 농수산물과 의류 등 다양한 물품들을 볼 수 있다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/xfXJoEM496" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/fuvCbRaN7p" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-jeonbuk2.png" alt="곰소젓갈도매시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>곰소젓갈도매시장</p>
+                  <span>#젓갈</span>
+                  <span>#천일염</span>
+                  <span>#어포</span>
+                </div>
+                <span class="market-adr">전북 부안군 진서면 곰소항길 22-34</span>
+                <span class="market-content-info"> 일제강점기 한반도에서 착취한 농산물과 군수물자를 운반하기 위해 구축한 것이 곰소항의 시작이지만, 현재는 곰소항 인근에서 나는
+                  각종 수산물을 젓갈로 담아 판매하는 대규모 젓갈 단지로 이름이 높다. 국내 3대 젓갈시장중 한곳으로 불리는 곳이다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/_inkdY19Fq" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/PCHa07Aswk" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+        <div class="market-contents" id="jeonnam">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-jeonnam1.png" alt="목포 자유시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>목포 자유시장</p>
+                  <span>#낙지</span>
+                  <span>#남진야시장</span>
+                  <span>#국밥</span>
+                </div>
+                <span class="market-adr">전남 목포시 자유로 122 </span>
+                <span class="market-content-info">
+                  목포 자유시장은 목포역 부근에서 형성된 노점상들이 목포시에서 마련한 장소에 모여 상인들 스스로 자기 점포를 갖기 위해 조금씩 저축해 마련한 시장이다. 다른 시장과 달리 상인들 스스로
+                  적금 운동을 해서 개설한 시장이라는 점에서 남다른 특별함이 있다.
+                </span>
+                <div class="go-market">
+                  <a href="https://kko.to/Ukc5WZHTUA" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/mLIkK81_00" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-jeonnam2.png" alt="여수수산물특화시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>여수수산물특화시장</p>
+                  <span>#해산물</span>
+                  <span>#돌게간장게장</span>
+                </div>
+                <span class="market-adr">전남 여수시 남산로 60-31</span>
+                <span class="market-content-info"> 여수시는 주변에 풍부한 어장을 보유한 해안 지역으로 어업 비중이 높아 가장 현대화된 시설을 갖추고 있는 수산물 시장이
+                  자리잡고 있다. 수산물 온라인 쇼핑몰도 운영하고 있어 집에서도 편하게 여수 바다의 싱싱한 수산물을 받아볼 수 있다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/TthUf2TZm5" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/op2671fbsY" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+        <div class="market-contents" id="sejong">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-sejong1.png" alt="세종전통시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>세종전통시장</p>
+                  <span>#건어물</span>
+                  <span>#통닭발튀김</span>
+                  <span>#반찬</span>
+                </div>
+                <span class="market-adr"> 세종 조치원읍 조치원8길 42</span>
+                <span class="market-content-info"> 매일 운영되는 상설시장과 매월 끝자리 4일, 9일에 열리는 오일장이 함께 운영되고 있다. 1931년에 개설되어 80년 이상의
+                  전통을 고스란히 유지하면서 현재의 전통시장으로 거듭나며 꾸준히 발전해 오고 있는 큰 규모의 전통시장이다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/Yx2Tse2fER" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/UPZaZQW0-M" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-sejong2.png" alt="전의 왕의물시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>전의 왕의물시장</p>
+                  <span>#농산물</span>
+                  <span>#벽화</span>
+                </div>
+                <span class="market-adr">세종 전의면 장터길 33</span>
+                <span class="market-content-info"> 세종특별자치시 전의면은 세종대왕이 눈병을 치료할 때 찾아간 곳으로 얄려져 있다. 탄산수가 나오는 우물의 물을 길어다 안질이
+                  치료가 되었다 하여 ‘왕의 물’이라는 이름이 생겨났다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/UPZaZQW0-M" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/q9Z7zhvGHY" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+        <div class="market-contents" id="seoul">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-seoul1.png" alt="청량리종합시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>청량리종합시장</p>
+                  <span>#쌀빵</span>
+                  <span>#농수산물</span>
+                  <span>#건어물</span>
+                </div>
+                <span class="market-adr"> 서울 동대문구 홍릉로1길 68-3</span>
+                <span class="market-content-info"> 1960년대부터 본격적으로 사람과 물자가 오가기 시작한 청량리종합시장은 서울 동북권 최대 규모의 재래시장으로 오늘날까지 그
+                  역할을 단단히 하고 있다. 일반적인 재래시장과는 달리 농수산물 및 청과물 도매시장을 함께 운영하고 있다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/jewvWJRD-c" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/-LrL8Y1k2B" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-seoul2.png" alt="방산시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>방산시장</p>
+                  <span>#인쇄</span>
+                  <span>#포장자재</span>
+                  <span>#제빵재료</span>
+                </div>
+                <span class="market-adr">서울 중구 을지로33길 18-1</span>
+                <span class="market-content-info"> 방산종합시장은 종합 인쇄 및 포장 산업 관련 전문시장이다. 시장골목에 지류도매시장이 함께 형성되어 있어 포장자재는 물론
+                  도배지, 아트지 등 다양한 지류 관련 상품들까지 저렴한 도매 가격으로 구입할 수 있다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/U6wHzcRbIj" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/Ywbwhqzmcp" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+        <div class="market-contents" id="ulsan">
+          <div class="market-content">
+            <div class="market-content1">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-ulsan1.png" alt="학성새벽시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>학성새벽시장</p>
+                  <span>#건어물</span>
+                  <span>#농수산물</span>
+                  <span>#약재</span>
+                </div>
+                <span class="market-adr"> 울산 중구 새벽시장3길 20 </span>
+                <span class="market-content-info"> 새벽 2시부터 정오까지만 운영되는 새벽시장이다. 주로 울산이나 울산 인근의 지역에서 직접 재배하거나 산지에서 직송된
+                  농수산물을 취급하고 있는 식자재도매 시장으로 이곳에 가면 품질 좋은 신선한 상품을 저렴하게 구입할 수 있다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/CTublBERFn" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/gxlduuXix_" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="market-content2">
+              <div class="market-content-left">
+                <a href="#">
+                  <img src="images/4marketinfo/market-content-ulsan2.png" alt="울산번개시장" />
+                </a>
+              </div>
+              <div class="market-content-right">
+                <div class="market-content-right-top">
+                  <p>울산번개시장</p>
+                  <span>#해산물</span>
+                  <span>#아시아인일요장날</span>
+                </div>
+                <span class="market-adr">울산 남구 신선로184번길 46-1</span>
+                <span class="market-content-info"> 울산번개시장은 시장 인근에 있는 공단 근로자들의 거주지 주변에서 시장 역할을 해오다가 상설시장으로 발전했다. 현재
+                  상가건물형시장에 노점상들이 함께 공존하고 있다. 반짝하고 생겼다가 없어짐을 반복하는 마치 번개와 같다고 해서 유래되었다. </span>
+                <div class="go-market">
+                  <a href="https://kko.to/x6PQacPBiI" target="_blank"><span>길찾기</span></a>
+                  <div class="line"></div>
+                  <a href="https://kko.to/MqXm9rcInL" target="_blank"><span>지도 보기</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button><a href="#">더보기</a></button>
+        </div>
+      </div>
+    </div>
+    <!-- 지역 축제 -->
+    <section class="local-festival" id="nav3">
+      <div class="container">
+        <div class="inner">
+          <!-- 지역 축제 왼쪽 -->
+          <div class="local-festival-left">
+            <div class="local-festival-title">
+              <div class="local-festival-left-title-top">
+                <h2 class="title">진행중인<br />지역축제</h2>
+                <img src="images/5festival/festivaltitle.png" alt="문어" />
+              </div>
+              <p>전통시장 방문하고 축제도 함께 즐겨요</p>
+            </div>
+            <div class="local-festival-left-bottom">
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev prev-festival"></div>
+              <div class="swiper-button-next next-festival"></div>
+            </div>
+          </div>
+          <!-- 지역 축제 오른쪽 -->
+          <div class="local-festival-right">
+            <div class="swiper sw-festival">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="festival-img">
+                    <img src="images/5festival/festival1.png" alt="마켓피어나인" />
                   </div>
-                  <div class="swiper-slide">
-                    <div class="festival-img">
-                      <img src="images/5festival/festival2.png" alt="창덕궁 달빛기행" />
-                    </div>
-                    <div class="festival-info">
-                      <p class="festival-contents-title">창덕궁 달빛기행</p>
-                      <span>2024.04.11 ~ 2024.06.02</span>
-                    </div>
-                    <button>더보기</button>
+                  <div class="festival-info">
+                    <p class="festival-contents-title">마켓피어나인</p>
+                    <span>2024.04.12 ~ 2024.06.02</span>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="festival-img">
-                      <img src="images/5festival/festival3.png" alt="여름꽃 & 능소화축제" />
-                    </div>
-                    <div class="festival-info">
-                      <p class="festival-contents-title">여름꽃 & 능소화축제</p>
-                      <span>2024.05.15 ~ 2024.07.20</span>
-                    </div>
-                    <button>더보기</button>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="festival-img">
+                    <img src="images/5festival/festival2.png" alt="창덕궁 달빛기행" />
                   </div>
-                  <div class="swiper-slide">
-                    <div class="festival-img">
-                      <img src="images/5festival/festival4.png" alt="네이처파크 플라워페스티벌" />
-                    </div>
-                    <div class="festival-info">
-                      <p class="festival-contents-title">네이처파크 플라워페스티벌</p>
-                      <span>2024.03.30 ~ 2024.06.09</span>
-                    </div>
-                    <button>더보기</button>
+                  <div class="festival-info">
+                    <p class="festival-contents-title">창덕궁 달빛기행</p>
+                    <span>2024.04.11 ~ 2024.06.02</span>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="festival-img">
-                      <img src="images/5festival/festival5.png" alt="광주왕실도자컨퍼런스" />
-                    </div>
-                    <div class="festival-info">
-                      <p class="festival-contents-title">광주왕실도자컨퍼런스</p>
-                      <span>2024.05.03 ~ 2024.05.15</span>
-                    </div>
-                    <button>더보기</button>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="festival-img">
+                    <img src="images/5festival/festival3.png" alt="여름꽃 & 능소화축제" />
                   </div>
-                  <div class="swiper-slide">
-                    <div class="festival-img">
-                      <img src="images/5festival/festival6.png" alt="담양대나무축제" />
-                    </div>
-                    <div class="festival-info">
-                      <p class="festival-contents-title">담양대나무축제</p>
-                      <span>2024.05.11 ~ 2024.05.15</span>
-                    </div>
-                    <button>더보기</button>
+                  <div class="festival-info">
+                    <p class="festival-contents-title">여름꽃 & 능소화축제</p>
+                    <span>2024.05.15 ~ 2024.07.20</span>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="festival-img">
-                      <img src="images/5festival/festival7.png" alt="경복궁 생과방" />
-                    </div>
-                    <div class="festival-info">
-                      <p class="festival-contents-title">경복궁 생과방</p>
-                      <span>2024.04.17 ~ 2024.06.24</span>
-                    </div>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="festival-img">
+                    <img src="images/5festival/festival4.png" alt="네이처파크 플라워페스티벌" />
                   </div>
-                  <div class="swiper-slide">
-                    <div class="festival-img">
-                      <img src="images/5festival/festival8.png" alt="밤의 석조전" />
-                    </div>
-                    <div class="festival-info">
-                      <p class="festival-contents-title">밤의 석조전</p>
-                      <span>2024.04.16 ~ 2024.05.25</span>
-                    </div>
-                    <button>더보기</button>
+                  <div class="festival-info">
+                    <p class="festival-contents-title">네이처파크 플라워페스티벌</p>
+                    <span>2024.03.30 ~ 2024.06.09</span>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="festival-img">
-                      <img src="images/5festival/festival9.png" alt="음성품바축제" />
-                    </div>
-                    <div class="festival-info">
-                      <p class="festival-contents-title">음성품바축제</p>
-                      <span>2024.05.22. ~ 2024.05.26</span>
-                    </div>
-                    <button>더보기</button>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="festival-img">
+                    <img src="images/5festival/festival5.png" alt="광주왕실도자컨퍼런스" />
                   </div>
-                  <div class="swiper-slide">
-                    <div class="festival-img">
-                      <img src="images/5festival/festival10.png" alt="고창청보리밭 축제" />
-                    </div>
-                    <div class="festival-info">
-                      <p class="festival-contents-title">고창청보리밭 축제</p>
-                      <span>2024.04.20~2024.05.12</span>
-                    </div>
-                    <button>더보기</button>
+                  <div class="festival-info">
+                    <p class="festival-contents-title">광주왕실도자컨퍼런스</p>
+                    <span>2024.05.03 ~ 2024.05.15</span>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="festival-img">
-                      <img src="images/5festival/festival11.png" alt="고양국제꽃박람회" />
-                    </div>
-                    <div class="festival-info">
-                      <p class="festival-contents-title">고양국제꽃박람회</p>
-                      <span>2024.04.26 ~ 2024.05.12</span>
-                    </div>
-                    <button>더보기</button>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="festival-img">
+                    <img src="images/5festival/festival6.png" alt="담양대나무축제" />
                   </div>
-                  <div class="swiper-slide">
-                    <div class="festival-img">
-                      <img src="images/5festival/festival12.png" alt="부산연등회" />
-                    </div>
-                    <div class="festival-info">
-                      <p class="festival-contents-title">부산연등회</p>
-                      <span>2024.04.26 ~ 2024.05.12</span>
-                    </div>
-                    <button>더보기</button>
+                  <div class="festival-info">
+                    <p class="festival-contents-title">담양대나무축제</p>
+                    <span>2024.05.11 ~ 2024.05.15</span>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="festival-img">
-                      <img src="images/5festival/festival13.png" alt="양주 회암사지 왕실축제" />
-                    </div>
-                    <div class="festival-info">
-                      <p class="festival-contents-title">양주 회암사지 왕실축제</p>
-                      <span>2024.05.10 ~ 2024.05.12</span>
-                    </div>
-                    <button>더보기</button>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="festival-img">
+                    <img src="images/5festival/festival7.png" alt="경복궁 생과방" />
                   </div>
-                  <div class="swiper-slide">
-                    <div class="festival-img">
-                      <img src="images/5festival/festival14.png" alt="춘천마임축제" />
-                    </div>
-                    <div class="festival-info">
-                      <p class="festival-contents-title">춘천마임축제</p>
-                      <span>2024.05.26 ~ 2024.06.02</span>
-                    </div>
-                    <button>더보기</button>
+                  <div class="festival-info">
+                    <p class="festival-contents-title">경복궁 생과방</p>
+                    <span>2024.04.17 ~ 2024.06.24</span>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="festival-img">
-                      <img src="images/5festival/festival15.png" alt="충주 다이브 페스티벌" />
-                    </div>
-                    <div class="festival-info">
-                      <p class="festival-contents-title">충주 다이브 페스티벌</p>
-                      <span>2024.05.30 ~ 2024.06.02</span>
-                    </div>
-                    <button>더보기</button>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="festival-img">
+                    <img src="images/5festival/festival8.png" alt="밤의 석조전" />
                   </div>
+                  <div class="festival-info">
+                    <p class="festival-contents-title">밤의 석조전</p>
+                    <span>2024.04.16 ~ 2024.05.25</span>
+                  </div>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="festival-img">
+                    <img src="images/5festival/festival9.png" alt="음성품바축제" />
+                  </div>
+                  <div class="festival-info">
+                    <p class="festival-contents-title">음성품바축제</p>
+                    <span>2024.05.22. ~ 2024.05.26</span>
+                  </div>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="festival-img">
+                    <img src="images/5festival/festival10.png" alt="고창청보리밭 축제" />
+                  </div>
+                  <div class="festival-info">
+                    <p class="festival-contents-title">고창청보리밭 축제</p>
+                    <span>2024.04.20~2024.05.12</span>
+                  </div>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="festival-img">
+                    <img src="images/5festival/festival11.png" alt="고양국제꽃박람회" />
+                  </div>
+                  <div class="festival-info">
+                    <p class="festival-contents-title">고양국제꽃박람회</p>
+                    <span>2024.04.26 ~ 2024.05.12</span>
+                  </div>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="festival-img">
+                    <img src="images/5festival/festival12.png" alt="부산연등회" />
+                  </div>
+                  <div class="festival-info">
+                    <p class="festival-contents-title">부산연등회</p>
+                    <span>2024.04.26 ~ 2024.05.12</span>
+                  </div>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="festival-img">
+                    <img src="images/5festival/festival13.png" alt="양주 회암사지 왕실축제" />
+                  </div>
+                  <div class="festival-info">
+                    <p class="festival-contents-title">양주 회암사지 왕실축제</p>
+                    <span>2024.05.10 ~ 2024.05.12</span>
+                  </div>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="festival-img">
+                    <img src="images/5festival/festival14.png" alt="춘천마임축제" />
+                  </div>
+                  <div class="festival-info">
+                    <p class="festival-contents-title">춘천마임축제</p>
+                    <span>2024.05.26 ~ 2024.06.02</span>
+                  </div>
+                  <button>더보기</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="festival-img">
+                    <img src="images/5festival/festival15.png" alt="충주 다이브 페스티벌" />
+                  </div>
+                  <div class="festival-info">
+                    <p class="festival-contents-title">충주 다이브 페스티벌</p>
+                    <span>2024.05.30 ~ 2024.06.02</span>
+                  </div>
+                  <button>더보기</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- 중간배너 -->
-      <section class="banner-m">
-        <div class="container">
-          <div class="inner">
-            <!-- <div class="banner-img"></div> -->
-            <a href="#">
-              <img src="images/6banner-m/banner-m-1200.png" alt="중간 배너 이미지" />
-              <img src="images/6banner-m/banner-m-768.png" alt="중간 배너 이미지2" />
-              <img src="images/6banner-m/banner-m-360.png" alt="중간 배너 이미지3" />
-            </a>
-          </div>
+      </div>
+    </section>
+    <!-- 중간배너 -->
+    <section class="banner-m">
+      <div class="container">
+        <div class="inner">
+          <!-- <div class="banner-img"></div> -->
+          <a href="#">
+            <img src="images/6banner-m/banner-m-1200.png" alt="중간 배너 이미지" />
+            <img src="images/6banner-m/banner-m-768.png" alt="중간 배너 이미지2" />
+            <img src="images/6banner-m/banner-m-360.png" alt="중간 배너 이미지3" />
+          </a>
         </div>
-      </section>
-      <!-- 랭킹 -->
-      <section class="ranking">
-        <div class="container">
-          <div class="inner">
-            <div class="ranking-wrap">
-              <div class="ranking-title">
-                <!-- <h2>전국 전통시장 뱃지 보유 랭킹</h2> -->
-                <h2>전국 전통시장 뱃지 랭킹</h2>
-              </div>
-              <div class="title ranking-topRank">
-                <ul>
-                  <li>
-                    <h2 class="ranking-number">2</h2>
-                    <div class="ranking-img"><img src="images/8ranking/ranking-img-2.jpg" alt="2위 프로필 사진" /></div>
-                    <p class="ranking-name">코비</p>
-                    <p class="ranking-collect">115개</p>
-                  </li>
-                  <!-- 로그인시 1위 -->
-                  <li class="ranking-rank-login">
-                    <div class="ranking-number">1</div>
-                    <div class="ranking-img ranking-rank1">
-                      <img src="images/8ranking/ranking-img-1-crown.png" class="rank1-img-login" alt="1위 프로필 사진" />
-                      <!-- <img src="images/7ranking/ranking-crown.png" alt="" class="ranking-crown-img" /> -->
-                    </div>
-                    <div class="ranking-img ranking-rank1"></div>
-                    <a href="#">
-                      <div class="ranking-name">케로피</div>
-                    </a>
-
-                    <div class="ranking-collect">126개</div>
-                  </li>
-                  <!-- 비로그인시 1위 -->
-                  <li class="ranking-rank-notlogin">
-                    <div class="ranking-number">1</div>
-                    <div class="ranking-img ranking-rank1-notlogin">
-                      <img src="images/8ranking/ranking-img-notlogin-1.png" class="rank1-img-notlogin" alt="비로그인시 1위 프로필 사진" />
-                    </div>
-                    <div class="ranking-img ranking-rank1"></div>
-                    <div class="ranking-name">짱구</div>
-                    <div class="ranking-collect">126개</div>
-                  </li>
-                  <li>
-                    <div class="ranking-number">3</div>
-                    <div class="ranking-img"><img src="images/8ranking/ranking-img-3.jpg" alt="3위 프로필 사진" /></div>
-                    <div class="ranking-name">따하하하</div>
-                    <div class="ranking-collect">89개</div>
-                  </li>
-                </ul>
-              </div>
-              <!-- 그밖에 순위표 -->
-              <div class="ranking-table">
-                <ul>
-                  <li>
-                    <h3 class="ranking-number">4</h3>
-                    <div class="ranking-img"><img src="images/8ranking/ranking-img-4.jpg" alt="4위 프로필 사진" /></div>
-                    <div class="ranking-table-txt">
-                      <p class="ranking-name">브라우니</p>
-                      <p class="ranking-collect">88개</p>
-                    </div>
-                  </li>
-                  <li>
-                    <h3 class="ranking-number">5</h3>
-                    <div class="ranking-img"><img src="images/8ranking/ranking-img-5.jpg" alt="4위 프로필 사진" /></div>
-                    <div class="ranking-table-txt">
-                      <p class="ranking-name">뚱이</p>
-                      <p class="ranking-collect">70개</p>
-                    </div>
-                  </li>
-                  <li>
-                    <h3 class="ranking-number">6</h3>
-                    <div class="ranking-img"><img src="images/8ranking/ranking-img-6.jpg" alt="4위 프로필 사진" /></div>
-                    <div class="ranking-table-txt">
-                      <p class="ranking-name">짱구</p>
-                      <p class="ranking-collect">68개</p>
-                    </div>
-                  </li>
-                  <li>
-                    <h3 class="ranking-number">7</h3>
-                    <div class="ranking-img"><img src="images/8ranking/ranking-img-7.jpg" alt="4위 프로필 사진" /></div>
-                    <div class="ranking-table-txt">
-                      <p class="ranking-name">호빵맨</p>
-                      <p class="ranking-collect">56개</p>
-                    </div>
-                  </li>
-                  <li>
-                    <h3 class="ranking-number">8</h3>
-                    <div class="ranking-img"><img src="images/8ranking/ranking-img-8.jpg" alt="4위 프로필 사진" /></div>
-                    <div class="ranking-table-txt">
-                      <p class="ranking-name">아이우에오</p>
-                      <p class="ranking-collect">52개</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="ranking-me">
-                <h3 class="ranking-number">1</h3>
-                <div class="ranking-img">
-                  <img src="images/8ranking/ranking-img-1.png" alt="내 프로필 사진" />
-                </div>
-                <div class="ranking-table-txt">
-                  <p class="ranking-name">케로피</p>
-                  <p class="ranking-collect">126개</p>
-                </div>
-              </div>
-              <div class="ranking-me ranking-me-notlogin">
-                <h3 class="ranking-number">-</h3>
-                <div class="ranking-img">
-                  <img src="images/8ranking/ranking-me-notlogin.png" class="ranking-me-notlogin" />
-                </div>
-                <div class="ranking-table-txt">
-                  <a href="#"><p class="ranking-name">내 랭킹 확인하기</p></a>
-                </div>
-              </div>
+      </div>
+    </section>
+    <!-- 랭킹 -->
+    <section class="ranking">
+      <div class="container">
+        <div class="inner">
+          <div class="ranking-wrap">
+            <div class="ranking-title">
+              <!-- <h2>전국 전통시장 뱃지 보유 랭킹</h2> -->
+              <h2>전국 전통시장 뱃지 랭킹</h2>
             </div>
-            <div class="ranking-banner">
+            <div class="title ranking-topRank">
               <ul>
                 <li>
-                  <div class="ranking-banner-img">
-                    <img src="images/8ranking/ranking-description-1.png" alt="랭킹 뱃지 이미지" />
+                  <h2 class="ranking-number">2</h2>
+                  <div class="ranking-img"><img src="images/8ranking/ranking-img-2.jpg" alt="2위 프로필 사진" /></div>
+                  <p class="ranking-name">코비</p>
+                  <p class="ranking-collect">115개</p>
+                </li>
+                <!-- 로그인시 1위 -->
+                <li class="ranking-rank-login">
+                  <div class="ranking-number">1</div>
+                  <div class="ranking-img ranking-rank1">
+                    <img src="images/8ranking/ranking-img-1-crown.png" class="rank1-img-login" alt="1위 프로필 사진" />
+                    <!-- <img src="images/7ranking/ranking-crown.png" alt="" class="ranking-crown-img" /> -->
                   </div>
-                  <div class="ranking-banner-txt">
-                    <div class="ranking-banner-title">
-                      <h2>나만의 전통시장 뱃지들을 모으자!</h2>
-                    </div>
-                    <div class="ranking-banner-description">
-                      <p>전통시장을 방문하고 다양한 시장 뱃지들을 모아보세요. 더 많은 뱃지를 획득하면서 재미와 보상을 누려보세요!</p>
-                    </div>
+                  <div class="ranking-img ranking-rank1"></div>
+                  <a href="#">
+                    <div class="ranking-name">케로피</div>
+                  </a>
+
+                  <div class="ranking-collect">126개</div>
+                </li>
+                <!-- 비로그인시 1위 -->
+                <li class="ranking-rank-notlogin">
+                  <div class="ranking-number">1</div>
+                  <div class="ranking-img ranking-rank1-notlogin">
+                    <img src="images/8ranking/ranking-img-notlogin-1.png" class="rank1-img-notlogin"
+                      alt="비로그인시 1위 프로필 사진" />
+                  </div>
+                  <div class="ranking-img ranking-rank1"></div>
+                  <div class="ranking-name">짱구</div>
+                  <div class="ranking-collect">126개</div>
+                </li>
+                <li>
+                  <div class="ranking-number">3</div>
+                  <div class="ranking-img"><img src="images/8ranking/ranking-img-3.jpg" alt="3위 프로필 사진" /></div>
+                  <div class="ranking-name">따하하하</div>
+                  <div class="ranking-collect">89개</div>
+                </li>
+              </ul>
+            </div>
+            <!-- 그밖에 순위표 -->
+            <div class="ranking-table">
+              <ul>
+                <li>
+                  <h3 class="ranking-number">4</h3>
+                  <div class="ranking-img"><img src="images/8ranking/ranking-img-4.jpg" alt="4위 프로필 사진" /></div>
+                  <div class="ranking-table-txt">
+                    <p class="ranking-name">브라우니</p>
+                    <p class="ranking-collect">88개</p>
                   </div>
                 </li>
                 <li>
-                  <div class="ranking-banner-img">
-                    <img src="images/8ranking/ranking-description-2.png" alt="랭킹 뱃지 이미지" />
-                  </div>
-                  <div class="ranking-banner-txt">
-                    <div class="ranking-banner-title">
-                      <h2>랭킹으로 전통시장을 더 즐겁게!</h2>
-                    </div>
-                    <div class="ranking-banner-description">
-                      <p>많은 뱃지를 모을수록 랭킹이 올라가요. 나만의 뱃지들로 전통시장을 더욱 특별하게 만들어보세요.</p>
-                    </div>
+                  <h3 class="ranking-number">5</h3>
+                  <div class="ranking-img"><img src="images/8ranking/ranking-img-5.jpg" alt="4위 프로필 사진" /></div>
+                  <div class="ranking-table-txt">
+                    <p class="ranking-name">뚱이</p>
+                    <p class="ranking-collect">70개</p>
                   </div>
                 </li>
                 <li>
-                  <div class="ranking-banner-img">
-                    <img src="images/8ranking/ranking-description-3.png" alt="랭킹 뱃지 이미지" />
+                  <h3 class="ranking-number">6</h3>
+                  <div class="ranking-img"><img src="images/8ranking/ranking-img-6.jpg" alt="4위 프로필 사진" /></div>
+                  <div class="ranking-table-txt">
+                    <p class="ranking-name">짱구</p>
+                    <p class="ranking-collect">68개</p>
                   </div>
-                  <div class="ranking-banner-txt">
-                    <div class="ranking-banner-title">
-                      <h2>온누리 상품권 받을 확률 UP!</h2>
-                    </div>
-                    <div class="ranking-banner-description">
-                      <p>게다가 랭킹 순위를 높여 온누리 상품권을 받을 수 있어요. 이 기회를 놓치지 마세요!</p>
-                    </div>
+                </li>
+                <li>
+                  <h3 class="ranking-number">7</h3>
+                  <div class="ranking-img"><img src="images/8ranking/ranking-img-7.jpg" alt="4위 프로필 사진" /></div>
+                  <div class="ranking-table-txt">
+                    <p class="ranking-name">호빵맨</p>
+                    <p class="ranking-collect">56개</p>
+                  </div>
+                </li>
+                <li>
+                  <h3 class="ranking-number">8</h3>
+                  <div class="ranking-img"><img src="images/8ranking/ranking-img-8.jpg" alt="4위 프로필 사진" /></div>
+                  <div class="ranking-table-txt">
+                    <p class="ranking-name">아이우에오</p>
+                    <p class="ranking-collect">52개</p>
                   </div>
                 </li>
               </ul>
-              <div class="ranking-warning">
-                <p>✔️로그인 시, 랭킹 서비스를 이용할 수 있어요.</p>
+            </div>
+            <div class="ranking-me">
+              <h3 class="ranking-number">1</h3>
+              <div class="ranking-img">
+                <img src="images/8ranking/ranking-img-1.png" alt="내 프로필 사진" />
               </div>
-              <!-- <img src="images/7ranking/ranking-banner.jpg" alt="랭킹 배너 임시 적용"> -->
+              <div class="ranking-table-txt">
+                <p class="ranking-name">케로피</p>
+                <p class="ranking-collect">126개</p>
+              </div>
+            </div>
+            <div class="ranking-me ranking-me-notlogin">
+              <h3 class="ranking-number">-</h3>
+              <div class="ranking-img">
+                <img src="images/8ranking/ranking-me-notlogin.png" class="ranking-me-notlogin" />
+              </div>
+              <div class="ranking-table-txt">
+                <a href="#">
+                  <p class="ranking-name">내 랭킹 확인하기</p>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- 방문 후기 -->
-      <seciton class="review" id="nav4" id="nav4">
-        <div class="container">
-          <div class="inner">
-            <div class="title-wrap">
-              <div class="title-wrap-all">
-                <h2 class="title">시장 방문 후기</h2>
-                <p class="sub-title">영수증 인증으로 검증된 진짜 후기</p>
-              </div>
-              <div class="review-btn btn-select">
-                <button class="on title-btn reveiw-btn-color">맛집</button>
-                <button class="title-btn reveiw-btn-color">시장 나들이</button>
-              </div>
-            </div>
-            <div class="review-slider-eat">
-              <div class="swiper reviewSwiper">
-                <div class="swiper-wrapper review-swiper-1">
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="images/review/reveiw-gra-3.jpg" alt="제주 딱새우회 맛집 후기" />
-                      <p>
-                        제주 오면 꼭 먹는 <br />
-                        딱새우회, 고등어 갈치회🦐🐟
-                      </p>
-                    </a>
+          <div class="ranking-banner">
+            <ul>
+              <li>
+                <div class="ranking-banner-img">
+                  <img src="images/8ranking/ranking-description-1.png" alt="랭킹 뱃지 이미지" />
+                </div>
+                <div class="ranking-banner-txt">
+                  <div class="ranking-banner-title">
+                    <h2>나만의 전통시장 뱃지들을 모으자!</h2>
                   </div>
-
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="images/review/review-gra-4.jpg" alt="양양 감자옹심이 맛집 후기" />
-                      <p>
-                        양 진짜 많은 감자 옹심이<br />
-                        맛집 추천👍
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="images/review/reveiw-gra-5.jpg" alt="서울 시장냉면 맛집 후기" />
-                      <p>
-                        3대째 내려온 서울식<br />
-                        냉면 맛있게 맵네요.
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="images/review/reveiw-gra-1.jpg" alt="보령 꼬막정식 맛집 후기" />
-                      <p>
-                        가족모임 할 때<br />
-                        꼬막정식 식사 추천합니다.
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="images/review/review-gra-6.jpg" alt="묵은지고등어찜 맛집 후기" />
-                      <p>
-                        가성비 좋아요. 김치찜이 진하고<br />
-                        부드럽네요.
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="images/review/reveiw-gra-2.jpg" alt="횡성 횡성한우 맛집 후기" />
-                      <p>
-                        고소하고 부드러운<br />
-                        횡성한우 진자 맛집
-                      </p>
-                    </a>
+                  <div class="ranking-banner-description">
+                    <p>전통시장을 방문하고 다양한 시장 뱃지들을 모아보세요. 더 많은 뱃지를 획득하면서 재미와 보상을 누려보세요!</p>
                   </div>
                 </div>
+              </li>
+              <li>
+                <div class="ranking-banner-img">
+                  <img src="images/8ranking/ranking-description-2.png" alt="랭킹 뱃지 이미지" />
+                </div>
+                <div class="ranking-banner-txt">
+                  <div class="ranking-banner-title">
+                    <h2>랭킹으로 전통시장을 더 즐겁게!</h2>
+                  </div>
+                  <div class="ranking-banner-description">
+                    <p>많은 뱃지를 모을수록 랭킹이 올라가요. 나만의 뱃지들로 전통시장을 더욱 특별하게 만들어보세요.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="ranking-banner-img">
+                  <img src="images/8ranking/ranking-description-3.png" alt="랭킹 뱃지 이미지" />
+                </div>
+                <div class="ranking-banner-txt">
+                  <div class="ranking-banner-title">
+                    <h2>온누리 상품권 받을 확률 UP!</h2>
+                  </div>
+                  <div class="ranking-banner-description">
+                    <p>게다가 랭킹 순위를 높여 온누리 상품권을 받을 수 있어요. 이 기회를 놓치지 마세요!</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="ranking-warning">
+              <p>✔️로그인 시, 랭킹 서비스를 이용할 수 있어요.</p>
+            </div>
+            <!-- <img src="images/7ranking/ranking-banner.jpg" alt="랭킹 배너 임시 적용"> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 방문 후기 -->
+    <seciton class="review" id="nav4" id="nav4">
+      <div class="container">
+        <div class="inner">
+          <div class="title-wrap">
+            <div class="title-wrap-all">
+              <h2 class="title">시장 방문 후기</h2>
+              <p class="sub-title">영수증 인증으로 검증된 진짜 후기</p>
+            </div>
+            <div class="review-btn btn-select">
+              <button class="on title-btn reveiw-btn-color">맛집</button>
+              <button class="title-btn reveiw-btn-color">시장 나들이</button>
+            </div>
+          </div>
+          <div class="review-slider-eat">
+            <div class="swiper reviewSwiper">
+              <div class="swiper-wrapper review-swiper-1">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/review/reveiw-gra-3.jpg" alt="제주 딱새우회 맛집 후기" />
+                    <p>
+                      제주 오면 꼭 먹는 <br />
+                      딱새우회, 고등어 갈치회🦐🐟
+                    </p>
+                  </a>
+                </div>
 
-                <!-- <div class="swiper-button-next-review1"></div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/review/review-gra-4.jpg" alt="양양 감자옹심이 맛집 후기" />
+                    <p>
+                      양 진짜 많은 감자 옹심이<br />
+                      맛집 추천👍
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/review/reveiw-gra-5.jpg" alt="서울 시장냉면 맛집 후기" />
+                    <p>
+                      3대째 내려온 서울식<br />
+                      냉면 맛있게 맵네요.
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/review/reveiw-gra-1.jpg" alt="보령 꼬막정식 맛집 후기" />
+                    <p>
+                      가족모임 할 때<br />
+                      꼬막정식 식사 추천합니다.
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/review/review-gra-6.jpg" alt="묵은지고등어찜 맛집 후기" />
+                    <p>
+                      가성비 좋아요. 김치찜이 진하고<br />
+                      부드럽네요.
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/review/reveiw-gra-2.jpg" alt="횡성 횡성한우 맛집 후기" />
+                    <p>
+                      고소하고 부드러운<br />
+                      횡성한우 진자 맛집
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <!-- <div class="swiper-button-next-review1"></div>
                 <div class="swiper-button-prev-review1"></div>
                 <div class="swiper-pagination-review1"></div> -->
-                <div class="swiper-button-next swiper-button-next-review1"></div>
-                <div class="swiper-button-prev swiper-button-prev-review1"></div>
-                <div class="swiper-pagination swiper-pagination-review1"></div>
-                <!-- </div> -->
-              </div>
-              <div class="swiper reviewSwiper2">
-                <div class="swiper-wrapper review-swiper-2">
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="images/review/review-m-grad-2.jpg" alt="서울 시장냉면 맛집 후기" />
-                      <p>
-                        먹부림부터 트랜디함까지<br />
-                        즐기는 광장시장
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="images/review/review-m-grad-4.jpg" alt="묵은지고등어찜 맛집 후기" />
-                      <p>
-                        엽전으로 도시락 골라먹기<br />
-                        재밌는 경험이였네요.
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="images/review/review-m-grad-1.jpg" alt="양양 감자옹심이 맛집 후기" />
-                      <p>
-                        푸릇푸릇 제철 봄나물<br />
-                        두릅 구매 후기
-                      </p>
-                    </a>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="images/review/review-m-grad-3.jpg" alt="보령 꼬막정식 맛집 후기" />
-                      <p>
-                        추억의 아날로그 감성,<br />
-                        골동품이 가득해요.
-                      </p>
-                    </a>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="images/review/review-m-grad-5.jpg" alt="횡성 횡성한우 맛집 후기" />
-                      <p>
-                        벛꽃길과 함께 하는<br />
-                        화개장터 구경
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="images/review/review-m-grad-6.jpg" alt="춘천 야시장" />
-                      <p>
-                        춘천 야시장<br />
-                        밤에 가볼만한 곳 추천합니당
-                      </p>
-                    </a>
-                  </div>
-                </div>
-                <!-- <div class="review-pageBox"> -->
-                <!-- <div class="swiper-pagination2"></div> -->
-
-                <div class="swiper-button-next swiper-button-next-review2"></div>
-                <div class="swiper-button-prev swiper-button-prev-review2"></div>
-                <div class="swiper-pagination swiper-pagination-review2"></div>
-                <!-- </div> -->
-              </div>
+              <div class="swiper-button-next swiper-button-next-review1"></div>
+              <div class="swiper-button-prev swiper-button-prev-review1"></div>
+              <div class="swiper-pagination swiper-pagination-review1"></div>
+              <!-- </div> -->
             </div>
-          </div>
-        </div>
-      </seciton>
-      <!-- 이벤트, 오늘의 소식 -->
-      <seciton class="reviewToday" id="nav5">
-        <div class="container">
-          <div class="inner">
-            <div class="reviewToday-wrap">
-              <!-- 이벤트 -->
-              <div class="event-b">
-                <div class="swiper eventSwiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <a href="#"> <img src="images/7event/event-img-1.png" alt="이벤트1" /></a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a href="#"> <img src="images/7event/event-img-2.png" alt="이벤트2" /></a>
-                    </div>
-                    <div class="swiper-slide">
-                      <a href="#"> <img src="images/7event/event-img-3.png" alt="이벤트3" /></a>
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
+            <div class="swiper reviewSwiper2">
+              <div class="swiper-wrapper review-swiper-2">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/review/review-m-grad-2.jpg" alt="서울 시장냉면 맛집 후기" />
+                    <p>
+                      먹부림부터 트랜디함까지<br />
+                      즐기는 광장시장
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/review/review-m-grad-4.jpg" alt="묵은지고등어찜 맛집 후기" />
+                    <p>
+                      엽전으로 도시락 골라먹기<br />
+                      재밌는 경험이였네요.
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/review/review-m-grad-1.jpg" alt="양양 감자옹심이 맛집 후기" />
+                    <p>
+                      푸릇푸릇 제철 봄나물<br />
+                      두릅 구매 후기
+                    </p>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/review/review-m-grad-3.jpg" alt="보령 꼬막정식 맛집 후기" />
+                    <p>
+                      추억의 아날로그 감성,<br />
+                      골동품이 가득해요.
+                    </p>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/review/review-m-grad-5.jpg" alt="횡성 횡성한우 맛집 후기" />
+                    <p>
+                      벛꽃길과 함께 하는<br />
+                      화개장터 구경
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="images/review/review-m-grad-6.jpg" alt="춘천 야시장" />
+                    <p>
+                      춘천 야시장<br />
+                      밤에 가볼만한 곳 추천합니당
+                    </p>
+                  </a>
                 </div>
               </div>
-              <!-- 오늘의 소식 -->
-              <div class="today-info">
-                <div class="today-info-title title">오늘의 소식</div>
-                <ul class="today-info-content">
-                  <li>
-                    <a href="#">
-                      <p>게시판 제목</p>
-                      <span>|</span>
-                      <p>내용</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <p>게시판 제목</p>
-                      <span>|</span>
-                      <p>내용</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <p>게시판 제목</p>
-                      <span>|</span>
-                      <p>내용</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <p>게시판 제목</p>
-                      <span>|</span>
-                      <p>내용</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <p>게시판 제목</p>
-                      <span>|</span>
-                      <p>내용</p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </seciton>
-      <!-- 푸터 -->
-      <footer class="footer">
-        <div class="container">
-          <div class="inner">
-            <ul class="ft-top">
-              <li><a href="#">개인정보처리방침</a></li>
-              <li><a href="#">공지사항</a></li>
-              <li><a href="#">이용안내</a></li>
-              <li><a href="#">고객센터</a></li>
-              <li><a href="#">제휴 문의</a></li>
-            </ul>
+              <!-- <div class="review-pageBox"> -->
+              <!-- <div class="swiper-pagination2"></div> -->
 
-            <div class="ft-bt">
-              <div class="ft-bt-left">
-                <div class="ft-logo"><img src="images/10footer/footer-logo.png" alt="하단 흑백 로고" /></div>
-                <p>(주) 모꼬지</p>
-                <p>주소 : 대구 중구 중앙대로 394, 제일빌딩 5층</p>
-                <p>사업자등록번호 : 123-456-78977 | 통신판매업신고 : 2024-대구중구-1234호</p>
-                <p>대표 : 김그린</p>
-                <p>Copyright 2024. <b>MOKKOJI Co., Ltd</b>. all <b>rights</b> reserved.</p>
-              </div>
-              <div class="ft-middle-line"></div>
-              <div class="ft-bt-right">
-                <h2>고객센터</h2>
-                <p>전화번호 : 1234-1234</p>
-                <p>평일 9:00 ~ 18:00 토,일요일 및 공휴일 휴무</p>
-              </div>
+              <div class="swiper-button-next swiper-button-next-review2"></div>
+              <div class="swiper-button-prev swiper-button-prev-review2"></div>
+              <div class="swiper-pagination swiper-pagination-review2"></div>
+              <!-- </div> -->
             </div>
           </div>
         </div>
-      </footer>
-    </div>
-  </body>
+      </div>
+    </seciton>
+    <!-- 이벤트, 오늘의 소식 -->
+    <seciton class="reviewToday" id="nav5">
+      <div class="container">
+        <div class="inner">
+          <div class="reviewToday-wrap">
+            <!-- 이벤트 -->
+            <div class="event-b">
+              <div class="swiper eventSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#"> <img src="images/7event/event-img-1.png" alt="이벤트1" /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"> <img src="images/7event/event-img-2.png" alt="이벤트2" /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"> <img src="images/7event/event-img-3.png" alt="이벤트3" /></a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <!-- 오늘의 소식 -->
+            <div class="today-info">
+              <div class="today-info-title title">오늘의 소식</div>
+              <ul class="today-info-content">
+                <li>
+                  <a href="#">
+                    <p>게시판 제목</p>
+                    <span>|</span>
+                    <p>내용</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>게시판 제목</p>
+                    <span>|</span>
+                    <p>내용</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>게시판 제목</p>
+                    <span>|</span>
+                    <p>내용</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>게시판 제목</p>
+                    <span>|</span>
+                    <p>내용</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>게시판 제목</p>
+                    <span>|</span>
+                    <p>내용</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </seciton>
+    <!-- 푸터 -->
+    <footer class="footer">
+      <div class="container">
+        <div class="inner">
+          <ul class="ft-top">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">제휴 문의</a></li>
+          </ul>
+          <div class="ft-bt">
+            <div class="ft-bt-left">
+              <div class="ft-logo"><img src="images/10footer/footer-logo.png" alt="하단 흑백 로고" /></div>
+              <p>(주) 모꼬지</p>
+              <p>주소 : 대구 중구 중앙대로 394, 제일빌딩 5층</p>
+              <p>사업자등록번호 : 123-456-78977 | 통신판매업신고 : 2024-대구중구-1234호</p>
+              <p>대표 : 김그린</p>
+              <p>Copyright 2024. <b>MOKKOJI Co., Ltd</b>. all <b>rights</b> reserved.</p>
+            </div>
+            <div class="ft-middle-line"></div>
+            <div class="ft-bt-right">
+              <h2>고객센터</h2>
+              <p>전화번호 : 1234-1234</p>
+              <p>평일 9:00 ~ 18:00 토,일요일 및 공휴일 휴무</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
