@@ -77,6 +77,15 @@ window.addEventListener("load", function () {
       mbheader.classList.remove("scrolled"); // 스크롤 올릴 때 scrolled 클래스 제거
     }
   });
+  // 모바일 450 스크롤 다운 시 헤더 그림자 효과
+  var mbheader450 = document.querySelector(".mb-header-450");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 0) {
+      mbheader450.classList.add("scrolled"); // 스크롤 내릴 때 scrolled 클래스 추가
+    } else {
+      mbheader450.classList.remove("scrolled"); // 스크롤 올릴 때 scrolled 클래스 제거
+    }
+  });
   // 모바일 햄버거 메뉴 열고 닫기
   const mbMenuOpen = document.getElementById("mb-menuBt");
   const mbMenuContents = document.getElementById("mbMenuContents");
@@ -88,18 +97,18 @@ window.addEventListener("load", function () {
   mbMenuClose.addEventListener("click", function () {
     mbMenuContents.style.display = "none";
   });
+    // 모바일450 햄버거 메뉴 열고 닫기
+    const mbMenuOpen450 = document.getElementById("mb-menuBt-450");
+    const mbMenuContents450 = document.getElementById("mbMenuContents450");
+    // const mbMenuClose = document.getElementById("mb-menu-xBt");
+    const mbMenuClose450 = document.querySelector(".mb-menu-xBt-450");
+    mbMenuOpen450.addEventListener("click", function () {
+      mbMenuContents450.style.display = "block";
+    });
+    mbMenuClose450.addEventListener("click", function () {
+      mbMenuContents450.style.display = "none";
+    });
   // 모바일 헤더 검색창 열고 닫기
-  const mbSearchOpen = document.getElementById("mb-search-open");
-  const mbSearch = document.getElementById("mb-search");
-  const mbSearchClose = document.getElementById("mb-closeBt");
-  const mbSearchInput = document.getElementById("mbSearchInput");
-  mbSearchOpen.addEventListener("click", function () {
-    mbSearch.style.display = "block";
-  });
-  mbSearchClose.addEventListener("click", function () {
-    mbSearch.style.display = "none";
-    mbSearchInput.value = ""; // input 내용 리셋
-  });
   // =================================================================
   // 전국 시장 소개 스와이프
   var swLocalName = new Swiper(".sw-local-name", {
