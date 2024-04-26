@@ -103,7 +103,7 @@ window.addEventListener("load", function () {
   // =================================================================
   // 전국 시장 소개 스와이프
   var swLocalName = new Swiper(".sw-local-name", {
-    slidesPerView: 10,
+    slidesPerView: 3,
     spaceBetween: 10,
     // responsive 옵션을 사용하여 너비에 따라 슬라이드 수 조정
     breakpoints: {
@@ -115,19 +115,46 @@ window.addEventListener("load", function () {
         slidesPerView: 9,
         spaceBetween: 20,
       },
-      1161: {
+      1291: {
+        slidesPerView: 8,
+        spaceBetween: 20,
+      },
+      1131: {
+        slidesPerView: 7,
+        spaceBetween: 20,
+      },
+      971: {
+        slidesPerView: 6,
+        spaceBetween: 20,
+      },
+      791: {
+        slidesPerView: 5,
+        spaceBetween: 10,
+      },
+      741: {
+        slidesPerView: 9,
+        spaceBetween: 10,
+      },
+      661: {
         slidesPerView: 8,
         spaceBetween: 10,
       },
-      1031: {
+      581: {
         slidesPerView: 7,
         spaceBetween: 10,
       },
-      881: {
+      511: {
         slidesPerView: 6,
         spaceBetween: 10,
       },
-
+      431: {
+        slidesPerView: 5,
+        spaceBetween: 10,
+      },
+      371: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
     },
     navigation: {
       nextEl: ".next-local-name",

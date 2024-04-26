@@ -285,17 +285,38 @@ input::placeholder {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.header .search .search-content-bot .search-hot .search-hot-list-left li a span {
+.header
+  .search
+  .search-content-bot
+  .search-hot
+  .search-hot-list-left
+  li
+  a
+  span {
   margin-right: 20px;
 }
 .header .search .search-content-bot .search-hot .search-hot-list-right {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.header .search .search-content-bot .search-hot .search-hot-list-right li a span {
+.header
+  .search
+  .search-content-bot
+  .search-hot
+  .search-hot-list-right
+  li
+  a
+  span {
   margin-right: 20px;
 }
-.header .search .search-content-bot .search-hot .search-hot-list-right li:nth-child(5) a span {
+.header
+  .search
+  .search-content-bot
+  .search-hot
+  .search-hot-list-right
+  li:nth-child(5)
+  a
+  span {
   margin-right: 11px;
 }
 /* 모바일 헤더 =================================================== */
@@ -345,15 +366,56 @@ input::placeholder {
   border: none;
   background: none;
   cursor: pointer;
+  display: none;
 }
 .mb-header > .inner > .container > .mb-search > button > i {
   font-size: 2.5rem;
+}
+.mb-search-cont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 455px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 0 15px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.search-text {
+  width: calc(100% - 53px);
+  height: 50px;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  outline: none;
+}
+.search-text::placeholder {
+  color: #a2a2a2;
+  font-size: 15px;
+  font-weight: 700;
+}
+.search-bt {
+  background: url("../images/1header/btn_search.svg") no-repeat center;
+  width: 18px;
+  height: 18px;
+  border: none;
+  cursor: pointer;
+}
+.search-reset {
+  width: 16px;
+  height: 16px;
+  background: url("../images/1header/btn_searchDelete.svg");
+  border: none;
+  font-size: 0;
+  cursor: pointer;
 }
 /* 모바일 햄버거바 메뉴 */
 .mb-header > .mb-menu-contents {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   display: block;
   width: 400px;
   height: 100vh;
@@ -517,17 +579,38 @@ input::placeholder {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.mb-header .search .search-content-bot .search-hot .search-hot-list-left li a span {
+.mb-header
+  .search
+  .search-content-bot
+  .search-hot
+  .search-hot-list-left
+  li
+  a
+  span {
   margin-right: 20px;
 }
 .mb-header .search .search-content-bot .search-hot .search-hot-list-right {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.mb-header .search .search-content-bot .search-hot .search-hot-list-right li a span {
+.mb-header
+  .search
+  .search-content-bot
+  .search-hot
+  .search-hot-list-right
+  li
+  a
+  span {
   margin-right: 20px;
 }
-.mb-header .search .search-content-bot .search-hot .search-hot-list-right li:nth-child(5) a span {
+.mb-header
+  .search
+  .search-content-bot
+  .search-hot
+  .search-hot-list-right
+  li:nth-child(5)
+  a
+  span {
   margin-right: 11px;
 }
 /* 배너 */
@@ -670,7 +753,7 @@ input::placeholder {
 .local-cont > .local-bt-name {
   width: 60px;
   border-radius: 5px;
-  background-color: #8da4d0;
+  background-color: #ff9364;
   color: #fff;
   display: block;
   border: none;
@@ -687,7 +770,6 @@ input::placeholder {
   text-align: center;
   width: 50%;
   margin: auto;
-  background-color: #f7dbc4;
 }
 .sw-local-name {
   position: relative;
@@ -702,20 +784,23 @@ input::placeholder {
 .prev-local-name {
   top: 1373px;
   right: auto;
-  left: 0px;
+  left: 22%;
   margin-left: 5px;
 }
 .next-local-name {
   top: 1373px;
   left: auto;
-  right: 5px;
+  right: 23%;
 }
 /* 시장 소개 내용 */
+.market-info-contents {
+  margin: 0 50px;
+}
 .market-contents {
-  margin: 30px 20px 0 20px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
 }
 .market-content {
   display: flex;
@@ -737,11 +822,12 @@ input::placeholder {
 }
 .market-content-right,
 .market-content-left {
-  margin: auto;
+  /* margin: auto; */
   width: 50%;
 }
 .market-content-left img {
   width: 100%;
+  height: 100%;
 }
 .go-market {
   display: flex;
@@ -794,8 +880,16 @@ input::placeholder {
   display: block;
   margin: 0 auto;
   border: none;
-  border-radius: 5px;
   background-color: #8da4d0;
+  font-size: 1.5rem;
+  padding: 5px 3px;
+  border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+}
+.market-contents button a {
+  display: block;
+  color: #fff;
 }
 /* 지역 축제 =================================================== */
 /* 지역 축제 왼쪽 */
