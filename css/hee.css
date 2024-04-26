@@ -48,6 +48,21 @@
   height: 100%;
   object-fit: cover;
 }
+
+.banner .swiper-pagination {
+  padding: 10px;
+}
+.banner .swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  background-color: #ff9364;
+  opacity: 0.3;
+  margin: 0 100px;
+}
+.banner .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
 /* 중간배너 */
 .banner-m {
   width: 100%;
@@ -692,6 +707,9 @@
   position: relative;
   z-index: 1;
   display: none;
+  width: 82.4%;
+  height: 100%;
+  margin-left: 0;
 }
 .review .review-slider-eat {
   position: relative;
@@ -818,19 +836,18 @@
   margin-top: 30px;
 }
 
-.reviewToday .event-b .evnet-content{
+.reviewToday .event-b .evnet-content {
   width: 100%;
   height: 100%;
 }
 
-.reviewToday .event-b .evnet-content a{
-display: block;
-width: 100%;
-height: 100%;
+.reviewToday .event-b .evnet-content a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
-
-.reviewToday .event-b .evnet-content a img{
+.reviewToday .event-b .evnet-content a img {
   width: 100%;
   height: 100%;
 }
@@ -905,7 +922,7 @@ height: 100%;
   font-weight: 700;
 }
 
-.today-info-content li a span{
+.today-info-content li a span {
   font-weight: 700;
 }
 
@@ -1219,8 +1236,6 @@ height: 100%;
   }
 }
 
-
-
 @media screen and (max-width: 850px) {
   /* 리뷰 */
   .review .review-slider-eat {
@@ -1232,11 +1247,9 @@ height: 100%;
     line-height: 28px !important;
   }
 
-  .review .swiper-slide a{
+  .review .swiper-slide a {
     width: 75% !important;
   }
-
-  
 }
 
 @media screen and (max-width: 790px) {
@@ -1356,7 +1369,7 @@ height: 100%;
   }
 
   /* 리뷰 */
-  .review .inner{
+  .review .inner {
     width: 100%;
     flex-direction: column;
   }
@@ -1387,7 +1400,6 @@ height: 100%;
     height: 102vw !important;
     margin-bottom: 25px;
     font-size: 1.6rem;
-   
   }
 
   .review .swiper-slide a {
@@ -1418,11 +1430,11 @@ height: 100%;
     gap: 20px;
   }
 
-  .reviewToday .today-info{
-  width: 100%;
+  .reviewToday .today-info {
+    width: 100%;
   }
 
-  .reviewToday .event-b{
+  .reviewToday .event-b {
     width: 100%;
     margin-top: 0;
   }
@@ -1479,9 +1491,8 @@ height: 100%;
   }
 }
 
-
-@media screen and (max-width: 550px){
-  .review .swiper-slide a p{
+@media screen and (max-width: 550px) {
+  .review .swiper-slide a p {
     font-size: 2.5rem !important;
   }
 }

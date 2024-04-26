@@ -6,6 +6,10 @@ window.addEventListener("load", function () {
       nextEl: ".banner-button-next",
       prevEl: ".banner-button-prev",
     },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
     autoplay: {
       delay: 2400, // 자동 재생 간격 설정 (5초)
     },
@@ -20,10 +24,14 @@ window.addEventListener("load", function () {
       nextEl: ".banner-button-next",
       prevEl: ".banner-button-prev",
     },
-    autoplay: {
-      delay: 2400, // 자동 재생 간격 설정 (5초)
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
-    speed: 700, // 부드러운 넘김 효과를 위한 속도 조정
+    autoplay: {
+      delay: 2500, // 자동 재생 간격 설정 (5초)
+    },
+    speed: 800, // 부드러운 넘김 효과를 위한 속도 조정
     slidesPerView: 1, // 한 번에 표시할 슬라이드 수
     // slidesPerGroup: 1,
   });
@@ -34,10 +42,14 @@ window.addEventListener("load", function () {
       nextEl: ".banner-button-next",
       prevEl: ".banner-button-prev",
     },
-    autoplay: {
-      delay: 2400, // 자동 재생 간격 설정 (5초)
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
-    speed: 700, // 부드러운 넘김 효과를 위한 속도 조정
+    autoplay: {
+      delay: 2500, // 자동 재생 간격 설정 (5초)
+    },
+    speed: 800, // 부드러운 넘김 효과를 위한 속도 조정
     slidesPerView: 1, // 한 번에 표시할 슬라이드 수
     // slidesPerGroup: 1,
   });
@@ -49,9 +61,9 @@ window.addEventListener("load", function () {
       prevEl: ".banner-button-prev",
     },
     autoplay: {
-      delay: 2400, // 자동 재생 간격 설정 (5초)
+      delay: 2500, // 자동 재생 간격 설정 (5초)
     },
-    speed: 700, // 부드러운 넘김 효과를 위한 속도 조정
+    speed: 800, // 부드러운 넘김 효과를 위한 속도 조정
     slidesPerView: 1, // 한 번에 표시할 슬라이드 수
     // slidesPerGroup: 1,
   });
@@ -72,7 +84,7 @@ window.addEventListener("load", function () {
   //   });
 
   var reviewSwiper = new Swiper(".reviewSwiper", {
-    slidesPerView:5,
+    slidesPerView: 5,
     centeredSlides: true,
     loop: true,
     spaceBetween: 10,
@@ -130,7 +142,7 @@ window.addEventListener("load", function () {
         slidesPerView: 5,
         spaceBetween: 10,
       },
-       851: {
+      851: {
         slidesPerView: 3,
         spaceBetween: 10,
       },
