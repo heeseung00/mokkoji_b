@@ -509,7 +509,12 @@
   .market-content-right-top {
     gap: 7px;
   }
-  /* 시장 소개 */
+}
+@media screen and (max-width: 680px) {
+  /* 모바일 검색바 */
+  .mb-search-cont {
+    width: 400px;
+  }
 }
 @media screen and (max-width: 630px) {
   /* 지역 축제 */
@@ -540,6 +545,10 @@
   }
   .mb-header > .mb-menu-contents > .mb-menu-xBt {
     font-size: 3.6rem;
+  }
+  /* 모바일 검색바 */
+  .mb-search-cont {
+    width: 350px;
   }
 }
 @media screen and (max-width: 610px) {
@@ -622,6 +631,10 @@
   }
   #jeonnam .market-content1 .market-content-right-top span:nth-last-child(2) {
     display: none;
+  }
+  /* 모바일 검색바 */
+  .mb-search-cont {
+    width: 300px;
   }
 }
 @media screen and (max-width: 535px) {
@@ -709,8 +722,22 @@
     -webkit-box-orient: vertical;
     display: -webkit-box;
   }
+  /* 모바일 검색바 */
+  .mb-search-cont {
+    width: 250px;
+  }
 }
 @media screen and (max-width: 450px) {
+  .wrap {
+    margin-top: 120px;
+  }
+  /* 450 모바일 헤더 */
+  .mb-header{
+    display: none;
+  }
+  .mb-header-450{
+    display: block;
+  }
   /* 추천 맛집 */
   .market-best-left {
     width: 160px;
@@ -737,6 +764,10 @@
   .market-content1,
   .market-content2 {
     gap: 10px;
+  }
+  /* 모바일 검색바 */
+  .mb-header {
+    display: none;
   }
 }
 @media screen and (max-width: 430px) {
@@ -874,26 +905,26 @@
   }
 }
 @media screen and (max-width: 360px) {
-  /* 모바일 헤더 */
-  .mb-header > .mb-menu-contents {
+  /* 모바일 헤더 450 */
+  .mb-header-450 > .mb-menu-contents-450 {
     width: 220px;
     padding-left: 30px;
   }
-  .mb-header > .mb-menu-contents > .mb-my-list img {
+  .mb-header-450 > .mb-menu-contents-450 > .mb-my-list-450 img {
     width: 35px;
   }
-  .mb-header > .mb-menu-contents > .mb-my-list > a > span {
+  .mb-header-450 > .mb-menu-contents-450 > .mb-my-list-450 > a > span {
     margin: 0 5px 0 15px;
     font-size: 1.6rem;
   }
-  .mb-header > .mb-menu-contents > .mb-my-list > a i {
+  .mb-header-450 > .mb-menu-contents-450 > .mb-my-list-450 > a i {
     font-size: 1.4rem;
     line-height: 1.4rem;
   }
-  .go-join a span {
+  .go-join-450 a span {
     left: 50px;
   }
-  .mb-header > .mb-menu-contents > .mb-menu-xBt {
+  .mb-header-450 > .mb-menu-contents-450 > .mb-menu-xBt-450 {
     font-size: 3rem;
   }
 }
