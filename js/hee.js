@@ -1,11 +1,68 @@
 window.addEventListener("load", function () {
+  // 메인 배너 스와이퍼
+  var bannerSwiper = new Swiper(".bannerSwiper", {
+    loop: true,
+    navigation: {
+      nextEl: ".banner-button-next",
+      prevEl: ".banner-button-prev",
+    },
+    autoplay: {
+      delay: 2400, // 자동 재생 간격 설정 (5초)
+    },
+    speed: 700, // 부드러운 넘김 효과를 위한 속도 조정
+    slidesPerView: 1, // 한 번에 표시할 슬라이드 수
+    // slidesPerGroup: 1,
+  });
+
+  var bannerSwiper2 = new Swiper(".bannerSwiper-1200", {
+    loop: true,
+    navigation: {
+      nextEl: ".banner-button-next",
+      prevEl: ".banner-button-prev",
+    },
+    autoplay: {
+      delay: 2400, // 자동 재생 간격 설정 (5초)
+    },
+    speed: 700, // 부드러운 넘김 효과를 위한 속도 조정
+    slidesPerView: 1, // 한 번에 표시할 슬라이드 수
+    // slidesPerGroup: 1,
+  });
+
+  var bannerSwiper3 = new Swiper(".bannerSwiper-790", {
+    loop: true,
+    navigation: {
+      nextEl: ".banner-button-next",
+      prevEl: ".banner-button-prev",
+    },
+    autoplay: {
+      delay: 2400, // 자동 재생 간격 설정 (5초)
+    },
+    speed: 700, // 부드러운 넘김 효과를 위한 속도 조정
+    slidesPerView: 1, // 한 번에 표시할 슬라이드 수
+    // slidesPerGroup: 1,
+  });
+
+  var bannerSwiper4 = new Swiper(".bannerSwiper-450", {
+    loop: true,
+    navigation: {
+      nextEl: ".banner-button-next",
+      prevEl: ".banner-button-prev",
+    },
+    autoplay: {
+      delay: 2400, // 자동 재생 간격 설정 (5초)
+    },
+    speed: 700, // 부드러운 넘김 효과를 위한 속도 조정
+    slidesPerView: 1, // 한 번에 표시할 슬라이드 수
+    // slidesPerGroup: 1,
+  });
+
   //   var reviewSwiper = new Swiper(".reviewSwiper", {
   //     slidesPerView: 1,
   //     centeredSlides: true,
   //     loop: true,
   //     spaceBetween: 10,
   //     autoplay: {
-  //       delay: 2500, // 자동 재생 간격 설정 (5초)
+  //       delay: 2300, // 자동 재생 간격 설정 (5초)
   //     },
   //     speed: 700, // 부드러운 넘김 효과를 위한 속도 조정
   //     pagination: {
@@ -15,7 +72,7 @@ window.addEventListener("load", function () {
   //   });
 
   var reviewSwiper = new Swiper(".reviewSwiper", {
-    slidesPerView: 3,
+    slidesPerView:5,
     centeredSlides: true,
     loop: true,
     spaceBetween: 10,
@@ -32,12 +89,16 @@ window.addEventListener("load", function () {
       prevEl: ".review .swiper-button-prev-review1",
     },
     breakpoints: {
-      1200: {
+      1201: {
         slidesPerView: 5,
         spaceBetween: 10,
       },
-      769: {
+      851: {
         slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      769: {
+        slidesPerView: 1,
         spaceBetween: 10,
       },
       0: {
@@ -69,8 +130,12 @@ window.addEventListener("load", function () {
         slidesPerView: 5,
         spaceBetween: 10,
       },
-      769: {
+       851: {
         slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      769: {
+        slidesPerView: 1,
         spaceBetween: 10,
       },
       0: {
@@ -81,20 +146,20 @@ window.addEventListener("load", function () {
   });
 
   //   이벤트 스와이퍼
-  var eventSwiper = new Swiper(".eventSwiper", {
-    slidesPerView: 1,
-    centeredSlides: true,
-    loop: true,
-    spaceBetween: 10,
-    autoplay: {
-      delay: 2500, // 자동 재생 간격 설정 (5초)
-    },
-    speed: 700, // 부드러운 넘김 효과를 위한 속도 조정
-    pagination: {
-      el: ".review-pagination",
-      dynamicBullets: true,
-    },
-  });
+  // var eventSwiper = new Swiper(".eventSwiper", {
+  //   slidesPerView: 1,
+  //   centeredSlides: true,
+  //   loop: true,
+  //   spaceBetween: 10,
+  //   autoplay: {
+  //     delay: 2900, // 자동 재생 간격 설정 (5초)
+  //   },
+  //   speed: 700, // 부드러운 넘김 효과를 위한 속도 조정
+  //   pagination: {
+  //     el: ".review-pagination",
+  //     dynamicBullets: true,
+  //   },
+  // });
 });
 
 // =========================================================================================================
