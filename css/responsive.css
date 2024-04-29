@@ -361,7 +361,7 @@
     margin: 20px 0;
   }
   .market-content-info {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 880px) {
@@ -522,7 +522,7 @@
 }
 @media screen and (max-width: 610px) {
   .market-content-info {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .market-content-right-top p {
     font-size: 1.6rem;
@@ -533,6 +533,18 @@
   }
   .market-content-right-top {
     gap: 6px;
+  }
+  .market-content-right-top p {
+    font-size: 1.5rem;
+  }
+  .market-content-right-top {
+    gap: 5px;
+  }
+  /* 시장 소개 스와이퍼  */
+  .prev-local-name:after,
+  .next-local-name:after {
+    font-size: 1.6rem;
+    font-weight: bold;
   }
 }
 @media screen and (max-width: 600px) {
@@ -549,20 +561,6 @@
   }
   .mb-search-cont-input {
     width: 450px;
-  }
-}
-@media screen and (max-width: 610px) {
-  .market-content-right-top p {
-    font-size: 1.5rem;
-  }
-  .market-content-right-top {
-    gap: 5px;
-  }
-  /* 시장 소개 스와이퍼  */
-  .prev-local-name:after,
-  .next-local-name:after {
-    font-size: 1.6rem;
-    font-weight: bold;
   }
 }
 @media screen and (max-width: 570px) {
@@ -708,12 +706,12 @@
   }
   .market-content-info {
     display: -webkit-box;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-overflow: ellipsis; /* 말줄임 표시 (...) 추가 */
     max-width: 100%; /* 최대 너비 설정 (넘치는 것은 말줄임 표시) */
     overflow: hidden; /* 넘치는 것은 안보이게 설정 */
-    height: 100px; /* 최대 높이 설정 (넘치는 것은 말줄임 표시) */
-    -webkit-line-clamp: 6;
+    height: 75px; /* 최대 높이 설정 (넘치는 것은 말줄임 표시) */
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     display: -webkit-box;
   }
@@ -726,11 +724,11 @@
   }
 }
 @media screen and (max-width: 480px) {
-    /* 지역 축제 */
-    .festival-img img {
-      /* height: 340px; */
-      height: 100%;
-    }
+  /* 지역 축제 */
+  .festival-img img {
+    /* height: 340px; */
+    height: 100%;
+  }
 }
 @media screen and (max-width: 450px) {
   /* .wrap {
@@ -802,10 +800,10 @@
   }
 }
 @media screen and (max-width: 420px) {
-  .local-festival .inner{
+  .local-festival .inner {
     height: 540px;
   }
-  .sw-festival .swiper-slide{
+  .sw-festival .swiper-slide {
     height: 460px;
   }
 }

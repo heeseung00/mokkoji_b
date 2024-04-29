@@ -243,6 +243,48 @@ window.addEventListener("load", function () {
   //   // 클릭된 버튼에 해당하는 시장 정보를 보여줍니다.
   //   content.style.display = "block";
   // }
+  // ================================================================
+  // 서울 버튼 요소를 선택합니다.
+  const seoulButton = document.querySelector(".seoul");
+  // 서울 버튼에 선택된 스타일을 적용합니다.
+  seoulButton.classList.add("selected");
+  const seoulButtonName = seoulButton.querySelector(".local-bt-name");
+  // 서울 버튼의 배경색을 변경합니다.
+  seoulButtonName.style.backgroundColor = "#ff9364"; // 원하는 배경색으로 변경
+  seoulButtonName.style.color = "#fff"; // 원하는 텍스트 색상으로 변경
+  seoulButtonName.style.border = "none";
+  // 필요에 따라 다른 스타일도 변경합니다.
+  // 이전에 선택된 버튼의 스타일을 초기화하고 selected 클래스를 제거하는 함수
+  function resetPreviousButton() {
+    const previousSelectedButton = document.querySelector(".local-cont.selected");
+    if (previousSelectedButton) {
+      previousSelectedButton.classList.remove("selected");
+      const previousButtonName = previousSelectedButton.querySelector(".local-bt-name");
+      // 이전에 선택된 버튼의 배경색을 원래 스타일로 변경
+      previousButtonName.style.backgroundColor = "#fff"; // 이전에 설정한 배경색으로 변경
+      previousButtonName.style.color = "#bababa"; // 이전에 설정한 텍스트 색상으로 변경
+      previousButtonName.style.border = "1px solid #bababa"; // 이전에 설정한 텍스트 색상으로 변경
+      // 필요에 따라 다른 스타일도 초기화합니다.
+    }
+  }
+  // 각 지역 버튼 요소를 가져옵니다.
+  const localButtons = document.querySelectorAll(".local-cont");
+  // 각 버튼에 클릭 이벤트 리스너를 추가합니다.
+  localButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      // 이전에 선택된 버튼의 selected 클래스를 제거하고 스타일을 초기화합니다.
+      resetPreviousButton();
+      // 현재 클릭된 버튼에 selected 클래스를 추가합니다.
+      this.classList.add("selected");
+      const currentButtonName = this.querySelector(".local-bt-name");
+      // 현재 클릭된 버튼의 배경색을 변경합니다.
+      currentButtonName.style.backgroundColor = "#ff9364"; // 원하는 배경색으로 변경
+      currentButtonName.style.color = "#fff"; // 원하는 텍스트 색상으로 변경
+      currentButtonName.style.border = "none";
+      // 필요에 따라 다른 스타일도 변경합니다.
+    });
+  });
+  // ================================================================
   // 서울
   const seoulBt = document.querySelector(".seoul");
   const seoulCon = document.getElementById("seoul");
