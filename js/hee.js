@@ -180,9 +180,13 @@ window.addEventListener("load", function () {
   //     dynamicBullets: true,
   //   },
   // });
+
+  // ==============================================================
+  // 로그인 로그인 로그인
+  document.getElementById("loginCloseIcon").addEventListener("click", function () {
+    window.location.href = "index.html";
+  });
 });
-
-
 
 // =========================================================================================================
 // 제이쿼리

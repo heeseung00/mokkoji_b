@@ -734,7 +734,6 @@
   margin: 0;
 }
 
-
 .review .swiper-slide {
   position: relative;
   text-align: center;
@@ -856,8 +855,8 @@
 .reviewToday .event-b .evnet-content {
   /* width: 516px; */
   width: 100%;
-  height: 100%; 
- /* height: 100%; */
+  height: 100%;
+  /* height: 100%; */
 }
 
 .reviewToday .event-b .evnet-content a {
@@ -1133,8 +1132,8 @@
   }
 }
 
-@media screen and(max-width:1280px){
-  .review .swiper-slide p{
+@media screen and(max-width:1280px) {
+  .review .swiper-slide p {
     font-size: 0.8462vw;
   }
 }
@@ -1153,7 +1152,7 @@
     padding: 0 20px;
   }
 
-  .review .review-btn{
+  .review .review-btn {
     font-size: 7.7354vw;
   }
 
@@ -1254,7 +1253,6 @@
     font-size: 1.8rem !important;
     line-height: 26px;
   }
-  
 }
 
 @media screen and (max-width: 1020px) {
@@ -1306,8 +1304,8 @@
     gap: 0px !important;
     flex-direction: row;
     justify-content: space-between;
-        /* margin-top: 1vw; */
-        padding-right: 20px;
+    /* margin-top: 1vw; */
+    padding-right: 20px;
   }
   .review .review-slider-eat {
     width: 100%;
@@ -1328,13 +1326,14 @@
     display: none;
   }
 
-  
+  .review .review-btn {
+    margin-top: -30px;
+  }
 }
 
-
-@media screen and (max-width: 815px){
+@media screen and (max-width: 815px) {
   /* 리뷰 */
-  .review .swiper-slide p{
+  .review .swiper-slide p {
     font-size: 1.6rem !important;
   }
 }
@@ -1471,7 +1470,7 @@
     margin-top: 0;
   }
 
-  .review .title-wrap > .title-wrap-all{
+  .review .title-wrap > .title-wrap-all {
     margin-top: 11%;
   }
 
@@ -1480,8 +1479,9 @@
   }
 
   .review .review-btn {
-    margin-top: 46px;
     width: 50%;
+    margin-top: 6%;
+    /* margin-top: 46px; */
   }
 
   .review .review-btn > button {
@@ -1495,7 +1495,7 @@
     font-size: 1.6rem;
   }
 
-  .review .swiper{
+  .review .swiper {
     width: 100%;
   }
 
@@ -1579,10 +1579,9 @@
   }
 }
 
-
 @media screen and (max-width: 610px) {
-  .review .review-btn{
-    margin-top: 7.5410vw !important;    
+  .review .review-btn {
+    margin-top: 5% !important;
   }
 }
 
@@ -1597,7 +1596,7 @@
     transform: scale(1);
   }
 
-  .review .swiper-slide a{
+  .review .swiper-slide a {
     width: 53% !important;
   }
 
@@ -1605,7 +1604,58 @@
     font-size: 3.0833vw !important;
     line-height: 3.8177vw !important;
   }
+}
 
+@media screen and (max-width: 560px) {
+  /* 리뷰 */
+  .review .title-wrap {
+    flex-direction: column;
+  }
+
+  .review .sub-title {
+    margin-bottom: 0;
+  }
+
+  .review .review-btn {
+    margin-top: 5vw;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .review .review-btn > button {
+    width: 100%;
+  }
+
+  .review .review-slider-eat {
+    position: relative;
+    height: 100.0885vw !important;
+  }
+
+  .review .swiper-slide a {
+    width: 70% !important;
+  }
+
+  .review .swiper-slide a p {
+    font-size: 4.2833vw !important;
+    line-height: 6.2177vw !important;
+  }
+
+  .review .swiper-pagination-bullet {
+    width: 17px;
+    height: 17px;
+  }
+
+  .review .swiper-button-next-review1,
+  .review .swiper-button-next-review2 {
+    right: 7%;
+    display: none;
+  }
+
+  .review .swiper-button-prev-review1,
+  .review .swiper-button-prev-review2 {
+    left: 7%;
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1633,61 +1683,10 @@
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
   }
-
-  /* 리뷰 */
-  .review .title-wrap{
-    flex-direction: column
-  }
-
-  .review .sub-title{
-    margin-bottom: 0;
-  }
-
-
-  .review .review-btn{
-    margin-top: 5vw;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .review .review-btn > button{
-    width: 100%;
-  }
-
-  .review .review-slider-eat {
-    position: relative;
-    height: 100.0885vw !important
-  }
-
-  .review .swiper-slide a {
-    width: 70% !important;
-  }
-
-  .review .swiper-slide a p{
-    font-size: 4.2833vw !important;
-    line-height: 6.2177vw !important;
-  }
-
-  .review .swiper-pagination-bullet {
-    width: 17px;
-    height: 17px;
-  }
-
-  .review .swiper-button-next-review1,
-  .review .swiper-button-next-review2 {
-    right: 7%;
-    display: none;
-  }
-
-  .review .swiper-button-prev-review1,
-  .review .swiper-button-prev-review2 {
-    left: 7%;
-    display: none;
-  }
 }
 
 @media screen and (max-width: 480px) {
-  .review .title-wrap{
+  .review .title-wrap {
     margin-top: 5%;
   }
   .review .swiper-slide a p {
@@ -1779,6 +1778,12 @@
   }
 }
 
+@media screen and (max-width: 420px) {
+  .today-info-content li a .today-info-tit {
+    width: 55%;
+  }
+}
+
 @media screen and (max-width: 400px) {
   /* 랭킹 */
   .ranking-topRank .ranking-img {
@@ -1859,6 +1864,11 @@
     margin-bottom: 20px;
   }
 
+  /* 리뷰 */
+  .review .swiper-slide p {
+    font-size: 1.4rem;
+  }
+
   /* 이벤트 */
   .event .event-subtitle p {
     width: 100%;
@@ -1866,15 +1876,14 @@
     font-size: 1.6rem;
   }
 
-  /* 리뷰 */
-  .review .swiper-slide p {
-    font-size: 1.4rem;
+  /* 이벤트, 소식 */
+  .today-info-content li a .today-info-tit {
+    width: 103%;
   }
 }
 
-@media screen and (max-width: 328px){
-  .review .title-wrap{
+@media screen and (max-width: 328px) {
+  .review .title-wrap {
     margin-top: 6%;
   }
-  
 }
