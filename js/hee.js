@@ -113,6 +113,10 @@ window.addEventListener("load", function () {
         slidesPerView: 3,
         spaceBetween: 10,
       },
+      601: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
       0: {
         slidesPerView: 1,
         spaceBetween: 0,
@@ -150,6 +154,10 @@ window.addEventListener("load", function () {
         slidesPerView: 3,
         spaceBetween: 5,
       },
+      601: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
       0: {
         slidesPerView: 1,
         spaceBetween: 0,
@@ -173,6 +181,8 @@ window.addEventListener("load", function () {
   //   },
   // });
 });
+
+
 
 // =========================================================================================================
 // 제이쿼리

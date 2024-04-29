@@ -1,0 +1,433 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  background-color: #fff;
+  /* background: linear-gradient(to right, #99004d 0%, #ff0080 100%); */
+}
+
+::selection{
+  background: #ff80bf;
+
+}
+
+.wrap{
+  margin-top: 200px;
+}
+
+
+.login_header{
+  margin-bottom: 150px;
+}
+
+
+/* 뒤로가기 버튼 - 모바일 */
+.login_go_back{
+  display: none;
+}
+
+/* 로그인 */
+.login_wrap{
+  background: #fff;
+  width: 600px;
+  max-width: 1200px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  margin: 0 auto 150px;
+  z-index: 0;
+  
+}
+
+.login_wrap{
+  padding: 30px;
+}
+
+.login_wrap form .title{
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  position: relative;
+  text-align: center;
+}
+
+/* .login_wrap form .title:before{
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 33px;
+  left: 0px;
+  bottom: 3px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+} */
+
+.login_wrap form .input-box{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 30px 0;
+  border: 1px solid #969696;
+  border-radius: 5px;
+  background: #fff !important;
+}
+
+.login_wrap form .input-box input{
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  border: none;
+  color: #333;
+  padding: 12px;
+}
+
+.login_wrap form .input-box input::placeholder {
+  font-size: 1.5rem;
+  color: #969696;
+}
+
+.login_wrap form .underline::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.login_wrap form .underline::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background: #FE6B38;
+  left: 0;
+  bottom: 0;
+  /* transform: scaleX(0);
+  transform-origin: left; */
+  transition: all 0.3s ease;
+}
+
+.login_wrap form .input-box input:focus ~ .underline::after,
+.login_wrap form .input-box input:valid ~ .underline::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.input-box.login_password{
+  margin-bottom: 15px !important;
+}
+
+/* 로그인 버튼 */
+.login_wrap form .login-button{
+  margin: 45px 0 20px 0;
+}
+
+.login_wrap form .login-button > input{
+  background-color: #ff9364 !important;
+  color: #fff;
+  border: none !important;
+} 
+
+.login_wrap .login-button > input[type = "submit"]:hover,
+.login_wrap .login-button > input[type = "submit"]:active
+{
+  background-color: #FE6B38 !important;
+}
+
+.login_wrap > .input-box > input[type="submit"]{
+  color: #333;
+  cursor: pointer;
+}
+
+.login_wrap .input-box input[type="submit"]:hover{
+  background-color: #FE6B38;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+
+/* 로그인 유지, 비밀번호 찾기 */
+.login_part1{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+.stay-login{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.stay-login > #login_checkbox{
+  border-radius: 50% !important;
+  width: 16px;
+  height: 16px;
+  accent-color: #ff9364;
+  background-color: #fff !important;
+  --chkbg: 0, 100%, 50%; 
+  --chkfg: 240, 100%, 50%;
+  cursor: pointer;
+}
+
+.stay-login > label{
+  cursor: pointer;
+}
+
+.signin_findId{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0 30px;
+  font-size: 1.4rem;
+}
+
+
+.signin_findId > a:hover,
+.login_forget_password > a:hover
+{
+  color: #ff9364;
+}
+
+/* 소셜 로그인 */
+.social-login-txt{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 10px;
+}
+
+.social-login-txt .social-line{
+  width: 40%;
+  height: 1px;
+  background-color: #969696;
+}
+.social-login-txt .option{
+  width: 20%;
+  font-size: 14px;
+  text-align: center;
+  color: #969696;
+}
+
+
+.social-login-icon{
+  width: 100%;
+  margin: 30px 0;
+}
+
+.social-login-icon ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-login-icon ul li{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  
+}
+
+.social-login-icon ul li:nth-child(3){
+  border: 1px solid #969696;
+}
+
+.social-login-icon ul li a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-login-icon ul li a img{
+  width: 110%;
+  height: 110%;
+}
+
+/* .login_wrap .facebook a,
+.login_wrap .twitter a{
+  display: block;
+  height: 45px;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 20px;
+  line-height: 45px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.login_wrap .facebook i,
+.login_wrap .twitter i{
+  padding-right: 12px;
+  font-size: 20px;
+}
+
+.login_wrap .twitter a{
+  background: linear-gradient(to right,  #00acee 0%, #1abeff 100%);
+  margin: 20px 0 15px 0;
+}
+
+.login_wrap .twitter a:hover{
+  background: linear-gradient(to left,  #00acee 0%, #1abeff 100%);
+  margin: 20px 0 15px 0;
+}
+
+.login_wrap .facebook a{
+  background: linear-gradient( to right,  #3b5998 0%, #476bb8 100%);
+  margin: 20px 0 50px 0;
+}
+
+.login_wrap .facebook a:hover{
+  background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
+  margin: 20px 0 50px 0;
+}
+ */
+
+/* 반응형 */
+@media screen and (max-width: 1000px){
+  /* 로그인 */
+  .login_wrap{
+    background: #fff;
+    width: 600px;
+    max-width: 1200px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 100px auto 100px !important;
+    z-index: 0;
+  }
+
+}
+
+
+@media screen and (max-width: 790px){
+  .wrap{
+    margin: 0 !important;
+  }
+
+  /* 로그인 */
+  .login_wrap{
+    background: #fff;
+    width: 600px;
+    max-width: 1200px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    margin: 0 auto !important;
+    z-index: 0;
+  }
+
+  .header, .mb-header, .mb-header-450{
+    display: none !important;
+    margin-bottom: 0;
+  }
+
+  /* 뒤로가기 버튼 - 모바일 */
+  .login_go_back{
+    display: flex;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+
+  }
+  .login_go_back > a{
+    display: block;
+    width: 100vw;
+    height: 100%;
+  }
+
+
+  .login_wrap{
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+    box-shadow: none;
+  }
+
+  .social-login-icon ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-login-icon ul li{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+  }
+
+  /* 푸터 */
+  footer{
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 480px){
+  /* 소셜 로그인 */
+  .social-login-txt .social-line{
+    width: 35%;
+  }
+
+  .social-login-txt .option{
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 400px){
+  /* 로그인 버튼 */
+  .login_wrap form .login-button {
+    margin: 30px 0 20px 0;
+  }
+  /* 소셜 로그인 */
+  .social-login-txt .option{
+    width: 40%;
+  }
+
+  .social-login-txt .social-line{
+    width: 30%;
+  }
+
+  .social-login-icon ul li{
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+
+@media screen and (max-width:350px){
+  .signin_findId{
+    gap: 7px;
+  }
+}
+
+@media screen and (max-width: 337px){
+  .signin_findId{
+   font-size: 1.3rem;
+   gap: 4px;
+  }
+}
