@@ -232,6 +232,7 @@ body {
   border-width: 0 0 2px;
   outline: none;
   font-size: 2rem;
+  padding-bottom: 13px;
 }
 input::placeholder {
   color: #5e5e5e;
