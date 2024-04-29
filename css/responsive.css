@@ -3,20 +3,12 @@
   .market-best {
     padding-left: 30px;
   }
-  .market-best-left {
-    width: 280px;
-    padding: 30px 10px 40px 10px;
-  }
   .prev-best::after {
     right: -120px;
   }
   /* 지역 축제 */
   .local-festival {
     padding-left: 30px;
-  }
-  .local-festival-left {
-    width: 280px;
-    padding: 30px 10px 40px 10px;
   }
   .prev-best::after {
     right: -120px;
@@ -46,7 +38,6 @@
     padding-left: 20px;
   }
   .market-best-left {
-    width: 280px;
     padding: 30px 10px 40px 10px;
   }
   /* 지역 축제 */
@@ -58,7 +49,6 @@
     padding-left: 20px;
   }
   .local-festival-left {
-    width: 280px;
     padding: 30px 10px 40px 10px;
   }
 }
@@ -203,17 +193,12 @@
     font-size: 2.3rem;
   }
   /* 추천 맛집 */
-  .market-best-left {
-    width: 250px;
-    padding: 30px 10px 40px 10px;
-  }
   .market-best .title {
     font-size: 2.6rem;
   }
-  .market-info-left-title p {
+  /* .market-info-left-title p {
     font-size: 1.2rem;
-    line-height: 1.3;
-  }
+  } */
   .prev-best::after {
     font-size: 2.3rem;
     right: -100px;
@@ -466,36 +451,29 @@
 @media screen and (max-width: 740px) {
   /* 추천맛집 */
   .market-best-left {
-    width: 230px;
-    padding: 30px 10px 40px 10px;
+    width: 210px;
   }
   .market-best .title {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
-  .market-info-left-title p {
+  /* .market-info-left-title p {
     font-size: 1rem;
-    line-height: 1.3;
-  }
+  } */
   .market-info-left-title-top img {
-    width: 80px;
+    width: 60px;
   }
   .prev-best::after {
     right: -70px;
   }
   /* 지역 축제 */
   .local-festival-left {
-    width: 230px;
-    padding: 30px 10px 40px 10px;
+    width: 210px;
   }
   .local-festival .title {
-    font-size: 2.4rem;
-  }
-  .local-festival-left-title-top p {
-    font-size: 1rem;
-    line-height: 1.3;
+    font-size: 2.3rem;
   }
   .local-festival-left-title-top img {
-    width: 80px;
+    width: 70px;
   }
   .prev-festival::after {
     left: 90px;
@@ -708,11 +686,6 @@
   }
 }
 @media screen and (max-width: 510px) {
-  /* 지역 축제 */
-  .festival-img img {
-    /* height: 340px; */
-    height: 100%;
-  }
   /* 시장 소개 스와이퍼 */
   .next-local-name {
     right: 3%;
@@ -752,6 +725,13 @@
     width: 350px;
   }
 }
+@media screen and (max-width: 480px) {
+    /* 지역 축제 */
+    .festival-img img {
+      /* height: 340px; */
+      height: 100%;
+    }
+}
 @media screen and (max-width: 450px) {
   /* .wrap {
     margin-top: 120px;
@@ -765,18 +745,13 @@
   } */
   /* 추천 맛집 */
   .market-best-left {
-    width: 160px;
     padding: 30px 5px 40px 0px;
-  }
-  .market-info-left-title-top img {
-    width: 70px;
   }
   .prev-best::after {
     right: -40px;
   }
   /* 지역 축제 */
   .local-festival-left {
-    width: 160px;
     padding: 30px 5px 40px 0px;
   }
   .local-festival-left-title-top img {
@@ -826,14 +801,34 @@
     font-size: 3.2rem;
   }
 }
+@media screen and (max-width: 420px) {
+  .local-festival .inner{
+    height: 540px;
+  }
+  .sw-festival .swiper-slide{
+    height: 460px;
+  }
+}
 @media screen and (max-width: 400px) {
   /* 추천 맛집 */
   .sw-festival .swiper-slide {
     padding: 20px 10px;
   }
+  .market-best .title {
+    font-size: 1.8rem;
+  }
+  .market-info-left-title p {
+    font-size: 1.2rem;
+  }
   /* 지역 축제 */
   .sw-best .swiper-slide {
     padding: 20px 10px;
+  }
+  .local-festival-left .title {
+    font-size: 1.8rem;
+  }
+  .local-festival-left-title-top img {
+    width: 50px;
   }
   /* 시장 소개 */
   .market-contents {
@@ -899,19 +894,18 @@
 }
 @media screen and (max-width: 370px) {
   /* 추천 맛집 */
-  .market-best-left {
-    width: 130px;
-  }
   .market-info-left-title-top img {
-    width: 50px;
+    width: 40px;
   }
   .market-best .title {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
-  .market-info-left-title p {
+  .market-best-left {
+    width: 150px;
+  }
+  /* .market-info-left-title p {
     font-size: 1rem;
-    line-height: 1.3;
-  }
+  } */
   .sw-best .swiper-slide {
     margin: 30px 0 25px 0.5%;
   }
@@ -924,17 +918,16 @@
   }
   /* 지역 축제 */
   .local-festival-left {
-    width: 130px;
+    width: 190px;
   }
   .local-festival-left-title-top img {
     width: 45px;
   }
   .local-festival .title {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .local-festival-title p {
-    font-size: 1rem;
-    line-height: 1.3;
+    font-size: 1.2rem;
   }
   .sw-festival .swiper-slide {
     margin: 30px 0 25px 0.5%;

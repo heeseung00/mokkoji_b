@@ -286,17 +286,29 @@ input::placeholder {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.header .search .search-content-bot .search-hot .search-hot-list-left li a span {
+.header .search .search-content-bot .search-hot .search-hot-list-left li span {
   margin-right: 20px;
+}
+.header .search .search-content-bot .search-hot .search-hot-list-left li {
+  cursor: pointer;
 }
 .header .search .search-content-bot .search-hot .search-hot-list-right {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.header .search .search-content-bot .search-hot .search-hot-list-right li a span {
+.header .search .search-content-bot .search-hot .search-hot-list-right li span {
   margin-right: 20px;
 }
-.header .search .search-content-bot .search-hot .search-hot-list-right li:nth-child(5) a span {
+.header .search .search-content-bot .search-hot .search-hot-list-right li {
+  cursor: pointer;
+}
+.header
+  .search
+  .search-content-bot
+  .search-hot
+  .search-hot-list-right
+  li:nth-child(5)
+  span {
   margin-right: 11px;
 }
 /* 모바일 헤더 =================================================== */
@@ -521,7 +533,12 @@ input::placeholder {
   display: block;
   position: relative;
 }
-.mb-header-450 > .container > .inner > .mb-header-450-top > .mb-menu-450 > button {
+.mb-header-450
+  > .container
+  > .inner
+  > .mb-header-450-top
+  > .mb-menu-450
+  > button {
   border: none;
   background: none;
   cursor: pointer;
@@ -529,7 +546,13 @@ input::placeholder {
   top: -30px;
   right: 0;
 }
-.mb-header-450 > .container > .inner > .mb-header-450-top > .mb-menu-450 > button > i {
+.mb-header-450
+  > .container
+  > .inner
+  > .mb-header-450-top
+  > .mb-menu-450
+  > button
+  > i {
   font-size: 2.8rem;
 }
 .mb-header-450-top > button {
@@ -553,7 +576,13 @@ input::placeholder {
   left: 45%;
   transform: translateX(-50%);
 }
-.mb-header-450 > .container > .inner > .mb-header-450-top > .logo-450 > a > img {
+.mb-header-450
+  > .container
+  > .inner
+  > .mb-header-450-top
+  > .logo-450
+  > a
+  > img {
   width: 50px;
   height: 50px;
   text-align: center;
@@ -593,11 +622,11 @@ input::placeholder {
   align-items: center;
   margin-top: 80px;
 }
-.mb-header-450 > .mb-menu-contents-450 > .mb-my-list-450 > a > span {
+.mb-header-450 > .mb-menu-contents-450 > .mb-my-list-450 > span {
   margin: 0 10px 0 20px;
   font-size: 1.8rem;
 }
-.mb-header-450 > .mb-menu-contents-450 > .mb-my-list-450 > a i {
+.mb-header-450 > .mb-menu-contents-450 > .mb-my-list-450 i {
   font-size: 1.8rem;
   line-height: 2rem;
 }
@@ -607,10 +636,10 @@ input::placeholder {
 .mb-header-450 > .mb-menu-contents-450 > .mb-menu-list-450 > li {
   padding: 20px 0;
 }
-.mb-header-450 > .mb-menu-contents-450 > .mb-menu-list-450 > li > a {
+.mb-header-450 > .mb-menu-contents-450 > .mb-menu-list-450 > li {
   font-size: 2rem;
 }
-.mb-header-450 > .mb-menu-contents-450 > .mb-menu-list-450 > li:hover a {
+.mb-header-450 > .mb-menu-contents-450 > .mb-menu-list-450 > li:hover {
   color: #f88222;
 }
 .go-join-450 {
@@ -698,17 +727,41 @@ input::placeholder {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.mb-header .search .search-content-bot .search-hot .search-hot-list-left li a span {
+.mb-header
+  .search
+  .search-content-bot
+  .search-hot
+  .search-hot-list-left
+  li
+  span {
   margin-right: 20px;
+}
+.mb-header .search .search-content-bot .search-hot .search-hot-list-left li {
+  cursor: pointer;
 }
 .mb-header .search .search-content-bot .search-hot .search-hot-list-right {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.mb-header .search .search-content-bot .search-hot .search-hot-list-right li a span {
+.mb-header
+  .search
+  .search-content-bot
+  .search-hot
+  .search-hot-list-right
+  li
+  span {
   margin-right: 20px;
 }
-.mb-header .search .search-content-bot .search-hot .search-hot-list-right li:nth-child(5) a span {
+.mb-header .search .search-content-bot .search-hot .search-hot-list-right li {
+  cursor: pointer;
+}
+.mb-header
+  .search
+  .search-content-bot
+  .search-hot
+  .search-hot-list-right
+  li:nth-child(5)
+  span {
   margin-right: 11px;
 }
 /* 검색창 */
@@ -803,17 +856,39 @@ input::placeholder {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.mb-header .search .search-content-bot .search-hot .search-hot-list-left li a span {
+.mb-header
+  .search
+  .search-content-bot
+  .search-hot
+  .search-hot-list-left
+  li
+  span {
   margin-right: 20px;
+}
+.mb-header .search .search-content-bot .search-hotz .search-hot-list-left li {
+  cursor: pointer;
 }
 .mb-header .search .search-content-bot .search-hot .search-hot-list-right {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.mb-header .search .search-content-bot .search-hot .search-hot-list-right li a span {
+.mb-header
+  .search
+  .search-content-bot
+  .search-hot
+  .search-hot-list-right
+  li
+  span {
   margin-right: 20px;
 }
-.mb-header .search .search-content-bot .search-hot .search-hot-list-right li:nth-child(5) a span {
+.mb-header
+  .search
+  .search-content-bot
+  .search-hot
+  .search-hot-list-right
+  li:nth-child(5)
+  a
+  span {
   margin-right: 11px;
 }
 /* 배너 */
@@ -842,7 +917,7 @@ input::placeholder {
 .market-best-left {
   position: relative;
   display: block;
-  width: 300px;
+  width: 250px;
   padding: 30px 20px 40px 20px;
   background-color: #fffcf0;
   /* background-color: #555142; */
@@ -860,18 +935,29 @@ input::placeholder {
   line-height: 1.5;
 }
 .market-info-left-title-top img {
-  width: 100px;
+  width: 80px;
 }
 .market-info-left-title p {
   font-size: 1.3rem;
   line-height: 1.3;
+}
+.vertical-text {
+  writing-mode: horizontal-tb;
+  /* writing-mode: vertical-rl; */
+  writing-mode: vertical-lr;
+}
+.prev-best,
+.next-best {
+  display: block;
+  width: 0;
+  height: 0;
 }
 .prev-best::after {
   font-size: 2.5rem;
   font-weight: bold;
   color: #00539c;
   position: absolute;
-  bottom: -150px;
+  bottom: -180px;
   right: -140px;
 }
 .next-best::after {
@@ -879,7 +965,7 @@ input::placeholder {
   font-weight: bold;
   color: #00539c;
   position: absolute;
-  bottom: -150px;
+  bottom: -180px;
   right: 10px;
 }
 /* 추천 맛집 오른쪽 */
@@ -897,7 +983,7 @@ input::placeholder {
 }
 .sw-best .swiper-slide {
   border-radius: 5px;
-  margin: 30px 0 25px 0.3%;
+  margin: 45px 0 25px 0.3%;
   background-color: #fff;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   padding-bottom: 50px;
@@ -937,7 +1023,7 @@ input::placeholder {
 .best-info span {
   font-size: 1.3rem;
 }
-.swiper-slide button {
+/* .swiper-slide button {
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -950,7 +1036,7 @@ input::placeholder {
   border: none;
   color: #fff;
   background-color: #8da4d0;
-}
+} */
 /* 시장 소개 =================================================== */
 /* 버튼 스와이프 */
 .local-cont > .local-bt-name {
@@ -985,17 +1071,30 @@ input::placeholder {
   color: #00539c;
 }
 .prev-local-name {
-  top: 1373px;
+  top: 102px;
   right: auto;
   left: 22%;
   margin-left: 5px;
 }
 .next-local-name {
-  top: 1373px;
+  top: 102px;
   left: auto;
   right: 23%;
 }
 /* 시장 소개 내용 */
+.market-info {
+  display: block;
+  position: relative;
+}
+.market-info .title {
+  font-size: 3rem;
+  align-items: center;
+  /* margin-top: 150px; */
+  padding-top: 30px;
+  margin-bottom: 20px !important;
+  font-weight: 700;
+  margin: 0 20px;
+}
 .market-info-contents {
   margin: 0 50px;
 }
@@ -1031,6 +1130,7 @@ input::placeholder {
 .market-content-left img {
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 .go-market {
   display: flex;
@@ -1061,7 +1161,7 @@ input::placeholder {
   border-radius: 5px;
   padding: 5px 10px 5px 10px;
   color: #191919;
-  background-color: #fcf6f2;
+  background-color: #fdebc8;
 }
 .market-content-right-top p {
   font-size: 1.6rem;
@@ -1089,8 +1189,6 @@ input::placeholder {
   border-radius: 5px;
   width: 100px;
   cursor: pointer;
-}
-.market-contents button a {
   display: block;
   color: #fff;
 }
@@ -1112,7 +1210,7 @@ input::placeholder {
 .local-festival-left {
   position: relative;
   display: block;
-  width: 300px;
+  width: 250px;
   padding: 30px 20px 40px 20px;
   background-color: #fff4f4;
   /* background-color: #555142; */
@@ -1130,7 +1228,7 @@ input::placeholder {
   line-height: 1.5;
 }
 .local-festival-left-title-top img {
-  margin-left: 10px;
+  margin-left: 5px;
   width: 90px;
 }
 .local-festival-title p {
@@ -1142,15 +1240,21 @@ input::placeholder {
   font-weight: bold;
   color: #00539c;
   position: absolute;
-  bottom: -210px;
+  bottom: -230px;
   left: 120px;
+}
+.prev-festival,
+.next-festival {
+  display: block;
+  width: 0;
+  height: 0;
 }
 .next-festival::after {
   font-size: 2.5rem;
   font-weight: bold;
   color: #00539c;
   position: absolute;
-  bottom: -210px;
+  bottom: -230px;
   right: 10px;
 }
 /* 지역 축제 오른쪽 */
@@ -1168,7 +1272,7 @@ input::placeholder {
 }
 .sw-festival .swiper-slide {
   border-radius: 5px;
-  margin: 30px 0 25px 0.3%;
+  margin: 40px 0 30px 0.3%;
   background-color: #fff;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   padding-bottom: 50px;
@@ -1209,4 +1313,7 @@ input::placeholder {
   border: none;
   color: #fff;
   background-color: #8da4d0;
+}
+.swiper-slide button a {
+  color: #fff;
 }
