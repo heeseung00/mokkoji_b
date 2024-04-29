@@ -325,6 +325,14 @@ input[type="checkbox"]:checked {
 }
 
 @media screen and (max-width: 790px) {
+  /* 헤더 */
+  header,
+  .mb-header,
+  .mb-header-450 {
+    display: none;
+  }
+
+  /* 컨테이너 */
   .join > .container {
     padding: 0 40px;
   }
@@ -333,7 +341,7 @@ input[type="checkbox"]:checked {
     align-items: flex-start;
     width: 100%;
     height: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 5px !important;
     flex-direction: column;
   }
 
@@ -407,6 +415,12 @@ input[type="checkbox"]:checked {
 
   .join #signupEnterNumber {
     margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .join .label-title:last-child,
+  .join .signupEnterNumberBtn {
+    display: none;
   }
 
   .join select#signUpTelecom {
@@ -415,6 +429,10 @@ input[type="checkbox"]:checked {
 
   .join .signupForm-content button.signup-check {
     width: 24%;
+  }
+
+  .gender-input-wrap {
+    margin: 20px 0 30px;
   }
 }
 
