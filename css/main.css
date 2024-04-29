@@ -941,11 +941,6 @@ input::placeholder {
   font-size: 1.3rem;
   line-height: 1.3;
 }
-.vertical-text {
-  writing-mode: horizontal-tb;
-  /* writing-mode: vertical-rl; */
-  writing-mode: vertical-lr;
-}
 .prev-best,
 .next-best {
   display: block;
@@ -955,7 +950,7 @@ input::placeholder {
 .prev-best::after {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #00539c;
+  color: #8da4d0;
   position: absolute;
   bottom: -180px;
   right: -140px;
@@ -963,7 +958,7 @@ input::placeholder {
 .next-best::after {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #00539c;
+  color: #8da4d0;
   position: absolute;
   bottom: -180px;
   right: 10px;
@@ -1042,10 +1037,10 @@ input::placeholder {
 .local-cont > .local-bt-name {
   width: 60px;
   border-radius: 5px;
-  background-color: #ff9364;
-  color: #fff;
+  /* background-color: #ff9364; */
+  color: #bababa;
   display: block;
-  border: none;
+  border: 1px solid #bababa;
   cursor: pointer;
   font-size: 1.6rem;
   padding: 5px 0;
@@ -1068,7 +1063,7 @@ input::placeholder {
 .prev-local-name:after,
 .next-local-name:after {
   font-size: 2rem;
-  color: #00539c;
+  color: #f88222;
 }
 .prev-local-name {
   top: 102px;
@@ -1111,7 +1106,8 @@ input::placeholder {
 }
 .market-content1,
 .market-content2 {
-  border: 1px solid #5e5e5e;
+  /* border: 1px solid #5e5e5e; */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   padding: 30px 20px 50px 20px;
 }
@@ -1177,6 +1173,7 @@ input::placeholder {
   font-size: 1.3rem;
   line-height: 1.5;
   word-break: break-all;
+  color: #5e5e5e;
 }
 /* 더보기 버튼 */
 .market-contents button {
@@ -1238,7 +1235,7 @@ input::placeholder {
 .prev-festival::after {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #00539c;
+  color: #8da4d0;
   position: absolute;
   bottom: -230px;
   left: 120px;
@@ -1252,7 +1249,7 @@ input::placeholder {
 .next-festival::after {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #00539c;
+  color: #8da4d0;
   position: absolute;
   bottom: -230px;
   right: 10px;
