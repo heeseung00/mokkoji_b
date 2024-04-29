@@ -1,76 +1,77 @@
 @charset "utf-8";
 
 * {
-    box-sizing: border-box;
-  }
-
-   
- ul>li {
-    list-style: none;
-}
- a {
-    text-decoration: none;
-}
- .clearfix::after {
-    content: ""; display: block; clear: both;
+  box-sizing: border-box;
 }
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    /* box-sizing: border-box; */
-  }
+ul > li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
-  
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* box-sizing: border-box; */
+}
 
-  .wrap{
-    margin-top: 0 !important;
-  }
+.wrap {
+  margin-top: 0 !important;
+}
 
-  .join{
-    position: relative;
-    max-width: 900px;
-    width: 100%;
-    height: 100%;
-    margin: 150px auto;
-  }
+.join {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  height: 100%;
+  margin: 250px auto 150px;
+}
 
-  .join > .container{
-    margin: 0 auto !important;
-    max-width: 1200px;
-  }
+.join > .container {
+  margin: 0 auto !important;
+  max-width: 1200px;
+}
 
-  .join-title > h1 {
-    font-size: 3rem;
-    text-align: center;
-    color: #333;
-    font-weight: 700;
-    margin-bottom: 50px;
-  }
+.join-title > h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
 
-  .focused {
-    border: 2px solid #007bff;
-    outline: none; /* 포커스 테두리 제거 */
-  }
+.focused {
+  border: 2px solid #007bff;
+  outline: none; /* 포커스 테두리 제거 */
+}
 
-  #join_agree{
-    display: none;
-    /* display: block; */
-  }
+#join_agree {
+  display: none;
+  /* display: block; */
+}
 
-  #join_basic_info{
-    display: none;
-  }
+#join_basic_info {
+  display: none;
+  /* display: block; */
+}
 
-  #join_more_info{
-    display: block;
-  }
+#join_more_info {
+  display: block;
+  /* display: none; */
+}
 
 /* 약관 동의 */
 /* #join_agree #joinForm { width: 460px; margin: 0 auto; }
@@ -89,108 +90,284 @@
     margin-top: 20px;
 } */
 
+#signup-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+#signupForm .signupForm-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
 
-  #signup-form {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.signupForm-content-wrap {
+  display: flex;
+  width: 100%;
+}
+
+.input-wrap {
+  display: flex;
+  width: 82%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.input-wrap input::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background: #fe6b38;
+}
+
+.input-wrap input::placeholder {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.input-wrap #user_date {
+  padding: 15px 10px;
+  border: 1px solid #ccc;
+  font-size: 1.5rem;
+  color: #333;
+  border-radius: 5px;
+}
+
+.input-wrap #user_date::placeholder {
+  color: #ccc;
+}
+/* 이름 */
+.input-wrap #user_nickname {
+  padding: 15px 10px;
+  font-size: 1.5rem;
+  color: #ccc;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.join label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* padding-bottom: 20px; */
+  color: #333;
+}
+
+.join label.label-title {
+  padding-bottom: 20px;
+}
+
+/* input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid #999;
+  appearance: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+input[type="checkbox"]:checked {
+  background: #32e732;
+  border: none;
+} */
+
+.join input[type="text"],
+.join input[type="password"] {
+  /* box-sizing: border-box; */
+  width: 100%;
+  padding: 15px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* 번호 */
+.join #signupEnterNumber {
+  width: 100%;
+  margin-left: 25px;
+}
+.join #signupEnterNumber::placeholder {
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+.join select#signUpTelecom {
+  border-radius: 5px;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  color: #ccc;
+  margin-right: 10px;
+  padding: 0 5px;
+  width: 12%;
+  height: 48px;
+}
+
+.join select#signUpTelecom > option {
+  color: #333;
+}
+
+.join button.signupEnterNumberBtn {
+  border: #fff !important;
+  background-color: #fff !important;
+}
+
+.join .signupForm-content button.signup-check {
+  width: 18%;
+  height: 100%;
+  padding: 15px 10px;
+  margin: 0 0 20px 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ff9364;
+  background-color: #fff;
+  border: 1px solid #ff9364;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.join .signupForm-content button.signup-check:hover {
+  background-color: #ff9364;
+  color: #fff;
+}
+
+.join .error {
+  color: rgb(240, 63, 64);
+  font-size: 10px;
+  margin: 10px 0;
+}
+
+.gender-input-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin: 20px 0;
+}
+
+.gender-input-wrap .gender-all {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0 !important;
+}
+
+.gender-input-wrap .gender-all label {
+  padding-bottom: 0 !important;
+  /* cursor: pointer; */
+}
+
+.gender-input-wrap .gender-all > input {
+  margin-right: 10px;
+}
+
+/* 다음 버튼 */
+.join .next-btn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join button[type="submit"] {
+  width: 126px;
+  padding: 16px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #ff9364;
+  text-align: center;
+}
+
+.join button[type="submit"]:hover {
+  background-color: #fe6b38;
+}
+
+/* 나중에 입력하기 */
+.join label.later_enter_label {
+  margin-left: 10px;
+}
+
+.later_enter_content {
+  margin-left: 150px;
+  margin-bottom: 70px !important;
+}
+/* =================================================================== */
+/* 반응형  */
+
+@media screen and (max-width: 880px) {
+  .join .signupForm-content button.signup-check {
+    width: 20%;
   }
+}
 
-  #signupForm .signupForm-content{
+@media screen and (max-width: 830px) {
+  .join .signupForm-content button.signup-check {
+    width: 22%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .join > .container {
+    padding: 0 40px;
+  }
+  #signupForm .signupForm-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     height: 100%;
     margin-bottom: 20px;
+    flex-direction: column;
   }
 
-  .signupForm-content-wrap{
-    display: flex;
+  .signupForm-content-wrap {
     width: 100%;
   }
 
-  .input-wrap{
+  .input-wrap {
     display: flex;
-    width: 82%;
+    width: 100%;
     height: 100%;
     flex-direction: column;
   }
 
-  .input-wrap input::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    background: #FE6B38;
-  }
-
-  .input-wrap input::placeholder{
-    font-size: 1.5rem;
-    color: #ccc;
-  }
-
   .join label {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 180px;
-    height: 100%;
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding-bottom: 20px;
-    color: #333;
+    padding-bottom: 10px !important;
   }
 
-  .join input[type="text"],
-  .join input[type="password"] {
-    /* box-sizing: border-box; */
-    width: 100%;
-    padding: 15px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-
-  .join .signupForm-content button.signup-check{
-    width: 18%;
-    height: 100%;
-    padding: 16px 10px;
-    margin: 0 0 20px 10px;
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #ff9364;
-    background-color: #fff;
-    border: 1px solid #ff9364;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .join .signupForm-content button.signup-check:hover{
-    background-color: #ff9364;
-    color: #fff;
-  }
-
-  .join .error {
-    color: rgb(240, 63, 64);
-    font-size: 10px;
-    margin: 10px 0;
+  .join #user_nickname {
+    width: 50%;
   }
 
   /* 다음 버튼 */
-  .join .next-btn{
+  .join .next-btn {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
   }
 
   .join button[type="submit"] {
-    width: 126px;
+    width: 100%;
     padding: 16px 10px;
     border: none;
     border-radius: 5px;
@@ -199,69 +376,135 @@
     font-weight: 700;
     cursor: pointer;
     background-color: #ff9364;
-    text-align: center
-    ;
+    text-align: center;
   }
 
   .join button[type="submit"]:hover {
-    background-color: #FE6B38;
+    background-color: #fe6b38;
   }
 
-  /* =================================================================== */
-  /* 반응형  */
-
-  @media screen and (max-width: 790px){
-    #signupForm .signupForm-content {
-        display: flex;
-        align-items: flex-start;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 20px;
-        flex-direction: column;
-    }
-
-    .signupForm-content-wrap{
-        width: 100%;
-    }
-
-    .input-wrap{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-      }
-
-      .join label{
-        padding-bottom: 10px !important;
-      }
-
-    /* 다음 버튼 */
-    .join .next-btn{
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .join button[type="submit"] {
-      width: 100%;
-      padding: 16px 10px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      color: #fff;
-      font-weight: 700;
-      cursor: pointer;
-      background-color: #ff9364;
-      text-align: center
-      ;
-    }
-
-    .join button[type="submit"]:hover {
-      background-color: #FE6B38;
-    }
-
+  #signupForm .signupForm-content {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    flex-direction: column;
   }
 
+  /* .join #user_number {
+    width: 95%;
+  } */
+
+  .join .gender-input-wrap {
+    flex-direction: row;
+  }
+
+  .join .later_enter_content {
+    margin-left: 0;
+    flex-direction: row !important;
+  }
+
+  .join #signupEnterNumber {
+    margin-left: 0;
+  }
+
+  .join select#signUpTelecom {
+    width: 15%;
+  }
+
+  .join .signupForm-content button.signup-check {
+    width: 24%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .join .signupForm-content button.signup-check {
+    width: 28%;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .join .signupForm-content button.signup-check {
+    width: 28%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .join .signupForm-content button.signup-check {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .join .signupForm-content button.signup-check {
+    width: 33%;
+  }
+  .join select#signUpTelecom {
+    width: 23%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .join .signupForm-content button.signup-check {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 552px) {
+  .join .signupForm-content button.signup-check {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .join .signupForm-content button.signup-check {
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .join .signupForm-content button.signup-check {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .join .signupForm-content button.signup-check {
+    width: 43%;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .join .signupForm-content button.signup-check {
+    width: 47%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .join select#signUpTelecom {
+    width: 27%;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .join select#signUpTelecom {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .join select#signUpTelecom {
+    width: 34%;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .join select#signUpTelecom {
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .join select#signUpTelecom {
+    width: 40%;
+  }
+}
