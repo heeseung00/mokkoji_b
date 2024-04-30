@@ -476,6 +476,13 @@ body {
   height: 19px;
 }
 
+/* 회원가입 버튼 */
+#join_more_info_btn > button > a {
+  width: 100%;
+  display: block;
+  color: #fff;
+}
+
 /* =================================================================== */
 /* 반응형  */
 
@@ -502,7 +509,7 @@ body {
   }
 
   .join {
-    margin: 150px auto 150px;
+    margin: 100px auto 150px;
   }
 
   .header,
@@ -550,11 +557,11 @@ body {
   }
 
   .login_go_back #loginCloseBtn > #loginCloseIcon {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
   .login_go_back #loginCloseBtn > #loginCloseIcon:hover {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     color: #ff9364;
   }
 
@@ -565,16 +572,17 @@ body {
     align-items: center;
     font-size: 1.8rem;
     font-weight: 700;
+    padding-top: 10px;
   }
 
   #signupForm .signupForm-content,
   #signupForm2 .signupForm-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     height: 100%;
     margin-bottom: 5px !important;
-    flex-direction: column;
+    flex-direction: column !important;
   }
 
   .signupForm-content-wrap {
@@ -640,8 +648,20 @@ body {
     flex-direction: row;
   }
 
-  .join .later_enter_content {
-    margin-left: 0;
+  #join_more_info .gender-all label,
+  #join_more_info .later_enter_label {
+    font-weight: 400;
+    margin-left: 0 !important;
+  }
+
+  #join_more_info .later_enter_label {
+    margin-left: 10px !important;
+  }
+
+  #join_more_info .later_enter_content {
+    margin-left: 0 !important;
+    display: flex !important;
+    font-weight: 400;
     flex-direction: row !important;
   }
 

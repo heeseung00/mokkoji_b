@@ -1361,6 +1361,21 @@
   .banner-button-prev {
     display: none;
   }
+
+  /* 중간 배너 */
+  .banner-m {
+    margin-bottom: 20px;
+  }
+
+  /* 리뷰 */
+  .review {
+    margin-bottom: 50px;
+  }
+
+  /* 이벤트, 오늘의 소식 */
+  .reviewToday > .container {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 768px) {

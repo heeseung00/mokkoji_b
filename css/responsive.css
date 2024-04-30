@@ -430,6 +430,13 @@
   .mb-header .search .container .inner .search-contents {
     padding: 20px 0px 0 00px;
   }
+
+  /* 추천 맛집 왼쪽 */
+  .market-best {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
   /* 시장 소개 스와이퍼 */
   .sw-local-container {
     margin: auto;
@@ -441,6 +448,12 @@
   }
   .next-local-name {
     right: 2%;
+  }
+
+  /* 지역 축제 */
+  .local-festival {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 770px) {
