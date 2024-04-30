@@ -39,13 +39,11 @@ body {
   width: 600px;
   max-width: 1200px;
   border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+  border: 1px solid #f0f0f0;
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15); */
   position: relative;
   margin: 0 auto 150px;
   z-index: 0;
-}
-
-.login_wrap {
   padding: 20px;
 }
 
@@ -213,7 +211,7 @@ body {
 
 .social-login-txt .social-line {
   width: 40%;
-  height: 1px;
+  height: 0.5px;
   background-color: #969696;
 }
 .social-login-txt .option {
@@ -327,7 +325,8 @@ body {
     width: 600px;
     max-width: 1200px;
     border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15); */
+    border: none;
     position: relative;
     margin: 0 auto !important;
     z-index: 0;
