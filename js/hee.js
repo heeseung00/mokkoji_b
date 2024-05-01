@@ -1,4 +1,10 @@
 window.addEventListener("load", function () {
+  // var element = document.getElementById("exampleElement");
+  // if (element) {
+  //   element.style.color = "red";
+  // } else {
+  //   console.error("Element not found.");
+  // }
   // 메인 배너 스와이퍼
   var bannerSwiper = new Swiper(".bannerSwiper", {
     loop: true,
@@ -185,6 +191,22 @@ window.addEventListener("load", function () {
   // 로그인 로그인 로그인
   document.getElementById("loginCloseIcon").addEventListener("click", function () {
     window.location.href = "index.html";
+  });
+
+  var idInput = document.querySelector(".input-box input[type='text']");
+  var passwordInput = document.querySelector(".input-box.login_password input[type='password']");
+  var loginButton = document.querySelector("#loginBtnWrap input[type='submit']");
+
+  loginButton.addEventListener("click", function (event) {
+    // 아이디와 비밀번호가 모두 입력되었는지 확인
+    if (idInput.value.trim() !== "" && passwordInput.value.trim() !== "") {
+      // 모두 입력되었으면 index.html로 이동
+      window.location.href = "index.html";
+    } else {
+      // 아이디 또는 비밀번호가 입력되지 않았을 경우
+      event.preventDefault(); // 기본 동작(폼 제출) 막기
+      alert("아이디와 비밀번호를 모두 입력해주세요.");
+    }
   });
 });
 

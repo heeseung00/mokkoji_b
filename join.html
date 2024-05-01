@@ -60,10 +60,10 @@
     <script src="js/html5shiv.js"></script>
     <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="js/repond.min.js"></script>
-    <script src="js/resize_hee.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/hee.js"></script>
-    <script src="js/lee.js"></script>
+    <!-- <script src="js/resize_hee.js"></script> -->
+    <!-- <script src="js/script.js"></script> -->
+    <!-- <script src="js/hee.js"></script> -->
+    <!-- <script src="js/lee.js"></script> -->
     <script src="js/join.js"></script>
     <script src="js/jquery.cookie.js"></script>
     <!-- Google tag (gtag.js) -->
@@ -86,7 +86,7 @@
           <div class="inner">
             <!-- 로고 -->
             <div class="hd-logo">
-              <a href="index.html"><img src="images/1header/hd-logo-main.png" alt="로고" /></a>
+              <a href="index.html"><img src="images/link-img/mokkoji_link_img.png" alt="로고" /></a>
             </div>
             <!-- 네비게이션 -->
             <nav class="nav">
@@ -450,8 +450,8 @@
                 <li class="checkBox check01">
                   <ul class="clearfix">
                     <li class="checkBtn" id="checkAllBtn">
-                      <input type="radio" name="chkAll" id="chkAll" class="chkAll chk" />
-                      <label for="chk">전체 약관 동의하기</label>
+                      <input type="radio" name="chkAll" id="chkAll" class="chkAll" />
+                      <label for="chkAll">전체 약관 동의하기</label>
                     </li>
 
                     <p>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</p>
@@ -555,7 +555,7 @@
                     <span class="error"></span>
                     <!-- 에러메시지 출력할 요소 -->
                   </div>
-                  <button class="signup-check signup-check-border">인증하기</button>
+                  <!-- <button class="signup-check signup-check-border">인증하기</button> -->
                 </div>
               </div>
               <div class="signupForm-content">
@@ -629,7 +629,7 @@
                     <option value="signUpTelecom">알뜰폰 kt</option>
                     <option value="signUpTelecom">알뜰폰 LG U+</option>
                   </select>
-                  <div class="input-wrap number-enter">
+                  <div class="input-wrap">
                     <input type="text" name="user_number" id="user_number" placeholder="예: 010-1234-5678" />
                     <span class="error"></span>
                     <!-- 에러메시지 출력할 요소 -->
@@ -639,9 +639,17 @@
               </div>
               <!-- 인증번호 -->
               <div class="signupForm-content">
-                <label for="signupEnterNumber"></label>
-                <input type="text" id="signupEnterNumber" placeholder="인증번호를 입력해주세요." />
-                <button class="signup-check signupEnterNumberBtn"></button>
+                <label for="signupEnterNumber" class="signupEnter"></label>
+                <div class="EnterNumber-btn-input">
+                  <div class="input-wrap signUpCheckWrap">
+                    <input type="text" id="signupEnterNumber" placeholder="인증번호를 입력해주세요." />
+                    <!-- .code_wrap .time  -->
+                    <span class="time"></span>
+                    <span class="error"></span>
+                    <!-- 에러메시지 출력할 요소 -->
+                  </div>
+                  <button class="signup-check signup-check-border" id="signUp_send_check">인증하기</button>
+                </div>
               </div>
               <!-- 성별 -->
               <div class="signupForm-content">

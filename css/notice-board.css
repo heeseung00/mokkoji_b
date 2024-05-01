@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.wrap {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.wrap .container {
+  width: 100%;
+}
+
+.wrap .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#catList {
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 0;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  /* background-color: aquamarine; */
+  justify-content: space-between;
+}
+
+.cat-card {
+  width: calc(25% - 40px); /* 한 줄에 4개씩 표시되도록 수정 */
+  margin: 40px auto;
+  /* background-color: aliceblue; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cat-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-link {
+  margin: 0 5px;
+  padding: 10px 15px;
+  background-color: #3498db;
+  /* 배경색 */
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+/* 호버 효과 */
+.page-link:hover {
+  background-color: #2980b9;
+  /* 호버 시 배경색 변경 */
+}
+
+.active-page {
+  background-color: #29b96a;
+  /* 활성 페이지 배경색 변경 */
+}
+
+.disabled {
+  background-color: #ccc;
+  /* 비활성화된 버튼 배경색 */
+  pointer-events: none;
+  /* 비활성화된 버튼을 클릭하지 못하게 설정 */
+}
+
+/* 게시판 제목 및 버튼*/
+.board-title {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.board-title h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.board-title .board-title-btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 50px;
+}
+
+.board-title .board-title-btn button {
+  width: 115px;
+  height: 35px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.board-title .board-title-btn .boardOn {
+  background-color: #ff9364;
+  color: #fff;
+  border: 1px solid #ff9364;
+}
+
+/* 게시판 검색창 */
+.board-search {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.board-search .container {
+  width: 100%;
+}
+
+.board-search > .container > .inner {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.board-search .board-search-select {
+  width: 12%;
+  height: 100%;
+  font-size: 1.3rem;
+}
+.board-search .board-search-select > select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.board-search .board-search-select > select > option {
+  cursor: pointer;
+}
+
+.board-search .board-search-input {
+  width: 30%;
+  height: 100%;
+}
+
+.board-search .board-search-input input {
+  padding: 8px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1.3rem;
+}
+
+.board-search .board-search-input > input::placeholder {
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.board-search .board-search-btn {
+  width: 6%;
+  height: 100%;
+}
+
+.board-search .board-search-btn > button {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* 상세 글자 */
+.board-text-wrap {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.board-text-wrap h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 7px 0 10px !important;
+}
+
+.board-text-wrap p.description {
+  font-size: 1.2rem;
+  margin: 10px 0 17px !important;
+}
+
+/* 별점 & 유저 */
+.star-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
+.star-wrap .star-image {
+  width: 35%;
+  height: 15%;
+}
+
+.star-wrap .user {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+  width: 100%;
+  height: 15%;
+}
+
+.star-wrap .user > img {
+  width: 20px;
+  height: 20px;
+}
+
+.star-wrap .user p {
+  font-size: 1.2rem;
+}
+
+.user-review-simple {
+  font-size: 11px;
+  display: flex;
+  gap: 5px;
+}
+
+.user-review-simple p {
+  margin-right: 4px;
+}
+
+.user-review-simple span {
+  color: #999999;
+}

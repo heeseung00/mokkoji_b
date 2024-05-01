@@ -1,11 +1,260 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-BN7H88RJ");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="css/notice-board.css" />
+    <title>게시판</title>
+    <!-- seo적용 -->
+    <meta name="robots" content="ALL" />
+    <meta name="robots" content="index, follow" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta property="title" content="모꼬지 ┃ 전통시장의 새로운 트렌드를 만들다." />
+    <meta name="description" content="모꼬지는 전국 전통시장과 죽기 전에 꼭 가봐야 할 여행지를 소개하는 국내 유일한 시장 및 여행 정보 전문 포털 사이트입니다." />
+    <meta name="keywords" content="모꼬지, 대한민국, 전통시장" />
+    <meta property="keyword" content="모꼬지, 대한민국, 전통시장" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="모꼬지 ┃ 전통시장의 새로운 트렌드를 만들다." />
+    <meta property="og:description" content="모꼬지는 전국 전통시장과 죽기 전에 꼭 가봐야 할 여행지를 소개하는 국내 유일한 시장 및 여행 정보 전문 포털 사이트입니다" />
+    <meta property="og:image" content="/images/link-img/thumbnail-01.png" />
+    <meta property="og:url" content="https://mokkoji-b.vercel.app/" />
+    <!-- flaticon -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-straight/css/uicons-thin-straight.css" />
+    <!-- font aswesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/hee.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- 제이쿼리 추가 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="js/html5shiv.js"></script>
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="js/repond.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/hee.js"></script>
+    <script src="js/lee.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E30E53JQ92"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-E30E53JQ92");
+    </script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- 게시판 제목 -->
+      <div class="board-title">
+        <div class="container">
+          <div class="inner">
+            <h2>게시판</h2>
+            <div class="board-title-btn">
+              <button class="boardOn">시장 방문 후기</button>
+              <button>오늘의 소식</button>
+              <button>소통 공간</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="board-search">
+        <div class="container">
+          <div class="inner">
+            <div class="board-search-select">
+              <select name="boardSelect" id="boardSelect">
+                <option value="선택" selected>지역</option>
+                <option value="서울">서울</option>
+                <option value="대구">대구</option>
+                <option value="부산">부산</option>
+              </select>
+            </div>
+            <div class="board-search-input">
+              <label for="boardSearch"></label>
+              <input type="search" name="boardSearch" id="boardSearch" placeholder="검색어를 입력해주세요." />
+            </div>
+            <div class="board-search-btn">
+              <button>조회</button>
+            </div>
+            <div class="board-txt">
+              <p>총 156건</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="catList">
+        <!-- js출력 고양이 리스트 -->
+      </div>
+      <div class="pagination" id="pagination">
+        <!-- js출력 pagination-->
+      </div>
+    </div>
+
+    <script>
+      const itemsPerPage = 8; //고양이 리스트를 3개 보이겠다
+      let currentPage = 1;
+      const catListDiv = document.getElementById("catList");
+      const paginationDiv = document.getElementById("pagination");
+      const prevButton = document.createElement("a"); //이전버튼
+      const nextButton = document.createElement("a"); //다음버튼
+      // URL에서 쿼리문자열을 읽어와서 고양이의 아이디를 가져온다
+      const urlParams = new URLSearchParams(window.location.search);
+      const catId = urlParams.get("id");
+
+      // 고양이 정보를 가져와서 화면에 출력하는 함수
+      function displayCatInfo(page) {
+        // console.log();
+        fetch("notice-board.json")
+          .then((response) => response.json())
+          .then(function (data) {
+            console.log(data);
+            // 페이지네이션 계산
+            const startIndex = (page - 1) * itemsPerPage;
+            // const startIndex = 0;
+            // console.log(startIndex);
+            const endIndex = startIndex + itemsPerPage;
+            // const endIndex = 3;
+            // console.log(endIndex); // 3
+            // 첫화면에 리스틀 인덱스번호가 0 ~ 2까지 출력을 하기 위함
+            const catsOnpage = data.slice(startIndex, endIndex);
+            console.log(catsOnpage);
+            catListDiv.innerHTML = "";
+            catsOnpage.forEach((cat) => {
+              // console.log(cat);
+              const catCard = document.createElement("div");
+              // console.log(catCard);
+              catCard.className = "cat-card";
+              // console.log(catCard);
+              catCard.innerHTML = `
+              <a href="catcate.html?id=${cat.id}">
+                                <img class="cat-image" src="${cat.url}" alt="${cat.title} 사진">
+                                <div class="board-text-wrap">
+                                  <div class="star-wrap">
+                                    <img class = "star-image" src="${cat.stars}" alt = "별점 5">
+                                    <div class="user">
+                                      <img class = "user-image" src="${cat.userIcon}" alt = "유저 아이콘">
+                                      <p>${cat.userName}</p>
+                                    </div>
+                                  </div>
+                                  <h2>${cat.title}</h2>
+                                  <p class = "description">고양이 특징: ${cat.description}</p>
+                                  <div class="user-review-simple">
+                                    <p> 
+                                      <span>맛</span>
+                                      ${cat.taste}
+                                    </p>
+                                    <p> 
+                                      <span>가격</span>
+                                      ${cat.price}
+                                    </p>
+                                    <p> 
+                                      <span>응대</span>
+                                      ${cat.service}
+                                    </p>
+                                  </div>
+                                </div>
+                            </a>
+              `;
+              catListDiv.appendChild(catCard);
+            });
+            pagination(data.length);
+          })
+          .catch((error) => {
+            console.error("데이터를 가져오는 중 에러가 발생했습니다:", error);
+          });
+      }
+
+      // 페이지네이션 생성
+      function pagination(totalItems) {
+        // console.log(totalItems);
+        paginationDiv.innerHTML = "";
+
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+        for (let i = 1; i <= totalPages; i++) {
+          const pageLink = document.createElement("a");
+          pageLink.className = "page-link";
+          pageLink.href = `?id=${catId}&page=${i}`;
+          pageLink.textContent = i;
+          if (i === currentPage) {
+            pageLink.classList.add("active-page"); // 활성 페이지 강조
+          }
+          paginationDiv.appendChild(pageLink);
+        }
+        // 이전버튼
+        prevButton.className = "page-link";
+        prevButton.textContent = "이전";
+        if (currentPage > 1) {
+          prevButton.href = `?id=${catId}&page=${currentPage - 1}`;
+        } else {
+          prevButton.classList.add("disabled"); //현재 페이지가 1일 경우 비활성화
+        }
+        paginationDiv.insertBefore(prevButton, paginationDiv.firstChild);
+
+        // 다음버튼
+        nextButton.className = "page-link";
+        nextButton.textContent = "다음";
+        if (currentPage < totalPages) {
+          nextButton.href = `?id=${catId}&page=${currentPage + 1}`;
+        } else {
+          nextButton.classList.add("disabled"); // 마지막 페이지일 경우 비활성화
+        }
+
+        paginationDiv.appendChild(nextButton);
+      }
+      // 페이지 로드시 고양이 정보 출력
+      document.addEventListener("DOMContentLoaded", function () {
+        const pageParm = urlParams.get("page");
+        if (pageParm) {
+          currentPage = parseInt(pageParm);
+        }
+        displayCatInfo(currentPage);
+      });
+    </script>
+  </body>
 </html>
