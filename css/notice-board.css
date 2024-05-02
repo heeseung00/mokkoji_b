@@ -74,7 +74,7 @@ a {
   /* background-color: #3498db; */
   /* 배경색 */
   color: #191919;
-  border: none;
+  /* border: 1px solid #e4e4e4; */
   border-radius: 40px;
   font-weight: bold;
   transition: background-color 0.3s;
@@ -83,20 +83,54 @@ a {
 /* 호버 효과 */
 .page-link:hover {
   background-color: #ff9364;
+  color: #fff;
   /* 호버 시 배경색 변경 */
 }
 
 .active-page {
   background-color: #ff9364;
   color: #fff;
+  font-weight: bold;
+  /* border: 1px solid #ff9364; */
   /* 활성 페이지 배경색 변경 */
 }
 
 .disabled {
-  background-color: #ccc;
+  background-color: #e6e6e6;
   /* 비활성화된 버튼 배경색 */
   pointer-events: none;
   /* 비활성화된 버튼을 클릭하지 못하게 설정 */
+}
+
+.pagination-none {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.pagination-none a {
+  color: black;
+  padding: 10px 14px;
+  border-radius: 50px;
+  text-decoration: none;
+  /* border: 1px solid #ddd; */
+  margin: 0 5px;
+}
+
+.pagination-none a:hover {
+  background-color: #ff9364;
+  color: #fff;
+  border: 1px solid #ff9364;
+}
+
+.pagination-none .prev,
+.pagination-none .next {
+  background-color: #f1f1f1;
+}
+
+.pagination-none .page {
+  background-color: white;
 }
 
 /* 게시판 제목 및 버튼*/
@@ -208,6 +242,19 @@ a {
   font-size: 1.3rem;
 }
 
+.board-search input::-ms-clear,
+.board-search input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.board-search input::-webkit-search-decoration,
+.board-search input::-webkit-search-cancel-button,
+.board-search input::-webkit-search-results-button,
+.board-search input::-webkit-search-results-decoration {
+  display: none;
+}
+
 .board-search .board-search-input > input::placeholder {
   width: 100%;
   font-size: 1.3rem;
@@ -271,12 +318,12 @@ a {
   display: block;
   width: 100%;
   height: auto;
-  padding: 10px;
+  padding: 13px;
 }
 
 .board-text-wrap h2 {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 600;
   margin: 10px 0 15px !important;
   /* 말줄임 */
   overflow: hidden;
@@ -290,8 +337,10 @@ a {
 
 .board-text-wrap p.description {
   font-size: 1.2rem;
+  font-weight: 400;
   margin: 10px 0 17px !important;
   line-height: 17px;
+
   /* 말줄임 */
   overflow: hidden;
   white-space: normal;
@@ -569,7 +618,7 @@ table {
   }
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 930px) {
   .cat-card {
     width: calc(31% - 0px);
     margin: 15px 0;

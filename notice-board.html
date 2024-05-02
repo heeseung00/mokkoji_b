@@ -96,7 +96,7 @@
           <div class="inner">
             <!-- 로고 -->
             <div class="hd-logo">
-              <a href="#"><img src="images/link-img/mokkoji_link_img.png" alt="로고" /></a>
+              <a href="index.html"><img src="images/link-img/mokkoji_link_img.png" alt="로고" /></a>
             </div>
             <!-- 네비게이션 -->
             <nav class="nav">
@@ -131,7 +131,7 @@
             <div class="inner">
               <!-- 로고 -->
               <div class="hd-logo">
-                <a href="#"><img src="images/1header/hd-logo-main.png" alt="로고" /></a>
+                <a href="index.html"><img src="images/1header/hd-logo-main.png" alt="로고" /></a>
               </div>
               <div class="search-close-bt" id="closeBt">
                 <i class="fa-solid fa-xmark" id="mb-menu-xBt"></i>
@@ -432,16 +432,30 @@
             </div> -->
             <div class="board-search-txt">
               <p class="board-search-txt1">총 156건</p>
-              <p class="board-search-txt2">총 7건</p>
-              <p class="board-search-txt3">총 30건</p>
+              <p class="board-search-txt2">총 5건</p>
+              <p class="board-search-txt3">총 18건</p>
             </div>
             <form action="">
               <div class="board-search-select">
                 <select name="boardSelect" id="boardSelect">
                   <option value="전체" selected>전체</option>
                   <option value="서울">서울</option>
+                  <option value="인천">인천</option>
+                  <option value="대전">대전</option>
                   <option value="대구">대구</option>
+                  <option value="대구">경기</option>
                   <option value="부산">부산</option>
+                  <option value="울산">울산</option>
+                  <option value="광주">광주</option>
+                  <option value="강원">강원</option>
+                  <option value="충북">충북</option>
+                  <option value="충남">충남</option>
+                  <option value="경북">경북</option>
+                  <option value="경남">경남</option>
+                  <option value="전북">전북</option>
+                  <option value="전남">전남</option>
+                  <option value="제주">제주</option>
+                  <option value="세종">세종</option>
                 </select>
               </div>
               <div class="board-search-input">
@@ -461,7 +475,8 @@
             <!-- 맛집, 나들이 -->
             <div class="review-select-wrap">
               <select name="reviewSelect" id="reviewSlect">
-                <option value="맛집" selected>맛집</option>
+                <option value="전체" selected>전체</option>
+                <option value="맛집">맛집</option>
                 <option value="시장 나들이">시장 나들이</option>
               </select>
             </div>
@@ -480,7 +495,7 @@
         <!-- js출력 고양이 리스트 -->
       </div>
       <!-- 페이지네이션1 -->
-      <div id="pagination" class="pagination">
+      <div id="pagination" class="paginatio">
         <!-- js출력 pagination-->
       </div>
 
@@ -498,9 +513,9 @@
               </thead>
               <tbody>
                 <tr>
-                  <td class="board-table-num">3</td>
+                  <td class="board-table-num">5</td>
                   <th class="board-title-1">
-                    <a href="#!">[이벤트] 이벤트 당첨자 안내</a>
+                    <a href="#!">[이벤트] 이벤트 당첨자 발표 안내</a>
                     <p>테스트</p>
                   </th>
                   <td>2024.05.10</td>
@@ -508,16 +523,30 @@
                 </tr>
 
                 <tr>
-                  <td class="board-table-num">2</td>
+                  <td class="board-table-num">4</td>
                   <th><a href="#!">[이벤트] 시장 페이백 이벤트 개최</a></th>
                   <td>2024.05.07</td>
                   <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
                 </tr>
 
                 <tr>
+                  <td class="board-table-num">3</td>
+                  <th><a href="#!">[공지사항] (5/2)시스템 정기점검 안내</a></th>
+                  <td>2024.04.29</td>
+                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
+                </tr>
+
+                <tr>
+                  <td class="board-table-num">2</td>
+                  <th><a href="#!">[이벤트] 출석체크 이벤트 당첨자 발표 안내</a></th>
+                  <td>2024.04.23</td>
+                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
+                </tr>
+
+                <tr>
                   <td class="board-table-num">1</td>
                   <th><a href="#!">[공지사항] 공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
-                  <td>2024.05.02</td>
+                  <td>2024.04.23</td>
                   <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
                 </tr>
               </tbody>
@@ -526,7 +555,12 @@
         </div>
       </div>
       <!-- 페이지네이션2 -->
-      <div id="pagination2" class="pagination"></div>
+      <div id="pagination2" class="pagination-none">
+        <a href="#!" class="prev">이전</a>
+        <a href="#!" class="page">1</a>
+        <a href="#!" class="page">2</a>
+        <a href="#!" class="next">다음</a>
+      </div>
 
       <!-- 소통 공간 -->
       <div id="boardListTalk" class="boardList">
@@ -542,7 +576,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td class="board-table-num">3</td>
+                  <td class="board-table-num">18</td>
                   <th class="board-title-1">
                     <a href="#!">광장시장 맛집 추천해주세요.</a>
                   </th>
@@ -551,77 +585,107 @@
                 </tr>
 
                 <tr>
-                  <td class="board-table-num">2</td>
+                  <td class="board-table-num">17</td>
                   <th><a href="#!">국제시장 운영시간 언제까지인가요?</a></th>
                   <td>2024.05.10</td>
                   <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
                 </tr>
                 <tr>
-                  <td class="board-table-num">1</td>
+                  <td class="board-table-num">16</td>
                   <th><a href="#!">가족과 함께 놀러갈 코스 추천해주세요!</a></th>
                   <td>2024.05.10</td>
                   <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
                 </tr>
 
                 <tr>
-                  <td class="board-table-num">1</td>
+                  <td class="board-table-num">15</td>
                   <th><a href="#!">00시장에서 온누리 상품권 사용 가능한가요?</a></th>
+                  <td>2024.05.10</td>
+                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
+                </tr>
+                <tr>
+                  <td class="board-table-num">14</td>
+                  <th><a href="#!">남대문 시장 페이백 이벤트 해보신분~? </a></th>
                   <td>2024.05.09</td>
                   <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
                 </tr>
                 <tr>
-                  <td class="board-table-num">1</td>
-                  <th><a href="#!">남대문 시장 페이백 이벤트 해보신분~? </a></th>
-                  <td>2024.05.10</td>
-                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
-                </tr>
-                <tr>
-                  <td class="board-table-num">1</td>
+                  <td class="board-table-num">13</td>
                   <th><a href="#!"> 장충시장 이용 팁 공유합니다!</a></th>
-                  <td>2024.05.10</td>
+                  <td>2024.05.09</td>
                   <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
                 </tr>
                 <tr>
-                  <td class="board-table-num">1</td>
-                  <th><a href="#!">종로5가 전통시장 지역 특산물</a></th>
-                  <td>2024.05.10</td>
+                  <td class="board-table-num">12</td>
+                  <th><a href="#!">중리전통시장과일 나눠서 구매하실분?</a></th>
+                  <td>2024.05.09</td>
                   <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
                 </tr>
 
                 <tr>
-                  <td class="board-table-num">1</td>
-                  <th><a href="#!">부산 국제시장에서 찐 숨은 맛집 알려드릴게요.</a></th>
-                  <td>2024.05.10</td>
+                  <td class="board-table-num">11</td>
+                  <th><a href="#!">부산 국제시장에서 찐 숨은 맛집 추천.</a></th>
+                  <td>2024.05.09</td>
+                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
+                </tr>
+                <tr>
+                  <td class="board-table-num">10</td>
+                  <th><a href="#!">대구 축제 일정 모음</a></th>
+                  <td>2024.05.09</td>
+                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
+                </tr>
+                <tr>
+                  <td class="board-table-num">9</td>
+                  <th><a href="#!">부산 갈만한 시장 추천 받아요.</a></th>
+                  <td>2024.05.09</td>
+                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
+                </tr>
+                <tr>
+                  <td class="board-table-num">8</td>
+                  <th><a href="#!">육거리종합시장 꽈배기 맛있나요?</a></th>
+                  <td>2024.05.08</td>
+                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
+                </tr>
+                <tr>
+                  <td class="board-table-num">7</td>
+                  <th><a href="#!">데이트 하기 좋은 시장 추천좀요</a></th>
+                  <td>2024.05.08</td>
+                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
+                </tr>
+                <tr>
+                  <td class="board-table-num">6</td>
+                  <th><a href="#!">대룡시장 오늘 왜 문 닫았나요ㅠㅠ</a></th>
+                  <td>2024.05.08</td>
+                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
+                </tr>
+                <tr>
+                  <td class="board-table-num">5</td>
+                  <th><a href="#!">제주 동문시장 맛도리 발견</a></th>
+                  <td>2024.05.08</td>
+                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
+                </tr>
+                <tr>
+                  <td class="board-table-num">4</td>
+                  <th><a href="#!">시장 불 났음</a></th>
+                  <td>2024.05.08</td>
+                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
+                </tr>
+                <tr>
+                  <td class="board-table-num">3</td>
+                  <th><a href="#!">아이들과 가기 좋은 시장</a></th>
+                  <td>2024.05.08</td>
+                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
+                </tr>
+                <tr>
+                  <td class="board-table-num">2</td>
+                  <th><a href="#!">가기 좋은 시장 추천 모음zip</a></th>
+                  <td>2024.05.07</td>
                   <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
                 </tr>
                 <tr>
                   <td class="board-table-num">1</td>
-                  <th><a href="#!">가족과 함께 놀러갈 코스 추천해주세요!</a></th>
-                  <td>2024.05.10</td>
-                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
-                </tr>
-                <tr>
-                  <td class="board-table-num">1</td>
-                  <th><a href="#!">가족과 함께 놀러갈 코스 추천해주세요!</a></th>
-                  <td>2024.05.10</td>
-                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
-                </tr>
-                <tr>
-                  <td class="board-table-num">1</td>
-                  <th><a href="#!">가족과 함께 놀러갈 코스 추천해주세요!</a></th>
-                  <td>2024.05.10</td>
-                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
-                </tr>
-                <tr>
-                  <td class="board-table-num">1</td>
-                  <th><a href="#!">가족과 함께 놀러갈 코스 추천해주세요!</a></th>
-                  <td>2024.05.10</td>
-                  <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
-                </tr>
-                <tr>
-                  <td class="board-table-num">1</td>
-                  <th><a href="#!">가족과 함께 놀러갈 코스 추천해주세요!</a></th>
-                  <td>2024.05.10</td>
+                  <th><a href="#!">여기 좋네요</a></th>
+                  <td>2024.05.07</td>
                   <td class="board-arrow"><i class="fa-solid fa-angle-right"></i></td>
                 </tr>
               </tbody>
@@ -630,9 +694,13 @@
         </div>
       </div>
       <!-- 페이지네이션3 -->
-      <!-- <div id="pagination3" class="pagination">
-               
-            </div> -->
+      <div id="pagination3" class="pagination-none">
+        <a href="#!" class="prev">이전</a>
+        <a href="#!" class="page">1</a>
+        <a href="#!" class="page">2</a>
+        <a href="#!" class="page">3</a>
+        <a href="#!" class="next">다음</a>
+      </div>
     </div>
 
     <script>
@@ -640,8 +708,6 @@
       let currentPage = 1;
       const catListDiv = document.getElementById("catList");
       const paginationDiv = document.getElementById("pagination");
-      const paginationDiv2 = document.getElementById("pagination2");
-      const paginationDiv3 = document.getElementById("pagination3");
       const prevButton = document.createElement("a"); // 이전버튼
       const nextButton = document.createElement("a"); // 다음버튼
 
@@ -753,7 +819,7 @@
 
       function updateItemsPerPage() {
         const screenWidth = window.innerWidth;
-        if (screenWidth >= 615 && screenWidth <= 910) {
+        if (screenWidth >= 615 && screenWidth <= 930) {
           itemsPerPage = 9;
         } else {
           itemsPerPage = 8;
@@ -766,6 +832,8 @@
 
       // 브라우저 크기가 변경될 때마다 실행
       window.addEventListener("resize", updateItemsPerPage);
+
+      //   =========================================
     </script>
   </body>
 </html>

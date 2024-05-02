@@ -213,6 +213,7 @@ window.addEventListener("load", function () {
 // =========================================================================================================
 // 제이쿼리
 $(function () {
+  $("#pagination2, #pagination3").hide();
   // 장날 안내: 버튼 클릭 색깔
   $(".market-btn-color").click(function () {
     $(this).addClass("on").siblings().removeClass("on");
@@ -256,6 +257,7 @@ $(function () {
     $(this).addClass("boardOn").siblings().removeClass("boardOn");
     $("#catList").show();
     $("#boardListInfo, #boardListTalk").hide(); // 수정된 부분
+    // 페이지네이션
     $("#pagination").show();
     $("#pagination2, #pagination3").hide();
     $("p.board-search-txt1").show();
@@ -267,8 +269,10 @@ $(function () {
     $(this).addClass("boardOn").siblings().removeClass("boardOn");
     $("#boardListInfo").show();
     $("#catList, #boardListTalk").hide(); // 수정된 부분
-    // $('#pagination2').show();
+    // 페이지네이션
+    $("#pagination2").show();
     $("#pagination, #pagination3").hide();
+
     $("p.board-search-txt2").show();
     $(".board-search-txt1, .board-search-txt3").hide();
     $("#reviewSlect").hide();
@@ -279,8 +283,10 @@ $(function () {
     $(this).addClass("boardOn").siblings().removeClass("boardOn");
     $("#boardListTalk").show();
     $("#catList, #boardListInfo").hide(); // 수정된 부분
-    // $('#pagination3').show();
+    // 페이지네이션
+    $("#pagination3").show();
     $("#pagination, #pagination2").hide();
+
     $("p.board-search-txt3").show();
     $(".board-search-txt1, .board-search-txt2").hide();
     $("#reviewSlect").hide();
