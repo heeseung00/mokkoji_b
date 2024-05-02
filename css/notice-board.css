@@ -2,7 +2,7 @@
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #191919;
 }
 
 .wrap {
@@ -19,10 +19,16 @@ a {
   margin: 0 auto;
 }
 
+/* 상단 */
+.login_go_back {
+  display: none;
+}
+
+/* 시장방문후기 */
 #catList {
   display: flex;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 20px 0;
   flex-wrap: wrap;
   max-width: 1200px;
   /* background-color: aquamarine; */
@@ -30,12 +36,19 @@ a {
 }
 
 .cat-card {
-  width: calc(25% - 40px); /* 한 줄에 4개씩 표시되도록 수정 */
-  margin: 40px auto;
+  width: calc(25% - 30px); /* 한 줄에 4개씩 표시되도록 수정 */
+  margin: 20px 0;
   /* background-color: aliceblue; */
-  border: 1px solid #ccc;
+  border: 1px solid #d1d1d1;
   border-radius: 5px;
   overflow: hidden;
+}
+
+.cat-imge-wrap {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
 .cat-image {
@@ -46,32 +59,36 @@ a {
   margin: 0 auto;
 }
 
-.pagination {
+#pagination,
+#pagination2,
+#pagination3 {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  font-size: 1.2rem;
 }
 
 .page-link {
   margin: 0 5px;
-  padding: 10px 15px;
-  background-color: #3498db;
+  padding: 10px 13px;
+  /* background-color: #3498db; */
   /* 배경색 */
-  color: #fff;
+  color: #191919;
   border: none;
-  border-radius: 20px;
+  border-radius: 40px;
   font-weight: bold;
   transition: background-color 0.3s;
 }
 
 /* 호버 효과 */
 .page-link:hover {
-  background-color: #2980b9;
+  background-color: #ff9364;
   /* 호버 시 배경색 변경 */
 }
 
 .active-page {
-  background-color: #29b96a;
+  background-color: #ff9364;
+  color: #fff;
   /* 활성 페이지 배경색 변경 */
 }
 
@@ -87,12 +104,17 @@ a {
   width: 100%;
   position: relative;
   height: 100%;
+  margin-top: 100px;
 }
 
 .board-title h2 {
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 25px;
+}
+
+.board-title h2:nth-child(2) {
+  display: none;
 }
 
 .board-title .board-title-btn {
@@ -110,9 +132,10 @@ a {
   height: 35px;
   font-size: 1.3rem;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #d1d1d1;
   background-color: #fff;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .board-title .board-title-btn .boardOn {
@@ -125,25 +148,33 @@ a {
 .board-search {
   width: 100%;
   height: 100%;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #ccc;
 }
 
 .board-search .container {
   width: 100%;
 }
 
-.board-search > .container > .inner {
+.board-search .inner {
   display: flex;
-  gap: 5px;
+  align-items: end;
   width: 100%;
   height: 100%;
   max-width: 1200px;
-  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.board-search form {
+  display: flex;
+  gap: 5px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .board-search .board-search-select {
-  width: 12%;
+  /* width: 12%; */
+  width: 70px;
   height: 100%;
   font-size: 1.3rem;
 }
@@ -151,7 +182,10 @@ a {
   width: 100%;
   padding: 5px;
   border-radius: 5px;
+  border: 1px solid #d1d1d1;
   cursor: pointer;
+  color: #aeaeae;
+  font-weight: 200;
 }
 
 .board-search .board-search-select > select > option {
@@ -159,25 +193,49 @@ a {
 }
 
 .board-search .board-search-input {
-  width: 30%;
+  /* width: 60%; */
+  width: 360px;
   height: 100%;
+  position: relative;
+  display: inline-block;
 }
 
 .board-search .board-search-input input {
-  padding: 8px;
+  padding: 8px 10px 8px 10px;
   width: 100%;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #d1d1d1;
   font-size: 1.3rem;
 }
 
 .board-search .board-search-input > input::placeholder {
   width: 100%;
   font-size: 1.3rem;
+  color: #aeaeae;
+  font-weight: 200;
 }
 
+.board-search .board-search-input label {
+  position: absolute;
+  top: 30%;
+  right: 23px;
+  transform: translate(-50%, -50%);
+}
+
+.board-search .board-search-input label i {
+  position: absolute;
+  font-size: 1.2rem;
+}
+
+/* .board-search .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+} */
+
 .board-search .board-search-btn {
-  width: 6%;
+  width: 70px;
   height: 100%;
 }
 
@@ -187,8 +245,25 @@ a {
   padding: 8px;
   font-size: 1.3rem;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #f0f0f0;
   cursor: pointer;
+}
+
+.board-search .board-search-btn > button:hover {
+  background-color: #606060;
+  border: 1px solid #606060;
+  color: #fff;
+}
+
+/* 후기, 인기순/최신순  */
+.board-sub-txt {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.board-sub-txt .inner {
+  display: flex;
+  align-items: center;
 }
 
 /* 상세 글자 */
@@ -200,14 +275,50 @@ a {
 }
 
 .board-text-wrap h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
-  margin: 7px 0 10px !important;
+  margin: 10px 0 15px !important;
+  /* 말줄임 */
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
 }
 
 .board-text-wrap p.description {
   font-size: 1.2rem;
   margin: 10px 0 17px !important;
+  line-height: 17px;
+  /* 말줄임 */
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
+}
+
+.board-search-txt {
+  width: 52%;
+  height: 100%;
+  font-size: 1.3rem;
+  text-align: left;
+  margin-bottom: 2px;
+}
+
+.board-search-txt p {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 5px;
+}
+
+.board-search-txt p.board-search-txt2,
+.board-search-txt p.board-search-txt3 {
+  display: none;
 }
 
 /* 별점 & 유저 */
@@ -254,4 +365,432 @@ a {
 
 .user-review-simple span {
   color: #999999;
+}
+
+/* 인기, 최신순 */
+#bestNew {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  font-size: 1.3rem;
+}
+
+#bestNew > * {
+  margin-left: 5px;
+}
+
+#bestNew .inner {
+  display: flex;
+  justify-content: end;
+  font-size: 1.3rem;
+}
+
+#bestNew .inner > * {
+  margin-left: 5px;
+}
+
+#bestNew p {
+  cursor: pointer;
+}
+
+#bestNew p:hover {
+  color: #f26e36;
+}
+#bestNew .bestNew-on {
+  color: #ff9364;
+  font-weight: 600;
+}
+
+/* ===================== */
+/* 오늘의 소식 */
+.boardList {
+  width: 100%;
+  display: none;
+  margin: 25px 0 40px;
+}
+
+/* =============== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.board-table {
+  font-size: 13px;
+  width: 100%;
+  /* border-top: 1px solid #ccc; */
+  border-bottom: 1px solid #ccc;
+}
+
+.board-table a {
+  color: #191919;
+  display: inline-block;
+  line-height: 1.4;
+  vertical-align: middle;
+  /* 말줄임 */
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
+}
+.board-table a:hover {
+  text-decoration: underline;
+}
+.board-table th {
+  text-align: center;
+}
+
+.board-table tbody td.board-arrow {
+  display: none;
+}
+
+.board-table .tr-wrap {
+  width: 100%;
+}
+
+.board-table .th-num {
+  width: 100px;
+  text-align: center;
+}
+
+.board-table .th-date {
+  width: 200px;
+}
+
+.board-table th,
+.board-table td {
+  padding: 14px 0;
+}
+
+.board-table tbody td {
+  border-top: 1px solid #e7e7e7;
+  text-align: center;
+}
+
+.board-table tbody th {
+  padding-left: 28px;
+  padding-right: 14px;
+  border-top: 1px solid #eeeded;
+  text-align: left;
+}
+
+.board-table tbody th p {
+  display: none;
+}
+
+/* .board-table .btn {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 15px;
+  font-weight: 400;
+  background: transparent;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+} */
+
+.btn-dark {
+  background: #555;
+  color: #fff;
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+  background: #373737;
+  border-color: #373737;
+  color: #fff;
+}
+
+.btn-dark {
+  background: #555;
+  color: #fff;
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+  background: #373737;
+  border-color: #373737;
+  color: #fff;
+}
+
+/* reset */
+
+* {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+
+/* ============================================================= */
+/* 반응형 */
+
+@media screen and (max-width: 1250px) {
+  #catList {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .cat-card {
+    width: calc(31% - 0px);
+    margin: 15px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    margin-top: 0 !important;
+  }
+
+  .header,
+  .mb-header,
+  .mb-header-450 {
+    display: none !important;
+  }
+
+  /* 뒤로가기 버튼 - 모바일 */
+  .login_go_back {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: -50%;
+    z-index: 999999;
+    padding: 20px 20px 0;
+  }
+
+  .login_go_back > a {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+  }
+
+  .login_go_back #loginCloseBtn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .login_go_back #loginCloseBtn > #loginCloseIcon {
+    font-size: 2.5rem;
+  }
+
+  .login_go_back #loginCloseBtn > #loginCloseIcon:hover {
+    font-size: 2.5rem;
+    color: #ff9364;
+  }
+
+  .login_go_back .go_back_title {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .board-title {
+    margin-top: 70px;
+  }
+
+  .board-title h2:nth-child(1) {
+    display: none;
+  }
+
+  .board-title h2:nth-child(2) {
+    display: block;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cat-card {
+    width: calc(33% - 5px);
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .cat-card {
+    width: calc(50% - 5px);
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .board-table-title {
+    display: none;
+  }
+
+  .board-table tr {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  /* .board-table th, .board-table td{
+    padding: 0;
+  } */
+
+  .board-table tbody th {
+    padding-left: 0;
+  }
+
+  .board-table a {
+    font-weight: 500;
+  }
+
+  .board-table tbody td {
+    text-align: left;
+    border: none;
+    padding: 0 0 20px 0;
+    font-weight: 300;
+  }
+
+  .board-table tbody th.board-title-1 {
+    border-top: 0;
+  }
+
+  .board-table tbody td.board-arrow {
+    display: block;
+    position: absolute;
+    top: 35%;
+    right: 0;
+    font-size: 2.2rem;
+    color: #ccc;
+    font-weight: 100;
+  }
+
+  .board-table td.board-table-num {
+    display: none;
+  }
+
+  /* 지역 검색 */
+  .board-search .board-search-input {
+    width: 240px;
+  }
+}
+
+/* @media screen and (max-width: 590px) {
+  .board-search .board-search-select {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .board-search .board-search-select {
+    width: 18%;
+  }
+} */
+
+@media screen and (max-width: 450px) {
+  .cat-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* 지역 검색 */
+  .board-search .board-search-input {
+    width: 200px;
+  }
+}
+
+/* @media screen and (max-width: 430px) {
+  .board-search .board-search-select {
+    width: 23%;
+  }
+
+  .board-search .board-search-input {
+    width: 35%;
+  }
+}
+ */
+
+@media screen and (max-width: 390px) {
+  /* 지역 검색 */
+  .board-search .board-search-input {
+    width: 170px;
+  }
+
+  .board-search .board-search-select {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  /* 제목 */
+  .board-title h2:nth-child(2) {
+    font-size: 2.8rem;
+  }
+  /* 지역 검색 */
+  .board-search .board-search-input {
+    width: 170px;
+  }
+
+  .board-search .board-search-select {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .board-search .board-search-select {
+    width: 58px;
+  }
+
+  .board-search .board-search-input {
+    width: 122px;
+  }
+
+  .board-search .board-search-input input {
+    padding: 8px 34px 8px 10px;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .board-title h2:nth-child(2) {
+    font-size: 2.6rem;
+  }
 }

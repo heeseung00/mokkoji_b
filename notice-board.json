@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "title": "고양이 1",
-    "url": "images/review/review-m-grad-1.jpg",
+    "title": "가족과 함께가기 좋은 꼬막정식 식사",
+    "url": "images/review/reveiw-gra-1.jpg",
     "stars": "images/review/review-stars.png",
     "userIcon": "images/8ranking/ranking-img-1.png",
     "userName": "케로케로피",
-    "description": "고양이 1의 특징",
+    "description": "미리말하지만 난 꼬막(등의 해산물)을 먹지않는다. 그럼에도 불구하고 맛있게 먹었음. 음식의 간이 딱 맞아요.",
     "taste": "맛있음",
     "price": "만족",
     "service": "친절함"
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "title": "고양이 2",
-    "url": "images/review/review-m-grad-1.jpg",
+    "url": "images/review/review-m-grad-3.jpg",
     "stars": "images/review/review-stars.png",
     "userIcon": "images/8ranking/ranking-img-1.png",
     "userName": "케로케로피",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "title": "고양이 3",
-    "url": "images/review/review-m-grad-1.jpg",
+    "url": "images/review/review-m-grad-4.jpg",
     "stars": "images/review/review-stars.png",
     "userIcon": "images/8ranking/ranking-img-1.png",
     "userName": "케로케로피",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "title": "고양이 4",
-    "url": "images/review/review-m-grad-1.jpg",
+    "url": "images/review/review-m-grad-5.jpg",
     "stars": "images/review/review-stars.png",
     "userIcon": "images/8ranking/ranking-img-1.png",
     "userName": "케로케로피",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "title": "고양이 5",
-    "url": "images/review/review-m-grad-1.jpg",
+    "url": "images/review/review-m-grad-6.jpg",
     "stars": "images/review/review-stars.png",
     "userIcon": "images/8ranking/ranking-img-1.png",
     "userName": "케로케로피",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "title": "고양이 6",
-    "url": "images/review/review-m-grad-1.jpg",
+    "url": "images/review/review-m-grad-2.jpg",
     "stars": "images/review/review-stars.png",
     "userIcon": "images/8ranking/ranking-img-1.png",
     "userName": "케로케로피",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "title": "고양이 7",
-    "url": "images/review/review-m-grad-1.jpg",
+    "url": "images/review/reveiw-gra-2.jpg",
     "stars": "images/review/review-stars.png",
     "userIcon": "images/8ranking/ranking-img-1.png",
     "userName": "케로케로피",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "title": "고양이 8",
-    "url": "images/review/review-m-grad-1.jpg",
+    "url": "images/review/reveiw-gra-3.jpg",
     "stars": "images/review/review-stars.png",
     "userIcon": "images/8ranking/ranking-img-1.png",
     "userName": "케로케로피",

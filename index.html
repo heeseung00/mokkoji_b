@@ -64,7 +64,9 @@
     <!-- font aswesom -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> -->
+    <!-- cdn Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
     <!-- aos css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- css -->
@@ -78,7 +80,9 @@
     <!-- aos js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+    <!-- cdn Swiper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"></script>
     <!-- js -->
     <script src="js/html5shiv.js"></script>
     <!-- <script src="js/prefixfree.min.js"></script> -->
@@ -86,6 +90,8 @@
     <script src="js/script.js"></script>
     <script src="js/hee.js"></script>
     <script src="js/lee.js"></script>
+    <!-- 희승: 시장 후기 사이즈 조절-->
+    <script src="js/resize_hee.js"></script>
     <script src="js/jquery.cookie.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E30E53JQ92"></script>
@@ -1671,7 +1677,7 @@
         <div class="container">
           <div class="inner">
             <!-- <div class="banner-img"></div> -->
-            <a href="javascript:;">
+            <a href="notice-board.html">
               <img src="images/6banner-m/banner-m-1200.png" alt="중간 배너 이미지" />
               <img src="images/6banner-m/banner-m-768.png" alt="중간 배너 이미지2" />
               <img src="images/6banner-m/banner-m-360.png" alt="중간 배너 이미지3" />
@@ -1692,7 +1698,9 @@
                 <ul>
                   <li>
                     <h2 class="ranking-number">2</h2>
-                    <div class="ranking-img"><img src="images/8ranking/ranking-img-2.jpg" alt="2위 프로필 사진" /></div>
+                    <div class="ranking-img">
+                      <img src="images/8ranking/ranking-img-2.jpg" alt="2위 프로필 사진" />
+                    </div>
                     <p class="ranking-name">코비</p>
                     <p class="ranking-collect">115개</p>
                   </li>
@@ -1721,7 +1729,9 @@
                   </li>
                   <li>
                     <div class="ranking-number">3</div>
-                    <div class="ranking-img"><img src="images/8ranking/ranking-img-3.jpg" alt="3위 프로필 사진" /></div>
+                    <div class="ranking-img">
+                      <img src="images/8ranking/ranking-img-3.jpg" alt="3위 프로필 사진" />
+                    </div>
                     <div class="ranking-name">따하하하</div>
                     <div class="ranking-collect">89개</div>
                   </li>
@@ -1732,7 +1742,9 @@
                 <ul>
                   <li>
                     <h3 class="ranking-number">4</h3>
-                    <div class="ranking-img"><img src="images/8ranking/ranking-img-4.jpg" alt="4위 프로필 사진" /></div>
+                    <div class="ranking-img">
+                      <img src="images/8ranking/ranking-img-4.jpg" alt="4위 프로필 사진" />
+                    </div>
                     <div class="ranking-table-txt">
                       <p class="ranking-name">브라우니</p>
                       <p class="ranking-collect">88개</p>
@@ -1740,7 +1752,9 @@
                   </li>
                   <li>
                     <h3 class="ranking-number">5</h3>
-                    <div class="ranking-img"><img src="images/8ranking/ranking-img-5.jpg" alt="4위 프로필 사진" /></div>
+                    <div class="ranking-img">
+                      <img src="images/8ranking/ranking-img-5.jpg" alt="4위 프로필 사진" />
+                    </div>
                     <div class="ranking-table-txt">
                       <p class="ranking-name">뚱이</p>
                       <p class="ranking-collect">70개</p>
@@ -1748,7 +1762,9 @@
                   </li>
                   <li>
                     <h3 class="ranking-number">6</h3>
-                    <div class="ranking-img"><img src="images/8ranking/ranking-img-6.jpg" alt="4위 프로필 사진" /></div>
+                    <div class="ranking-img">
+                      <img src="images/8ranking/ranking-img-6.jpg" alt="4위 프로필 사진" />
+                    </div>
                     <div class="ranking-table-txt">
                       <p class="ranking-name">짱구</p>
                       <p class="ranking-collect">68개</p>
@@ -1756,7 +1772,9 @@
                   </li>
                   <li>
                     <h3 class="ranking-number">7</h3>
-                    <div class="ranking-img"><img src="images/8ranking/ranking-img-7.jpg" alt="4위 프로필 사진" /></div>
+                    <div class="ranking-img">
+                      <img src="images/8ranking/ranking-img-7.jpg" alt="4위 프로필 사진" />
+                    </div>
                     <div class="ranking-table-txt">
                       <p class="ranking-name">호빵맨</p>
                       <p class="ranking-collect">56개</p>
@@ -1764,7 +1782,9 @@
                   </li>
                   <li>
                     <h3 class="ranking-number">8</h3>
-                    <div class="ranking-img"><img src="images/8ranking/ranking-img-8.jpg" alt="4위 프로필 사진" /></div>
+                    <div class="ranking-img">
+                      <img src="images/8ranking/ranking-img-8.jpg" alt="4위 프로필 사진" />
+                    </div>
                     <div class="ranking-table-txt">
                       <p class="ranking-name">아이우에오</p>
                       <p class="ranking-collect">52개</p>
@@ -2079,7 +2099,9 @@
 
             <div class="ft-bt">
               <div class="ft-bt-left">
-                <div class="ft-logo"><img src="images/10footer/footer-logo.png" alt="하단 흑백 로고" /></div>
+                <div class="ft-logo">
+                  <img src="images/10footer/footer-logo.png" alt="하단 흑백 로고" />
+                </div>
                 <p>(주) 모꼬지</p>
                 <p>주소 : 대구 중구 중앙대로 394, 제일빌딩 5층</p>
                 <p>사업자등록번호 : 123-456-78977 | 통신판매업신고 : 2024-대구중구-1234호</p>

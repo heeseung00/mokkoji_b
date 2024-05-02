@@ -248,4 +248,41 @@ $(function () {
     $(".reviewSwiper").hide();
     $(".reviewSwiper2").show();
   });
+
+  // ===========================================================
+  // 게시판
+  // 시장 방문 후기: 버튼 클릭 색깔
+  $(".marketReveiw-btn-color").click(function () {
+    $(this).addClass("boardOn").siblings().removeClass("boardOn");
+    $("#catList").show();
+    $("#boardListInfo, #boardListTalk").hide(); // 수정된 부분
+    $("#pagination").show();
+    $("#pagination2, #pagination3").hide();
+    $("p.board-search-txt1").show();
+    $("p.board-search-txt2, .board-search-txt3").hide();
+  });
+
+  // 오늘의 소식: 버튼 클릭 색깔
+  $(".today-btn-color").click(function () {
+    $(this).addClass("boardOn").siblings().removeClass("boardOn");
+    $("#boardListInfo").show();
+    $("#catList, #boardListTalk").hide(); // 수정된 부분
+    // $('#pagination2').show();
+    $("#pagination, #pagination3").hide();
+    $("p.board-search-txt2").show();
+    $(".board-search-txt1, .board-search-txt3").hide();
+    $("#reviewSlect").hide();
+  });
+
+  // 소통 공간: 버튼 클릭 색깔
+  $(".talk-btn-color").click(function () {
+    $(this).addClass("boardOn").siblings().removeClass("boardOn");
+    $("#boardListTalk").show();
+    $("#catList, #boardListInfo").hide(); // 수정된 부분
+    // $('#pagination3').show();
+    $("#pagination, #pagination2").hide();
+    $("p.board-search-txt3").show();
+    $(".board-search-txt1, .board-search-txt2").hide();
+    $("#reviewSlect").hide();
+  });
 });

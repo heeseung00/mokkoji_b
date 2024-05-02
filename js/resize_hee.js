@@ -1,4 +1,4 @@
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
     var browserWidth = window.innerWidth; // 현재 브라우저의 너비
 
     // 브라우저 크기가 1200px 이하인 경우에는 함수 실행하지 않음
