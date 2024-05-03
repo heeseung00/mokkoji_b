@@ -102,10 +102,10 @@ window.addEventListener("load", function () {
       el: ".swiper-pagination-review1",
       clickable: true,
     },
-    navigation: {
-      nextEl: ".review .swiper-button-next-review1",
-      prevEl: ".review .swiper-button-prev-review1",
-    },
+    // navigation: {
+    //   nextEl: ".review .swiper-button-next-review1",
+    //   prevEl: ".review .swiper-button-prev-review1",
+    // },
     breakpoints: {
       1201: {
         slidesPerView: 5,
@@ -143,10 +143,10 @@ window.addEventListener("load", function () {
       el: ".swiper-pagination-review2",
       clickable: true,
     },
-    navigation: {
-      nextEl: ".swiper-button-next-review2",
-      prevEl: ".swiper-button-prev-review2",
-    },
+    // navigation: {
+    //   nextEl: ".swiper-button-next-review2",
+    //   prevEl: ".swiper-button-prev-review2",
+    // },
     breakpoints: {
       1200: {
         slidesPerView: 5,

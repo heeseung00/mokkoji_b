@@ -1,25 +1,126 @@
-// window.addEventListener("load", function () {
-//
-//   var joinSwiper = new Swiper(".joinSwiper", {
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//       renderBullet: function (index, className) {
-//         return '<span class="' + className + '">' + (index + 1) + "</span>";
-//       },
-//     },
-//   });
-// })
+window.addEventListener("load", function () {
+  var isVerified = false;
+  var countdown; // 카운트다운을 관리하는 변수
+
+  function completeVerification() {
+    // 입력된 값 가져오기
+    var inputValue = document.getElementById("join_more_info").querySelector("#signupEnterNumber").value.trim();
+
+    // 입력된 값이 비어있는지 확인
+    if (inputValue !== "") {
+      // 이미 인증되었는지 확인
+      if (!isVerified) {
+        // 버튼 안의 텍스트를 "인증 완료"로 변경
+        var button = document.getElementById("join_more_info").querySelector("#signUp_send_check");
+        button.innerText = "인증 완료";
+
+        // 버튼 스타일 변경
+        button.style.color = "#777777";
+        button.style.backgroundColor = "#f4f4f4";
+        button.style.borderColor = "#f4f4f4";
+
+        // #signupEnterNumber 스타일 변경
+        var signupEnterNumber = document.getElementById("join_more_info").querySelector("#signupEnterNumber");
+        signupEnterNumber.style.color = "#777777";
+        signupEnterNumber.style.backgroundColor = "#f4f4f4";
+        signupEnterNumber.style.borderColor = "#f4f4f4";
+
+        // 입력 불가능하게 만듭니다.
+        signupEnterNumber.disabled = true;
+
+        // 인증 완료 메시지를 alert 창으로 표시
+        alert("인증이 완료되었습니다.");
+
+        // 클릭 이벤트 제거
+        button.removeEventListener("click", completeVerification);
+
+        // 인증 상태 업데이트
+        isVerified = true;
+
+        // 카운트 다운 메시지를 숨깁니다.
+        document.querySelector("span.time").style.display = "none";
+      } else {
+        // 이미 인증된 경우
+        alert("이미 인증되었습니다.");
+      }
+    } else {
+      // 입력된 값이 없는 경우
+      alert("인증번호를 입력해주세요.");
+    }
+  }
+
+  // "인증하기" 버튼 클릭 이벤트 리스너 추가
+  document
+    .getElementById("join_more_info")
+    .querySelector("#signUp_send_check")
+    .addEventListener("click", function () {
+      // 이미 인증된 경우에만 카운트 다운 메시지를 숨깁니다.
+      if (isVerified) {
+        document.querySelector("span.time").style.display = "none";
+      }
+      completeVerification();
+    });
+
+  // "인증하기" 버튼 클릭 시 카운트 다운 시작
+  document
+    .getElementById("join_more_info")
+    .querySelector("#signUp_send_check")
+    .addEventListener("click", function () {
+      // 카운트 다운을 관리하는 함수
+      function updateCountdown() {
+        if (seconds >= 0) {
+          const minutes = Math.floor(seconds / 60);
+          const remainingSeconds = seconds % 60;
+          $timeSpan.text(`${minutes.toString().padStart(2, "0")}:${remainingSeconds.toString().padStart(2, "0")}`);
+          seconds--;
+        } else {
+          clearInterval(countdown);
+          alert("인증번호 유효시간이 만료되었습니다.");
+        }
+      }
+
+      // 카운트 다운 시작
+      clearInterval(countdown); // 기존 카운트 다운 중이면 중지
+      seconds = 180; // 3분(180초) 카운트 다운으로 설정
+      updateCountdown(); // 초기 카운트 다운 값을 표시
+      countdown = setInterval(updateCountdown, 1000); // 1초마다 업데이트
+    });
+
+  // #signupEnterNumber 값 변경 감지하여 스타일 초기화
+  document
+    .getElementById("join_more_info")
+    .querySelector("#signupEnterNumber")
+    .addEventListener("input", function () {
+      var signupEnterNumber = document.getElementById("join_more_info").querySelector("#signupEnterNumber");
+      if (!isVerified && signupEnterNumber.value.trim() !== "") {
+        // 값이 입력된 경우 스타일 초기화
+        signupEnterNumber.style.color = "";
+        signupEnterNumber.style.backgroundColor = "";
+        signupEnterNumber.style.borderColor = "";
+      }
+    });
+
+  // ==================================================
+  // 중복확인 버튼 클릭: 이동 막기
+  document.getElementById("doble-check-btn").addEventListener("click", function (event) {
+    event.preventDefault();
+  });
+});
 
 // =========================================================================================================
 // 제이쿼리
-
 $(document).ready(function () {
-  // 전체 동의 라디오 버튼 선택 해제 시
-  // 전체 동의 라디오 버튼
-  $("#chkAll").change(function () {
-    var isChecked = $(this).prop("checked");
-    $(".chk").prop("checked", isChecked);
+  $("#cbx_chkAll").click(function () {
+    if ($("#cbx_chkAll").is(":checked")) $("input[name=chk]").prop("checked", true);
+    else $("input[name=chk]").prop("checked", false);
+  });
+
+  $("input[name=chk]").click(function () {
+    var total = $("input[name=chk]").length;
+    var checked = $("input[name=chk]:checked").length;
+
+    if (total != checked) $("#cbx_chkAll").prop("checked", false);
+    else $("#cbx_chkAll").prop("checked", true);
   });
 
   //=======================================
@@ -45,22 +146,23 @@ $(document).ready(function () {
   }
   updateButtonText();
 
-  //  ===========================================
-  // 유효성 검사: 기본정보
+  // ===================================================================
   // 정규 표현식을 사용한 유효성 검사
   var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   var passwordRegex = /^(?=.*\d)(?=.*[a-z]).{8,}$/; // 숫자와 소문자 8글자 이상
 
-  function validateInput(input, regex, errorMessage) {
+  function validateInput(input, regex, errorMessage, wrapId) {
     if (regex.test(input.val())) {
-      input.removeClass("error");
-      input.siblings(".error").text("");
-      $(".join .signupForm-content button.signup-check").css("margin", "0 0 20px 10px");
+      input.siblings(".error").hide(); // 유효성 검사 통과 시 에러 메시지 숨김
+      $("#" + wrapId)
+        .find("label.label-title")
+        .css("padding-bottom", "30px"); // 에러 메시지가 숨겨질 때 padding-bottom 변경
       return true;
     } else {
-      input.addClass("error");
-      input.siblings(".error").text(errorMessage);
-      $(".join .signupForm-content button.signup-check").css("margin", "0 0 10px 10px");
+      input.siblings(".error").text(errorMessage).show(); // 유효성 검사 실패 시 에러 메시지 표시
+      $("#" + wrapId)
+        .find("label.label-title")
+        .css("padding-bottom", "20px"); // 에러 메시지가 보일 때 padding-bottom 변경
       return false;
     }
   }
@@ -69,25 +171,23 @@ $(document).ready(function () {
     var password = $("#user_pw").val();
     var confirmPassword = $("#confirm_pw").val();
     if (password === confirmPassword) {
-      $("#confirm_pw").removeClass("error");
-      $("#confirm_pw").siblings(".error").text("");
-      $(".join .signupForm-content button.signup-check").css("margin", "0 0 20px 10px");
+      $("#confirm_pw").siblings(".error").hide(); // 유효성 검사 통과 시 에러 메시지 숨김
+      $("#confirmPwWrap").find("label.label-title").css("padding-bottom", "30px"); // 에러 메시지가 숨겨질 때 padding-bottom 변경
       return true;
     } else {
-      $("#confirm_pw").addClass("error");
-      $("#confirm_pw").siblings(".error").text("비밀번호가 일치하지 않습니다.");
-      $(".join .signupForm-content button.signup-check").css("margin", "0 0 10px 10px");
+      $("#confirm_pw").siblings(".error").text("비밀번호가 일치하지 않습니다.").show(); // 유효성 검사 실패 시 에러 메시지 표시
+      $("#confirmPwWrap").find("label.label-title").css("padding-bottom", "20px"); // 에러 메시지가 보일 때 padding-bottom 변경
       return false;
     }
   }
 
   // 사용자가 입력란에 타이핑하는 동안 유효성 검사 실시
   $("#user_id").on("input", function () {
-    validateInput($(this), emailRegex, "올바른 이메일 형식이 아닙니다.");
+    validateInput($(this), emailRegex, "올바른 이메일 형식이 아닙니다.", "userIdWrap");
   });
 
   $("#user_pw").on("input", function () {
-    validateInput($(this), passwordRegex, "8자리 이상 영문 소문자와 숫자를 입력해주세요.");
+    validateInput($(this), passwordRegex, "8자리 이상 영문 소문자와 숫자를 입력해주세요.", "pwWrap");
   });
 
   $("#confirm_pw").on("input", function () {
@@ -95,21 +195,25 @@ $(document).ready(function () {
   });
 
   $("#user_nickname").on("input", function () {
-    validateInput($(this), /.+/, "닉네임을 입력해주세요.");
+    validateInput($(this), /.+/, "닉네임을 입력해주세요.", "nicknameWrap");
+    if ($(this).siblings(".error").is(":visible")) {
+      $("#nicknameWrap").find("label.label-title").css("padding-bottom", "20px");
+    } else {
+      $("#nicknameWrap").find("label.label-title").css("padding-bottom", "30px");
+    }
   });
 
   // 다음 페이지로 넘어가는 버튼 클릭 시 유효성 검사 수행
   $("#join_basic_info_btn > .signup-next-btn2").click(function (e) {
     e.preventDefault();
-    var validEmail = validateInput($("#user_id"), emailRegex, "올바른 이메일 형식이 아닙니다.");
-    var validPassword = validateInput($("#user_pw"), passwordRegex, "8자리 이상 영문 소문자와 숫자를 입력해주세요.");
+    var validEmail = validateInput($("#user_id"), emailRegex, "올바른 이메일 형식이 아닙니다.", "userIdWrap");
+    var validPassword = validateInput($("#user_pw"), passwordRegex, "8자리 이상 영문 소문자와 숫자를 입력해주세요.", "pwWrap");
     var validConfirmPassword = validateConfirmPassword();
-    var validNickname = validateInput($("#user_nickname"), /.+/, "닉네임을 입력해주세요.");
+    var validNickname = validateInput($("#user_nickname"), /.+/, "닉네임을 입력해주세요.", "nicknameWrap");
 
     if (validEmail && validPassword && validConfirmPassword && validNickname) {
       // 오류 메시지 숨기기
-      $("#user_id, #user_pw, #confirm_pw, #user_nickname").siblings(".error").text("");
-      $(".join .signupForm-content button.signup-check").css("margin", "0 0 20px 10px");
+      $(".error").hide();
 
       // 다음 페이지로 이동
       $("#join_agree, #join_basic_info").css("display", "none");
@@ -127,6 +231,10 @@ $(document).ready(function () {
       return false;
     }
   });
+
+  // $("#nicknameWrap").siblings(".error").show(fucntion(){
+  //   $("#nicknameWrap").find("button").css("margin-top", "11px")
+  // })
 
   // =================================================
   // 휴대폰: 유효성 검사
@@ -195,20 +303,15 @@ $(document).ready(function () {
   });
 
   // =================================================
-  // 나중에 입력하기 체크 여부에 따라 동작 설정
   $("#later_enter").change(function () {
     if ($(this).is(":checked")) {
       // 나중에 입력하기가 체크되면 해당 폼 안의 모든 input과 select, button을 비활성화
       $("#join_more_info input, #join_more_info select, .signup-check-border,  #user_number , #signupEnterNumber ,span.time").not("#later_enter").prop("disabled", true).addClass("disabled-style");
-      $("#join_more_info_btn button").prop("disabled", true);
       $("span.error").hide(); // 나중에 입력하기 체크 시 에러 메시지 숨김
-      $(".input-wrap").addClass("later_enter_margin");
     } else {
       // 나중에 입력하기가 체크 해제되면 해당 폼 안의 모든 input과 select, button을 활성화
       $("#join_more_info input, #join_more_info select, #user_number, #signupEnterNumber,span.time ").not("#later_enter").prop("disabled", false).removeClass("disabled-style");
-      $("#join_more_info_btn button").prop("disabled", false);
       $("span.error").show(); // 나중에 입력하기 체크 해제 시 에러 메시지 보임
-      $(".input-wrap").removeClass("later_enter_margin");
     }
   });
 
@@ -237,30 +340,46 @@ $(document).ready(function () {
   });
 
   // =========================================================
-  //   체크 화살표 방향 바꾸기
+  // 약관 동의: 내용 보이기
+  // #check_detial_Btn1을 클릭했을 때
   $("#check_detial_Btn1").click(function () {
     $("#checkTxt1").toggle();
-    // var $icon = $(this).find("i");
-    // $icon.toggleClass("rotated");
   });
 
+  // #check_detial_Btn2을 클릭했을 때
   $("#check_detial_Btn2").click(function () {
     $("#checkTxt2").toggle();
-    // var $icon = $(this).find("i");
-    // $icon.toggleClass("rotated");
   });
 
+  // #check_detial_Btn3을 클릭했을 때
   $("#check_detial_Btn3").click(function () {
     $("#checkTxt3").toggle();
-    // var $icon = $(this).find("i");
-    // $icon.toggleClass("rotated");
   });
 
+  // ==========================================================
+  // 약관 동의: 체크 화살표 방향 바꾸기
+  $(".check_detial_icon1").click(function () {
+    // 아이콘 회전
+    $(this).toggleClass("rotate");
+  });
+
+  $(".check_detial_icon2").click(function () {
+    // 아이콘 회전
+    $(this).toggleClass("rotate");
+  });
+
+  $(".check_detial_icon3").click(function () {
+    // 아이콘 회전
+    $(this).toggleClass("rotate");
+  });
+
+  // =========================================================
+  // 회원가입버튼 및 로그인 페이지로 이동
   $("#join_more_info_btn button").click(function () {
     // 회원가입 완료 알림 메시지를 표시합니다.
     alert("회원가입이 성공적으로 완료되었습니다. 로그인 페이지로 이동합니다.");
 
     // 로그인 페이지로 이동합니다.
-    // window.location.href = "login.html";
+    window.location.href = "login.html";
   });
 });

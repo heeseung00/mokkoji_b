@@ -788,6 +788,7 @@
   color: #fe6b38;
   top: 50%;
   transform: translateY(-50%);
+  display: none !important;
 }
 /* .review .swiper-button-prev-review1,
 .review .swiper-button-next-review1 {
@@ -796,8 +797,8 @@
 
 /* PAGINATION */
 .review .swiper-pagination-bullet {
-  width: 17px;
-  height: 17px;
+  width: 16px;
+  height: 16px;
   text-align: center;
   line-height: 21px;
   font-size: 1.2rem;
@@ -1317,8 +1318,6 @@
     line-height: 25px !important;
   }
 
-  
-
   .review .swiper-slide a {
     width: 100% !important;
     margin-bottom: 0;
@@ -1333,7 +1332,6 @@
     margin-top: -30px;
   }
 
-  
   .review .swiper-pagination-bullet {
     width: 13px;
     height: 13px;
@@ -1380,7 +1378,6 @@
   .review {
     margin-bottom: 50px;
   }
-
 
   /* 이벤트, 오늘의 소식 */
   .reviewToday > .container {
@@ -1681,8 +1678,6 @@
     left: 7%;
     display: none;
   }
-
-  
 }
 
 @media screen and (max-width: 500px) {

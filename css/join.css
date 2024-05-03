@@ -67,13 +67,13 @@ body {
 
 /* 회원가입 과정 */
 #join_agree {
-  /* display: none; */
-  display: block;
+  display: none;
+  /* display: block; */
 }
 
 #join_basic_info {
-  display: none;
-  /* display: block; */
+  /* display: none; */
+  display: block;
 }
 
 #join_more_info {
@@ -131,13 +131,20 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
+  height: 100%;
 }
 
 .input-wrap {
+  position: relative;
   display: flex;
   width: 82%;
   height: 100%;
+  align-items: flex-start;
   flex-direction: column;
+}
+
+.input-wrap input {
+  position: relative;
 }
 
 .input-wrap input::after {
@@ -177,7 +184,8 @@ body {
 }
 
 .rotate {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
+  /*transition: transform 0.5s ease;  회전 애니메이션 효과를 부드럽게 만들기 위해 추가 */
 }
 
 #join_agree .join_box > ul {
@@ -197,7 +205,18 @@ body {
   padding: 15px 0 30px;
   border-bottom: 0.3px solid rgb(244, 244, 244);
   color: #686868;
+  overflow: hidden;
 }
+
+#join_agree li.checkBox p.checkTxtScroll {
+  overflow-y: scroll;
+  height: 115px;
+}
+
+/* #join_agree .clearfix {
+  display: flex;
+  align-items: center;
+} */
 
 #join_agree .checkBtn {
   display: flex;
@@ -221,8 +240,8 @@ body {
 }
 
 #join_agree .checkBtn > input.chk {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   margin-right: 10px;
 }
 
@@ -238,8 +257,35 @@ body {
   font-weight: 400 !important;
 }
 
-/* radio 커스텀 (적용 x) */
-#join_agree input[type="radio"] {
+/* #join_agree .check04 {
+} */
+
+#join_agree .checkBtn-sub {
+  width: 100%;
+  display: flex;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+#join_agree .checkBtn-sub li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#join_agree .checkBtn-sub li input {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+#join_agree .checkBtn-sub li label {
+  font-weight: 300;
+}
+
+/* checkbox 커스텀 (적용 x) */
+#join_agree input[type="checkbox"],
+#join_more_info input[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -251,31 +297,73 @@ body {
   cursor: pointer;
   padding: 0.2em 0.4em;
   background-color: #fff;
+  border: 1px solid #191919;
+  box-shadow: transparent;
 }
 
-#join_agree input[type="radio"]:checked {
-  background-color: #ff9364;
+#join_agree input[type="checkbox"]:checked,
+#join_more_info input[type="checkbox"]:checked {
+  background-color: #fff;
   vertical-align: middle;
   appearance: none;
-  border: 0.1em solid #ff9364;
+  background-color: #fe6b38;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1.5px #fe6b38;
   /* border: 0.4em solid tomato; */
   border-radius: 50%;
-  width: 19px;
-  height: 19px;
+  width: 1spx;
+  height: 18px;
+  margin-bottom: 2px;
+}
+#join_more_info input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  padding: 0.2em 0.4em;
+  background-color: #fff;
+  border: 1px solid #191919;
+  box-shadow: transparent;
+}
+
+#join_more_info input[type="radio"]:checked {
+  background-color: #fff;
+  vertical-align: middle;
+  appearance: none;
+  background-color: #fe6b38;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1.5px #fe6b38;
+  /* border: 0.4em solid tomato; */
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  margin-bottom: 2px;
 }
 
 /* 체크 효과 */
-#join_agree .check_detial_Btn {
+#join_agree #check_detial_Btn1,
+#check_detial_Btn2,
+#check_detial_Btn3 {
   display: none;
   transition: 0.3 all;
 }
 
-/* #check_detial_Btn:checked ~ #checkTxt {
+/* #check_detial_Btn1:checked ~ #checkTxt1,
+#check_detial_Btn2:checked ~ #checkTxt2,
+#check_detial_Btn3:checked ~ #checkTxt4 {
   display: block;
 } */
 
-#join_agree .checkTxt {
+#join_agree #checkTxt1,
+#checkTxt2,
+#checkTxt3 {
   display: none;
+  transition: 0.3 all;
 }
 
 .check_detial_icon {
@@ -295,6 +383,7 @@ body {
 
 /* 생년월일 */
 .input-wrap #user_date {
+  width: 100%;
   padding: 15px 10px;
   border: 1px solid #ccc;
   font-size: 1.5rem;
@@ -333,6 +422,10 @@ body {
 
 .join label.label-title {
   padding-bottom: 20px;
+}
+
+.join label.label-title:nth-child(4) {
+  padding-bottom: 0 !important;
 }
 
 .join span.label_star,
@@ -437,7 +530,7 @@ body {
   width: 19%;
   height: 100%;
   padding: 15px 10px;
-  margin: 0 0 10px 10px;
+  margin: 0 0 0 10px;
   font-size: 1.6rem;
   font-weight: 600;
   color: #fff;
@@ -458,9 +551,12 @@ body {
   border: 1px solid #ff9364;
   border-radius: 5px;
   color: #ff9364;
+  margin-bottom: 12px;
 }
 
 .join .error {
+  position: relative;
+  bottom: 0px;
   color: rgb(240, 63, 64);
   font-size: 1.3rem;
   margin: 10px 0 0;
@@ -664,7 +760,7 @@ body {
     align-items: flex-start;
     width: 100%;
     height: 100%;
-    margin-bottom: 5px !important;
+    margin-bottom: 20px !important;
     flex-direction: column !important;
   }
 
@@ -723,7 +819,7 @@ body {
     align-items: flex-start;
     width: 100%;
     height: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
     flex-direction: column;
   }
 
@@ -795,8 +891,8 @@ body {
     background-color: #fe6b38;
   }
 
-  /* radio 커스텀 (적용 x) */
-  #join_agree input[type="radio"] {
+  /* checkbox 커스텀 (적용 x) */
+  #join_agree input[type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -808,11 +904,14 @@ body {
     cursor: pointer;
   }
 
-  #join_agree input[type="radio"]:checked {
-    background-color: #ff9364;
+  #join_agree input[type="checkbox"]:checked {
+    background-color: #fff;
     vertical-align: middle;
     appearance: none;
-    border: max(1px, 0.2rem) solid #ff9364;
+    background-color: #fe6b38;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1.5px #fe6b38;
+    /* border: 0.4em solid tomato; */
     border-radius: 50%;
     width: 18px;
     height: 18px;

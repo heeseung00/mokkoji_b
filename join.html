@@ -64,6 +64,7 @@
     <!-- <script src="js/script.js"></script> -->
     <!-- <script src="js/hee.js"></script> -->
     <!-- <script src="js/lee.js"></script> -->
+    <script src="js/join-agree.js"></script>
     <script src="js/join.js"></script>
     <script src="js/jquery.cookie.js"></script>
     <!-- Google tag (gtag.js) -->
@@ -450,27 +451,27 @@
                 <li class="checkBox check01">
                   <ul class="clearfix">
                     <li class="checkBtn" id="checkAllBtn">
-                      <input type="radio" name="chkAll" id="chkAll" class="chkAll" />
+                      <input type="checkbox" name="chkAll" id="cbx_chkAll" class="chkAll" />
                       <label for="chkAll">전체 약관 동의하기</label>
                     </li>
 
-                    <p>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</p>
+                    <p class="scrollbar-none">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</p>
                   </ul>
                 </li>
                 <li class="checkBox check01">
                   <ul class="clearfix">
                     <li class="checkBtn">
-                      <input type="radio" name="chk1" id="chk1" class="chk" />
+                      <input type="checkbox" name="chk" id="chk1" class="chk" />
                       <label for="chk">이용약관 동의 <span>(필수)</span></label>
                       <div class="checkDteail">
                         <input id="check_detial_Btn1" type="checkbox" class="check_detial_Btn" />
-                        <label for="check_detial_Btn1"><i class="fa-solid fa-chevron-down check_detial_icon"></i></label>
+                        <label for="check_detial_Btn1"><i class="fa-solid fa-chevron-down check_detial_icon check_detial_icon1"></i></label>
                       </div>
                     </li>
                     <div class="checkTxt" id="checkTxt1">
                       <p>
-                        여러분을 환영합니다. 네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를 이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며,
-                        아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
+                        여러분을 환영합니다. 모꼬지 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 모꼬지 서비스의 이용과 관련하여 모꼬지 서비스를 제공하는 모꼬지 주식회사(이하 ‘모꼬지’)와 이를 이용하는 모꼬지 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며,
+                        아울러 여러분의 모꼬지 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
                       </p>
                     </div>
                   </ul>
@@ -478,17 +479,17 @@
                 <li class="checkBox check02">
                   <ul class="clearfix">
                     <li class="checkBtn">
-                      <input type="radio" name="chk2" id="chk2" class="chk" />
+                      <input type="checkbox" name="chk" id="chk2" class="chk" />
                       <label for="chk">개인정보 수집∙이용 동의 <span>(필수)</span></label>
                       <div class="checkDteail">
                         <input id="check_detial_Btn2" type="checkbox" class="check_detial_Btn" />
-                        <label for="check_detial_Btn2"><i class="fa-solid fa-chevron-down check_detial_icon"></i></label>
+                        <label for="check_detial_Btn2"><i class="fa-solid fa-chevron-down check_detial_icon check_detial_icon2"></i></label>
                       </div>
                     </li>
                     <div class="checkTxt" id="checkTxt2">
                       <p>
-                        여러분을 환영합니다. 네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를 이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며,
-                        아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
+                        여러분을 환영합니다. 모꼬지 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 모꼬지 서비스의 이용과 관련하여 모꼬지 서비스를 제공하는 모꼬지 주식회사(이하 ‘모꼬지’)와 이를 이용하는 모꼬지 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며,
+                        아울러 여러분의 모꼬지 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
                       </p>
                     </div>
                   </ul>
@@ -497,17 +498,47 @@
                 <li class="checkBox check03">
                   <ul class="clearfix">
                     <li class="checkBtn">
-                      <input type="radio" name="chk3" id="chk3" class="chk" />
+                      <input type="checkbox" name="chk" id="chk3" class="chk" />
                       <label for="chk">위치정보 이용약관 동의 <span>(선택)</span></label>
                       <div class="checkDteail">
                         <input id="check_detial_Btn3" type="checkbox" class="check_detial_Btn" />
-                        <label for="check_detial_Btn3"><i class="fa-solid fa-chevron-down check_detial_icon"></i></label>
+                        <label for="check_detial_Btn3"><i class="fa-solid fa-chevron-down check_detial_icon check_detial_icon3"></i></label>
                       </div>
                     </li>
                     <div class="checkTxt" id="checkTxt3">
-                      <p>
-                        여러분을 환영합니다. 네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를 이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며,
-                        아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
+                      <p class="checkTxtScroll">
+                        제1조(목적)<br /><br />
+                        본 약관은 모꼬지(이하 "회사")가 제공하는 위치기반 서비스(이하 "서비스")를 이용함에 있어, 회사와 이용자 간의 권리, 의무, 책임사항 등을 정함을 목적으로 합니다.<br /><br />
+
+                        제2조(약관의 효력 및 변경)<br /><br />
+                        ① 서비스 이용자는 본 약관 내용에 동의함으로써 위치정보 이용에 관한 서비스를 이용할 수 있습니다.<br />
+                        ② 회사는 필요 시 본 약관을 변경할 수 있으며, 변경된 약관은 회사의 웹사이트나 애플리케이션을 통해 공지함으로써 효력이 발생합니다.<br /><br />
+
+                        제3조(위치정보 수집 이용 동의)<br /><br />
+                        ① 회사는 위치정보를 수집 및 이용하기 위하여 이용자의 별도 동의를 받습니다.<br />
+                        ② 회사는 위치정보를 이용자에게 제공하기 전에 해당 이용자의 동의를 받습니다.<br />
+                        ③ 회사는 위치정보를 이용자에게 제공하기 위해 필요한 경우, 추가적인 동의를 요청할 수 있습니다.<br /><br />
+
+                        제4조(이용자의 권리)<br /><br />
+                        ① 이용자는 언제든지 위치정보의 수집 및 이용에 대한 동의를 철회할 수 있습니다.<br />
+                        ② 이용자는 위치정보 수집에 대한 동의를 거부할 수 있으나, 이 경우 서비스 이용이 제한될 수 있습니다.<br /><br />
+
+                        제5조(회사의 의무)<br /><br />
+                        ① 회사는 위치정보를 안정적으로 제공하기 위해 최선의 노력을 다합니다.<br />
+                        ② 회사는 위치정보의 수집, 이용 시에 이용자의 개인정보 보호를 위해 관련 법령 및 정책을 준수합니다.<br /><br />
+
+                        제6조(손해배상)<br /><br />
+                        회사는 위치정보의 수집, 이용으로 인해 발생한 이용자의 손해에 대하여 어떠한 책임도 부담하지 않습니다.<br /><br />
+
+                        제7조(면책)<br /><br />
+                        회사는 다음의 경우에는 위치정보의 수집, 이용에 대한 책임을 면합니다:<br />
+                        ① 이용자가 위치정보를 제공하는 과정에서 거짓 정보를 제공한 경우<br />
+                        ② 기타 회사의 고의 또는 과실이 없는 사유로 인한 경우<br /><br />
+
+                        제8조(분쟁해결)<br /><br />
+                        본 약관에 명시되지 않은 사항에 대해서는 관련 법령 및 회사의 정책에 따릅니다.<br /><br />
+
+                        위치정보 이용약관에 동의합니다.
                       </p>
                     </div>
                   </ul>
@@ -516,9 +547,19 @@
                 <li class="checkBox check04">
                   <ul class="clearfix">
                     <li class="checkBtn">
-                      <input type="radio" name="chk4" id="chk4" class="chk" />
-                      <label for="chk">이벤트, 프로모션 알림 메일 수신 <span>(선택)</span></label>
+                      <input type="checkbox" name="chk" id="chk4" class="chk" />
+                      <label for="chk4">이벤트, 프로모션 알림 메일 수신 <span>(선택)</span></label>
                     </li>
+                    <ul class="checkBtn-sub">
+                      <li>
+                        <input type="checkbox" name="chk" id="chk5" class="chk" />
+                        <label for="chk5">SMS</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="chk" id="chk6" class="chk" />
+                        <label for="chk6">이메일</label>
+                      </li>
+                    </ul>
                   </ul>
                 </li>
               </ul>
@@ -540,7 +581,7 @@
               <div class="signupForm-content" id="">
                 <label for="user_id" class="label-title">이메일(아이디)<span class="label_star">*</span></label>
                 <div class="signupForm-content-wrap">
-                  <div class="input-wrap">
+                  <div class="input-wrap" id="userIdWrap">
                     <input type="text" name="user_id" id="user_id" class="user-button-none" placeholder="예: mokkoji@mokkoji.com" />
                     <span class="error"></span>
                     <!-- 에러메시지 출력할 요소 -->
@@ -550,7 +591,7 @@
               <div class="signupForm-content">
                 <label for="user_pw" class="label-title">비밀번호<span class="label_star">*</span></label>
                 <div class="signupForm-content-wrap">
-                  <div class="input-wrap">
+                  <div class="input-wrap" id="pwWrap">
                     <input type="password" name="user_pw" id="user_pw" placeholder="예: abcd1234" />
                     <span class="error"></span>
                     <!-- 에러메시지 출력할 요소 -->
@@ -561,7 +602,7 @@
               <div class="signupForm-content">
                 <label for="confirm_pw" class="label-title">비밀번호 확인<span span class="label_star">*</span></label>
                 <div class="signupForm-content-wrap">
-                  <div class="input-wrap">
+                  <div class="input-wrap" id="confirmPwWrap">
                     <input type="password" name="confirm_pw" id="confirm_pw" class="user-button-none" placeholder="비밀번호를 한번더 입력해주세요." />
                     <span class="error"></span>
                     <!-- 에러메시지 출력할 요소 -->
@@ -571,12 +612,12 @@
               <div class="signupForm-content">
                 <label for="user_nickname" class="label-title">닉네임<span span class="label_star">*</span></label>
                 <div class="signupForm-content-wrap">
-                  <div class="input-wrap">
+                  <div class="input-wrap" id="nicknameWrap">
                     <input type="text" name="user_nickname" id="user_nickname" placeholder="예: 모꼬지" />
                     <span class="error"></span>
                     <!-- 에러메시지 출력할 요소 -->
                   </div>
-                  <button class="signup-check signup-check-border">중복확인</button>
+                  <button class="signup-check signup-check-border" id="doble-check-btn">중복확인</button>
                 </div>
               </div>
 
@@ -648,7 +689,7 @@
                     <span class="error"></span>
                     <!-- 에러메시지 출력할 요소 -->
                   </div>
-                  <button class="signup-check signup-check-border" id="signUp_send_check">인증하기</button>
+                  <button class="signup-check signup-check-border" id="signUp_send_check" onclick="completeVerification()">인증하기</button>
                 </div>
               </div>
               <!-- 성별 -->
@@ -657,15 +698,15 @@
                 <div class="signupForm-content-wrap">
                   <div class="input-wrap gender-input-wrap">
                     <div class="gender_man_wrap gender-all">
-                      <input type="radio" name="user_gender" id="user_gender_man" />
+                      <input type="radio" name="gender" id="user_gender_man" onclick="checkOnlyOne(this)" />
                       <label for="user_gender_man">남자</label>
                     </div>
                     <div class="gender_woman_wrap gender-all">
-                      <input type="radio" name="user_gender" id="user_gender_woman" />
+                      <input type="radio" name="gender" id="user_gender_woman" onclick="checkOnlyOne(this)" />
                       <label for="user_gender_woman" cl>여자</label>
                     </div>
                     <div class="gender_none_wrap gender-all">
-                      <input type="radio" name="user_gender" id="user_gender_none" />
+                      <input type="radio" name="gender" id="user_gender_none" onclick="checkOnlyOne(this)" />
                       <label for="user_gender_woman">선택 안함</label>
                     </div>
 
@@ -677,7 +718,7 @@
 
               <!-- 나중에 입력 -->
               <div class="signupForm-content later_enter_content">
-                <input type="radio" name="later_enter" id="later_enter" />
+                <input type="checkbox" name="later_enter" id="later_enter" />
                 <label for="later_enter" class="later_enter_label">나중에 입력하기</label>
               </div>
               <div class="next-btn" id="join_more_info_btn">
