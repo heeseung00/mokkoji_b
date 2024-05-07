@@ -993,6 +993,7 @@ input::placeholder {
 }
 .best-img img {
   width: 100%;
+  cursor: pointer;
 }
 .circle {
   background-color: #00539c;
@@ -1285,6 +1286,7 @@ input::placeholder {
 }
 .festival-img img {
   width: 100%;
+  cursor: pointer;
 }
 .festival-info {
   display: block;
