@@ -1,0 +1,826 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #191919;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #191919;
+  word-break: keep-all;
+  font-size: 10px;
+  position: relative;
+}
+/* 공통요소 */
+.wrap {
+  width: 100%;
+  position: relative;
+  margin-top: 100px;
+}
+.inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.sub-title {
+  font-size: 3rem;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+/* 내용 */
+.contents {
+  display: block;
+  position: relative;
+}
+.contents .inner {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* 상단 */
+.contents-top {
+  display: flex;
+  position: relative;
+  padding-top: 50px;
+  /* gap: 20px; */
+}
+/* 상단 왼쪽 */
+.contents-top-left {
+  position: relative;
+  display: block;
+  width: 450px;
+  /* background-color: chocolate; */
+}
+.contents-top-left h2 {
+  font-size: 2.8rem;
+  line-height: 1.3;
+}
+/* 상단 오른쪽 */
+.contents-top-right {
+  position: relative;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 20px;
+  gap: 20px;
+}
+/* 상단 오른쪽 왼쪽 */
+.contents-top-right-left {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+}
+.contents-top-right-left-sesarch-top {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.contents-top-right-left-sesarch-top input {
+  width: 100%;
+  height: 35px;
+  border: 0.5px solid #d9d9d9;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+  padding: 0px 25px 0px 16px;
+  font-size: 1.5rem;
+  color: #222222;
+}
+.contents-top-right-left-sesarch-top input::placeholder {
+  font-size: 1.5rem;
+  color: #acacac;
+}
+.contents-top-right-left-sesarch-top i {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/* 상단 오른쪽 지역 선택 */
+.contents-top-right-left-sesarch-bottom {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.select_cus {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+  z-index: 99;
+}
+.select_cus .trigger {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 35px;
+  padding: 0 36px 0 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.select_cus .trigger:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  background: url("../images/lee\ sub\ region/select_arr.png") center center no-repeat;
+  background-size: contain;
+  transform: scaleY(-1);
+}
+.select_cus.active .trigger:after {
+  transform: scaleY(1);
+}
+.select_cus .trigger_txt {
+  overflow: hidden;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: -0.21px;
+  color: #acacac;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.select_cus.select .trigger_txt {
+  color: #222222;
+}
+.select_cus .option {
+  display: none;
+  position: absolute;
+  top: calc(100% - 1px);
+  width: 100%;
+  max-height: 203px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  z-index: 1;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+.select_cus .option > li {
+  padding: 11px 16px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #2c2c2c;
+  cursor: pointer;
+}
+.select_cus .option > li:hover {
+  background: #f2f2f2;
+}
+.contents-top-right-right button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  /* position: absolute;
+  right: 0; */
+  margin-top: 10px;
+  background-color: #8da4d0;
+  /* color: #222222; */
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+/* 상단 해시태그 */
+.contents-top-right-right {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+.contents-top-right-right p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 20px 0 10px 0;
+}
+.hashtag {
+  display: block;
+  position: relative;
+}
+.hashtag button {
+  /* border: 1px solid #8da4d0; */
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #222222;
+}
+.hashtag button:hover {
+  font-weight: bold;
+}
+/* 지역 행사 스와이퍼 커스텀 */
+/*.recommend-festival {
+  position: relative;
+  margin: 30px 10px;
+  .swiper {
+    &-pagination {
+      position: relative;
+      width: 100px;
+      bottom: auto;
+      &-progressbar-fill {
+        background: #7c8789;
+      }
+    }
+    &-pagination2 {
+      position: relative;
+      width: calc(100% - 150px);
+      height: 10px;
+      bottom: auto;
+    }
+  }
+  .pagination_container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+} */
+.pagination_container {
+  display: block;
+  align-items: center;
+  position: relative;
+  /* top: 20px; */
+}
+/* 지역 버튼 스와이퍼 */
+.location-sw {
+  display: block;
+  position: relative;
+  width: 92%;
+  margin: 50px auto;
+}
+.location-sw .swiper-slide {
+  display: block;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.location-sw .swiper-slide img:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.daeguBtn img{
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.location-sw .swiper-slide img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  max-width: 72px;
+}
+.location-sw .swiper-slide span {
+  font-size: 1.6rem;
+}
+/* 스와이퍼 버튼 */
+.sw-name-next {
+  width: 0;
+  height: 0;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  position: absolute;
+  top: 0;
+  right: -32px;
+  font-size: 2rem;
+  color: #8da4d0;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  position: absolute;
+  top: 0;
+  left: -32px;
+  font-size: 2rem;
+  color: #8da4d0;
+}
+.location-markek-contents {
+  position: relative;
+  display: block;
+}
+.location-markeks {
+  position: relative;
+  display: block;
+}
+.location-markek-name {
+  position: relative;
+  display: block;
+}
+.location-markek-name h2 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* 추천 스와이퍼 */
+.recommend-cont {
+  display: block;
+  position: relative;
+}
+.sw-recommend-conts {
+  display: block;
+  position: relative;
+  padding: 0 30px;
+}
+.sw-recommend-conts .swiper-slide {
+  display: block;
+  width: 100%;
+  position: relative;
+  border: 1px solid #acacac;
+  border-radius: 5px;
+  padding: 20px;
+}
+.sw-recommend-conts .swiper-slide:hover {
+  box-shadow: 0 0 0 1px #191919 inset;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+/* .sw-recommend-conts .swiper-slide::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+} */
+/* .recommend-square {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+} */
+.recommend-square em {
+  display: inline-block;
+  font-size: 1.4rem;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 10px 10px 10px 0;
+  background: #333;
+  color: #fff;
+  font-weight: 300;
+  padding: 0 10px;
+}
+.recommend-square strong {
+  display: block;
+  margin: 28px 0 12px;
+  font-size: 2.2rem;
+  line-height: 25px;
+  letter-spacing: -1px;
+  color: #000;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.recommend-square p {
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  line-height: 2rem;
+  color: #333;
+  overflow: hidden;
+  max-height: 40px;
+  display: block;
+  display: -webkit-box;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+/* 전통시장 */
+.location-markek-list {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.location-markek-list li {
+  width: 100%;
+  /* border: 1px solid #acacac; */
+  border-radius: 5px;
+  padding: 20px 10px 15px 10px;
+  background-color: #f7f7f7;
+}
+.location-markek-list li:hover {
+  box-shadow: 0 0 0 2px #191919 inset;
+  transition: all 0.2s;
+}
+.location-markek-list li span {
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.location-markek-list li p {
+  font-size: 1.3rem;
+  padding: 15px 0;
+  color: #5e5e5e;
+}
+.location-markek-list li button {
+  display: block;
+  border: none;
+  background-color: #f7f7f7;
+  /* background-color: #fff; */
+  border-radius: 5px;
+  /* color: #222222; */
+  padding: 3px 5px;
+  margin: auto;
+  cursor: pointer;
+}
+.location-markek-list li button a {
+  /* color: #fff; */
+  color: #00539c;
+  font-size: 1.2rem;
+}
+.location-markek-list li button:hover a {
+  font-weight: bold;
+}
+.traditional-market {
+  display: block;
+  position: relative;
+  margin-top: 30px;
+}
+/* 지역내용 중간 */
+.location-markeks-mid {
+  display: block;
+  position: relative;
+}
+/* 추천 맛집 */
+.recommend-rest {
+  display: block;
+  position: relative;
+  margin-top: 50px;
+}
+.recommend-rest-list {
+  display: flex;
+  position: relative;
+  width: 100%;
+  gap: 30px;
+}
+.recommend-rest-content {
+  width: 100%;
+  text-align: center;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: auto;
+}
+.recommend-rest-content img {
+  width: 100%;
+  cursor: pointer;
+}
+.recommend-rest-content span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+}
+.recommend-rest-content p {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+.texts {
+  padding: 10px;
+}
+/* 추천 여행지 */
+.recommend-travel {
+  display: block;
+  position: relative;
+  margin-top: 50px;
+}
+.recommend-travel-list {
+  display: flex;
+  position: relative;
+  width: 100%;
+  gap: 30px;
+}
+.recommend-travel-content {
+  width: 100%;
+  text-align: center;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: auto;
+}
+.recommend-travel-content img {
+  width: 100%;
+  cursor: pointer;
+}
+.recommend-travel-content span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+}
+.recommend-travel-content p {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+.recommend-rest .sub-title i,
+.recommend-travel .sub-title i,
+.recommend-festival .sub-title i,
+.traditional-market .sub-title i {
+  font-size: 2.3rem;
+  cursor: pointer;
+}
+.location-markek-name .sub-title i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.recommend-rest .sub-title,
+.recommend-travel .sub-title,
+.recommend-festival .sub-title,
+.traditional-market .sub-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.location-markek-name .sub-title {
+  display: flex;
+  justify-content: space-between;
+}
+/* 지역내용 804 */
+.location-markeks-mid-840 {
+  display: none;
+}
+.title-840 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-top: 70px;
+  transition: all 0.3s;
+}
+.title-840 .food,
+.title-840 .trav {
+  width: 50%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #8da4d0;
+  color: #2c2c2c;
+}
+.title-840 .food {
+  background-color: #8da4d0;
+  color: #fff;
+  border-radius: 5px 0 0 5px;
+}
+.title-840 .trav {
+  border-radius: 0 5px 5px 0px;
+}
+.title-840 .trav:hover {
+  /* background-color: #ff9364; */
+  background-color: #8da4d0;
+  color: #fff;
+}
+.mid-plusBt {
+  display: none;
+  position: relative;
+  text-align: center;
+}
+.location-markeks-mid i {
+  display: inline-block;
+  font-size: 2.3rem;
+  cursor: pointer;
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+/* 지역 행사 스와이퍼 */
+.recommend-festival {
+  display: block;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.sw-sub-festival {
+  display: block;
+  position: relative;
+  /* width: 100%; */
+  height: 100%;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  padding: 0 10px 10px 10px;
+}
+.sw-sub-festival .swiper-slide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+}
+.sw-sub-festival .swiper-slide img {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+.festival-text {
+  display: block;
+  position: relative;
+  padding: 20px 10px;
+}
+.sw-sub-festival .festival-text span {
+  font-size: 1.6rem;
+  display: block;
+  font-weight: bold;
+  padding-bottom: 10px;
+  /* padding: 20px 10px 10px 10px; */
+}
+.sw-sub-festival .festival-text p {
+  display: block;
+  font-size: 1.3rem;
+}
+/* 지역 행사 스와이퍼 스크롤바 */
+.swiper-scrollbar-drag {
+  background-color: rgba(141, 164, 208, 0.7);
+}
+/* ============================================= 반응형 */
+@media screen and (max-width: 1050px) {
+  .location-markek-list {
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .location-markek-list {
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-content: space-around;
+    gap: 20px;
+  }
+  .location-markek-list li {
+    width: calc(50% - 10px);
+  }
+}
+@media screen and (max-width: 1000px) {
+}
+@media screen and (max-width: 890px) {
+  .recommend-square strong {
+    font-size: 2rem;
+  }
+  .recommend-square p {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 840px) {
+  .recommend-travel {
+    display: none;
+  }
+  .location-markeks-mid-840 {
+    display: block;
+  }
+  .recommend-rest-list {
+    flex-wrap: wrap;
+  }
+  .recommend-rest-list li {
+    width: calc(50% - 30px / 2);
+  }
+  .recommend-rest .sub-title,
+  .recommend-travel .sub-title {
+    display: none;
+  }
+  .recommend-travel {
+    margin-top: 30px;
+  }
+  .recommend-travel-list {
+    flex-wrap: wrap;
+  }
+  .recommend-travel li {
+    width: calc(50% - 30px / 2);
+  }
+  .recommend-rest .sub-title,
+  .recommend-travel .sub-title {
+    display: none;
+  }
+  .recommend-rest {
+    margin-top: 30px;
+  }
+  .mid-plusBt {
+    display: block;
+  }
+  .recommend-rest-content p,
+  .recommend-travel-content p {
+    margin-bottom: 10px;
+  }
+  .recommend-rest-list,
+  .recommend-travel-list {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .sw-recommend-conts .swiper-slide {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 810px) {
+  .contents-top-left h2 {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (max-width: 790px) {
+  .contents-top {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .contents-top-right-left {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 750px) {
+  .contents-top-right-left-sesarch-top input::placeholder {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .sw-recommend-conts .swiper-slide {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .sw-recommend-conts .swiper-slide {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contents-top {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .contents-top-left {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 585px) {
+  .recommend-square em {
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.1rem;
+    border-radius: 10px 10px 10px 0;
+  }
+  .recommend-square strong {
+    display: block;
+    margin: 22px 0 8px;
+    font-size: 1.7rem;
+    line-height: 20px;
+    letter-spacing: -0.7px;
+  }
+  .recommend-square p {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    line-height: 16px;
+    max-height: 32px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .sw-recommend-conts {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .location-markek-list li {
+    width: 100%;
+    padding: 10px;
+  }
+  .location-markek-list li p {
+    padding: 15px 0;
+    font-size: 1.3rem;
+  }
+  .location-markek-list {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .recommend-rest-list,
+  .recommend-travel-list {
+    gap: 20px 0px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .recommend-travel-content span,
+  .recommend-rest-content span {
+    font-size: 1.4rem;
+  }
+  .recommend-rest-content p,
+  .recommend-travel-content p {
+    font-size: 1.2rem;
+  }
+  .sw-recommend-conts .swiper-slide {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .sw-recommend-conts .swiper-slide {
+    width: 90%;
+  }
+}
