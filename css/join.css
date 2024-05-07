@@ -67,18 +67,18 @@ body {
 
 /* 회원가입 과정 */
 #join_agree {
-  display: none;
-  /* display: block; */
-}
-
-#join_basic_info {
   /* display: none; */
   display: block;
 }
 
-#join_more_info {
-  /* display: block; */
+#join_basic_info {
   display: none;
+  /* display: block; */
+}
+
+#join_more_info {
+  display: none;
+  /* display: block; */
 }
 
 /* ========================= */
@@ -551,7 +551,7 @@ body {
   border: 1px solid #ff9364;
   border-radius: 5px;
   color: #ff9364;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 }
 
 .join .error {
@@ -776,7 +776,12 @@ body {
   }
 
   .join label {
-    padding-bottom: 10px !important;
+    /* padding-bottom: 10px !important; */
+  }
+
+  .check04 .checkBtn-sub label{
+    width: 150px;
+
   }
 
   .join #user_nickname {
@@ -1085,16 +1090,34 @@ body {
   #join_agree .checkBtn label {
     font-size: 1.3rem;
   }
+
+  #join_agree .check04 .checkBtn-sub label{
+    font-size: 1.3rem;
+    width: 141px !important;
+  }
 }
 
 @media screen and (max-width: 345px) {
+  #join_agree .check04 .checkBtn-sub label{
+    font-size: 1.3rem;
+    width: 130px !important;
+  }
+
   .join select#signUpTelecom {
     width: 37%;
   }
+  
 
   /* 추가 정보 입력 */
   #join_more_info .gender-input-wrap .gender-all label {
     font-size: 1.4rem;
+  }
+}
+
+
+@media screen and (max-width: 340px) {
+  #join_agree .check04 .checkBtn-sub label{
+    width: 100% !important;
   }
 }
 
