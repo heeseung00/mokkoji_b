@@ -5,17 +5,29 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-html,
-body {
-  /* display: grid; */
-  width: 100%;
-  height: 100%;
-  place-items: center;
-  background-color: #fff;
-  /* background: linear-gradient(to right, #99004d 0%, #ff0080 100%); */
+ul,
+li {
+  list-style: none;
 }
-
+a {
+  color: #191919;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #191919;
+  word-break: keep-all;
+  font-size: 10px;
+  position: relative;
+}
 ::selection {
   background: #ff80bf;
 }

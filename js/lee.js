@@ -21,23 +21,26 @@ window.addEventListener("load", function () {
     searchInput.value = ""; // input 내용 리셋
   });
   // =================================================================
-  var menuItems = document.querySelectorAll(".menu-list li a");
+  var menuItems = document.querySelectorAll(".menu-list a");
   menuItems.forEach(function (item) {
     item.addEventListener("click", function (event) {
-      event.preventDefault(); // 기본 동작 방지
-      // 클릭된 메뉴 아이템에만 'active' 클래스를 추가합니다.
-      menuItems.forEach(function (menuItem) {
-        menuItem.parentElement.classList.remove("active");
-      });
-      this.parentElement.classList.add("active");
-      // 해당 섹션으로 스크롤합니다.
-      var targetId = this.getAttribute("href").substring(1);
-      var targetSection = document.getElementById(targetId);
-      var offsetTop = targetSection.offsetTop;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth",
-      });
+      // href 속성 값 가져오기
+      var href = this.getAttribute("href");
+      // 만약 href 속성 값이 "#"로 시작하면, 스크롤 효과 적용
+      if (href.startsWith("#")) {
+        event.preventDefault(); // 기본 동작 방지
+        // 대상 섹션의 id 가져오기
+        var targetSectionId = href.substring(1);
+        // 대상 섹션 요소 가져오기
+        var targetSection = document.getElementById(targetSectionId);
+        // 대상 섹션의 페이지 맨 위에서의 거리 계산
+        var offsetTop = targetSection.offsetTop;
+        // 부드러운 스크롤링 효과 적용
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth",
+        });
+      }
     });
   });
   // 스크롤 이벤트를 사용하여 현재 보이는 섹션을 감지하고 해당 섹션의 메뉴에 클래스를 추가하여 CSS를 적용합니다.
