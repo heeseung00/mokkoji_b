@@ -427,9 +427,9 @@
   .mb-header {
     display: block;
   }
-  .mb-header .search .container .inner .search-contents {
+  /* .mb-header .search .container .inner .search-contents {
     padding: 20px 0px 0 00px;
-  }
+  } */
 
   /* 추천 맛집 왼쪽 */
   .market-best {
@@ -578,19 +578,19 @@
 }
 @media screen and (max-width: 570px) {
   /* 헤더 검색 */
-  .mb-header .search .container .inner .search-contents {
+  /* .mb-header .search .container .inner .search-contents {
     padding: 30px 0px 0 0px;
-  }
+  } */
   /* 검색 상단 */
-  .mb-header .search .search-contents .search-content-top input {
+  /* .mb-header .search .search-contents .search-content-top input {
     font-size: 1.6rem;
-  }
+  } */
   input::placeholder {
     font-size: 1.6rem;
   }
-  .mb-header .search .search-contents .search-content-top i {
+  /* .mb-header .search .search-contents .search-content-top i {
     font-size: 1.6rem;
-  }
+  } */
   /* 검색 중간 */
   .mb-header .search .search-content-mid p {
     font-size: 1.6rem;
@@ -646,6 +646,22 @@
   }
   .mb-search-cont-input {
     width: 400px;
+  }
+  .mb-header > .search > .container > .inner > .search-contents > .search-content-top > .hd-logo > a > img {
+    width: 50px;
+    height: 50px;
+  }
+  .mb-header .search .search-contents .search-content-top i {
+    font-size: 3rem;
+  }
+  .mb-header .search .search-contents .search-content-top {
+    margin-top: 10px;
+  }
+  .mb-header .search .search-contents .mb-search-cont {
+    width: 300px;
+  }
+  .mb-header > .search > .container > .inner > .search-contents > .search-content-top > .hd-logo {
+    width: 50px;
   }
 }
 @media screen and (max-width: 535px) {
@@ -741,6 +757,14 @@
   .festival-img img {
     /* height: 340px; */
     height: 100%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .mb-header .search .search-contents .mb-search-cont {
+    width: 250px;
+  }
+  .mb-header .search .search-contents .search-content-top i {
+    font-size: 2.6rem;
   }
 }
 @media screen and (max-width: 450px) {
@@ -851,6 +875,9 @@
   .mb-search-cont-input {
     width: 250px;
   }
+  .mb-header .search .search-contents .mb-search-cont {
+    width: 200px;
+  }
 }
 @media screen and (max-width: 390px) {
   .mb-search-cont {
@@ -866,15 +893,15 @@
     padding: 15px 18px;
   }
   /* 검색 상단 */
-  .mb-header .search .search-contents .search-content-top input {
+  /* .mb-header .search .search-contents .search-content-top input {
     font-size: 1.5rem;
-  }
+  } */
   input::placeholder {
     font-size: 1.5rem;
   }
-  .mb-header .search .search-contents .search-content-top i {
+  /* .mb-header .search .search-contents .search-content-top i {
     font-size: 1.5rem;
-  }
+  } */
   /* 검색 중간 */
   .mb-header .search .search-content-mid p {
     font-size: 1.5rem;
@@ -980,6 +1007,11 @@
   }
   .mb-search-cont-input {
     width: 230px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .mb-header .search .search-contents .mb-search-cont {
+    width: 160px;
   }
 }
 @media screen and (max-width: 340px) {

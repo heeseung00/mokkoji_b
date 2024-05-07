@@ -80,7 +80,7 @@ body {
   height: auto;
   margin-top: 10px;
 }
-.hd-logo > a > img {
+.hd-logo a img {
   width: 100%;
   margin: auto;
   display: block;
@@ -303,13 +303,7 @@ input::placeholder {
 .header .search .search-content-bot .search-hot .search-hot-list-right li {
   cursor: pointer;
 }
-.header
-  .search
-  .search-content-bot
-  .search-hot
-  .search-hot-list-right
-  li:nth-child(5)
-  span {
+.header .search .search-content-bot .search-hot .search-hot-list-right li:nth-child(5) span {
   margin-right: 11px;
 }
 /* 모바일 헤더 =================================================== */
@@ -463,6 +457,46 @@ input::placeholder {
 .go-join a span:hover {
   font-weight: bold;
 }
+/* 모바일 검색 */
+.mb-header > .search > .container > .inner > .search-contents > .search-content-top > .hd-logo > a > img {
+  width: 70px;
+  height: 70px;
+}
+.mb-header > .search > .container > .inner > .search-contents > .search-content-top > .hd-logo {
+  width: 70px;
+}
+.mb-header > .search > .container > .inner > .search-contents > .search-content-top > .hd-logo > a {
+  display: inline-block;
+}
+/* 검색 상단*/
+.mb-header .search .search-contents .search-content-top {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .search .search-contents .search-content-top input {
+  height: 30px;
+  /* width: 800px; */
+  width: 100%;
+  border-width: 0 0 2px;
+  outline: none;
+  font-size: 2rem;
+  padding-bottom: 13px;
+}
+input::placeholder {
+  color: #5e5e5e;
+  font-size: 2rem;
+}
+.header .search .search-contents .search-content-top i {
+  font-size: 2rem;
+  color: #5e5e5e;
+  cursor: pointer;
+}
+.hd-logo a {
+  display: block;
+  position: relative;
+}
 /* 모바일 검색바 450px 일때 */
 .mb-search-cont-450 {
   display: flex;
@@ -534,12 +568,7 @@ input::placeholder {
   display: block;
   position: relative;
 }
-.mb-header-450
-  > .container
-  > .inner
-  > .mb-header-450-top
-  > .mb-menu-450
-  > button {
+.mb-header-450 > .container > .inner > .mb-header-450-top > .mb-menu-450 > button {
   border: none;
   background: none;
   cursor: pointer;
@@ -547,13 +576,7 @@ input::placeholder {
   top: -30px;
   right: 0;
 }
-.mb-header-450
-  > .container
-  > .inner
-  > .mb-header-450-top
-  > .mb-menu-450
-  > button
-  > i {
+.mb-header-450 > .container > .inner > .mb-header-450-top > .mb-menu-450 > button > i {
   font-size: 2.8rem;
 }
 .mb-header-450-top > button {
@@ -577,13 +600,7 @@ input::placeholder {
   left: 45%;
   transform: translateX(-50%);
 }
-.mb-header-450
-  > .container
-  > .inner
-  > .mb-header-450-top
-  > .logo-450
-  > a
-  > img {
+.mb-header-450 > .container > .inner > .mb-header-450-top > .logo-450 > a > img {
   width: 50px;
   height: 50px;
   text-align: center;
@@ -676,10 +693,7 @@ input::placeholder {
   width: 100%;
   height: 100%;
 }
-.mb-header .search .mb-search-top .search-close-bt {
-  position: relative;
-}
-.mb-header .search .mb-search-top .search-close-bt > i {
+.mb-header .search .search-close-bt > i {
   display: inline-block;
   font-size: 3.5rem;
   color: #5e5e5e;
@@ -728,13 +742,7 @@ input::placeholder {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.mb-header
-  .search
-  .search-content-bot
-  .search-hot
-  .search-hot-list-left
-  li
-  span {
+.mb-header .search .search-content-bot .search-hot .search-hot-list-left li span {
   margin-right: 20px;
 }
 .mb-header .search .search-content-bot .search-hot .search-hot-list-left li {
@@ -744,25 +752,13 @@ input::placeholder {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.mb-header
-  .search
-  .search-content-bot
-  .search-hot
-  .search-hot-list-right
-  li
-  span {
+.mb-header .search .search-content-bot .search-hot .search-hot-list-right li span {
   margin-right: 20px;
 }
 .mb-header .search .search-content-bot .search-hot .search-hot-list-right li {
   cursor: pointer;
 }
-.mb-header
-  .search
-  .search-content-bot
-  .search-hot
-  .search-hot-list-right
-  li:nth-child(5)
-  span {
+.mb-header .search .search-content-bot .search-hot .search-hot-list-right li:nth-child(5) span {
   margin-right: 11px;
 }
 /* 검색창 */
@@ -776,7 +772,7 @@ input::placeholder {
   height: 100vh;
   position: absolute;
   top: -80px;
-  padding-top: 30px;
+  /* padding-top: 30px; */
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
@@ -857,13 +853,7 @@ input::placeholder {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.mb-header
-  .search
-  .search-content-bot
-  .search-hot
-  .search-hot-list-left
-  li
-  span {
+.mb-header .search .search-content-bot .search-hot .search-hot-list-left li span {
   margin-right: 20px;
 }
 .mb-header .search .search-content-bot .search-hotz .search-hot-list-left li {
@@ -873,23 +863,10 @@ input::placeholder {
   font-size: 1.6rem;
   line-height: 1.9;
 }
-.mb-header
-  .search
-  .search-content-bot
-  .search-hot
-  .search-hot-list-right
-  li
-  span {
+.mb-header .search .search-content-bot .search-hot .search-hot-list-right li span {
   margin-right: 20px;
 }
-.mb-header
-  .search
-  .search-content-bot
-  .search-hot
-  .search-hot-list-right
-  li:nth-child(5)
-  a
-  span {
+.mb-header .search .search-content-bot .search-hot .search-hot-list-right li:nth-child(5) a span {
   margin-right: 11px;
 }
 /* 배너 */

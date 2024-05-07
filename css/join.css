@@ -1,33 +1,32 @@
 @charset "utf-8";
-
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-
-ul > li {
+ul,
+li {
   list-style: none;
 }
 a {
+  color: #191919;
   text-decoration: none;
 }
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
+img {
+  border: 0;
+  vertical-align: middle;
 }
-
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  /* box-sizing: border-box; */
+  font-family: "Noto Sans KR", sans-serif;
+  color: #191919;
+  word-break: keep-all;
+  font-size: 10px;
+  position: relative;
 }
-
 .wrap {
   margin-top: 0 !important;
 }
@@ -779,9 +778,8 @@ body {
     /* padding-bottom: 10px !important; */
   }
 
-  .check04 .checkBtn-sub label{
+  .check04 .checkBtn-sub label {
     width: 150px;
-
   }
 
   .join #user_nickname {
@@ -1091,14 +1089,14 @@ body {
     font-size: 1.3rem;
   }
 
-  #join_agree .check04 .checkBtn-sub label{
+  #join_agree .check04 .checkBtn-sub label {
     font-size: 1.3rem;
     width: 141px !important;
   }
 }
 
 @media screen and (max-width: 345px) {
-  #join_agree .check04 .checkBtn-sub label{
+  #join_agree .check04 .checkBtn-sub label {
     font-size: 1.3rem;
     width: 130px !important;
   }
@@ -1106,7 +1104,6 @@ body {
   .join select#signUpTelecom {
     width: 37%;
   }
-  
 
   /* 추가 정보 입력 */
   #join_more_info .gender-input-wrap .gender-all label {
@@ -1114,9 +1111,8 @@ body {
   }
 }
 
-
 @media screen and (max-width: 340px) {
-  #join_agree .check04 .checkBtn-sub label{
+  #join_agree .check04 .checkBtn-sub label {
     width: 100% !important;
   }
 }
