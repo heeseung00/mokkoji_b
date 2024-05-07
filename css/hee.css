@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-
-
-
 /* 희승 영역 */
 
 /* 메인 배너 */
@@ -1581,7 +1578,7 @@
   }
 
   .ft-bt-left {
-    width: 100%;
+    width: 100% !important;
   }
 
   .ft-bt-left > * {
