@@ -136,6 +136,31 @@ window.addEventListener("load", function () {
     mbSearchInput450.value = ""; // input 내용 리셋
   });
   // =================================================================
+// 모든 .mb-search-cont 클래스를 가진 요소를 선택합니다.
+var mbSearchConts = document.querySelectorAll('.mb-search-cont');
+// 각 .mb-search-cont 클래스를 가진 요소에 대해 처리합니다.
+mbSearchConts.forEach(function(mbSearchCont) {
+  // 현재 요소 내부에서 .search-text 클래스를 가진 입력 필드를 선택합니다.
+  var searchInput = mbSearchCont.querySelector('.search-text');
+  // 현재 요소 내부에서 .search-reset 클래스를 가진 리셋 버튼을 선택합니다.
+  var resetButton = mbSearchCont.querySelector('.search-reset');
+  // 입력 필드에 텍스트가 변경될 때마다 이벤트를 감지합니다.
+  searchInput.addEventListener('input', function() {
+    // 입력 필드에 값이 있는 경우 "Reset" 버튼을 표시합니다.
+    if (searchInput.value.length > 0) {
+      resetButton.style.opacity = '1'; // 보이도록 설정
+    } else {
+      // 입력 필드에 값이 없는 경우 "Reset" 버튼을 숨깁니다.
+      resetButton.style.opacity = '0';
+    }
+  });
+  // 리셋 버튼 클릭 시 입력 필드의 값 초기화
+  resetButton.addEventListener('click', function() {
+    searchInput.value = ''; // 입력 필드의 값 초기화
+    resetButton.style.opacity = '0'; // 리셋 버튼 숨김
+  });
+});
+    // =================================================================
   // 전국 시장 소개 스와이프
   var swLocalName = new Swiper(".sw-local-name", {
     slidesPerView: 3,

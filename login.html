@@ -46,7 +46,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main-login.css" />
     <link rel="stylesheet" href="css/hee.css" />
     <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/responsive.css" />
@@ -79,88 +79,90 @@
   </head>
   <body>
     <div class="wrap">
-      <!-- 헤더 -->
-      <header class="header">
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="container">
+        <div class="inner">
+          <!-- 로고 -->
+          <div class="hd-logo">
+            <a href="index.html"><img src="images/link-img/mokkoji_link_img.png" alt="로고" /></a>
+          </div>
+          <!-- 네비게이션 -->
+          <nav class="nav">
+            <ul class="menu-list">
+              <li><a href="region-sub.html">지역별</a></li>
+              <li><a href="#nav1">맛집</a></li>
+              <li><a href="#nav2">시장</a></li>
+              <li><a href="#nav3">축제</a></li>
+              <li><a href="#nav4">방문후기</a></li>
+              <li><a href="#nav5">공지사항</a></li>
+              <li><a href="notice-board.html">게시판</a></li>
+            </ul>
+          </nav>
+          <!-- 마이페이지 -->
+          <div class="hd-right">
+            <ul class="my-list">
+              <li>
+                <button id="search-open"><i class="fi fi-rr-search"></i></button>
+              </li>
+              <li><a href="index.html">로그아웃</a></li>
+              <li>
+                <div class="mypagePhoto">
+                  <a href="#"><img src="images/1header/mypageP.png" alt="마이페이지"></a>
+                  <span>마이페이지</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--검색 -->
+      <div class="search" id="search">
         <div class="container">
           <div class="inner">
             <!-- 로고 -->
             <div class="hd-logo">
-              <a href="index.html"><img src="images/link-img/mokkoji_link_img.png" alt="로고" /></a>
+              <a href="index.html"><img src="images/1header/hd-logo-main-2.png" alt="로고" /></a>
             </div>
-            <!-- 네비게이션 -->
-            <nav class="nav">
-              <ul class="menu-list">
-                <li><a href="region-sub.html">지역별</a></li>
-                <li><a href="#nav1">맛집</a></li>
-                <li><a href="#nav2">시장</a></li>
-                <li><a href="#nav3">축제</a></li>
-                <li><a href="#nav4">방문후기</a></li>
-                <li><a href="#nav5">공지사항</a></li>
-                <li><a href="notice-board.html">게시판</a></li>
-              </ul>
-            </nav>
-            <!-- 마이페이지 -->
-            <div class="hd-right">
-              <ul class="my-list">
-                <li>
-                  <button id="search-open"><i class="fi fi-rr-search"></i></button>
-                </li>
-                <li><a href="login.html">로그인</a></li>
-                <li><a href="join.html">회원가입</a></li>
-                <li>
-                  <a href="#"><i class="fa-regular fa-circle-user"></i></a>
-                </li>
-              </ul>
+            <div class="search-close-bt" id="closeBt">
+              <i class="fa-solid fa-xmark" id="mb-menu-xBt"></i>
             </div>
-          </div>
-        </div>
-        <!--검색 -->
-        <div class="search" id="search">
-          <div class="container">
-            <div class="inner">
-              <!-- 로고 -->
-              <div class="hd-logo">
-                <a href="index.html"><img src="images/1header/hd-logo-main-2.png" alt="로고" /></a>
+            <div class="search-contents">
+              <div class="search-content-top">
+                <input id="searchInput" type="text" placeholder="검색어를 입력해 주세요." maxlength="50" />
+                <i class="fi fi-rs-search"></i>
               </div>
-              <div class="search-close-bt" id="closeBt">
-                <i class="fa-solid fa-xmark" id="mb-menu-xBt"></i>
+              <div class="search-content-mid">
+                <p>최근 검색어</p>
+                <p class="search-s">최근 검색어 내역이 없습니다.</p>
               </div>
-              <div class="search-contents">
-                <div class="search-content-top">
-                  <input id="searchInput" type="text" placeholder="검색어를 입력해 주세요." maxlength="50" />
-                  <i class="fi fi-rs-search"></i>
+              <div class="search-content-bot">
+                <div class="search-content-bot-top">
+                  <p>최근 인기 검색어</p>
+                  <p class="search-s"><i class="fi fi-rs-info"></i>조회일 직전 7일간의 인기 검색어</p>
                 </div>
-                <div class="search-content-mid">
-                  <p>최근 검색어</p>
-                  <p class="search-s">최근 검색어 내역이 없습니다.</p>
-                </div>
-                <div class="search-content-bot">
-                  <div class="search-content-bot-top">
-                    <p>최근 인기 검색어</p>
-                    <p class="search-s"><i class="fi fi-rs-info"></i>조회일 직전 7일간의 인기 검색어</p>
-                  </div>
-                  <div class="search-hot">
-                    <ul class="search-hot-list-left">
-                      <li><span>1</span>광진손짜장</li>
-                      <li><span>2</span>제주도</li>
-                      <li><span>3</span>놀라운 토요일</li>
-                      <li><span>4</span>짜장면</li>
-                      <li><span>5</span>강원도 맛집</li>
-                    </ul>
-                    <ul class="search-hot-list-right">
-                      <li><span>6</span>돈까스</li>
-                      <li><span>7</span>경동시장</li>
-                      <li><span>8</span>참돔</li>
-                      <li><span>9</span>백종원</li>
-                      <li><span>10</span>이벤트</li>
-                    </ul>
-                  </div>
+                <div class="search-hot">
+                  <ul class="search-hot-list-left">
+                    <li><span>1</span>광진손짜장</li>
+                    <li><span>2</span>제주도</li>
+                    <li><span>3</span>놀라운 토요일</li>
+                    <li><span>4</span>짜장면</li>
+                    <li><span>5</span>강원도 맛집</li>
+                  </ul>
+                  <ul class="search-hot-list-right">
+                    <li><span>6</span>돈까스</li>
+                    <li><span>7</span>경동시장</li>
+                    <li><span>8</span>참돔</li>
+                    <li><span>9</span>백종원</li>
+                    <li><span>10</span>이벤트</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
       <!-- 로그인 뒤로가기: 모바일 -->
       <div class="login_go_back">
         <a href="javascript:window.history.back();">
@@ -193,7 +195,7 @@
               </div>
 
               <div class="input-box login-button" id="loginBtnWrap">
-                <input type="submit" name="loginBtn" value="로그인" />
+                <input type="submit" name="loginBtn" value="로그인" onClick="location.href='index-login.html'" />
               </div>
               <div class="signin_findId">
                 <a href="#">

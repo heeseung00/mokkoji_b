@@ -1,723 +1,736 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-PFLDMPXB");
-    </script>
-    <!-- End Google Tag Manager -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <title>모꼬지</title>
-    <!-- seo적용 -->
-    <meta name="robots" content="ALL" />
-    <meta name="robots" content="index, follow" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta property="title" content="모꼬지 ┃ 전통시장의 새로운 트렌드를 만들다." />
-    <meta name="description" content="모꼬지는 전국 전통시장과 죽기 전에 꼭 가봐야 할 여행지를 소개하는 국내 유일한 시장 및 여행 정보 전문 포털 사이트입니다." />
-    <meta name="keywords" content="모꼬지, 대한민국, 전통시장" />
-    <meta property="keyword" content="모꼬지, 대한민국, 전통시장" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="모꼬지 ┃ 전통시장의 새로운 트렌드를 만들다." />
-    <meta property="og:description" content="모꼬지는 전국 전통시장과 죽기 전에 꼭 가봐야 할 여행지를 소개하는 국내 유일한 시장 및 여행 정보 전문 포털 사이트입니다" />
-    <meta property="og:image" content="/images/link-img/thumbnail-01.png" />
-    <meta property="og:url" content="https://mokkoji-a.vercel.app/" />
-    <!-- flaticon -->
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css" />
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css" />
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-straight/css/uicons-thin-straight.css" />
-    <!-- font aswesom -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- link Swiper's CSS -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
-    <!-- aos css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- css -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/hee.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/region-sub.css" />
-    <!-- 제이쿼리 추가 -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- aos js -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Swiper js -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"></script>
-    <!-- js -->
-    <script src="js/html5shiv.js"></script>
-    <!-- <script src="js/prefixfree.min.js"></script> -->
-    <script src="js/repond.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/leesub.js"></script>
-    <script src="js/hee.js"></script>
-    <script src="js/lee.js"></script>
-    <script src="js/jquery.cookie.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPBSJSB4DE"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-SPBSJSB4DE");
-    </script>
-  </head>
 
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFLDMPXB" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="wrap">
-      <!-- 헤더 -->
-      <header class="header">
+<head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-PFLDMPXB");
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>모꼬지</title>
+  <!-- seo적용 -->
+  <meta name="robots" content="ALL" />
+  <meta name="robots" content="index, follow" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta property="title" content="모꼬지 ┃ 전통시장의 새로운 트렌드를 만들다." />
+  <meta name="description" content="모꼬지는 전국 전통시장과 죽기 전에 꼭 가봐야 할 여행지를 소개하는 국내 유일한 시장 및 여행 정보 전문 포털 사이트입니다." />
+  <meta name="keywords" content="모꼬지, 대한민국, 전통시장" />
+  <meta property="keyword" content="모꼬지, 대한민국, 전통시장" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="모꼬지 ┃ 전통시장의 새로운 트렌드를 만들다." />
+  <meta property="og:description" content="모꼬지는 전국 전통시장과 죽기 전에 꼭 가봐야 할 여행지를 소개하는 국내 유일한 시장 및 여행 정보 전문 포털 사이트입니다" />
+  <meta property="og:image" content="/images/link-img/thumbnail-01.png" />
+  <meta property="og:url" content="https://mokkoji-a.vercel.app/" />
+  <!-- flaticon -->
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css" />
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-straight/css/uicons-thin-straight.css" />
+  <!-- font aswesom -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- link Swiper's CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+  <!-- aos css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- css -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main-login.css" />
+  <link rel="stylesheet" href="css/hee.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/region-sub.css" />
+  <!-- 제이쿼리 추가 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- aos js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Swiper js -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"></script>
+  <!-- js -->
+  <script src="js/html5shiv.js"></script>
+  <!-- <script src="js/prefixfree.min.js"></script> -->
+  <script src="js/repond.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/leesub.js"></script>
+  <script src="js/hee.js"></script>
+  <script src="js/lee.js"></script>
+  <script src="js/jquery.cookie.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPBSJSB4DE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-SPBSJSB4DE");
+  </script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFLDMPXB" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="wrap">
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="container">
+        <div class="inner">
+          <!-- 로고 -->
+          <div class="hd-logo">
+            <a href="index.html"><img src="images/link-img/mokkoji_link_img.png" alt="로고" /></a>
+          </div>
+          <!-- 네비게이션 -->
+          <nav class="nav">
+            <ul class="menu-list">
+              <li><a href="region-sub.html">지역별</a></li>
+              <li><a href="#nav1">맛집</a></li>
+              <li><a href="#nav2">시장</a></li>
+              <li><a href="#nav3">축제</a></li>
+              <li><a href="#nav4">방문후기</a></li>
+              <li><a href="#nav5">공지사항</a></li>
+              <li><a href="notice-board.html">게시판</a></li>
+            </ul>
+          </nav>
+          <!-- 마이페이지 -->
+          <div class="hd-right">
+            <ul class="my-list">
+              <li>
+                <button id="search-open"><i class="fi fi-rr-search"></i></button>
+              </li>
+              <li><a href="index.html">로그아웃</a></li>
+              <li>
+                <div class="mypagePhoto">
+                  <a href="#"><img src="images/1header/mypageP.png" alt="마이페이지"></a>
+                  <span>마이페이지</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--검색 -->
+      <div class="search" id="search">
         <div class="container">
           <div class="inner">
             <!-- 로고 -->
             <div class="hd-logo">
-              <a href="index.html"><img src="images/link-img/mokkoji_link_img.png" alt="로고" /></a>
+              <a href="index.html"><img src="images/1header/hd-logo-main-2.png" alt="로고" /></a>
             </div>
-            <!-- 네비게이션 -->
-            <nav class="nav">
-              <ul class="menu-list">
-                <li><a href="region-sub.html">지역별</a></li>
-                <li><a href="#nav1">맛집</a></li>
-                <li><a href="#nav2">시장</a></li>
-                <li><a href="#nav3">축제</a></li>
-                <li><a href="#nav4">방문후기</a></li>
-                <li><a href="#nav5">공지사항</a></li>
-                <li><a href="notice-board.html">게시판</a></li>
-              </ul>
-            </nav>
-            <!-- 마이페이지 -->
-            <div class="hd-right">
-              <ul class="my-list">
-                <li>
-                  <button id="search-open"><i class="fi fi-rr-search"></i></button>
-                </li>
-                <li><a href="login.html">로그인</a></li>
-                <li><a href="join.html">회원가입</a></li>
-                <li>
-                  <a href="#"><i class="fa-regular fa-circle-user"></i></a>
-                </li>
-              </ul>
+            <div class="search-close-bt" id="closeBt">
+              <i class="fa-solid fa-xmark" id="mb-menu-xBt"></i>
             </div>
-          </div>
-        </div>
-        <!--검색 -->
-        <div class="search" id="search">
-          <div class="container">
-            <div class="inner">
-              <!-- 로고 -->
-              <div class="hd-logo">
-                <a href="index.html"><img src="images/1header/hd-logo-main-2.png" alt="로고" /></a>
+            <div class="search-contents">
+              <div class="search-content-top">
+                <input id="searchInput" type="text" placeholder="검색어를 입력해 주세요." maxlength="50" />
+                <i class="fi fi-rs-search"></i>
               </div>
-              <div class="search-close-bt" id="closeBt">
-                <i class="fa-solid fa-xmark" id="mb-menu-xBt"></i>
+              <div class="search-content-mid">
+                <p>최근 검색어</p>
+                <p class="search-s">최근 검색어 내역이 없습니다.</p>
               </div>
-              <div class="search-contents">
-                <div class="search-content-top">
-                  <input id="searchInput" type="text" placeholder="검색어를 입력해 주세요." maxlength="50" />
-                  <i class="fi fi-rs-search"></i>
+              <div class="search-content-bot">
+                <div class="search-content-bot-top">
+                  <p>최근 인기 검색어</p>
+                  <p class="search-s"><i class="fi fi-rs-info"></i>조회일 직전 7일간의 인기 검색어</p>
                 </div>
-                <div class="search-content-mid">
-                  <p>최근 검색어</p>
-                  <p class="search-s">최근 검색어 내역이 없습니다.</p>
-                </div>
-                <div class="search-content-bot">
-                  <div class="search-content-bot-top">
-                    <p>최근 인기 검색어</p>
-                    <p class="search-s"><i class="fi fi-rs-info"></i>조회일 직전 7일간의 인기 검색어</p>
-                  </div>
-                  <div class="search-hot">
-                    <ul class="search-hot-list-left">
-                      <li><span>1</span>광진손짜장</li>
-                      <li><span>2</span>제주도</li>
-                      <li><span>3</span>놀라운 토요일</li>
-                      <li><span>4</span>짜장면</li>
-                      <li><span>5</span>강원도 맛집</li>
-                    </ul>
-                    <ul class="search-hot-list-right">
-                      <li><span>6</span>돈까스</li>
-                      <li><span>7</span>경동시장</li>
-                      <li><span>8</span>참돔</li>
-                      <li><span>9</span>백종원</li>
-                      <li><span>10</span>이벤트</li>
-                    </ul>
-                  </div>
+                <div class="search-hot">
+                  <ul class="search-hot-list-left">
+                    <li><span>1</span>광진손짜장</li>
+                    <li><span>2</span>제주도</li>
+                    <li><span>3</span>놀라운 토요일</li>
+                    <li><span>4</span>짜장면</li>
+                    <li><span>5</span>강원도 맛집</li>
+                  </ul>
+                  <ul class="search-hot-list-right">
+                    <li><span>6</span>돈까스</li>
+                    <li><span>7</span>경동시장</li>
+                    <li><span>8</span>참돔</li>
+                    <li><span>9</span>백종원</li>
+                    <li><span>10</span>이벤트</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
-      <!-- 모바일 헤더 -->
-      <div class="mb-header">
+      </div>
+    </header>
+    <!-- 모바일 헤더 -->
+    <div class="mb-header">
+      <div class="container">
+        <div class="inner">
+          <!-- 로고 -->
+          <div class="logo">
+            <a href="index.html"><img src="images/1header/mb-hd-logo.png" alt="로고" /></a>
+          </div>
+          <!-- 검색 -->
+          <div class="mb-search">
+            <form action="#" class="mb-search-cont">
+              <input type="text" id="mbautofocus" class="search-text" maxlength="100" placeholder="검색어를 입력해주세요." />
+              <input type="reset" class="search-reset" />
+              <input type="button" class="search-bt" />
+            </form>
+          </div>
+          <!-- 햄버거바 -->
+          <div class="mb-menu">
+            <button id="mb-menuBt"><i class="fa-solid fa-bars"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- 햄버거 메뉴 내용 -->
+      <div class="mb-menu-contents" id="mbMenuContents">
+        <div class="mb-menu-xBt">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="mb-my-list">
+          <a href="#"><img src="images/1header/mypageP.png" alt="모바일마이페이지" /></a>
+          <div class="idNmail">
+            <a href="#"><span>망곰이</span>
+              <p>gomi88@naver.com</p>
+            </a>
+          </div>
+        </div>
+        <div class="go-out">
+          <a href="index.html">
+            <span>로그아웃</span>
+          </a>
+        </div>
+        <ul class="mb-menu-list">
+          <li><a href="region-sub.html">지역별</a></li>
+          <li><a href="#nav1">맛집</a></li>
+          <li><a href="#nav2">시장</a></li>
+          <li><a href="#nav3">축제</a></li>
+          <li><a href="#nav4">방문후기</a></li>
+          <li><a href="#nav5">공지사항</a></li>
+          <li><a href="notice-board.html">게시판</a></li>
+        </ul>
+      </div>
+      <!-- 검색 내용 -->
+      <div class="search" id="mb-search">
         <div class="container">
           <div class="inner">
             <!-- 로고 -->
-            <div class="logo">
-              <a href="index.html"><img src="images/1header/mb-hd-logo.png" alt="로고" /></a>
-            </div>
-            <!-- 검색 -->
-            <div class="mb-search">
-              <form action="#" class="mb-search-cont">
-                <input type="text" id="mbautofocus" class="search-text" maxlength="100" placeholder="검색어를 입력해주세요." />
-                <input type="reset" class="search-reset" />
-                <input type="button" class="search-bt" />
-              </form>
-            </div>
-            <!-- 햄버거바 -->
-            <div class="mb-menu">
-              <button id="mb-menuBt"><i class="fa-solid fa-bars"></i></button>
-            </div>
-          </div>
-        </div>
-        <!-- 햄버거 메뉴 내용 -->
-        <div class="mb-menu-contents" id="mbMenuContents">
-          <div class="mb-menu-xBt">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-          <div class="mb-my-list">
-            <img src="images/1header/mypage-icon.png" alt="모바일마이페이지" />
-            <a href="login.html"
-              ><span>로그인하세요</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </a>
-          </div>
-          <div class="go-join">
-            <a href="join.html">
-              <span>회원가입</span>
-            </a>
-          </div>
-          <ul class="mb-menu-list">
-            <li><a href="region-sub.html">지역별</a></li>
-            <li><a href="#nav1">맛집</a></li>
-            <li><a href="#nav2">시장</a></li>
-            <li><a href="#nav3">축제</a></li>
-            <li><a href="#nav4">방문후기</a></li>
-            <li><a href="#nav5">공지사항</a></li>
-            <li><a href="notice-board.html">게시판</a></li>
-          </ul>
-        </div>
-        <!-- 검색 내용 -->
-        <div class="search" id="mb-search">
-          <div class="container">
-            <div class="inner">
-              <!-- 로고 -->
-              <!-- <div class="hd-logo">
+            <!-- <div class="hd-logo">
                 <a href="index.html"><img src="images/1header/mb-hd-logo.png" alt="로고" /></a>
               </div> -->
-              <div class="search-contents">
-                <div class="search-content-top">
-                  <div class="hd-logo">
-                    <a href="index.html"><img src="images/1header/mb-hd-logo.png" alt="로고" /></a>
-                  </div>
-                  <form action="#" class="mb-search-cont">
-                    <input type="text" id="mbautofocus" class="search-text" maxlength="100" placeholder="검색어를 입력해주세요." />
-                    <input type="reset" class="search-reset" />
-                    <input type="button" class="search-bt" />
-                  </form>
-                  <div class="search-close-bt" id="mb-closeBt">
-                    <i class="fa-solid fa-xmark" id="mb-menu-xBt"></i>
-                  </div>
+            <div class="search-contents">
+              <div class="search-content-top">
+                <div class="hd-logo">
+                  <a href="index.html"><img src="images/1header/mb-hd-logo.png" alt="로고" /></a>
                 </div>
-                <div class="search-content-mid">
-                  <p>최근 검색어</p>
-                  <p class="search-s">최근 검색어 내역이 없습니다.</p>
+                <form action="#" class="mb-search-cont">
+                  <input type="text" id="mbautofocus" class="search-text" maxlength="100" placeholder="검색어를 입력해주세요." />
+                  <input type="reset" class="search-reset" />
+                  <input type="button" class="search-bt" />
+                </form>
+                <div class="search-close-bt" id="mb-closeBt">
+                  <i class="fa-solid fa-xmark" id="mb-menu-xBt"></i>
                 </div>
-                <div class="search-content-bot">
-                  <div class="search-content-bot-top">
-                    <p>최근 인기 검색어</p>
-                    <p class="search-s"><i class="fi fi-rs-info"></i>조회일 직전 7일간의 인기 검색어</p>
-                  </div>
-                  <div class="search-hot">
-                    <ul class="search-hot-list-left">
-                      <li><span>1</span>광진손짜장</li>
-                      <li><span>2</span>제주도</li>
-                      <li><span>3</span>놀라운 토요일</li>
-                      <li><span>4</span>짜장면</li>
-                      <li><span>5</span>강원도 맛집</li>
-                    </ul>
-                    <ul class="search-hot-list-right">
-                      <li><span>6</span>돈까스</li>
-                      <li><span>7</span>경동시장</li>
-                      <li><span>8</span>참돔</li>
-                      <li><span>9</span>백종원</li>
-                      <li><span>10</span>이벤트</li>
-                    </ul>
-                  </div>
+              </div>
+              <div class="search-content-mid">
+                <p>최근 검색어</p>
+                <p class="search-s">최근 검색어 내역이 없습니다.</p>
+              </div>
+              <div class="search-content-bot">
+                <div class="search-content-bot-top">
+                  <p>최근 인기 검색어</p>
+                  <p class="search-s"><i class="fi fi-rs-info"></i>조회일 직전 7일간의 인기 검색어</p>
+                </div>
+                <div class="search-hot">
+                  <ul class="search-hot-list-left">
+                    <li><span>1</span>광진손짜장</li>
+                    <li><span>2</span>제주도</li>
+                    <li><span>3</span>놀라운 토요일</li>
+                    <li><span>4</span>짜장면</li>
+                    <li><span>5</span>강원도 맛집</li>
+                  </ul>
+                  <ul class="search-hot-list-right">
+                    <li><span>6</span>돈까스</li>
+                    <li><span>7</span>경동시장</li>
+                    <li><span>8</span>참돔</li>
+                    <li><span>9</span>백종원</li>
+                    <li><span>10</span>이벤트</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- 모바일 헤더 -->
-      <div class="mb-header-450">
+    </div>
+    <!-- 모바일 헤더 -->
+    <div class="mb-header-450">
+      <div class="container">
+        <div class="inner">
+          <div class="mb-header-450-top">
+            <!-- 로고 -->
+            <div class="logo-450">
+              <a href="index.html"><img src="images/1header/mb-hd-logo.png" alt="로고" /></a>
+            </div>
+            <!-- 햄버거바 -->
+            <div class="mb-menu-450">
+              <button id="mb-menuBt-450"><i class="fa-solid fa-bars"></i></button>
+            </div>
+          </div>
+          <!-- 검색 -->
+          <div class="mb-search-450">
+            <form action="#" class="mb-search-cont-450">
+              <input type="text" class="search-text-450" maxlength="100" placeholder="검색어를 입력해주세요." />
+              <input type="reset" class="search-reset-450" />
+              <input type="button" class="search-bt-450" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- 햄버거 메뉴 내용 -->
+      <div class="mb-menu-contents-450" id="mbMenuContents450">
+        <div class="mb-menu-xBt-450">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="mb-my-list-450">
+          <img src="images/1header/mypage-icon.png" alt="모바일마이페이지" />
+          <a href="login.html"><span>로그인하세요</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+        <div class="go-join-450">
+          <a href="join.html">
+            <span>회원가입</span>
+          </a>
+        </div>
+        <ul class="mb-menu-list-450">
+          <li><a href="region-sub.html">지역별</a></li>
+          <li><a href="#nav1">맛집</a></li>
+          <li><a href="#nav2">시장</a></li>
+          <li><a href="#nav3">축제</a></li>
+          <li><a href="#nav4">방문후기</a></li>
+          <li><a href="#nav5">공지사항</a></li>
+          <li><a href="notice-board.html">게시판</a></li>
+        </ul>
+      </div>
+      <!-- 검색 내용 -->
+      <div class="search-450" id="mb-search-450">
         <div class="container">
           <div class="inner">
-            <div class="mb-header-450-top">
-              <!-- 로고 -->
-              <div class="logo-450">
-                <a href="index.html"><img src="images/1header/mb-hd-logo.png" alt="로고" /></a>
-              </div>
-              <!-- 햄버거바 -->
-              <div class="mb-menu-450">
-                <button id="mb-menuBt-450"><i class="fa-solid fa-bars"></i></button>
-              </div>
+            <!-- 로고 -->
+            <div class="hd-logo-450">
+              <a href="index.html"><img src="images/1header/mb-hd-logo.png" alt="로고" /></a>
             </div>
-            <!-- 검색 -->
-            <div class="mb-search-450">
-              <form action="#" class="mb-search-cont-450">
-                <input type="text" class="search-text-450" maxlength="100" placeholder="검색어를 입력해주세요." />
-                <input type="reset" class="search-reset-450" />
-                <input type="button" class="search-bt-450" />
-              </form>
+            <div class="search-close-bt-450" id="mb-closeBt-450">
+              <i class="fa-solid fa-xmark" id="mb-menu-xBt-450"></i>
             </div>
-          </div>
-        </div>
-        <!-- 햄버거 메뉴 내용 -->
-        <div class="mb-menu-contents-450" id="mbMenuContents450">
-          <div class="mb-menu-xBt-450">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-          <div class="mb-my-list-450">
-            <img src="images/1header/mypage-icon.png" alt="모바일마이페이지" />
-            <a href="login.html"
-              ><span>로그인하세요</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </a>
-          </div>
-          <div class="go-join-450">
-            <a href="join.html">
-              <span>회원가입</span>
-            </a>
-          </div>
-          <ul class="mb-menu-list-450">
-            <li><a href="region-sub.html">지역별</a></li>
-            <li><a href="#nav1">맛집</a></li>
-            <li><a href="#nav2">시장</a></li>
-            <li><a href="#nav3">축제</a></li>
-            <li><a href="#nav4">방문후기</a></li>
-            <li><a href="#nav5">공지사항</a></li>
-            <li><a href="notice-board.html">게시판</a></li>
-          </ul>
-        </div>
-        <!-- 검색 내용 -->
-        <div class="search-450" id="mb-search-450">
-          <div class="container">
-            <div class="inner">
-              <!-- 로고 -->
-              <div class="hd-logo-450">
-                <a href="index.html"><img src="images/1header/mb-hd-logo.png" alt="로고" /></a>
+            <div class="search-contents-450">
+              <div class="search-content-top-450">
+                <input id="mbSearchInput450" type="text" placeholder="검색어를 입력해 주세요." maxlength="50" />
+                <i class="fi fi-rs-search"></i>
               </div>
-              <div class="search-close-bt-450" id="mb-closeBt-450">
-                <i class="fa-solid fa-xmark" id="mb-menu-xBt-450"></i>
+              <div class="search-content-mid-450">
+                <p>최근 검색어</p>
+                <p class="search-s-450">최근 검색어 내역이 없습니다.</p>
               </div>
-              <div class="search-contents-450">
-                <div class="search-content-top-450">
-                  <input id="mbSearchInput450" type="text" placeholder="검색어를 입력해 주세요." maxlength="50" />
-                  <i class="fi fi-rs-search"></i>
+              <div class="search-content-bot-450">
+                <div class="search-content-bot-top-450">
+                  <p>최근 인기 검색어</p>
+                  <p class="search-s-450"><i class="fi fi-rs-info"></i>조회일 직전 7일간의 인기 검색어</p>
                 </div>
-                <div class="search-content-mid-450">
-                  <p>최근 검색어</p>
-                  <p class="search-s-450">최근 검색어 내역이 없습니다.</p>
-                </div>
-                <div class="search-content-bot-450">
-                  <div class="search-content-bot-top-450">
-                    <p>최근 인기 검색어</p>
-                    <p class="search-s-450"><i class="fi fi-rs-info"></i>조회일 직전 7일간의 인기 검색어</p>
-                  </div>
-                  <div class="search-hot-450">
-                    <ul class="search-hot-list-left-450">
-                      <li></li>
-                      <li><span>1</span>광진손짜장</li>
-                      <li><span>2</span>제주도</li>
-                      <li><span>3</span>놀라운 토요일</li>
-                      <li><span>4</span>짜장면</li>
-                      <li><span>5</span>강원도 맛집</li>
-                    </ul>
-                    <ul class="search-hot-list-right">
-                      <li><span>6</span>돈까스</li>
-                      <li><span>7</span>경동시장</li>
-                      <li><span>8</span>참돔</li>
-                      <li><span>9</span>백종원</li>
-                      <li><span>10</span>이벤트</li>
-                    </ul>
-                  </div>
+                <div class="search-hot-450">
+                  <ul class="search-hot-list-left-450">
+                    <li></li>
+                    <li><span>1</span>광진손짜장</li>
+                    <li><span>2</span>제주도</li>
+                    <li><span>3</span>놀라운 토요일</li>
+                    <li><span>4</span>짜장면</li>
+                    <li><span>5</span>강원도 맛집</li>
+                  </ul>
+                  <ul class="search-hot-list-right">
+                    <li><span>6</span>돈까스</li>
+                    <li><span>7</span>경동시장</li>
+                    <li><span>8</span>참돔</li>
+                    <li><span>9</span>백종원</li>
+                    <li><span>10</span>이벤트</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- 내용 -->
-      <div class="contents">
-        <div class="container">
-          <div class="inner">
-            <!-- 상단 -->
-            <div class="contents-top">
-              <!-- 상단 왼쪽 -->
-              <div class="contents-top-left">
-                <h2>
-                  대한민국 전통시장<br />
-                  어디까지 알고있니?
-                </h2>
-              </div>
-              <!-- 상단 오른쪽 -->
-              <div class="contents-top-right">
-                <div class="contents-top-right-left">
-                  <div class="contents-top-right-left-sesarch-top">
-                    <input type="text" placeholder="검색어를 입력해주세요." />
-                    <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <!-- 내용 -->
+    <div class="contents">
+      <div class="container">
+        <div class="inner">
+          <!-- 상단 -->
+          <div class="contents-top">
+            <!-- 상단 왼쪽 -->
+            <div class="contents-top-left">
+              <h2>
+                대한민국 전통시장<br />
+                어디까지 알고있니?
+              </h2>
+            </div>
+            <!-- 상단 오른쪽 -->
+            <div class="contents-top-right">
+              <div class="contents-top-right-left">
+                <div class="contents-top-right-left-sesarch-top">
+                  <input type="text" placeholder="검색어를 입력해주세요." />
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="contents-top-right-left-sesarch-bottom">
+                  <div class="select_cus">
+                    <input type="hidden" class="opt_val" value="" />
+                    <div class="trigger">
+                      <span class="trigger_txt">지역을 선택해주세요.</span>
+                    </div>
+                    <ul class="option">
+                      <!-- <li data-value="">지역을 선택해주세요.</li> -->
+                      <li data-value="option1">서울</li>
+                      <li data-value="option2">인천</li>
+                      <li data-value="option3">대전</li>
+                      <li data-value="option4">대구</li>
+                      <li data-value="option5">경기</li>
+                      <li data-value="option6">부산</li>
+                      <li data-value="option7">울산</li>
+                      <li data-value="option8">광주</li>
+                      <li data-value="option9">강원</li>
+                      <li data-value="option10">충북</li>
+                      <li data-value="option11">충남</li>
+                      <li data-value="option12">경북</li>
+                      <li data-value="option13">경남</li>
+                      <li data-value="option14">전북</li>
+                      <li data-value="option15">전남</li>
+                      <li data-value="option16">제주</li>
+                      <li data-value="option17">세종</li>
+                    </ul>
                   </div>
-                  <div class="contents-top-right-left-sesarch-bottom">
-                    <div class="select_cus">
-                      <input type="hidden" class="opt_val" value="" />
-                      <div class="trigger">
-                        <span class="trigger_txt">지역을 선택해주세요.</span>
+                </div>
+              </div>
+              <div class="contents-top-right-right">
+                <p>이런 검색어는 어때요?</p>
+                <div class="hashtag">
+                  <button>#야시장</button>
+                  <button>#방송에 나온 맛집</button>
+                  <button>#제주도</button>
+                  <button>#돈까스</button>
+                  <button>#강원도 3일장</button>
+                  <button>#경기도</button>
+                </div>
+                <!-- <button>검색하기</button> -->
+              </div>
+            </div>
+          </div>
+          <!-- 지역 버튼 스와이퍼-->
+          <div class="location-sw">
+            <div class="swiper sw-name">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/lee sub region/seoul.png" alt="서울" /><span>서울</span></div>
+                <div class="swiper-slide"><img src="images/lee sub region/incheon.png" alt="인천" /><span>인천</span></div>
+                <div class="swiper-slide"><img src="images/lee sub region/daejeon.png" alt="대전" /><span>대전</span></div>
+                <div class="swiper-slide daeguBtn"><img src="images/lee sub region/daegu.png" alt="대구" /><span>대구</span>
+                </div>
+                <div class="swiper-slide"><img src="images/lee sub region/gyeonggi.png" alt="경기" /><span>경기</span></div>
+                <div class="swiper-slide"><img src="images/lee sub region/busan.png" alt="부산" /><span>부산</span></div>
+                <div class="swiper-slide"><img src="images/lee sub region/ulsan.png" alt="울산" /><span>울산</span></div>
+                <div class="swiper-slide"><img src="images/lee sub region/gwangju.png" alt="광주" /><span>광주</span></div>
+                <div class="swiper-slide"><img src="images/lee sub region/gangwon.png" alt="강원" /><span>강원</span></div>
+                <div class="swiper-slide"><img src="images/lee sub region/chungbuk.png" alt="충북" /><span>충북</span></div>
+                <div class="swiper-slide"><img src="images/lee sub region/chungnam.png" alt="충남" /><span>충남</span></div>
+                <div class="swiper-slide"><img src="images/lee sub region/gyeongbuk.png" alt="경북" /><span>경북</span>
+                </div>
+                <div class="swiper-slide"><img src="images/lee sub region/gyeongnam.png" alt="경남" /><span>경남</span>
+                </div>
+                <div class="swiper-slide"><img src="images/lee sub region/jeonbuk.png" alt="전북" /><span>전북</span></div>
+                <div class="swiper-slide"><img src="images/lee sub region/jeonnam.png" alt="전남" /><span>전남</span></div>
+                <div class="swiper-slide"><img src="images/lee sub region/jeju.png" alt="제주" /><span>제주</span></div>
+                <div class="swiper-slide"><img src="images/lee sub region/sejong.png" alt="세종" /><span>세종</span></div>
+              </div>
+            </div>
+            <div class="swiper-button-next sw-name-next"></div>
+            <div class="swiper-button-prev sw-name-prev"></div>
+          </div>
+          <!-- 지역 내용 -->
+          <div class="location-markek-contents">
+            <!-- 지역 내용 상단 -->
+            <div class="location-markeks">
+              <div class="location-markek-name">
+                <div class="sub-title">
+                  <h2>대구</h2>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <!-- 추천 스와이퍼 -->
+              <div class="recommend-cont">
+                <div class="swiper sw-recommend-conts">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="recommend-square">
+                        <em>휴식</em>
+                        <strong>운암지수변공원</strong>
+                        <p>
+                          공기부터 달라지는 이 느낌!
+                          <br />
+                          자연이 숨 쉬는 곳에서 힐링하기
+                        </p>
                       </div>
-                      <ul class="option">
-                        <!-- <li data-value="">지역을 선택해주세요.</li> -->
-                        <li data-value="option1">서울</li>
-                        <li data-value="option2">인천</li>
-                        <li data-value="option3">대전</li>
-                        <li data-value="option4">대구</li>
-                        <li data-value="option5">경기</li>
-                        <li data-value="option6">부산</li>
-                        <li data-value="option7">울산</li>
-                        <li data-value="option8">광주</li>
-                        <li data-value="option9">강원</li>
-                        <li data-value="option10">충북</li>
-                        <li data-value="option11">충남</li>
-                        <li data-value="option12">경북</li>
-                        <li data-value="option13">경남</li>
-                        <li data-value="option14">전북</li>
-                        <li data-value="option15">전남</li>
-                        <li data-value="option16">제주</li>
-                        <li data-value="option17">세종</li>
-                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="recommend-square">
+                        <em>명소</em>
+                        <strong>가창댐 둘레길</strong>
+                        <p>
+                          따스한 봄바람을 맞으며
+                          <br />
+                          드라이브 해야 하는 필수 코스
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="recommend-square">
+                        <em>산책</em>
+                        <strong>남산 100년 향수길</strong>
+                        <p>
+                          봄에 가기 좋은 대구 산책코스!
+                          <br />
+                          남산 100년 향수길 걸어봐요
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="contents-top-right-right">
-                  <p>이런 검색어는 어때요?</p>
-                  <div class="hashtag">
-                    <button>#야시장</button>
-                    <button>#방송에 나온 맛집</button>
-                    <button>#제주도</button>
-                    <button>#돈까스</button>
-                    <button>#강원도 3일장</button>
-                    <button>#경기도</button>
+              </div>
+              <!-- 전통 시장 -->
+              <div class="traditional-market">
+                <div class="sub-title">
+                  <h2>전통 시장</h2>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <ul class="location-markek-list">
+                  <li>
+                    <span>서문시장</span>
+                    <p>대구광역시 북구 칠성남로 198</p>
+                    <button><a href="https://kko.to/zVReKZjznX" target="_blank">찾아가기</a></button>
+                  </li>
+                  <li>
+                    <span>교동시장</span>
+                    <p>대구광역시 중구 동성로 70-15</p>
+                    <button><a href="https://kko.to/wbrxu4ZM8G" target="_blank">찾아가기</a></button>
+                  </li>
+                  <li>
+                    <span>봉덕신시장</span>
+                    <p>대구광역시 남구 봉덕로 115</p>
+                    <button><a href="https://kko.to/3xXlwP1R-A" target="_blank">찾아가기</a></button>
+                  </li>
+                  <li>
+                    <span>화원시장</span>
+                    <p>대구광역시 달성군 화원읍 인흥길 33-4</p>
+                    <button><a href="https://kko.to/OHrOgxnKqQ" target="_blank">찾아가기</a></button>
+                  </li>
+                </ul>
+              </div>
+              <!-- 지역내용 중간 -->
+              <div class="location-markeks-mid">
+                <div class="location-markeks-mid-840">
+                  <div class="title-840">
+                    <span class="food" id="foodBt">추천 맛집</span>
+                    <span class="trav" id="travBt">추천 여행지</span>
                   </div>
-                  <!-- <button>검색하기</button> -->
                 </div>
-              </div>
-            </div>
-            <!-- 지역 버튼 스와이퍼-->
-            <div class="location-sw">
-              <div class="swiper sw-name">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="images/lee sub region/seoul.png" alt="서울" /><span>서울</span></div>
-                  <div class="swiper-slide"><img src="images/lee sub region/incheon.png" alt="인천" /><span>인천</span></div>
-                  <div class="swiper-slide"><img src="images/lee sub region/daejeon.png" alt="대전" /><span>대전</span></div>
-                  <div class="swiper-slide daeguBtn"><img src="images/lee sub region/daegu.png" alt="대구" /><span>대구</span></div>
-                  <div class="swiper-slide"><img src="images/lee sub region/gyeonggi.png" alt="경기" /><span>경기</span></div>
-                  <div class="swiper-slide"><img src="images/lee sub region/busan.png" alt="부산" /><span>부산</span></div>
-                  <div class="swiper-slide"><img src="images/lee sub region/ulsan.png" alt="울산" /><span>울산</span></div>
-                  <div class="swiper-slide"><img src="images/lee sub region/gwangju.png" alt="광주" /><span>광주</span></div>
-                  <div class="swiper-slide"><img src="images/lee sub region/gangwon.png" alt="강원" /><span>강원</span></div>
-                  <div class="swiper-slide"><img src="images/lee sub region/chungbuk.png" alt="충북" /><span>충북</span></div>
-                  <div class="swiper-slide"><img src="images/lee sub region/chungnam.png" alt="충남" /><span>충남</span></div>
-                  <div class="swiper-slide"><img src="images/lee sub region/gyeongbuk.png" alt="경북" /><span>경북</span></div>
-                  <div class="swiper-slide"><img src="images/lee sub region/gyeongnam.png" alt="경남" /><span>경남</span></div>
-                  <div class="swiper-slide"><img src="images/lee sub region/jeonbuk.png" alt="전북" /><span>전북</span></div>
-                  <div class="swiper-slide"><img src="images/lee sub region/jeonnam.png" alt="전남" /><span>전남</span></div>
-                  <div class="swiper-slide"><img src="images/lee sub region/jeju.png" alt="제주" /><span>제주</span></div>
-                  <div class="swiper-slide"><img src="images/lee sub region/sejong.png" alt="세종" /><span>세종</span></div>
-                </div>
-              </div>
-              <div class="swiper-button-next sw-name-next"></div>
-              <div class="swiper-button-prev sw-name-prev"></div>
-            </div>
-            <!-- 지역 내용 -->
-            <div class="location-markek-contents">
-              <!-- 지역 내용 상단 -->
-              <div class="location-markeks">
-                <div class="location-markek-name">
+                <!-- 추천 맛집 -->
+                <div class="recommend-rest">
                   <div class="sub-title">
-                    <h2>대구</h2>
+                    <h2>추천 맛집</h2>
                     <i class="fa-solid fa-plus"></i>
                   </div>
-                </div>
-                <!-- 추천 스와이퍼 -->
-                <div class="recommend-cont">
-                  <div class="swiper sw-recommend-conts">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="recommend-square">
-                          <em>휴식</em>
-                          <strong>운암지수변공원</strong>
-                          <p>
-                            공기부터 달라지는 이 느낌!
-                            <br />
-                            자연이 숨 쉬는 곳에서 힐링하기
-                          </p>
-                        </div>
+                  <ul class="recommend-rest-list">
+                    <li class="recommend-rest-content">
+                      <img src="images/lee sub region/food1.png" alt="미림돈까스" />
+                      <div class="texts">
+                        <span>미림 돈까스</span>
+                        <p>서문시장</p>
                       </div>
-                      <div class="swiper-slide">
-                        <div class="recommend-square">
-                          <em>명소</em>
-                          <strong>가창댐 둘레길</strong>
-                          <p>
-                            따스한 봄바람을 맞으며
-                            <br />
-                            드라이브 해야 하는 필수 코스
-                          </p>
-                        </div>
+                    </li>
+                    <li class="recommend-rest-content">
+                      <img src="images/lee sub region/food2.png" alt="신서문김밥" />
+                      <div class="texts">
+                        <span>신서문김밥</span>
+                        <p>교동시장</p>
                       </div>
-                      <div class="swiper-slide">
-                        <div class="recommend-square">
-                          <em>산책</em>
-                          <strong>남산 100년 향수길</strong>
-                          <p>
-                            봄에 가기 좋은 대구 산책코스!
-                            <br />
-                            남산 100년 향수길 걸어봐요
-                          </p>
-                        </div>
+                    </li>
+                    <li class="recommend-rest-content">
+                      <img src="images/lee sub region/food3.png" alt="신매 왕족발" />
+                      <div class="texts">
+                        <span>신매 왕족발</span>
+                        <p>신매시장</p>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- 전통 시장 -->
-                <div class="traditional-market">
-                  <div class="sub-title">
-                    <h2>전통 시장</h2>
-                    <i class="fa-solid fa-plus"></i>
-                  </div>
-                  <ul class="location-markek-list">
-                    <li>
-                      <span>서문시장</span>
-                      <p>대구광역시 북구 칠성남로 198</p>
-                      <button><a href="https://kko.to/zVReKZjznX" target="_blank">찾아가기</a></button>
                     </li>
-                    <li>
-                      <span>교동시장</span>
-                      <p>대구광역시 중구 동성로 70-15</p>
-                      <button><a href="https://kko.to/wbrxu4ZM8G" target="_blank">찾아가기</a></button>
-                    </li>
-                    <li>
-                      <span>봉덕신시장</span>
-                      <p>대구광역시 남구 봉덕로 115</p>
-                      <button><a href="https://kko.to/3xXlwP1R-A" target="_blank">찾아가기</a></button>
-                    </li>
-                    <li>
-                      <span>화원시장</span>
-                      <p>대구광역시 달성군 화원읍 인흥길 33-4</p>
-                      <button><a href="https://kko.to/OHrOgxnKqQ" target="_blank">찾아가기</a></button>
+                    <li class="recommend-rest-content">
+                      <img src="images/lee sub region/food4.png" alt="평화 떡공방" />
+                      <div class="texts">
+                        <span>평화 떡공방</span>
+                        <p>봉덕 신시장</p>
+                      </div>
                     </li>
                   </ul>
                 </div>
-                <!-- 지역내용 중간 -->
-                <div class="location-markeks-mid">
-                  <div class="location-markeks-mid-840">
-                    <div class="title-840">
-                      <span class="food" id="foodBt">추천 맛집</span>
-                      <span class="trav" id="travBt">추천 여행지</span>
-                    </div>
-                  </div>
-                  <!-- 추천 맛집 -->
-                  <div class="recommend-rest">
-                    <div class="sub-title">
-                      <h2>추천 맛집</h2>
-                      <i class="fa-solid fa-plus"></i>
-                    </div>
-                    <ul class="recommend-rest-list">
-                      <li class="recommend-rest-content">
-                        <img src="images/lee sub region/food1.png" alt="미림돈까스" />
-                        <div class="texts">
-                          <span>미림 돈까스</span>
-                          <p>서문시장</p>
-                        </div>
-                      </li>
-                      <li class="recommend-rest-content">
-                        <img src="images/lee sub region/food2.png" alt="신서문김밥" />
-                        <div class="texts">
-                          <span>신서문김밥</span>
-                          <p>교동시장</p>
-                        </div>
-                      </li>
-                      <li class="recommend-rest-content">
-                        <img src="images/lee sub region/food3.png" alt="신매 왕족발" />
-                        <div class="texts">
-                          <span>신매 왕족발</span>
-                          <p>신매시장</p>
-                        </div>
-                      </li>
-                      <li class="recommend-rest-content">
-                        <img src="images/lee sub region/food4.png" alt="평화 떡공방" />
-                        <div class="texts">
-                          <span>평화 떡공방</span>
-                          <p>봉덕 신시장</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- 추천 여행지 -->
-                  <div class="recommend-travel">
-                    <div class="sub-title">
-                      <h2>추천 여행지</h2>
-                      <i class="fa-solid fa-plus"></i>
-                    </div>
-                    <ul class="recommend-travel-list">
-                      <li class="recommend-travel-content">
-                        <img src="images/lee sub region/travel1.png" alt="계산성당" />
-                        <div class="texts">
-                          <span>계산성당</span>
-                          <p class="travel-adr">대구 중구 서성로 10</p>
-                        </div>
-                      </li>
-                      <li class="recommend-travel-content">
-                        <img src="images/lee sub region/travel2.png" alt="수성못" />
-                        <div class="texts">
-                          <span>수성못</span>
-                          <p>대구 수성구 두산동 512</p>
-                        </div>
-                      </li>
-                      <li class="recommend-travel-content">
-                        <img src="images/lee sub region/travel3.png" alt="83타워" />
-                        <div class="texts">
-                          <span>83타워</span>
-                          <p>대구 달서구 두류공원로 200</p>
-                        </div>
-                      </li>
-                      <li class="recommend-travel-content">
-                        <img src="images/lee sub region/travel4.png" alt="수창청춘맨숀" />
-                        <div class="texts">
-                          <span>수창청춘맨숀</span>
-                          <p>대구 중구 달성로22길 27</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- 더보기 버튼 -->
-                  <div class="mid-plusBt">
+                <!-- 추천 여행지 -->
+                <div class="recommend-travel">
+                  <div class="sub-title">
+                    <h2>추천 여행지</h2>
                     <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <ul class="recommend-travel-list">
+                    <li class="recommend-travel-content">
+                      <img src="images/lee sub region/travel1.png" alt="계산성당" />
+                      <div class="texts">
+                        <span>계산성당</span>
+                        <p class="travel-adr">대구 중구 서성로 10</p>
+                      </div>
+                    </li>
+                    <li class="recommend-travel-content">
+                      <img src="images/lee sub region/travel2.png" alt="수성못" />
+                      <div class="texts">
+                        <span>수성못</span>
+                        <p>대구 수성구 두산동 512</p>
+                      </div>
+                    </li>
+                    <li class="recommend-travel-content">
+                      <img src="images/lee sub region/travel3.png" alt="83타워" />
+                      <div class="texts">
+                        <span>83타워</span>
+                        <p>대구 달서구 두류공원로 200</p>
+                      </div>
+                    </li>
+                    <li class="recommend-travel-content">
+                      <img src="images/lee sub region/travel4.png" alt="수창청춘맨숀" />
+                      <div class="texts">
+                        <span>수창청춘맨숀</span>
+                        <p>대구 중구 달성로22길 27</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- 더보기 버튼 -->
+                <div class="mid-plusBt">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <!-- 지역 행사 스와이퍼 -->
+              <div class="recommend-festival">
+                <div class="sub-title">
+                  <h2>지역 행사</h2>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="swiper sw-sub-festival">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="images/lee sub region/festival1.png" alt="파워풀 대구 페스티벌" />
+                      <div class="festival-text">
+                        <span>파워풀 대구 페스티벌</span>
+                        <p>2024.05.10~2024.05.12</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/lee sub region/festival2.png" alt="군위 사랑과 나눔 문화축전" />
+                      <div class="festival-text">
+                        <span>군위 사랑과 나눔 문화축전</span>
+                        <p>2024.05.11 ~ 2024.05.11</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/lee sub region/festival3.png" alt="대구앞산축제" />
+                      <div class="festival-text">
+                        <span>대구앞산축제</span>
+                        <p>2024.05.25 ~ 2024.05.26</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/lee sub region/festival4.png" alt="이월드 라라랜드" />
+                      <div class="festival-text">
+                        <span>이월드 라라랜드</span>
+                        <p>2024.02.24 ~ 2024.05.31</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/lee sub region/festival5.png" alt="네이처파크 플라워페스티벌" />
+                      <div class="festival-text">
+                        <span>네이처파크 플라워페스티벌</span>
+                        <p>2024.03.30 ~ 2024.06.09</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <!-- 지역 행사 스와이퍼 -->
-                <div class="recommend-festival">
-                  <div class="sub-title">
-                    <h2>지역 행사</h2>
-                    <i class="fa-solid fa-plus"></i>
-                  </div>
-                  <div class="swiper sw-sub-festival">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="images/lee sub region/festival1.png" alt="파워풀 대구 페스티벌" />
-                        <div class="festival-text">
-                          <span>파워풀 대구 페스티벌</span>
-                          <p>2024.05.10~2024.05.12</p>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/lee sub region/festival2.png" alt="군위 사랑과 나눔 문화축전" />
-                        <div class="festival-text">
-                          <span>군위 사랑과 나눔 문화축전</span>
-                          <p>2024.05.11 ~ 2024.05.11</p>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/lee sub region/festival3.png" alt="대구앞산축제" />
-                        <div class="festival-text">
-                          <span>대구앞산축제</span>
-                          <p>2024.05.25 ~ 2024.05.26</p>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/lee sub region/festival4.png" alt="이월드 라라랜드" />
-                        <div class="festival-text">
-                          <span>이월드 라라랜드</span>
-                          <p>2024.02.24 ~ 2024.05.31</p>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/lee sub region/festival5.png" alt="네이처파크 플라워페스티벌" />
-                        <div class="festival-text">
-                          <span>네이처파크 플라워페스티벌</span>
-                          <p>2024.03.30 ~ 2024.06.09</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="pagination_container">
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-scrollbar"></div>
-                    <!-- <div class="swiper-pagination2"></div> -->
-                  </div>
+                <div class="pagination_container">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-scrollbar"></div>
+                  <!-- <div class="swiper-pagination2"></div> -->
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- 푸터 -->
-      <footer class="footer">
-        <div class="container">
-          <div class="inner">
-            <ul class="ft-top">
-              <li><a href="#">개인정보처리방침</a></li>
-              <li><a href="#">공지사항</a></li>
-              <li><a href="#">이용안내</a></li>
-              <li><a href="#">고객센터</a></li>
-              <li><a href="#">제휴 문의</a></li>
-            </ul>
-            <div class="ft-bt">
-              <div class="ft-bt-left">
-                <div class="ft-logo"><img src="images/10footer/footer-logo.png" alt="하단 흑백 로고" /></div>
-                <p>(주) 모꼬지</p>
-                <p>주소 : 대구 중구 중앙대로 394, 제일빌딩 5층</p>
-                <p>사업자등록번호 : 123-456-78977 | 통신판매업신고 : 2024-대구중구-1234호</p>
-                <p>대표 : 최희승, 이소망</p>
-                <p>© 모꼬지. All rights reserved. Designed by 희승 & 소망</p>
-              </div>
-              <div class="ft-middle-line"></div>
-              <div class="ft-bt-right">
-                <h2>고객센터</h2>
-                <p>전화번호 : 1234-1234</p>
-                <p>평일 9:00 ~ 18:00 토,일요일 및 공휴일 휴무</p>
-              </div>
+    </div>
+    <!-- 푸터 -->
+    <footer class="footer">
+      <div class="container">
+        <div class="inner">
+          <ul class="ft-top">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">제휴 문의</a></li>
+          </ul>
+          <div class="ft-bt">
+            <div class="ft-bt-left">
+              <div class="ft-logo"><img src="images/10footer/footer-logo.png" alt="하단 흑백 로고" /></div>
+              <p>(주) 모꼬지</p>
+              <p>주소 : 대구 중구 중앙대로 394, 제일빌딩 5층</p>
+              <p>사업자등록번호 : 123-456-78977 | 통신판매업신고 : 2024-대구중구-1234호</p>
+              <p>대표 : 최희승, 이소망</p>
+              <p>© 모꼬지. All rights reserved. Designed by 희승 & 소망</p>
+            </div>
+            <div class="ft-middle-line"></div>
+            <div class="ft-bt-right">
+              <h2>고객센터</h2>
+              <p>전화번호 : 1234-1234</p>
+              <p>평일 9:00 ~ 18:00 토,일요일 및 공휴일 휴무</p>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
-  </body>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
