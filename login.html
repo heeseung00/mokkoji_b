@@ -64,6 +64,7 @@
     <script src="js/script.js"></script>
     <script src="js/hee.js"></script>
     <script src="js/lee.js"></script>
+    <script src="js/login.js"></script>
     <script src="js/jquery.cookie.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E30E53JQ92"></script>
@@ -177,12 +178,12 @@
               <div class="title">로그인</div>
               <div class="input-box underline">
                 <input type="text" placeholder="아이디를 입력하세요." required />
-                <div class="underline"></div>
               </div>
+              <div class="error" id="idError"></div>
               <div class="input-box login_password">
                 <input type="password" placeholder="비밀번호를 입력하세요." required />
-                <div class="underline"></div>
               </div>
+              <div class="error" id="passwordError"></div>
 
               <div class="login_part1">
                 <div class="stay-login">
@@ -192,7 +193,8 @@
               </div>
 
               <div class="input-box login-button" id="loginBtnWrap">
-                <input type="submit" name="loginBtn" value="로그인" onClick="location.href='index-login.html'" />
+                <input type="submit" name="loginBtn" value="로그인" />
+                <!-- <input type="submit" name="loginBtn" value="로그인" onClick="location.href='index-login.html'" /> -->
               </div>
               <div class="signin_findId">
                 <a href="#">
@@ -229,18 +231,8 @@
                 <li class="social-apple social-icon-img">
                   <a href=""><img src="images/login/apple.png" alt="애플" /></a>
                 </li>
-                <!-- <li class="social-facebook social-icon-img">
-                                    <a href=""><img src="images/login/facebook.png" alt="페이스북" /></a>
-                                </li> -->
               </ul>
             </div>
-
-            <!-- <div class="twitter">
-                            <a href="#"><i class="fab fa-twitter"></i>Sign in With Twitter</a>
-                        </div>
-                        <div class="facebook">
-                            <a href="#"><i class="fab fa-facebook-f"></i>Sign in With Facebook</a>
-                        </div> -->
           </div>
         </div>
       </div>
