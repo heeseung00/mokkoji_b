@@ -88,6 +88,20 @@ body {
   background: #fff !important;
 }
 
+.login_wrap form .error {
+  width: 100%;
+  color: rgb(240, 63, 64);
+  font-size: 1.2rem;
+}
+
+.login_wrap form .error#passwordError {
+  width: 100%;
+  color: rgb(240, 63, 64);
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  margin-top: -5px;
+}
+
 .login_wrap form .input-box.login-button {
   border: none;
   /* border: 1px solid #ff9364 !important; */
