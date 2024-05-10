@@ -29,6 +29,7 @@ window.addEventListener("load", function () {
 
       // 로그인이 성공하면 페이지 이동
       location.href = "index-login.html";
+      alert(`로그인 성공! 메인 페이지로 이동합니다.`);
     }
   });
 
